@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const works = [
-  { title: "Project A", image: "/work1.jpg", link: "/works/work1", description: "An innovative design project exploring UI/UX." },
-  { title: "Project B", image: "/work2.jpg", link: "works/work2", description: "A Web3 development project focusing on blockchain integration." }
+  { title: "Studio: Redefining AI-Powered Video Creation", image: "/work1.jpg", link: "/works/work1", description: "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly." },
+  { title: "NFT minting", image: "/work2.jpg", link: "works/work2", description: "A Web3 development project focusing on blockchain integration." }
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+    <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Header */}
       <header className="p-6 flex justify-between items-center bg-gray-800 shadow-lg">
         <h1 className="text-2xl font-bold">My Portfolio</h1>
@@ -22,12 +22,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-20 bg-gray-800">
         <h1 className="text-4xl font-bold">Hi, I'm Hoi Ian</h1>
-        <p className="mt-4 text-lg text-gray-300">Macau-based Designer & Coder | 3 Years in Game & Web3</p>
+        <p className="mt-4 text-lg text-gray-300">Macau 
+Design + Code 
+Tsinghua 
+3Y Exp 
+Cantonese, Mandarin, English</p>
       </section>
       
       {/* Works Showcase */}
       <main className="flex-1 p-8">
-        <h2 className="text-3xl font-semibold mb-6 text-center">Featured Works</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-left">Latest Works</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {works.map((work, index) => (
             <a key={index} href={work.link} className="group block relative rounded-lg overflow-hidden shadow-md transform transition hover:scale-105">
