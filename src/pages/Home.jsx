@@ -45,11 +45,6 @@ Cantonese, Mandarin, English</p>
         </div>
       </main>
       
-      {/* Footer */}
-      <footer className="p-6 text-center text-white">
-      <h2 className="text-9xl font-xanh italic mb-6 text-left tracking-tighter">Let's connect</h2>
-        © {new Date().getFullYear()} My Portfolio. All rights reserved.
-      </footer>
     </div>
   );
 }

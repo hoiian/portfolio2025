@@ -20,10 +20,6 @@ export default function Work1() {
         {/* <Link to="/work2" className="text-blue-400 hover:underline">Next Project →</Link> */}
       </div>
 
-      {/* Footer (Same as Homepage) */}
-      <footer className="p-6 text-center text-gray-400 bg-gray-800 shadow-inner">
-        © {new Date().getFullYear()} My Portfolio. All rights reserved.
-      </footer>
     </div>
   );
 }
