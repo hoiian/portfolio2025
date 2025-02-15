@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const works = [
-  { title: "Studio: Redefining AI-Powered Video Creation", image: "/work1.jpg", link: "/works/work1", description: "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly." },
-  { title: "NFT minting", image: "/work2.jpg", link: "works/work2", description: "A Web3 development project focusing on blockchain integration." }
+  { title: "Studio: Redefining AI-Powered Video Creation", image: "/work1.jpg", link: "/work1", description: "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly." },
+  { title: "NFT minting", image: "/work2.jpg", link: "/work2", description: "A Web3 development project focusing on blockchain integration." }
 ];
 
 export default function Home() {
