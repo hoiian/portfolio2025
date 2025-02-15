@@ -3,21 +3,27 @@ import { Link } from "react-router-dom";
 
 export default function Work1() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+    <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Back Button */}
       <header className="p-6">
-        <Link to="/" className="text-blue-400 hover:underline">← Back</Link>
+        <Link to="/" className="text-yellow-300 hover:underline">← Back</Link>
       </header>
 
       {/* Work1 Content */}
-      <main className="flex-1 p-8 text-center">
-        <h1 className="text-4xl font-bold">Work 1 Project</h1>
-        <p className="mt-4 text-lg text-gray-300">Details about Work 1 go here...</p>
+      <main className="flex-1 p-8 text-left">
+        <h1 className="font-xanh italic tracking-tighter text-4xl">Studio: <br/>
+        Redefining AI-Powered Video Creation</h1>
+        <p className="mt-4 text-gray-300">
+            Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.
+
+        </p>
       </main>
 
       {/* Next Project Link */}
       <div className="p-6 text-center">
-        <Link to="/work2" className="text-blue-400 hover:underline">Next Project →</Link>
+        <Link to="/work2" className="font-xanh italic tracking-tighter text-yellow-300 hover:underline text-4xl">
+          Next Project →
+        </Link>
       </div>
     </div>
   );

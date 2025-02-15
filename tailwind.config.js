@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Avenir Next', 'Inter', 'sans-serif'],
         xanh: ['Xanh Mono', 'monospace'],
       },
     },
