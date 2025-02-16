@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        heading: ['PP Editorial New', 'serif'],
         sans: ['Avenir Next', 'Inter', 'sans-serif'],
-        xanh: ['Xanh Mono', 'monospace'],
+        // xanh: ['Xanh Mono', 'monospace'],
       },
     },
   },

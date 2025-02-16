@@ -21,8 +21,8 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="text-left py-20">
-        <h1 className="font-xanh italic text-9xl tracking-tighter">hoiian.wong</h1>
-        <p className="mt-4 text-lg text-gray-300 ">Macau 
+        <h1 className="italic text-9xl">hoiian.wong</h1>
+        <p className="mt-4 text-lg text-gray-300">Macau 
 Design + Code 
 Tsinghua 
 3Y Exp 
@@ -31,7 +31,8 @@ Cantonese, Mandarin, English</p>
       
       {/* Works Showcase */}
       <main className="flex-1 p-8">
-        <h2 className="text-6xl font-xanh italic mb-6 text-left tracking-tighter">Latest Works</h2>
+        <h2 className="text-6xl italic mb-1 text-left">Latest Works</h2>
+        <p className="mb-6">My most recent projects at Hologram</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {works.map((work, index) => (
             <a key={index} href={work.link} className="group block relative rounded-lg overflow-hidden shadow-md transform transition hover:scale-105 bg-white">

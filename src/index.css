@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-Regular.woff2') format('woff2');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-Italic.woff2') format('woff2');
+    font-weight: 400; /* Regular */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-Ultrabold.woff2') format('woff2');
+    font-weight: 800; /* Ultrabold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-UltraboldItalic.woff2') format('woff2');
+    font-weight: 800; /* Ultrabold */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-Ultralight.woff2') format('woff2');
+    font-weight: 200; /* Ultralight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PP Editorial New';
+    src: url('./assets/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2');
+    font-weight: 200; /* Ultralight */
+    font-style: italic;
+  }
+  
+
+  
 body {
     @apply font-sans;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+}

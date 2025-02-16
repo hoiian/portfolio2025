@@ -11,7 +11,7 @@ export default function Work1() {
 
       {/* Work1 Content */}
       <main className="flex-1 p-8 text-left">
-        <h1 className="font-xanh italic tracking-tighter text-4xl">Studio: <br/>
+        <h1 className="italic text-4xl">Studio: <br/>
         Redefining AI-Powered Video Creation</h1>
         <p className="mt-4 text-gray-300">
             Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.
@@ -21,7 +21,7 @@ export default function Work1() {
 
       {/* Next Project Link */}
       <div className="p-6 text-center">
-        <Link to="/work2" className="font-xanh italic tracking-tighter text-yellow-300 hover:underline text-4xl">
+        <Link to="/work2" className="italic text-yellow-300 hover:underline text-4xl">
           Next Project →
         </Link>
       </div>
