@@ -14,14 +14,14 @@ const works = [
   }
 ];
 
-const sentences = [
+const funFactSentences = [
   "Bungee jumped three times, skydived once… and somehow still alive. 🪂",
   "Born and raised in Macau 🇲🇴—yes, the one with all the casinos.",
   "Currently reading *The Stranger* and having an existential crisis. 🤔",
-  "Can use a mouse with both hands because my right hand gets tired from writing. 🎮",
+  "Can use a mouse with both hands.",
   "Fueled by bubble tea 🧋—my daily survival juice.",
   "ChatGPT is my unofficial spokesperson. 🤖💬",
-  "Gets things done with classical music playing in the background. 🎼✨",
+  "Gets things done with classical music BGM. 🎼✨",
   "Ideally needs 12+ hours of sleep per day. 😴",
   "A proud Sudoku addict. 🔢",
   "An MBTI P-type who actually enjoys organizing and using Sheets. 📊✨",
@@ -34,7 +34,7 @@ function RotatingText() {
     const interval = setInterval(() => {
       setFade(false);
       setTimeout(() => {
-        setIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+        setIndex((prevIndex) => (prevIndex + 1) % funFactSentences.length);
         setFade(true);
       }, 300); // Fade-out duration
     }, 5000);
@@ -43,7 +43,7 @@ function RotatingText() {
 
   return (
     <h6 className={`font-extralight text-xl text-zinc-200 mt-4 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
-      {sentences[index]}
+      {funFactSentences[index]}
     </h6>
   );
 }
