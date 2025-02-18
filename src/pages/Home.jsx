@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import SocialIcons from "../components/SocialIcons";
+
 
 const works = [
   { title: "Studio: Redefining AI-Powered Video Creation", 
@@ -68,6 +70,9 @@ export default function Home() {
       <section className=" py-20 min-h-[90vh] min-h-screen justify-center flex flex-col">
         <h1 className="text-[164px] uppercase text-left leading-none text-zinc-50">Hoi Ian <br /> Wong</h1>
         <RotatingText />
+        <SocialIcons />
+
+
       </section>
       
       {/* Works Showcase */}
