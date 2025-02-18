@@ -45,14 +45,13 @@ export default function SocialIcons() {
         </div>
       </div>
 
-
-      {/* Github */}
+      {/* LinkedIn */}
       <div className="relative group">
-        <a href="https://github.com/hoiian" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-zinc-900 rounded-full">
-          <Github size={20} strokeWidth={1} className="text-zinc-100 hover:text-zinc-400" />
+        <a href="https://www.linkedin.com/in/hoiianwong/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-zinc-900 rounded-full">
+          <Linkedin size={20} strokeWidth={1} className="text-zinc-100 hover:text-zinc-400" />
         </a>
         <span className="whitespace-nowrap absolute left-1/2 transform -translate-x-1/2 top-12 text-xs text-white bg-zinc-800 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-        Code on GitHub
+        Let's connect on LinkedIn
         </span>
       </div>
 
@@ -66,15 +65,7 @@ export default function SocialIcons() {
         </span>
       </div>
 
-      {/* LinkedIn */}
-      <div className="relative group">
-        <a href="https://www.linkedin.com/in/hoiianwong/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-zinc-900 rounded-full">
-          <Linkedin size={20} strokeWidth={1} className="text-zinc-100 hover:text-zinc-400" />
-        </a>
-        <span className="whitespace-nowrap absolute left-1/2 transform -translate-x-1/2 top-12 text-xs text-white bg-zinc-800 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-        Let's connect on LinkedIn
-        </span>
-      </div>
+
 
       {/* YouTube */}
       <div className="relative group">
@@ -86,6 +77,15 @@ export default function SocialIcons() {
         </span>
       </div>
 
+      {/* Github */}
+      <div className="relative group">
+        <a href="https://github.com/hoiian" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-zinc-900 rounded-full">
+          <Github size={20} strokeWidth={1} className="text-zinc-100 hover:text-zinc-400" />
+        </a>
+        <span className="whitespace-nowrap absolute left-1/2 transform -translate-x-1/2 top-12 text-xs text-white bg-zinc-800 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
+        Code on GitHub
+        </span>
+      </div>
     </div>
   );
 }
