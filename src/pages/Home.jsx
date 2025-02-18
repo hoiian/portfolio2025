@@ -87,12 +87,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className=" py-20 min-h-[90vh] min-h-screen justify-center flex flex-col">
         {/* <h1 className="text-[164px] uppercase text-left leading-none text-zinc-50">Hoi Ian <br /> Wong</h1> */}
-
-        <div className={` w-full p-4 z-50 transition-all flex items-center ${isScrolled ? 'backdrop-blur-md fixed top-0 left-0' : 'backdrop-blur-none'}`}>
-        <h1 className={`uppercase leading-none transition-all duration-500 text-zinc-50 ${isScrolled ? 'text-xl  ml-4' : 'text-[164px]'}`}>
-          Hoi Ian <br  /> Wong
+      
+        <h1 className={`pt-4 z-50 uppercase leading-none transition-all duration-500 text-zinc-50 ${isScrolled ? 'text-xl fixed top-0' : 'text-[164px]'}`}>
+          Hoi Ian <br/> Wong
         </h1>
-      </div>
+        
         <RotatingText />
         <SocialIcons />
 
