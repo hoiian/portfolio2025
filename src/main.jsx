@@ -5,6 +5,7 @@ import Home from "./pages/Home";   //
 import Work1 from "./pages/Work1"; 
 import Work2 from "./pages/Work2"; 
 import Footer from "./components/Footer"; 
+
 import "./index.css";  
 
 ReactDOM.createRoot(document.getElementById("root")).render(

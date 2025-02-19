@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SocialIcons from "../components/SocialIcons";
+import Header from "../components/Header";
 
 
 const works = [
@@ -72,6 +73,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white flex flex-col max-w-[1360px] mx-auto p-5">
+      <Header />
       {/* Header */}
 
       {/* <header className="p-6 flex justify-between items-center shadow-lg">
@@ -91,7 +93,7 @@ export default function Home() {
         <h1 className={`pt-4 z-50 uppercase leading-none transition-all duration-500 text-zinc-50 ${isScrolled ? 'text-xl fixed top-0' : 'text-[164px]'}`}>
           Hoi Ian <br/> Wong
         </h1>
-        
+
         <RotatingText />
         <SocialIcons />
 
