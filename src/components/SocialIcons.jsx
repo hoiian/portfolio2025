@@ -20,7 +20,7 @@ export default function SocialIcons() {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 mt-5 relative">
+    <div className="flex space-x-4 mt-5 relative">
       {/* Mail Icon - Copies to Clipboard */}
       <div className="relative group">
         <button onClick={copyToClipboard} className="w-10 h-10 flex items-center justify-center bg-zinc-900 rounded-full focus:outline-none">
