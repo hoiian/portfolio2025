@@ -15,12 +15,12 @@ const Resume = () => {
   ];
 
   return (
-    <div className="min-h-screen flex max-w-[1360px] pt-20">
+    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto pt-20">
       <Header />
       {/* Left Sidebar */}
-      <div className="w-1/3 p-6 flex flex-col ">
+      <div className="w-1/3 p-6 flex flex-col border-r-[1px] border-zinc-800">
       
-        <div className="space-y-4 text-3xl font-heading">
+        <div className="space-y-6 text-3xl font-heading">
         <p className="text-sm text-zinc-400 font-sans font-semibold uppercase ">Language</p>
           <button 
             className={`block w-full text-left ${selectedLanguage === "english" ? " text-white" : "text-zinc-600"}`}
@@ -51,7 +51,7 @@ const Resume = () => {
             {/* <ChevronDown size={20} strokeWidth={1} /> */}
           </button>
           {menuOpen && (
-            <div className="absolute top-full mt-2 border text-white rounded-sm w-auto">
+            <div className="absolute top-full mt-2 border border-zinc-600 text-white rounded-sm w-auto">
               {downloadOptions.map((option, index) => (
                 <a
                   key={index}
@@ -68,17 +68,17 @@ const Resume = () => {
       </div>
       
       {/* Right Content */}
-      <div className="w-2/3 p-10 border-l-1">
-        <h2 className="text-4xl italic mb-6">Experience</h2>
+      <div className="w-2/3 p-10">
+        <h2 className="text-4xl italic mb-6 text-zinc-50 font-extrabold">Experience</h2>
         <p>Placeholder for experience details...</p>
         
-        <h2 className="text-4xl italic mt-10 mb-6">Education</h2>
+        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Education</h2>
         <p>Placeholder for education details...</p>
         
-        <h2 className="text-4xl italic mt-10 mb-6">Skills</h2>
+        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Skills</h2>
         <p>Placeholder for skills details...</p>
         
-        <h2 className="text-4xl italic mt-10 mb-6">Strengths</h2>
+        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Strengths</h2>
         <p>Placeholder for strengths details...</p>
       </div>
     </div>
