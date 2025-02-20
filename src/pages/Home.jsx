@@ -73,6 +73,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white flex flex-col max-w-[1360px] mx-auto p-5">
+
+      {/* Floating Glow Effect */}
+      <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="fixed top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 w-[500px] h-[500px] bg-white opacity-5 blur-[120px] rounded-full animate-floating-global"></div>
+      </div>
+
       {/* Header */}
       <Header />
 
@@ -140,7 +146,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-          <a href={works[0].link} className="group block relative col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 overflow-hidden shadow-md transform transition hover:rotate-1">
+          <a href={works[0].link} className="group block relative col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 overflow-hidden transform transition hover:rotate-1">
             <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
@@ -150,7 +156,7 @@ export default function Home() {
               <p className="text-sm">{works[0].description}</p>
             </div>
           </a>
-          <a href={works[1].link} className="group block relative col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 w-full overflow-hidden shadow-md transform transition hover:rotate-1">
+          <a href={works[1].link} className="group block relative col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 w-full overflow-hidden transform transition hover:rotate-1">
           <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[1].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
@@ -162,6 +168,22 @@ export default function Home() {
         </div>
       </main>
       
+            {/* Tailwind Animation */}
+            <style>
+        {`
+          @keyframes floating-global {
+            0% { transform: translate(-50%, -50%) translate(0px, 0px) scale(1); }
+            25% { transform: translate(-50%, -50%) translate(220px, -80px) scale(1.1); }
+            50% { transform: translate(-50%, -50%) translate(-90px, 190px) scale(1.2); }
+            75% { transform: translate(-50%, -50%) translate(100px, -100px) scale(1.1); }
+            100% { transform: translate(-50%, -50%) translate(0px, 0px); scale(1) }
+          }
+          .animate-floating-global {
+            animation: floating-global 40s ease-in-out infinite alternate;
+          }
+        `}
+      </style>
+
     </div>
   );
 }
