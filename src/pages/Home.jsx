@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* Floating Glow Effect */}
       <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="fixed top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 w-[500px] h-[500px] bg-white opacity-5 blur-[120px] rounded-full animate-floating-global"></div>
+        <div className="fixed top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 w-[500px] h-[500px] bg-white opacity-5 blur-[150px] rounded-full animate-floating-global"></div>
       </div>
 
       {/* Header */}
@@ -95,21 +95,21 @@ export default function Home() {
         </div>
         
         <div className="w-1/3 flex flex-col space-y-6 text-lg">
-          <div className="border-b border-zinc-800 pb-4">
-            <span className="text-2xl">💼</span>
+          <div className="border-b border-zinc-900 pb-4">
+            <span >💼</span>
             <h3 className="">Experience</h3>
-            <p>3 Years full-time UX/UI design</p>
-            <p>7 Years freelance Front-End programming</p>
+            <p className="text-sm">3 Years full-time UX/UI design</p>
+            <p className="text-sm">7 Years freelance Front-End programming</p>
           </div>
-          <div className="border-b border-zinc-800 pb-4">
-            <span className="text-2xl">🗣</span>
+          <div className="border-b border-zinc-900 pb-4">
+            <span >🗣</span>
             <h3 className="">Language</h3>
-            <p>Cantonese, Mandarin & English</p>
+            <p className="text-sm">Cantonese, Mandarin & English</p>
           </div>
           <div>
-            <span className="text-2xl">🎓</span>
+            <span >🎓</span>
             <h3 className="">Education</h3>
-            <p>Master’s @ Tsinghua University</p>
+            <p className="text-sm">Master’s @ Tsinghua University</p>
           </div>
         </div>
 
