@@ -7,11 +7,11 @@ const Resume = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const downloadOptions = [
-    { label: "English", file: "/pdfs/resume-english.pdf" },
-    { label: "繁體中文", file: "/pdfs/resume-traditional.pdf" },
-    { label: "简体中文", file: "/pdfs/resume-simplified.pdf" },
-    { label: "English + 繁體中文", file: "/pdfs/resume-en-tw.pdf" },
-    { label: "English + 简体中文", file: "/pdfs/resume-en-cn.pdf" },
+    { label: "English", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en.pdf" },
+    { label: "繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
+    { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
+    { label: "English + 繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf" },
+    { label: "English + 简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf" },
   ];
 
   return (
@@ -23,19 +23,19 @@ const Resume = () => {
         <div className="space-y-6 text-3xl font-heading">
         <p className="text-sm text-zinc-400 font-sans font-semibold uppercase ">Language</p>
           <button 
-            className={`block w-full text-left ${selectedLanguage === "english" ? " text-white" : "text-zinc-600"}`}
+            className={`block w-full text-left ${selectedLanguage === "english" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
             onClick={() => setSelectedLanguage("english")}
           >
             English
           </button>
           <button 
-            className={`block w-full text-left ${selectedLanguage === "traditional" ? " text-white" : "text-zinc-600"}`}
+            className={`block w-full text-left ${selectedLanguage === "traditional" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
             onClick={() => setSelectedLanguage("traditional")}
           >
             繁體中文
           </button>
           <button 
-            className={`block w-full text-left ${selectedLanguage === "simplified" ? " text-white" : "text-zinc-600"}`}
+            className={`block w-full text-left ${selectedLanguage === "simplified" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
             onClick={() => setSelectedLanguage("simplified")}
           >
             简体中文
@@ -45,7 +45,7 @@ const Resume = () => {
         <div className="relative mt-20">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white px-5 py-2 rounded-sm w-auto text-left border"
+            className="text-white px-5 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800"
           >
             Download PDF 
             {/* <ChevronDown size={20} strokeWidth={1} /> */}
@@ -68,18 +68,32 @@ const Resume = () => {
       </div>
       
       {/* Right Content */}
-      <div className="w-2/3 p-10">
+      <div className="w-2/3 p-10 text-white">
         <h2 className="text-4xl italic mb-6 text-zinc-50 font-extrabold">Experience</h2>
-        <p>Placeholder for experience details...</p>
+        <div className="mt-6">
+          <span className="text-xl font-bold ">Hologram</span>
+          <span className=""> | Senior UI/UX Designer</span>
+          <p className="text-zinc-400">Mar 2024 - Present, Shenzhen</p>
+          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
+            <li>Built the marketplace, loot box, and staking system from scratch, defining the framework, flow, and visual to support the design of the product's financial system.</li>
+            <li>Designed the landing page, using innovative interactive methods to introduce the product and create interactive prototypes.</li>
+          </ul>
+        </div>
         
-        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Education</h2>
+        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Education</h2>
         <p>Placeholder for education details...</p>
         
-        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Skills</h2>
+        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Skills</h2>
         <p>Placeholder for skills details...</p>
         
-        <h2 className="text-4xl italic mt-10 mb-6 text-zinc-50 font-extrabold">Strengths</h2>
-        <p>Placeholder for strengths details...</p>
+        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Strengths</h2>
+        <div className="mt-6">
+          <span className="text-xl1 font-bold ">Technology Implementation</span>
+          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
+            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
+            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

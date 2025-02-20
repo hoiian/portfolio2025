@@ -8,7 +8,7 @@ export default function Header() {
         <NavLink 
           to="/" 
           className={({ isActive }) => 
-            `transition-all ${isActive ? "text-white font-bold" : "text-zinc-400"}`
+            `transition-all ${isActive ? "text-white font-bold" : "text-zinc-400 hover:text-zinc-200"}`
           }
         >
           Home
@@ -16,7 +16,7 @@ export default function Header() {
         <NavLink 
           to="/resume" 
           className={({ isActive }) => 
-            `transition-all ${isActive ? "text-white font-bold" : "text-zinc-400"}`
+            `transition-all ${isActive ? "text-white font-bold" : "text-zinc-400 hover:text-zinc-200"}`
           }
         >
           Resume
