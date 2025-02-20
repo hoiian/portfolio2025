@@ -83,10 +83,10 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className=" py-20 min-h-[90vh] min-h-screen flex items-center">
+      <section className=" py-20 min-h-[90vh] min-h-screen flex flex-col md:flex-row items-center">
         {/* <h1 className="text-[164px] uppercase text-left leading-none text-zinc-50">Hoi Ian <br /> Wong</h1> */}
-        <div className="w-2/3">
-          <h1 className={`pt-4 z-50 uppercase leading-none transition-all duration-500 text-zinc-50 mix-blend-difference ${isScrolled ? 'text-xl fixed top-0' : 'text-[164px]'}`}>
+        <div className="w-full md:w-2/3">
+          <h1 className={`pt-4 z-50 uppercase leading-none transition-all duration-500 text-zinc-50 mix-blend-difference  ${isScrolled ? 'text-xl fixed top-0' : 'text-[23vw] md:text-[164px]'}`}>
             Hoi Ian <br/> Wong
           </h1>
 
@@ -94,7 +94,7 @@ export default function Home() {
           <SocialIcons />
         </div>
         
-        <div className="w-1/3 flex flex-col space-y-6 text-lg">
+        <div className="w-full md:w-1/3 flex flex-col space-y-6 text-lg mt-10 md:mt-0">
           <div className="border-b border-zinc-900 pb-4">
             <span >💼</span>
             <h3 className="">Experience</h3>
@@ -118,12 +118,13 @@ export default function Home() {
       
       {/* Works Showcase */}
       <main className="flex-1">
-      <div className="flex items-center justify-between mb-10">
-          <div>
+      <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+          <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2024</p>
             <h2 className="text-6xl italic mb-1 text-left">Latest Works</h2>
             <p className="mb-6">My most recent projects at Hologram</p>
           </div>
+
           <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="154" height="28" viewBox="0 0 154 28" fill="none">
             <g clip-path="url(#clip0_488_2911)">
@@ -145,8 +146,8 @@ export default function Home() {
           </svg>
           </div>
         </div>
-        <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
-          <a href={works[0].link} className="group block relative col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 overflow-hidden transform transition hover:rotate-1">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+          <a href={works[0].link} className="group block relative col-span-1 lg:col-span-2 overflow-hidden transform transition hover:rotate-1">
             <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
@@ -156,7 +157,7 @@ export default function Home() {
               <p className="text-sm">{works[0].description}</p>
             </div>
           </a>
-          <a href={works[1].link} className="group block relative col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 w-full overflow-hidden transform transition hover:rotate-1">
+          <a href={works[1].link} className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1">
           <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[1].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
