@@ -1,65 +1,88 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import { ChevronDown } from "lucide-react"; 
 
-const resumes = {
-  en: "/resumes/resume-en.pdf#toolbar=0&navpanes=0&scrollbar=0",
-  zh_tw: "/resumes/resume-tw.pdf#toolbar=0&navpanes=0&scrollbar=0",
-  zh_cn: "/resumes/resume-cn.pdf#toolbar=0&navpanes=0&scrollbar=0",
-};
-
-const downloadOptions = [
-  { label: "English PDF", file: "/resumes/resume-en.pdf" },
-  { label: "繁體中文 PDF", file: "/resumes/resume-tw.pdf" },
-  { label: "简体中文 PDF", file: "/resumes/resume-cn.pdf" },
-  { label: "Word Format", file: "/resumes/resume.docx" },
-  { label: "Text Format", file: "/resumes/resume.txt" },
-];
-
-export default function Resume() {
-  const [selectedLang, setSelectedLang] = useState("en");
+const Resume = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("english");
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const downloadOptions = [
+    { label: "English", file: "/pdfs/resume-english.pdf" },
+    { label: "繁體中文", file: "/pdfs/resume-traditional.pdf" },
+    { label: "简体中文", file: "/pdfs/resume-simplified.pdf" },
+    { label: "English + 繁體中文", file: "/pdfs/resume-en-tw.pdf" },
+    { label: "English + 简体中文", file: "/pdfs/resume-en-cn.pdf" },
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex max-w-[1360px] pt-20">
       <Header />
-      <div className="flex flex-1 pt-[80px]">
-        {/* Language Selector */}
-        <div className="w-1/6 p-5 space-y-8 text-5xl">
-          <button onClick={() => setSelectedLang("en")} className={`font-heading block w-full text-right ${selectedLang === "en" ? " text-white" : "text-zinc-600"}`}>English</button>
-          <button onClick={() => setSelectedLang("zh_tw")} className={`block w-full text-right ${selectedLang === "zh_tw" ? " text-white" : "text-zinc-600"}`}>繁體中文</button>
-          <button onClick={() => setSelectedLang("zh_cn")} className={`block w-full text-right ${selectedLang === "zh_cn" ? " text-white" : "text-zinc-600"}`}>简体中文</button>
+      {/* Left Sidebar */}
+      <div className="w-1/3 p-6 flex flex-col ">
+      
+        <div className="space-y-4 text-3xl font-heading">
+        <p className="text-sm text-zinc-400 font-sans font-semibold uppercase ">Language</p>
+          <button 
+            className={`block w-full text-left ${selectedLanguage === "english" ? " text-white" : "text-zinc-600"}`}
+            onClick={() => setSelectedLanguage("english")}
+          >
+            English
+          </button>
+          <button 
+            className={`block w-full text-left ${selectedLanguage === "traditional" ? " text-white" : "text-zinc-600"}`}
+            onClick={() => setSelectedLanguage("traditional")}
+          >
+            繁體中文
+          </button>
+          <button 
+            className={`block w-full text-left ${selectedLanguage === "simplified" ? " text-white" : "text-zinc-600"}`}
+            onClick={() => setSelectedLanguage("simplified")}
+          >
+            简体中文
+          </button>
         </div>
-
-        {/* PDF Viewer */}
-        <div className="flex-1 flex items-center justify-center">
-          <iframe src={resumes[selectedLang]} className="w-full h-full" />
+        {/* Download Dropdown */}
+        <div className="relative mt-20">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-white px-5 py-2 rounded-sm w-auto text-left border"
+          >
+            Download PDF 
+            {/* <ChevronDown size={20} strokeWidth={1} /> */}
+          </button>
+          {menuOpen && (
+            <div className="absolute top-full mt-2 border text-white rounded-sm w-auto">
+              {downloadOptions.map((option, index) => (
+                <a
+                  key={index}
+                  href={option.file}
+                  download
+                  className="block px-3 py-2 hover:bg-zinc-900"
+                >
+                  {option.label}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
-
-        <div className="w-1/6 mt-10 self-end relative">
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-lg w-full text-left"
-        >
-          Download ▲
-        </button>
-        {menuOpen && (
-          <div className="absolute bottom-full mb-2 bg-zinc-800 text-white p-3 rounded-lg shadow-lg w-full">
-            {downloadOptions.map((option, index) => (
-              <a
-                key={index}
-                href={option.file}
-                download
-                className="block px-4 py-2 hover:bg-zinc-700"
-              >
-                {option.label}
-              </a>
-            ))}
-          </div>
-        )}
       </div>
+      
+      {/* Right Content */}
+      <div className="w-2/3 p-10 border-l-1">
+        <h2 className="text-4xl italic mb-6">Experience</h2>
+        <p>Placeholder for experience details...</p>
+        
+        <h2 className="text-4xl italic mt-10 mb-6">Education</h2>
+        <p>Placeholder for education details...</p>
+        
+        <h2 className="text-4xl italic mt-10 mb-6">Skills</h2>
+        <p>Placeholder for skills details...</p>
+        
+        <h2 className="text-4xl italic mt-10 mb-6">Strengths</h2>
+        <p>Placeholder for strengths details...</p>
       </div>
-
-
     </div>
   );
-}
+};
+
+export default Resume;
