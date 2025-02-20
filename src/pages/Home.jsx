@@ -102,10 +102,11 @@ export default function Home() {
       
       {/* Works Showcase */}
       <main className="flex-1">
+        <p className="mb-2 font-bold">2024</p>
         <h2 className="text-6xl italic mb-1 text-left">Latest Works</h2>
         <p className="mb-6">My most recent projects at Hologram</p>
-        <div className="grid grid-cols-3 gap-6">
-          <a href={works[0].link} className="group block relative col-span-2 overflow-hidden shadow-md transform transition hover:rotate-1">
+        <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+          <a href={works[0].link} className="group block relative col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 overflow-hidden shadow-md transform transition hover:rotate-1">
             <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
@@ -115,7 +116,7 @@ export default function Home() {
               <p className="text-sm">{works[0].description}</p>
             </div>
           </a>
-          <a href={works[1].link} className="group block relative col-span-1  overflow-hidden shadow-md transform transition hover:rotate-1">
+          <a href={works[1].link} className="group block relative col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 w-full overflow-hidden shadow-md transform transition hover:rotate-1">
           <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl h-[500px]">
               {/* <img  alt={works[1].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
