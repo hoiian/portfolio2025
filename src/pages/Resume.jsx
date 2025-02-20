@@ -24,10 +24,10 @@ export default function Resume() {
       <Header />
       <div className="flex flex-1 pt-[80px]">
         {/* Language Selector */}
-        <div className="w-1/6 p-5 space-y-4 text-5xl">
-          <button onClick={() => setSelectedLang("en")} className={`block w-full text-right ${selectedLang === "en" ? "font-bold text-white" : "text-zinc-400"}`}>English</button>
-          <button onClick={() => setSelectedLang("zh_tw")} className={`block w-full text-right ${selectedLang === "zh_tw" ? "font-bold text-white" : "text-zinc-400"}`}>繁體中文</button>
-          <button onClick={() => setSelectedLang("zh_cn")} className={`block w-full text-right ${selectedLang === "zh_cn" ? "font-bold text-white" : "text-zinc-400"}`}>简体中文</button>
+        <div className="w-1/6 p-5 space-y-8 text-5xl">
+          <button onClick={() => setSelectedLang("en")} className={`font-heading block w-full text-right ${selectedLang === "en" ? " text-white" : "text-zinc-600"}`}>English</button>
+          <button onClick={() => setSelectedLang("zh_tw")} className={`block w-full text-right ${selectedLang === "zh_tw" ? " text-white" : "text-zinc-600"}`}>繁體中文</button>
+          <button onClick={() => setSelectedLang("zh_cn")} className={`block w-full text-right ${selectedLang === "zh_cn" ? " text-white" : "text-zinc-600"}`}>简体中文</button>
         </div>
 
         {/* PDF Viewer */}
@@ -35,19 +35,28 @@ export default function Resume() {
           <iframe src={resumes[selectedLang]} className="w-full h-full" />
         </div>
 
-        <div className="w-1/6 p-5 space-y-4">
-              {/* Download Menu */}
-            <div className="fixed bottom-5 right-5">
-              <button onClick={() => setMenuOpen(!menuOpen)} className="bg-zinc-900 text-white px-4 py-2 rounded border-1">Download PDF ▼</button>
-              {menuOpen && (
-                <div className="absolute bottom-12 right-0 bg-zinc-800 text-white rounded shadow-lg">
-                  {downloadOptions.map((option) => (
-                    <a key={option.file} href={option.file} download className="block px-4 py-2 hover:bg-zinc-700">{option.label}</a>
-                  ))}
-                </div>
-              )}
-            </div>
-        </div>
+        <div className="w-1/6 mt-10 self-end relative">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-lg w-full text-left"
+        >
+          Download ▲
+        </button>
+        {menuOpen && (
+          <div className="absolute bottom-full mb-2 bg-zinc-800 text-white p-3 rounded-lg shadow-lg w-full">
+            {downloadOptions.map((option, index) => (
+              <a
+                key={index}
+                href={option.file}
+                download
+                className="block px-4 py-2 hover:bg-zinc-700"
+              >
+                {option.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
       </div>
 
 

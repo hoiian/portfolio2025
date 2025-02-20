@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex justify-center">
         <SocialIcons />
       </div>
-      <p className="mt-8 text-sm">© {new Date().getFullYear()} Hoi Ian Wong. All Rights Reserved. 📅 Last update on Feb.
+      <p className="mt-8 text-sm">© {new Date().getFullYear()} Hoi Ian Wong. All Rights Reserved. 📅 Last update in Feb.
       👩🏻‍💻 Crafted with React, Tailwind CSS, and Vite.</p>
     </footer>
   );
