@@ -121,7 +121,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-center justify-between mb-10">
           <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2024</p>
-            <h2 className="text-6xl italic mb-1 text-left">Latest Works</h2>
+            <h2 className="text-6xl italic mb-1">Latest Works</h2>
             <p className="mb-6">My most recent projects at Hologram</p>
           </div>
 
