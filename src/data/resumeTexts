@@ -1,0 +1,70 @@
+
+  const resumeTexts = {
+    english: {
+      experienceTitle: "Experience",
+      educationTitle: "Education",
+      skillsTitle: "Skills",
+      strengthsTitle: "Strengths",
+
+      hologramRole: "Senior UI/UX Designer",
+      Present: "Present",
+      Shenzhen: "Shenzhen",
+      hologramDetails: [
+        "Built the marketplace, loot box, and staking system from scratch, defining the framework, flow, and visual to support the design of the product's financial system.",
+        "Designed the landing page, using innovative interactive methods to introduce the product and create interactive prototypes.",
+      ],
+      educationDetails: [
+        "M.S. in Information Art and Design at Tsinghua University.",
+        "B.S. in Industrial Design at National Cheng Kung University.",
+      ],
+      strengthDetails: [
+        "Independent web developer since 2017, such as eDC Cloud Portal, Acer AI, Acer VR, and more.",
+        "Proficient with ChatGPT for daily writing assistance and brainstorming.",
+      ],
+    },
+    traditional: {
+      experienceTitle: "經驗",
+      educationTitle: "教育",
+      skillsTitle: "技能",
+      strengthsTitle: "優勢",
+
+      hologramRole: "高級 UI/UX 設計師",
+      Present: "現在",
+      Shenzhen: "深圳",
+      hologramDetails: [
+        "從零開始構建市場、抽獎和質押系統，定義框架、流程和視覺，支持產品金融系統設計。",
+        "設計登陸頁，使用創新的交互方式來介紹產品並創建交互式原型。",
+      ],
+      educationDetails: [
+        "清華大學信息藝術與設計碩士。",
+        "成功大學工業設計學士。",
+      ],
+      strengthDetails: [
+        "自2017年以來擔任獨立開發者，專注於 eDC 雲門戶、宏碁 AI 和 VR 項目。",
+        "擅長使用 ChatGPT 進行日常寫作輔助和頭腦風暴。",
+      ],
+    },
+    simplified: {
+      experienceTitle: "经验",
+      educationTitle: "教育",
+      skillsTitle: "技能",
+      strengthsTitle: "优势",
+      hologramRole: "高级 UI/UX 设计师",
+      Present: "现在",
+      Shenzhen: "深圳",
+      hologramDetails: [
+        "从零开始构建市场、抽奖和质押系统，定义框架、流程和视觉，支持产品金融系统设计。",
+        "设计登录页面，使用创新的交互方式介绍产品并创建交互式原型。",
+      ],
+      educationDetails: [
+        "清华大学信息艺术与设计硕士。",
+        "成功大学工业设计学士。",
+      ],
+      strengthDetails: [
+        "自2017年以来担任独立开发者，专注于 eDC 云门户、宏碁 AI 和 VR 项目。",
+        "擅长使用 ChatGPT 进行日常写作辅助和头脑风暴。",
+      ],
+    },
+  };
+
+export default resumeTexts;
