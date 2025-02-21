@@ -1,14 +1,38 @@
 
   const resumeTexts = {
     english: {
-      experienceTitle: "Experience",
-      educationTitle: "Education",
-      skillsTitle: "Skills",
-      strengthsTitle: "Strengths",
+      myName:"Hoi Ian Wong",
+      Experience: "Experience",
+      Education: "Education",
+      Skills: "Skills",
+      Strengths: "Strengths",
 
-      hologramRole: "Senior UI/UX Designer",
+      Feb:"Feb",
+      Mar:"Mar",
+      May:"May",
+      Jul:"Jul",
+      Dec:"Dec",
       Present: "Present",
+
+      Hangzhou:"Hangzhou",
+      Beijing:"Beijing",
       Shenzhen: "Shenzhen",
+      Taiwan:"Taiwan",
+
+      Design:"Design",
+      Intern:" Intern",
+      Designer:"Designer",
+      Senior:"Senior",
+
+      NetEase:"NetEase",
+      MSRA:"Microsoft Research Asia",
+
+      THU:"Tsinghua University",
+      THUDegree:"M.S. in Information Art and Design",
+      NCKU:"National Cheng Kung University",
+      NCKUDegree:"B.S. in Industrial Design",
+      
+      
       hologramDetails: [
         "Built the marketplace, loot box, and staking system from scratch, defining the framework, flow, and visual to support the design of the product's financial system.",
         "Designed the landing page, using innovative interactive methods to introduce the product and create interactive prototypes.",
@@ -23,14 +47,37 @@
       ],
     },
     traditional: {
-      experienceTitle: "經驗",
-      educationTitle: "教育",
-      skillsTitle: "技能",
-      strengthsTitle: "優勢",
+      myName:"黃凱欣",
+      Experience: "經驗",
+      Education: "教育",
+      Skills: "技能",
+      Strengths: "優勢",
 
-      hologramRole: "高級 UI/UX 設計師",
+      Feb:"2月",
+      Mar:"3月",
+      May:"5月",
+      Jul:"7月",
+      Dec:"12月",
       Present: "現在",
+
+      Hangzhou:"杭州",
+      Beijing:"北京",
       Shenzhen: "深圳",
+      Taiwan:"台灣",
+
+      Design:"設計",
+      Intern:"實習",
+      Designer:"設計師",
+      Senior:"高級",
+
+      NetEase:"網易",
+      MSRA:"微軟亞洲研究院",
+
+      THU:"清華大學",
+      THUDegree:"設計學碩士",
+      NCKU:"國立成功大學",
+      NCKUDegree:"工業設計學士",
+
       hologramDetails: [
         "從零開始構建市場、抽獎和質押系統，定義框架、流程和視覺，支持產品金融系統設計。",
         "設計登陸頁，使用創新的交互方式來介紹產品並創建交互式原型。",
@@ -45,13 +92,30 @@
       ],
     },
     simplified: {
-      experienceTitle: "经验",
-      educationTitle: "教育",
-      skillsTitle: "技能",
-      strengthsTitle: "优势",
-      hologramRole: "高级 UI/UX 设计师",
-      Present: "现在",
+      myName:"黄凯欣",
+      Experience: "经验",
+      Education: "教育",
+      Skills: "技能",
+      Strengths: "优势",
+
+      Hangzhou:"杭州",
+      Beijing:"北京",
       Shenzhen: "深圳",
+      Taiwan:"台湾",
+
+      Design:"设计",
+      Intern:"实习",
+      Designer:"设计师",
+      Senior:"高级",
+
+      NetEase:"网易",
+      MSRA:"微软亚洲研究院",
+
+      THU:"清华大学",
+      THUDegree:"设计学硕士",
+      NCKU:"台湾成功大学",
+      NCKUDegree:"工业设计学士",
+
       hologramDetails: [
         "从零开始构建市场、抽奖和质押系统，定义框架、流程和视觉，支持产品金融系统设计。",
         "设计登录页面，使用创新的交互方式介绍产品并创建交互式原型。",

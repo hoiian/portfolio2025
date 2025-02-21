@@ -101,11 +101,11 @@ const Resume = () => {
       {/* Right Content */}
       <div className="md:w-2/3 w-full md:p-10 md:pr-5 p-5 text-white">
         <h2 className="text-5xl mb-8 text-zinc-50 italic font-bold">
-          Hoi Ian Wong
+          {content.myName}
         </h2>
 
         <h2 className="text-3xl mb-6 text-zinc-50">
-          {content.experienceTitle}
+          {content.Experience}
         </h2>
 
         {/* Work1 */}
@@ -121,12 +121,12 @@ const Resume = () => {
               <span className="text-xl font-bold">Hologram</span>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>{content.hologramRole}</span>
+            <span>{content.Senior} UI/UX {content.Designer}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
               <p>
-                Mar 2024 - {content.Present}, {content.Shenzhen}
+              {content.Mar} 2024 - {content.Present}, {content.Shenzhen}
               </p>
             </div>
 
@@ -145,7 +145,7 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
-            <p className="text-zinc-400">Mar 2024 - {content.Present} </p>
+            <p className="text-zinc-400">{content.Mar} 2024 - {content.Present} </p>
             <p className="text-zinc-400">{content.Shenzhen}</p>
           </div>
         </div>
@@ -154,13 +154,13 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
-            <span className="text-xl font-bold">NetEase</span>
+            <span className="text-xl font-bold">{content.NetEase}</span>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>UI/UX Designer</span>
+            <span>UI/UX {content.Designer}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>Jul 2021 - Feb 2023, Hangzhou</p>
+              <p>{content.Jul} 2021 - {content.Feb} 2023, {content.Hangzhou}</p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
@@ -171,8 +171,8 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
-            <p className="text-zinc-400">Jul 2021 - Feb 2023</p>
-            <p className="text-zinc-400">Hangzhou</p>
+            <p className="text-zinc-400">{content.Jul} 2021 - {content.Feb} 2023</p>
+            <p className="text-zinc-400">{content.Hangzhou}</p>
           </div>
         </div>
 
@@ -180,13 +180,13 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
-            <span className="text-xl font-bold">Microsoft Research Asia</span>
+            <span className="text-xl font-bold">{content.MSRA}</span>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>UI/UX Designer Intern</span>
+            <span>UI/UX {content.Design}{content.Intern}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>Dec 2019 - May 2020, Beijing</p>
+              <p>{content.Dec} 2019 - {content.May} 2020, {content.Beijing}</p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
@@ -197,32 +197,32 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
-            <p className="text-zinc-400">Dec 2019 - May 2020</p>
-            <p className="text-zinc-400">Beijing</p>
+            <p className="text-zinc-400">{content.Dec} 2019 - {content.May} 2020</p>
+            <p className="text-zinc-400">{content.Beijing}</p>
           </div>
         </div>
-
+        {/* Education ------------------------ */}
         <h2 className="text-3xl mt-20 mb-6 text-zinc-50">
-          {content.educationTitle}
+          {content.Education}
         </h2>
         <div className="mt-6 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
-            <span className="text-xl font-bold">Tsinghua University</span>
+            <span className="text-xl font-bold">{content.THU}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>2018 - 2021, Beijing</p>
+              <p>2018 - 2021, {content.Beijing}</p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>M.S. in Information Art and Design</li>
+              <li>{content.THUDegree}</li>
             </ul>
           </div>
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
             <p className="text-zinc-400">2018 - 2021</p>
-            <p className="text-zinc-400">Beijing</p>
+            <p className="text-zinc-400">{content.Beijing}</p>
           </div>
         </div>
 
@@ -230,32 +230,32 @@ const Resume = () => {
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
             <span className="text-xl font-bold">
-              National Cheng Kung University
+            {content.NCKU}
             </span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>2014 - 2018, Taiwan</p>
+              <p>2014 - 2018, {content.Taiwan}</p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>B.S. in Industrial Design</li>
+              <li>{content.NCKUDegree}</li>
             </ul>
           </div>
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
             <p className="text-zinc-400">2014 - 2018</p>
-            <p className="text-zinc-400">Taiwan</p>
+            <p className="text-zinc-400">{content.Taiwan}</p>
           </div>
         </div>
-
+{/* ------------ */}
         <h2 className="text-3xl mt-20 mb-6 text-zinc-50 ">
-          {content.skillsTitle}
+          {content.Skills}
         </h2>
         <p>Placeholder for skills details...</p>
 
         <h2 className="text-3xl mt-20 mb-6 text-zinc-50 ">
-          {content.strengthsTitle}
+          {content.Strengths}
         </h2>
         <div className="mt-6">
           <span className="font-bold ">Technology Implementation</span>
