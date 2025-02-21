@@ -15,10 +15,10 @@ const Resume = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto pt-20">
+    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20">
       <Header />
       {/* Left Sidebar */}
-      <div className="md:w-1/3 w-full p-6 flex flex-row md:flex-col md:border-r-[1px] border-zinc-800 justify-between md:justify-start">
+      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col border-b md:border-b-0 md:border-r border-zinc-800 justify-between md:justify-start">
       
       <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
       <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">Language</p>
@@ -71,7 +71,7 @@ const Resume = () => {
       </div>
       
       {/* Right Content */}
-      <div className="md:w-2/3 w-full  p-10 text-white">
+      <div className="md:w-2/3 w-full md:p-10 p-5 text-white">
         <h2 className="text-4xl italic mb-6 text-zinc-50 font-extrabold">Experience</h2>
         <div className="mt-6">
           <span className="text-xl font-bold ">Hologram</span>
