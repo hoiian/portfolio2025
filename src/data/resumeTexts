@@ -98,6 +98,13 @@
       Skills: "技能",
       Strengths: "优势",
 
+      Feb:"2月",
+      Mar:"3月",
+      May:"5月",
+      Jul:"7月",
+      Dec:"12月",
+      Present: "现在",
+
       Hangzhou:"杭州",
       Beijing:"北京",
       Shenzhen: "深圳",

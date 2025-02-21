@@ -28,7 +28,7 @@ const Resume = () => {
     <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20">
       <Header />
       {/* Left Sidebar */}
-      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col border-b md:border-b-0 md:border-r border-zinc-800 justify-between md:justify-start">
+      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start md:sticky md:top-5 md:h-screen">
         <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
           <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">
             Language
@@ -99,7 +99,7 @@ const Resume = () => {
       </div>
 
       {/* Right Content */}
-      <div className="md:w-2/3 w-full md:p-10 md:pr-5 p-5 text-white">
+      <div className="md:w-2/3 w-full md:p-10 md:pr-5 p-5 text-white border-t md:border-t-0 md:border-l border-zinc-800">
         <h2 className="text-5xl mb-8 text-zinc-50 italic font-bold">
           {content.myName}
         </h2>
@@ -116,7 +116,7 @@ const Resume = () => {
               href="https://hologram.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 transition-opacity duration-300"
+              className="hover:opacity-70 "
             >
               <span className="text-xl font-bold">Hologram</span>
             </a>
@@ -144,7 +144,7 @@ const Resume = () => {
           </div>
 
           {/* Right Section: Date & Location for Larger Screens */}
-          <div className="w-1/4 text-right text-sm hidden md:block">
+          <div className="w-1/4 text-right text-sm hidden md:block ">
             <p className="text-zinc-400">{content.Mar} 2024 - {content.Present} </p>
             <p className="text-zinc-400">{content.Shenzhen}</p>
           </div>
@@ -154,7 +154,14 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
+          <a
+              href="https://www.neteasegames.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 "
+            >
             <span className="text-xl font-bold">{content.NetEase}</span>
+            </a>
             <span className="mx-2 text-zinc-400">›</span>
             <span>UI/UX {content.Designer}</span>
 
@@ -180,7 +187,14 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
+          <a
+              href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 "
+            >
             <span className="text-xl font-bold">{content.MSRA}</span>
+            </a>
             <span className="mx-2 text-zinc-400">›</span>
             <span>UI/UX {content.Design}{content.Intern}</span>
 
