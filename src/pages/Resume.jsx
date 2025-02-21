@@ -48,13 +48,12 @@ const Resume = () => {
         <div className="relative md:mt-20">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white px-5 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800"
+            className="text-white pl-5 pr-4 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800 flex items-center justify-between gap-1"
           >
-            Download PDF 
-            {/* <ChevronDown size={20} strokeWidth={1} /> */}
+            Download PDF <ChevronDown strokeWidth={1} />
           </button>
           {menuOpen && (
-            <div className="absolute top-full mt-2 border border-zinc-600 text-white rounded-sm w-auto bg-zinc-950">
+            <div className="absolute top-full mt-1 border border-zinc-600 text-white rounded-sm w-auto">
               {downloadOptions.map((option, index) => (
                 <a
                   key={index}
