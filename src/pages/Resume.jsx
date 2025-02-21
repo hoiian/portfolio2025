@@ -18,31 +18,34 @@ const Resume = () => {
     <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto pt-20">
       <Header />
       {/* Left Sidebar */}
-      <div className="w-1/3 p-6 flex flex-col border-r-[1px] border-zinc-800">
+      <div className="md:w-1/3 w-full p-6 flex flex-row md:flex-col md:border-r-[1px] border-zinc-800 justify-between md:justify-start">
       
-        <div className="space-y-6 text-3xl font-heading">
-        <p className="text-sm text-zinc-400 font-sans font-semibold uppercase ">Language</p>
-          <button 
-            className={`block w-full text-left ${selectedLanguage === "english" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-            onClick={() => setSelectedLanguage("english")}
-          >
-            English
-          </button>
-          <button 
-            className={`block w-full text-left ${selectedLanguage === "traditional" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-            onClick={() => setSelectedLanguage("traditional")}
-          >
-            繁體中文
-          </button>
-          <button 
-            className={`block w-full text-left ${selectedLanguage === "simplified" ? " text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-            onClick={() => setSelectedLanguage("simplified")}
-          >
-            简体中文
-          </button>
-        </div>
+      <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
+      <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">Language</p>
+      <button
+        className={`block w-full text-left ${selectedLanguage === "english" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
+        onClick={() => setSelectedLanguage("english")}
+      >
+        <span className="block md:hidden">Eng</span>
+        <span className="hidden md:block">English</span>
+      </button>
+      <button
+        className={`block w-full text-left ${selectedLanguage === "traditional" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
+        onClick={() => setSelectedLanguage("traditional")}
+      >
+        <span className="block md:hidden">繁</span>
+        <span className="hidden md:block">繁體中文</span>
+      </button>
+      <button
+        className={`block w-full text-left ${selectedLanguage === "simplified" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
+        onClick={() => setSelectedLanguage("simplified")}
+      >
+        <span className="block md:hidden">简</span>
+        <span className="hidden md:block">简体中文</span>
+      </button>
+    </div>
         {/* Download Dropdown */}
-        <div className="relative mt-20">
+        <div className="relative md:mt-20">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white px-5 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800"
@@ -51,7 +54,7 @@ const Resume = () => {
             {/* <ChevronDown size={20} strokeWidth={1} /> */}
           </button>
           {menuOpen && (
-            <div className="absolute top-full mt-2 border border-zinc-600 text-white rounded-sm w-auto">
+            <div className="absolute top-full mt-2 border border-zinc-600 text-white rounded-sm w-auto bg-zinc-950">
               {downloadOptions.map((option, index) => (
                 <a
                   key={index}
@@ -68,7 +71,7 @@ const Resume = () => {
       </div>
       
       {/* Right Content */}
-      <div className="w-2/3 p-10 text-white">
+      <div className="md:w-2/3 w-full  p-10 text-white">
         <h2 className="text-4xl italic mb-6 text-zinc-50 font-extrabold">Experience</h2>
         <div className="mt-6">
           <span className="text-xl font-bold ">Hologram</span>
@@ -87,6 +90,20 @@ const Resume = () => {
         <p>Placeholder for skills details...</p>
         
         <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Strengths</h2>
+        <div className="mt-6">
+          <span className="text-xl1 font-bold ">Technology Implementation</span>
+          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
+            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
+            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          </ul>
+        </div>
+        <div className="mt-6">
+          <span className="text-xl1 font-bold ">Technology Implementation</span>
+          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
+            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
+            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          </ul>
+        </div>
         <div className="mt-6">
           <span className="text-xl1 font-bold ">Technology Implementation</span>
           <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
