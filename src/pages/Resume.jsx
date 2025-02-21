@@ -33,15 +33,15 @@ const Resume = () => {
         className={`block w-full text-left ${selectedLanguage === "traditional" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
         onClick={() => setSelectedLanguage("traditional")}
       >
-        <span className="block md:hidden">繁</span>
-        <span className="hidden md:block">繁體中文</span>
+        <span className="block md:hidden font-serifTC">繁</span>
+        <span className="hidden md:block font-serifTC">繁體中文</span>
       </button>
       <button
         className={`block w-full text-left ${selectedLanguage === "simplified" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
         onClick={() => setSelectedLanguage("simplified")}
       >
-        <span className="block md:hidden">简</span>
-        <span className="hidden md:block">简体中文</span>
+        <span className="block md:hidden font-serifTC">简</span>
+        <span className="hidden md:block font-serifTC">简体中文</span>
       </button>
     </div>
         {/* Download Dropdown */}
@@ -71,7 +71,7 @@ const Resume = () => {
       
       {/* Right Content */}
       <div className="md:w-2/3 w-full md:p-10 p-5 text-white">
-        <h2 className="text-4xl italic mb-6 text-zinc-50 font-extrabold">Experience</h2>
+        <h2 className="text-4xl mb-6 text-zinc-50 ">Experience</h2>
         <div className="mt-6">
           <span className="text-xl font-bold ">Hologram</span>
           <span className=""> | Senior UI/UX Designer</span>
@@ -82,13 +82,13 @@ const Resume = () => {
           </ul>
         </div>
         
-        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Education</h2>
+        <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Education</h2>
         <p>Placeholder for education details...</p>
         
-        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Skills</h2>
+        <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Skills</h2>
         <p>Placeholder for skills details...</p>
         
-        <h2 className="text-4xl italic mt-20 mb-6 text-zinc-50 font-extrabold">Strengths</h2>
+        <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Strengths</h2>
         <div className="mt-6">
           <span className="text-xl1 font-bold ">Technology Implementation</span>
           <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
