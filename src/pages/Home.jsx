@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
+import ProjectCarousel from "../components/ProjectCarousel";
+import neteaseLogo from "../assets/images/neteaseLogo.png";
+
 
 
 const works = [
@@ -180,12 +183,12 @@ export default function Home() {
           </div>
 
           <div>
-          <a href="https://.." target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity duration-300">
-..
+          <a href="https://www.neteasegames.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity duration-300">
+          <img src={neteaseLogo} alt="NetEase Logo" className="mb-1 w-[120px]" />
           </a>
           </div>
         </div>
-
+<ProjectCarousel/>
       </main>
       
             {/* Tailwind Animation */}
