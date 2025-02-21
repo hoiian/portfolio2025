@@ -117,7 +117,7 @@ export default function Home() {
       </section>
       
       {/* Works Showcase */}
-      <main className="flex-1">
+      <main className="flex-1 pb-10">
       <div className="flex flex-col md:flex-row items-center justify-between mb-10">
           <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2024</p>
@@ -169,6 +169,23 @@ export default function Home() {
             </div>
           </a>
         </div>
+      </main>
+
+      <main className="flex-1 py-10">
+      <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+          <div className="text-center md:text-left">
+            <p className="mb-2 font-bold">2021 - 2023</p>
+            <h2 className="text-6xl italic mb-1">Past Works</h2>
+            <p className="mb-6">A collection of projects from my time at NetEase.</p>
+          </div>
+
+          <div>
+          <a href="https://.." target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity duration-300">
+..
+          </a>
+          </div>
+        </div>
+
       </main>
       
             {/* Tailwind Animation */}
