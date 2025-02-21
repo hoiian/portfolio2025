@@ -1,60 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 
 @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-Regular.woff2') format('woff2');
-    font-weight: 400; /* Regular */
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-Italic.woff2') format('woff2');
-    font-weight: 400; /* Regular */
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-Ultrabold.woff2') format('woff2');
-    font-weight: 800; /* Ultrabold */
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-UltraboldItalic.woff2') format('woff2');
-    font-weight: 800; /* Ultrabold */
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-Ultralight.woff2') format('woff2');
-    font-weight: 200; /* Ultralight */
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PP Editorial New';
-    src: url('./assets/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2');
-    font-weight: 200; /* Ultralight */
-    font-style: italic;
-  }
-  
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
 
-  
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-Italic.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-Ultrabold.woff2") format("woff2");
+  font-weight: 800; /* Ultrabold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-UltraboldItalic.woff2")
+    format("woff2");
+  font-weight: 800; /* Ultrabold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-Ultralight.woff2") format("woff2");
+  font-weight: 200; /* Ultralight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("./assets/fonts/PPEditorialNew-UltralightItalic.woff2")
+    format("woff2");
+  font-weight: 200; /* Ultralight */
+  font-style: italic;
+}
+
 body {
-    @apply font-sans;
-  }
+  @apply font-sans;
+}
 
-h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
 }
 
 p {
-    @apply text-zinc-400;
-  }
+  @apply text-zinc-400;
+}

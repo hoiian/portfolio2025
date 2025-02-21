@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { ChevronDown } from "lucide-react"; 
+import { ChevronDown } from "lucide-react";
 
 const Resume = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("english");
@@ -10,8 +10,14 @@ const Resume = () => {
     { label: "English", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en.pdf" },
     { label: "繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
     { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
-    { label: "English + 繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf" },
-    { label: "English + 简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf" },
+    {
+      label: "English + 繁體中文",
+      file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",
+    },
+    {
+      label: "English + 简体中文",
+      file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf",
+    },
   ];
 
   return (
@@ -19,31 +25,44 @@ const Resume = () => {
       <Header />
       {/* Left Sidebar */}
       <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col border-b md:border-b-0 md:border-r border-zinc-800 justify-between md:justify-start">
-      
-      <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
-      <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">Language</p>
-      <button
-        className={`block w-full text-left ${selectedLanguage === "english" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-        onClick={() => setSelectedLanguage("english")}
-      >
-        <span className="block md:hidden">Eng</span>
-        <span className="hidden md:block">English</span>
-      </button>
-      <button
-        className={`block w-full text-left ${selectedLanguage === "traditional" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-        onClick={() => setSelectedLanguage("traditional")}
-      >
-        <span className="block md:hidden font-serifTC">繁</span>
-        <span className="hidden md:block font-serifTC">繁體中文</span>
-      </button>
-      <button
-        className={`block w-full text-left ${selectedLanguage === "simplified" ? "text-white" : "text-zinc-600 hover:text-zinc-400"}`}
-        onClick={() => setSelectedLanguage("simplified")}
-      >
-        <span className="block md:hidden font-serifTC">简</span>
-        <span className="hidden md:block font-serifTC">简体中文</span>
-      </button>
-    </div>
+        <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
+          <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">
+            Language
+          </p>
+          <button
+            className={`block w-full text-left ${
+              selectedLanguage === "english"
+                ? "text-white"
+                : "text-zinc-600 hover:text-zinc-400"
+            }`}
+            onClick={() => setSelectedLanguage("english")}
+          >
+            <span className="block md:hidden">Eng</span>
+            <span className="hidden md:block">English</span>
+          </button>
+          <button
+            className={`block w-full text-left ${
+              selectedLanguage === "traditional"
+                ? "text-white"
+                : "text-zinc-600 hover:text-zinc-400"
+            }`}
+            onClick={() => setSelectedLanguage("traditional")}
+          >
+            <span className="block md:hidden font-serifTC">繁</span>
+            <span className="hidden md:block font-serifTC">繁體中文</span>
+          </button>
+          <button
+            className={`block w-full text-left ${
+              selectedLanguage === "simplified"
+                ? "text-white"
+                : "text-zinc-600 hover:text-zinc-400"
+            }`}
+            onClick={() => setSelectedLanguage("simplified")}
+          >
+            <span className="block md:hidden font-serifTC">简</span>
+            <span className="hidden md:block font-serifTC">简体中文</span>
+          </button>
+        </div>
         {/* Download Dropdown */}
         <div className="relative md:mt-20">
           <button
@@ -68,46 +87,110 @@ const Resume = () => {
           )}
         </div>
       </div>
-      
+
       {/* Right Content */}
-      <div className="md:w-2/3 w-full md:p-10 p-5 text-white">
-        <h2 className="text-4xl mb-6 text-zinc-50 ">Experience</h2>
-        <div className="mt-6">
-          <span className="text-xl font-bold ">Hologram</span>
-          <span className=""> | Senior UI/UX Designer</span>
-          <p className="text-zinc-400">Mar 2024 - Present, Shenzhen</p>
-          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
-            <li>Built the marketplace, loot box, and staking system from scratch, defining the framework, flow, and visual to support the design of the product's financial system.</li>
-            <li>Designed the landing page, using innovative interactive methods to introduce the product and create interactive prototypes.</li>
-          </ul>
+      <div className="md:w-2/3 w-full md:p-10 md:pr-5 p-5 text-white">
+        <h2 className="text-4xl mb-6 text-zinc-50">Experience</h2>
+        <div className="mt-6 flex">
+          {/* Left Section: Title and Content (3/4) */}
+          <div className="w-3/4">
+            <span className="text-xl font-bold">Hologram</span>
+            <span> | Senior UI/UX Designer</span>
+            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+              <li>
+                Built the marketplace, loot box, and staking system from
+                scratch, defining the framework, flow, and visual to support the
+                design of the product's financial system.
+              </li>
+              <li>
+                Designed the landing page, using innovative interactive methods
+                to introduce the product and create interactive prototypes.
+              </li>
+            </ul>
+          </div>
+          {/* Right Section: Date (1/4) */}
+          <div className="w-1/4 text-right text-sm">
+            <p className="text-zinc-400">Mar 2024 - Present</p>
+            <p className="text-zinc-400">Shenzhen</p>
+          </div>
         </div>
-        
-        <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Education</h2>
-        <p>Placeholder for education details...</p>
-        
+
+        <h2 className="text-4xl mt-20 mb-6 text-zinc-50">Education</h2>
+        <div className="mt-6 flex">
+          {/* Left Section: Title and Content (3/4) */}
+          <div className="w-3/4">
+            <span className="text-xl font-bold">Tsinghua University</span>
+            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+              <li>M.S. in Information Art and Design</li>
+            </ul>
+          </div>
+          {/* Right Section: Date (1/4) */}
+          <div className="w-1/4 text-right text-sm">
+            <p className="text-zinc-400">2018 - 2021</p>
+            <p className="text-zinc-400">Beijing</p>
+          </div>
+        </div>
+
+        <div className="mt-6 flex">
+          {/* Left Section: Title and Content (3/4) */}
+          <div className="w-3/4">
+            <span className="text-xl font-bold">
+              National Cheng Kung University
+            </span>
+            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+              <li>B.S. in Industrial Design</li>
+            </ul>
+          </div>
+          {/* Right Section: Date (1/4) */}
+          <div className="w-1/4 text-right text-sm">
+            <p className="text-zinc-400">2014 - 2018</p>
+            <p className="text-zinc-400">Taiwan</p>
+          </div>
+        </div>
+
         <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Skills</h2>
         <p>Placeholder for skills details...</p>
-        
+
         <h2 className="text-4xl mt-20 mb-6 text-zinc-50 ">Strengths</h2>
         <div className="mt-6">
-          <span className="text-xl1 font-bold ">Technology Implementation</span>
-          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
-            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
-            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          <span className="font-bold ">Technology Implementation</span>
+          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <li>
+              Independent web developer since 2017, such as eDC Cloud Portal,
+              Acer AI, Acer VR, and more.
+            </li>
+            <li>
+              Proficient with ChatGPT for daily writing assistance and
+              brainstorming.
+            </li>
           </ul>
         </div>
         <div className="mt-6">
-          <span className="text-xl1 font-bold ">Technology Implementation</span>
-          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
-            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
-            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          <span className="font-bold ">Efficiency Advocate</span>
+          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <li>
+              Proficient in task recording and digitization, streamlining
+              workflow with clean design drafts.
+            </li>
+            <li>
+              Established resource standards in early 2D game development,
+              achieving a 30% efficiency improvement.
+            </li>
           </ul>
         </div>
         <div className="mt-6">
-          <span className="text-xl1 font-bold ">Technology Implementation</span>
-          <ul className="list-disc list-inside mt-2 text-zinc-300 text-sm">
-            <li>Independent web developer since 2017,  such as eDC Cloud Portal, Acer AI, Acer VR, and more.</li>
-            <li>Proficient with ChatGPT for daily writing assistance and brainstorming.</li>
+          <span className="font-bold ">Bilingual Proficiency</span>
+          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <li>
+              English, Cantonese, and Mandarin can be used as working languages.
+              <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
+                <li>
+                  Use English for written and verbal communication at the
+                  current company.
+                </li>
+                <li>Native Cantonese speaker, grew up in Macau.</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
