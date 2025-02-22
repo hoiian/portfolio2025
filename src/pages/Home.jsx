@@ -75,7 +75,7 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen text-white flex flex-col max-w-[1360px] mx-auto p-5">
+    <div className="  min-h-screen text-white flex flex-col p-5 md:p-0">
 
       {/* Floating Glow Effect */}
       <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
@@ -86,7 +86,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className=" py-20 min-h-[90vh] min-h-screen flex flex-col md:flex-row items-center">
+      <section className="max-w-[1360px] mx-auto w-full py-20 min-h-[90vh] min-h-screen flex flex-col md:flex-row items-center">
         {/* <h1 className="text-[164px] uppercase text-left leading-none text-zinc-50">Hoi Ian <br /> Wong</h1> */}
         <div className="w-full md:w-2/3">
           <h1 className={`pt-4 z-50 uppercase leading-none transition-all duration-500 text-zinc-50 mix-blend-difference  ${isScrolled ? 'text-xl fixed top-0' : 'text-[23vw] md:text-[164px]'}`}>
@@ -119,8 +119,8 @@ export default function Home() {
 
       </section>
       
-      {/* Works Showcase */}
-      <main className="flex-1 pb-10">
+      {/* Hologram Works Showcase */}
+      <main className="max-w-[1360px] mx-auto flex-1 pb-10">
       <div className="flex flex-col md:flex-row items-center justify-between mb-10">
           <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2024</p>
@@ -175,7 +175,7 @@ export default function Home() {
       </main>
 
       <main className="flex-1 py-10">
-      <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+      <div className="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between mb-10">
           <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2021 - 2023</p>
             <h2 className="text-6xl italic mb-1">Past Works</h2>
@@ -188,7 +188,7 @@ export default function Home() {
           </a>
           </div>
         </div>
-<ProjectCarousel/>
+        <ProjectCarousel/>
       </main>
       
             {/* Tailwind Animation */}

@@ -12,12 +12,14 @@ const projects = [
 const ProjectCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Handle moving right
   const handleNext = () => {
     if (currentIndex < projects.length - 3) {
       setCurrentIndex(currentIndex + 1);
     }
   };
 
+  // Handle moving left
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -25,30 +27,9 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="max-w-[1360px] mx-auto relative">
-      {/* Arrow Buttons */}
-      <button
-        onClick={handlePrev}
-        disabled={currentIndex === 0}
-        className={`absolute left-0 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 ${
-          currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
-        }`}
-      >
-        <ChevronLeft size={24} strokeWidth={1} className="text-white" />
-      </button>
-
-      <button
-        onClick={handleNext}
-        disabled={currentIndex >= projects.length - 3}
-        className={`absolute right-0 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 ${
-          currentIndex >= projects.length - 3 ? "opacity-50 cursor-not-allowed" : ""
-        }`}
-      >
-        <ChevronRight size={24} strokeWidth={1} className="text-white" />
-      </button>
-
-      {/* Scrollable Container */}
-      <div className="overflow-hidden mt-10">
+    <div className="overflow-hidden w-screen mx-auto relative">
+      {/* Project Cards */}
+      <div className="mt-10">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
@@ -65,6 +46,29 @@ const ProjectCarousel = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Navigation Buttons Below Carousel */}
+      <div className="flex justify-center space-x-4 mt-6">
+        <button
+          onClick={handlePrev}
+          disabled={currentIndex === 0}
+          className={`p-3 rounded-full bg-zinc-800 hover:bg-zinc-700 transition ${
+            currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        >
+          <ChevronLeft size={24} strokeWidth={1} className="text-white" />
+        </button>
+
+        <button
+          onClick={handleNext}
+          disabled={currentIndex >= projects.length - 3}
+          className={`p-3 rounded-full bg-zinc-800 hover:bg-zinc-700 transition ${
+            currentIndex >= projects.length - 3 ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+        >
+          <ChevronRight size={24} strokeWidth={1} className="text-white" />
+        </button>
       </div>
     </div>
   );
