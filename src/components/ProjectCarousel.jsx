@@ -1,25 +1,47 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const projects = [
-  { title: "Project 1", description: "Description for Project 1" },
-  { title: "Project 2", description: "Description for Project 2" },
-  { title: "Project 3", description: "Description for Project 3" },
-  { title: "Project 4", description: "Description for Project 4" },
-  // { title: "Project 5", description: "Description for Project 5" },
+// Works Data
+const works = [
+  {
+    title: "MetaPush",
+    image: "src/assets/images/placeholder-image.jpg",
+    link: "/work1",
+    description: "Web3 messages aggregated tool",
+    background: "bg-[linear-gradient(142deg,#9CFFF5_0%,#01AFFF_100%)]",
+  },
+  {
+    title: "GaaS",
+    image: "src/assets/images/placeholder-image.jpg",
+    link: "/work2",
+    description: "Wallet and Market system for GameFi",
+    background: "bg-[linear-gradient(142deg,#A475F5_0%,#2F34C1_100%)]", 
+  },
+  {
+    title: "Event Center",
+    image: "src/assets/images/placeholder-image.jpg",
+    link: "/work3",
+    description: "Aggregation of in-game events",
+    background: "bg-[linear-gradient(142deg,#FFCC82_0%,#BF2E31_100%)]",
+  },
+  {
+    title: "NFT Marketplace",
+    image: "src/assets/images/placeholder-image.jpg",
+    link: "/work4",
+    description: "UI Redesign",
+    background: "bg-[linear-gradient(142deg,#F4C1D3_0%,#7B61FF_100%)]", 
+  },
 ];
 
 const ProjectCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Handle moving right
   const handleNext = () => {
-    if (currentIndex < projects.length - 3) {
+    if (currentIndex < works.length - 3) {
       setCurrentIndex(currentIndex + 1);
     }
   };
 
-  // Handle moving left
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -27,31 +49,37 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="overflow-hidden w-screen mx-auto1 relative">
-      {/* Project Cards */}
-      <div className="mt-10">
-        <div
-          className="flex gap-6 transition-transform duration-500"
-          style={{
-            transform: `translateX(-${currentIndex * (1360 / 3)}px)`,
-            padding: `0 calc((100vw - 1360px) / 2)`,
-          }}
-        >
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-1/3"
-            >
-              <div className="bg-zinc-800 rounded-lg p-6 h-full text-white shadow-lg">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-zinc-400">{project.description}</p>
-              </div>
+    <div className="w-screen overflow-hidden">
+      {/* Carousel */}
+      <div
+        className="flex transition-transform duration-500 gap-6"
+        style={{
+          transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+          padding: `0 calc((100vw - 1360px) / 2)`,
+        }}
+      >
+        {works.map((project, index) => (
+          <a
+            href={project.link}
+            key={index}
+            // className={`group block relative overflow-hidden transform transition hover:rotate-1 max-w-[430px] w-full`}
+            className={`flex-shrink-0 w-[30%]`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={`${project.background} rounded-3xl h-[282px]`}>
+              {/* Optional Image Placeholder */}
+              {/* <img src={project.image} alt={project.title} className="w-full object-cover group-hover:opacity-80 transition" /> */}
             </div>
-          ))}
-        </div>
+            <div className="p-4 text-white">
+              <h3 className="text-2xl italic">{project.title}</h3>
+              <p className="text-sm">{project.description}</p>
+            </div>
+          </a>
+        ))}
       </div>
 
-      {/* Navigation Buttons Below Carousel */}
+      {/* Navigation Arrows */}
       <div className="flex justify-center space-x-4 mt-6">
         <button
           onClick={handlePrev}
@@ -65,9 +93,9 @@ const ProjectCarousel = () => {
 
         <button
           onClick={handleNext}
-          disabled={currentIndex >= projects.length - 3}
+          disabled={currentIndex >= works.length - 3}
           className={`p-3 rounded-full bg-zinc-800 hover:bg-zinc-700 transition ${
-            currentIndex >= projects.length - 3 ? "opacity-50 cursor-not-allowed" : ""
+            currentIndex >= works.length - 3 ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
           <ChevronRight size={24} strokeWidth={1} className="text-white" />
