@@ -99,7 +99,7 @@ const Resume = () => {
       </div>
 
       {/* Right Content */}
-      <div className="md:w-2/3 w-full md:p-10 md:pr-5 p-5 text-white border-t md:border-t-0 md:border-l border-zinc-800">
+      <div className="md:w-2/3 w-full md:p-10 md:pr-0 p-5 text-white border-t md:border-t-0 md:border-l border-zinc-800">
         <h2 className="text-5xl mb-8 text-zinc-50 italic font-bold">
           {content.myName}
         </h2>

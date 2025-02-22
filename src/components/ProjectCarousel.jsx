@@ -6,7 +6,7 @@ const projects = [
   { title: "Project 2", description: "Description for Project 2" },
   { title: "Project 3", description: "Description for Project 3" },
   { title: "Project 4", description: "Description for Project 4" },
-  { title: "Project 5", description: "Description for Project 5" },
+  // { title: "Project 5", description: "Description for Project 5" },
 ];
 
 const ProjectCarousel = () => {
@@ -27,17 +27,20 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="overflow-hidden w-screen mx-auto relative">
+    <div className="overflow-hidden w-screen mx-auto1 relative">
       {/* Project Cards */}
       <div className="mt-10">
         <div
-          className="flex transition-transform duration-500"
-          style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+          className="flex gap-6 transition-transform duration-500"
+          style={{
+            transform: `translateX(-${currentIndex * (1360 / 3)}px)`,
+            padding: `0 calc((100vw - 1360px) / 2)`,
+          }}
         >
           {projects.map((project, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-1/3 p-4"
+              className="flex-shrink-0 w-1/3"
             >
               <div className="bg-zinc-800 rounded-lg p-6 h-full text-white shadow-lg">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
