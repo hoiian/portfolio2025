@@ -6,35 +6,36 @@ const works = [
   {
     title: "MetaPush",
     image: "src/assets/images/placeholder-image.jpg",
-    link: "/work1",
+    link: "https://whoiian.com/portfolio-item/metapush/",
     description: "Web3 messages aggregated tool",
     background: "bg-[linear-gradient(142deg,#9CFFF5_0%,#01AFFF_100%)]",
   },
   {
     title: "GaaS",
     image: "src/assets/images/placeholder-image.jpg",
-    link: "/work2",
+    link: "https://whoiian.com/portfolio-item/gaas/",
     description: "Wallet and Market system for GameFi",
-    background: "bg-[linear-gradient(142deg,#A475F5_0%,#2F34C1_100%)]", 
+    background: "bg-[linear-gradient(142deg,#A475F5_0%,#2F34C1_100%)]",
   },
   {
     title: "Event Center",
     image: "src/assets/images/placeholder-image.jpg",
-    link: "/work3",
+    link: "https://whoiian.com/portfolio-item/naraka/",
     description: "Aggregation of in-game events",
     background: "bg-[linear-gradient(142deg,#FFCC82_0%,#BF2E31_100%)]",
   },
   {
     title: "NFT Marketplace",
     image: "src/assets/images/placeholder-image.jpg",
-    link: "/work4",
+    link: "https://whoiian.com/portfolio-item/nft-marketplace/",
     description: "UI Redesign",
-    background: "bg-[linear-gradient(142deg,#F4C1D3_0%,#7B61FF_100%)]", 
+    background: "bg-[linear-gradient(142deg,#F4C1D3_0%,#7B61FF_100%)]",
   },
 ];
 
 const ProjectCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleNext = () => {
     if (currentIndex < works.length - 3) {
@@ -48,14 +49,23 @@ const ProjectCarousel = () => {
     }
   };
 
+  // Calculate transform and padding dynamically
+  const translateValue =
+    windowWidth > 1360
+      ? `-${(currentIndex * 1360) / 4}px`
+      : `-${(currentIndex * 100) / 4}%`;
+
+  const paddingValue =
+    windowWidth > 1360 ? `0 calc((100vw - 1360px) / 2)` : `0`;
+
   return (
     <div className="w-screen overflow-hidden">
       {/* Carousel */}
       <div
-        className="flex transition-transform duration-500 gap-6"
+        className="flex flex-col md:flex-row transition-transform duration-300 gap-6"
         style={{
-          transform: `translateX(-${currentIndex * (100 / 3)}%)`,
-          padding: `0 calc((100vw - 1360px) / 2)`,
+          transform: `translateX(${translateValue})`,
+          padding: paddingValue,
         }}
       >
         {works.map((project, index) => (
@@ -63,7 +73,7 @@ const ProjectCarousel = () => {
             href={project.link}
             key={index}
             // className={`group block relative overflow-hidden transform transition hover:rotate-1 max-w-[430px] w-full`}
-            className={`flex-shrink-0 w-[30%]`}
+            className={`md:flex-shrink-0 md:w-[30%] `}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +90,7 @@ const ProjectCarousel = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="flex justify-center space-x-4 mt-6">
+      <div className="hidden md:flex justify-center space-x-4 mt-6">
         <button
           onClick={handlePrev}
           disabled={currentIndex === 0}
@@ -95,7 +105,9 @@ const ProjectCarousel = () => {
           onClick={handleNext}
           disabled={currentIndex >= works.length - 3}
           className={`p-3 rounded-full bg-zinc-800 hover:bg-zinc-700 transition ${
-            currentIndex >= works.length - 3 ? "opacity-50 cursor-not-allowed" : ""
+            currentIndex >= works.length - 3
+              ? "opacity-50 cursor-not-allowed"
+              : ""
           }`}
         >
           <ChevronRight size={24} strokeWidth={1} className="text-white" />
