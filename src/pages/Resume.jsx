@@ -132,13 +132,18 @@ const Resume = () => {
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
               <li>
-                Built the marketplace, loot box, and staking system from
-                scratch, defining the framework, flow, and visual to support the
-                design of the product's financial system.
+                Enhanced the Holoword AI platform by refining its design system
+                and, as the only designer, independently driving new iterations.
               </li>
               <li>
-                Designed the landing page, using innovative interactive methods
-                to introduce the product and create interactive prototypes.
+                Led full-cycle design projects—from low-fidelity sketches to
+                complete high-fidelity prototypes—with close collaboration with
+                engineers and PMs.
+              </li>
+              <li>
+                Rapidly produced 0-to-1 designs for diverse features (e.g.,
+                video editor, message inbox, launchpad) in a fast-paced startup
+                environment.
               </li>
             </ul>
           </div>
@@ -175,8 +180,36 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>..</li>
-              <li>..</li>
+              <li>
+                NARAKA: BLADEPOINT - Computer Game - UX
+                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
+                  <li>
+                    Designed 28 interfaces in bi-weekly iterations; integrated
+                    joystick input in Unity for PC.
+                  </li>
+                  <li>
+                    Standardized resource uploads to boost team efficiency.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                NARAKA: BLADEPOINT - Computer Game - UX
+                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
+                  <li>
+                    Created web pages and plugins from scratch; achieved a 4.8/5
+                    app rating over four iterations.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Web3 Trading Platform - WebApp - UX/UI
+                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
+                  <li>
+                    Developed adaptive wallet and market applications for
+                    seamless multi-screen experiences.
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
 
