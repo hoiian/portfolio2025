@@ -193,7 +193,7 @@ const Resume = () => {
                 </ul>
               </li>
               <li>
-                NARAKA: BLADEPOINT - Computer Game - UX
+                Web3 Tool - Browser Plugin - UX/UI
                 <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
                   <li>
                     Created web pages and plugins from scratch; achieved a 4.8/5
@@ -306,9 +306,11 @@ const Resume = () => {
             <p className="text-zinc-400">{content.Taiwan}</p>
           </div>
         </div>
+
         {/* Skills------------ */}
-        <h2 className="text-3xl mt-20 mb-6 text-zinc-400 ">{content.Skills}</h2>
-        <p>Placeholder for skills details...</p>
+        {/* <h2 className="text-3xl mt-20 mb-6 text-zinc-400 ">{content.Skills}</h2>
+        <p>Placeholder for skills details...</p> */}
+
         {/* Strengths------------ */}
         <h2 className="text-3xl mt-20 mb-6 text-zinc-400">
           {content.Strengths}
@@ -320,22 +322,18 @@ const Resume = () => {
               Independent web developer since 2017, such as eDC Cloud Portal,
               Acer AI, Acer VR, and more.
             </li>
-            <li>
-              Proficient with ChatGPT for daily writing assistance and
-              brainstorming.
-            </li>
           </ul>
         </div>
         <div className="mt-6">
           <span className="font-bold ">Efficiency Advocate</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
-              Proficient in task recording and digitization, streamlining
-              workflow with clean design drafts.
+              Proficient in managing personal tasks and producing clear, concise
+              design file.
             </li>
             <li>
               Established resource standards in early 2D game development,
-              achieving a 30% efficiency improvement.
+              boosting efficiency by 30%.
             </li>
           </ul>
         </div>
@@ -343,12 +341,9 @@ const Resume = () => {
           <span className="font-bold ">Bilingual Proficiency</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
-              English, Cantonese, and Mandarin can be used as working languages.
+              Fluent in English, Cantonese, and Mandarin
               <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
-                <li>
-                  Use English for written and verbal communication at the
-                  current company.
-                </li>
+                <li>English as the primary language for work</li>
                 <li>Native Cantonese speaker, grew up in Macau.</li>
               </ul>
             </li>
