@@ -59,7 +59,7 @@ const ProjectCarousel = () => {
     windowWidth > 1360 ? `0 calc((100vw - 1360px) / 2)` : `0`;
 
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="md:w-screen w-full overflow-hidden">
       {/* Carousel */}
       <div
         className="flex flex-col md:flex-row transition-transform duration-300 gap-6"
@@ -73,7 +73,7 @@ const ProjectCarousel = () => {
             href={project.link}
             key={index}
             // className={`group block relative overflow-hidden transform transition hover:rotate-1 max-w-[430px] w-full`}
-            className={`md:flex-shrink-0 md:w-[30%] `}
+            className={`md:flex-shrink-0 md:w-[30%]`}
             target="_blank"
             rel="noopener noreferrer"
           >
