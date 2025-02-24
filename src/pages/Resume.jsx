@@ -100,13 +100,11 @@ const Resume = () => {
 
       {/* Right Content */}
       <div className="md:w-2/3 w-full md:p-10 md:pr-0 p-5 text-white border-t md:border-t-0 md:border-l border-zinc-800">
-        <h2 className="text-5xl mb-8 text-zinc-50 italic font-bold">
+        <h2 className="text-5xl mb-8 italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2DEDD0] via-[#2474DD] to-[#A22BC7] bg-[length:200%_200%] animate-gradient-x leading-snug pb-1">
           {content.myName}
         </h2>
-
-        <h2 className="text-3xl mb-6 text-zinc-50">
-          {content.Experience}
-        </h2>
+        {/* Experience ------------------------ */}
+        <h2 className="text-3xl mb-6 text-zinc-400">{content.Experience}</h2>
 
         {/* Work1 */}
         <div className="mt-6 flex flex-col md:flex-row">
@@ -121,12 +119,14 @@ const Resume = () => {
               <span className="text-xl font-bold">Hologram</span>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>{content.Senior} UI/UX {content.Designer}</span>
+            <span>
+              {content.Senior} UI/UX {content.Designer}
+            </span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
               <p>
-              {content.Mar} 2024 - {content.Present}, {content.Shenzhen}
+                {content.Mar} 2024 - {content.Present}, {content.Shenzhen}
               </p>
             </div>
 
@@ -145,7 +145,9 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block ">
-            <p className="text-zinc-400">{content.Mar} 2024 - {content.Present} </p>
+            <p className="text-zinc-400">
+              {content.Mar} 2024 - {content.Present}{" "}
+            </p>
             <p className="text-zinc-400">{content.Shenzhen}</p>
           </div>
         </div>
@@ -154,20 +156,22 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
-          <a
+            <a
               href="https://www.neteasegames.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 "
             >
-            <span className="text-xl font-bold">{content.NetEase}</span>
+              <span className="text-xl font-bold">{content.NetEase}</span>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
             <span>UI/UX {content.Designer}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>{content.Jul} 2021 - {content.Feb} 2023, {content.Hangzhou}</p>
+              <p>
+                {content.Jul} 2021 - {content.Feb} 2023, {content.Hangzhou}
+              </p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
@@ -178,7 +182,9 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
-            <p className="text-zinc-400">{content.Jul} 2021 - {content.Feb} 2023</p>
+            <p className="text-zinc-400">
+              {content.Jul} 2021 - {content.Feb} 2023
+            </p>
             <p className="text-zinc-400">{content.Hangzhou}</p>
           </div>
         </div>
@@ -187,20 +193,25 @@ const Resume = () => {
         <div className="mt-6 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
-          <a
+            <a
               href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 "
             >
-            <span className="text-xl font-bold">{content.MSRA}</span>
+              <span className="text-xl font-bold">{content.MSRA}</span>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>UI/UX {content.Design}{content.Intern}</span>
+            <span>
+              UI/UX {content.Design}
+              {content.Intern}
+            </span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
-              <p>{content.Dec} 2019 - {content.May} 2020, {content.Beijing}</p>
+              <p>
+                {content.Dec} 2019 - {content.May} 2020, {content.Beijing}
+              </p>
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
@@ -211,12 +222,14 @@ const Resume = () => {
 
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block">
-            <p className="text-zinc-400">{content.Dec} 2019 - {content.May} 2020</p>
+            <p className="text-zinc-400">
+              {content.Dec} 2019 - {content.May} 2020
+            </p>
             <p className="text-zinc-400">{content.Beijing}</p>
           </div>
         </div>
         {/* Education ------------------------ */}
-        <h2 className="text-3xl mt-20 mb-6 text-zinc-50">
+        <h2 className="text-3xl mt-20 mb-6 text-zinc-400">
           {content.Education}
         </h2>
         <div className="mt-6 flex">
@@ -243,9 +256,7 @@ const Resume = () => {
         <div className="mt-6 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
-            <span className="text-xl font-bold">
-            {content.NCKU}
-            </span>
+            <span className="text-xl font-bold">{content.NCKU}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
@@ -262,13 +273,11 @@ const Resume = () => {
             <p className="text-zinc-400">{content.Taiwan}</p>
           </div>
         </div>
-{/* ------------ */}
-        <h2 className="text-3xl mt-20 mb-6 text-zinc-50 ">
-          {content.Skills}
-        </h2>
+        {/* Skills------------ */}
+        <h2 className="text-3xl mt-20 mb-6 text-zinc-400 ">{content.Skills}</h2>
         <p>Placeholder for skills details...</p>
-
-        <h2 className="text-3xl mt-20 mb-6 text-zinc-50 ">
+        {/* Strengths------------ */}
+        <h2 className="text-3xl mt-20 mb-6 text-zinc-400">
           {content.Strengths}
         </h2>
         <div className="mt-6">
