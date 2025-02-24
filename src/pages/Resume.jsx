@@ -248,8 +248,9 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>..</li>
-              <li>..</li>
+              <li>Collaborated with PMs and lead designers on FinTech and COVID Insights web projects, streamlining processes and designing data forms.
+              </li>
+              <li>Used data visualization to clearly present text, numbers, and 3D information.</li>
             </ul>
           </div>
 
