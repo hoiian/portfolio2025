@@ -98,10 +98,10 @@ const ProjectCarousel = () => {
               {/* Preview Video */}
               <video
                 src={project.video}
-                muted={true} // Explicitly set muted for autoplay to work
                 loop
                 playsInline
-                autoPlay={hoveredIndex === index}
+                autoPlay
+                muted
                 className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
                   hoveredIndex === index ? "opacity-100" : "opacity-0"
                 }`}
