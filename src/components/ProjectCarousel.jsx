@@ -5,28 +5,28 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const works = [
   {
     title: "MetaPush",
-    image: "src/assets/images/placeholder-image.jpg",
+    image: "src/assets/images/pastProjCover/1metapush.png",
     link: "https://whoiian.com/portfolio-item/metapush/",
     description: "Web3 messages aggregated tool",
     background: "bg-[linear-gradient(142deg,#9CFFF5_0%,#01AFFF_100%)]",
   },
   {
     title: "GaaS",
-    image: "src/assets/images/placeholder-image.jpg",
+    image: "src/assets/images/pastProjCover/2gaas.png",
     link: "https://whoiian.com/portfolio-item/gaas/",
     description: "Wallet and Market system for GameFi",
     background: "bg-[linear-gradient(142deg,#A475F5_0%,#2F34C1_100%)]",
   },
   {
     title: "Event Center",
-    image: "src/assets/images/placeholder-image.jpg",
+    image: "src/assets/images/pastProjCover/3naraka.png",
     link: "https://whoiian.com/portfolio-item/naraka/",
     description: "Aggregation of in-game events",
     background: "bg-[linear-gradient(142deg,#FFCC82_0%,#BF2E31_100%)]",
   },
   {
     title: "NFT Marketplace",
-    image: "src/assets/images/placeholder-image.jpg",
+    image: "src/assets/images/pastProjCover/4marketplace.png",
     link: "https://whoiian.com/portfolio-item/nft-marketplace/",
     description: "UI Redesign",
     background: "bg-[linear-gradient(142deg,#F4C1D3_0%,#7B61FF_100%)]",
@@ -77,9 +77,12 @@ const ProjectCarousel = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={`${project.background} rounded-3xl h-[282px]`}>
-              {/* Optional Image Placeholder */}
-              {/* <img src={project.image} alt={project.title} className="w-full object-cover group-hover:opacity-80 transition" /> */}
+            <div className={`${project.background} rounded-3xl`}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full p-5 transition drop-shadow-[0_25px_50px_rgba(0,0,0,0.25)]"
+              />
             </div>
             <div className="p-4 text-white">
               <h3 className="text-2xl italic">{project.title}</h3>
