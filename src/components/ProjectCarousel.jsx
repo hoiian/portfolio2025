@@ -61,7 +61,7 @@ const ProjectCarousel = () => {
       : `-${(currentIndex * 100) / 4}%`;
 
   const paddingValue =
-    windowWidth > 1360 ? `0 calc((100vw - 1360px) / 2)` : `0`;
+    windowWidth > 1360 ? `0 calc((100vw - 1360px - 40px) / 2)` : `0`;
 
   return (
     <div className="md:w-screen w-full overflow-hidden">

@@ -181,34 +181,20 @@ const Resume = () => {
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
               <li>
-                NARAKA: BLADEPOINT - Computer Game - UX
-                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
-                  <li>
-                    Designed 28 interfaces in bi-weekly iterations; integrated
-                    joystick input in Unity for PC.
-                  </li>
-                  <li>
-                    Standardized resource uploads to boost team efficiency.
-                  </li>
-                </ul>
+                Computer Game (NARAKA: BLADEPOINT): Designed 28 interfaces,
+                optimizing user experience while integrating joystick input in
+                Unity for PC. Streamlined resource uploads to improve team
+                workflow and project efficiency.
               </li>
               <li>
-                Web3 Tool - Browser Plugin - UX/UI
-                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
-                  <li>
-                    Created web pages and plugins from scratch; achieved a 4.8/5
-                    app rating over four iterations.
-                  </li>
-                </ul>
+                Browser Plugin (Web3 Tool): Led the design and development of
+                web pages and plugins, iterating based on user feedback,
+                resulting in a 4.8/5 app rating.
               </li>
               <li>
-                Web3 Trading Platform - WebApp - UX/UI
-                <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
-                  <li>
-                    Developed adaptive wallet and market applications for
-                    seamless multi-screen experiences.
-                  </li>
-                </ul>
+                Web Application (Web3 Trading Platform): Developed adaptive
+                wallet and market applications, focusing on responsive design
+                for a seamless, cross-platform user experience.
               </li>
             </ul>
           </div>
@@ -248,9 +234,15 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>Collaborated with PMs and lead designers on FinTech and COVID Insights web projects, streamlining processes and designing data forms.
+              <li>
+                Collaborated with PMs and lead designers on FinTech and COVID
+                Insights web projects, streamlining processes and designing data
+                forms.
               </li>
-              <li>Used data visualization to clearly present text, numbers, and 3D information.</li>
+              <li>
+                Used data visualization to clearly present text, numbers, and 3D
+                information.
+              </li>
             </ul>
           </div>
 
@@ -343,7 +335,7 @@ const Resume = () => {
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
               Fluent in English, Cantonese, and Mandarin
-              <ul className="list-disc list-outside pl-5 space-y-2 ml-5 mt-2">
+              <ul className="list-disc list-outside space-y-2 ml-5 mt-2">
                 <li>English as the primary language for work</li>
                 <li>Native Cantonese speaker, grew up in Macau.</li>
               </ul>
