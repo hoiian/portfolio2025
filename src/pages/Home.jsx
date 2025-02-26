@@ -8,6 +8,7 @@ const works = [
   {
     title: "Studio: Redefining AI-Powered Video Creation",
     image: "src//assets/images/placeholder-image.jpg",
+    video: "src//assets/videos/work1/demo-FullStudio.mp4",
     link: "/work1",
     description:
       "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.",
@@ -16,6 +17,7 @@ const works = [
   {
     title: "NFT minting",
     image: "src//assets/images/placeholder-image.jpg",
+    video: "",
     link: "/work2",
     description:
       "A Web3 development project focusing on blockchain integration.",
@@ -199,8 +201,16 @@ export default function Home() {
             href={works[0].link}
             className="group block relative col-span-1 lg:col-span-2 overflow-hidden transform transition hover:rotate-1"
           >
-            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px]">
+            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px] flex items-center justify-center">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
+              <video
+                src={works[0].video}
+                loop
+                playsInline
+                autoPlay
+                muted
+                className=" transition-opacity duration-500 h-[80%] rounded-xl shadow-xl"
+              />
             </div>
 
             <div className="p-4 text-white">
