@@ -169,7 +169,7 @@ const Resume = () => {
             >
               <span className="text-xl font-bold">{content.NetEase}</span>
               {/* Tooltip */}
-              <div className="absolute top-0 right-[100px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur-sm rounded-xl p-4">
+              <div className="absolute top-0 right-[100px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
                 <img
                   src="src/assets/images/neteaseLogo.png" // replace with actual image URL
                   alt="Tooltip image"
@@ -273,7 +273,25 @@ const Resume = () => {
         <div className="mt-6 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
-            <span className="text-xl font-bold">{content.THU}</span>
+            <a
+              href="https://www.tsinghua.edu.cn/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group hover:text-zinc-400 "
+            >
+              <span className="text-xl font-bold">{content.THU}</span>
+              {/* Tooltip */}
+              <div className="absolute top-0 right-[200px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
+                <img
+                  src="src/assets/images/THULogo.svg" // replace with actual image URL
+                  alt="Tooltip image"
+                  className="w-[160px] object-cover rounded-xl mb-2"
+                />
+                <span className="text-xs text-zinc-50">
+                  Ranked 20th globally in the QS World University Rankings
+                </span>
+              </div>
+            </a>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
