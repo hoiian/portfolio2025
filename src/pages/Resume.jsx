@@ -165,9 +165,21 @@ const Resume = () => {
               href="https://www.neteasegames.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 "
+              className="relative group hover:text-zinc-400 "
             >
               <span className="text-xl font-bold">{content.NetEase}</span>
+              {/* Tooltip */}
+              <div className="absolute top-0 right-[100px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur-sm rounded-xl p-4">
+                <img
+                  src="src/assets/images/neteaseLogo.png" // replace with actual image URL
+                  alt="Tooltip image"
+                  className="w-[160px] object-cover rounded-xl mb-2"
+                />
+                <span className="text-xs text-zinc-50">
+                  NetEase, the fifth-largest gaming company globally, ranks
+                  higher than Epic Games in revenue.
+                </span>
+              </div>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
             <span>UI/UX {content.Designer}</span>
