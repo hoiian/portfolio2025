@@ -25,63 +25,157 @@ export default function Work1() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white flex flex-col max-w-4xl mx-auto relative">
+    <div className="min-h-screen text-white flex flex-col max-w-6xl mx-auto relative">
       {/* Fixed Right Navigation */}
       <nav className="fixed top-8 right-8 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
         <ul className="space-y-2 text-sm">
           <li>
-            <a href="#context" className={`block ${activeSection === "context" ? "text-white" : "text-zinc-500"} hover:text-zinc-300`}>
+            <a
+              href="#context"
+              className={`block ${
+                activeSection === "context" ? "text-white" : "text-zinc-500"
+              } hover:text-zinc-300`}
+            >
               Context
             </a>
           </li>
           <li>
-            <a href="#timeline" className={`block ${activeSection === "timeline" ? "text-white" : "text-zinc-500"} hover:text-zinc-300`}>
+            <a
+              href="#timeline"
+              className={`block ${
+                activeSection === "timeline" ? "text-white" : "text-zinc-500"
+              } hover:text-zinc-300`}
+            >
               Timeline
             </a>
           </li>
           <li>
-            <a href="#features" className={`block ${activeSection === "features" ? "text-white" : "text-zinc-500"} hover:text-zinc-300`}>
+            <a
+              href="#features"
+              className={`block ${
+                activeSection === "features" ? "text-white" : "text-zinc-500"
+              } hover:text-zinc-300`}
+            >
               Key Features
             </a>
           </li>
         </ul>
       </nav>
-      
+
       {/* Header with Back Button */}
-      <header className="p-6 flex justify-between items-center">
-        <Link to="/" className="hover:underline">← Back</Link>
+      <header className="p-6 fixed top-2 left-2">
+        <Link to="/" className="hover:underline">
+          ← Back
+        </Link>
       </header>
 
       {/* Work1 Content */}
-      <main className="flex-1 p-8 text-left">
-        <h1 className="italic text-4xl">Studio: <br/>
-        Redefining AI-Powered Video Creation</h1>
-        <p className="mt-4">
-          Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.
+      <div className="flex-1 p-8 text-left">
+        <video autoPlay loop muted playsInline>
+          <source src="/videos/work1/demo-FullStudio.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1 className="italic text-4xl">
+          Studio: Redefining AI-Powered Video Creation
+        </h1>
+        <p className="mt-4  max-w-3xl">
+          Studio is an all-in-one content creation suite, enabling VTubers, AI
+          creators, and digital influencers to stream, record, and edit videos
+          seamlessly.
         </p>
-      </main>
-      
+        <div>
+          My Role: UI, UX, Prototyping Team: 1 engineer Duration: 2 months
+        </div>
+      </div>
+
       {/* Background Section */}
       <section id="context" className="p-8 border-t border-zinc-800">
-        <h2 className="text-5xl italic">Context</h2>
-        <p className="mt-4">
-          Video creation has always been a top demand for Hologram. Our goal is to transform HoloStudio into a complete content creation platform for users. Today’s creators rely on their digital identities—avatars, PFPs, and IPs—and we're focusing on talking videos, a format popular on TikTok, YouTube, and Twitch. Hologram uniquely lets users have their personalized AI avatars speak on their behalf.
-        </p>
-        <p>
-          The current studio is a basic canvas for one-time short clips (with face tracking, background change, and picture-in-picture mode), but it lacks the full editing experience—combining multiple tracks and advanced effects—that creators need. We envision a studio modeled after tools like TikTok’s editor and CapCut, offering seamless recording, editing, and interaction all in one.
-        </p>
-      </section>
+        <div className="flex flex-row items-center justify-between text-5xl italic">
+          <h2 className="">Context</h2>
+          <h2>00</h2>
+        </div>
 
+        <p className="mt-4 max-w-3xl">
+          Video creation has always been a top demand for Hologram. Our goal is
+          to transform HoloStudio into a complete content creation platform for
+          users. Today’s creators rely on their digital identities—avatars,
+          PFPs, and IPs—and we're focusing on talking videos, a format popular
+          on TikTok, YouTube, and Twitch. Hologram uniquely lets users have
+          their personalized AI avatars speak on their behalf.
+        </p>
+        <p className="max-w-3xl">
+          The current studio is a basic canvas for one-time short clips (with
+          face tracking, background change, and picture-in-picture mode), but it
+          lacks the full editing experience—combining multiple tracks and
+          advanced effects—that creators need. We envision a studio modeled
+          after tools like TikTok’s editor and CapCut, offering seamless
+          recording, editing, and interaction all in one.
+        </p>
+
+        <div>
+          <h3 className="text-2xl mt-10 mb-4">
+            Before & After: Expanding the Studio Experience
+          </h3>
+
+          <img src="/images/work1/before.png" />
+          <p>
+            🔹 Before HoloStudio was a single-purpose Vtuber Playground,
+            allowing users to create basic avatar-driven livestreams with
+            limited editing features.
+          </p>
+
+          <img src="/images/work1/after.png" />
+          <p>
+            🔹 After We've evolved it into a comprehensive content creation
+            suite with three core modes: Vtuber Playground – Real-time AI avatar
+            streaming with enhanced interactivity. Video Editor – Record, edit,
+            and refine avatar-driven content seamlessly. AI Video Generator –
+            Create videos instantly from text prompts.
+          </p>
+        </div>
+      </section>
+      {/* Vtuber Playground */}
+      <section id="Vtuber" className="p-8 border-t border-zinc-800">
+        <div className="flex flex-row items-center justify-between text-5xl italic">
+          <h2 className="">Vtuber Playground</h2>
+          <h2>01</h2>
+        </div>
+        <div className="flex flex-row items-center justify-between">
+          <video autoPlay loop muted playsInline>
+            <source
+              src="/videos/work1/demo-VtuberPlayground-before.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <video autoPlay loop muted playsInline>
+            <source
+              src="/videos/work1/demo-VtuberPlayground.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className="flex flex-row items-center justify-between text-4xl mt-10">
+          <h2 className="italic">Problem</h2>
+          <h2>🔍</h2>
+        </div>
+      </section>
       {/* Timeline Section */}
       <section id="timeline" className="p-8 border-t border-zinc-800">
         <h2 className="text-5xl italic">Timeline</h2>
-        <p className="mt-4">Key milestones in the development and launch of Studio.</p>
+        <p className="mt-4">
+          Key milestones in the development and launch of Studio.
+        </p>
       </section>
 
       {/* Key Features Section */}
       <section id="features" className="p-8 border-t border-zinc-800">
         <h2 className="text-5xl italic">Key Features</h2>
-        <p className="mt-4">What makes Studio unique and how it empowers creators.</p>
+        <p className="mt-4">
+          What makes Studio unique and how it empowers creators.
+        </p>
       </section>
 
       {/* Next Project Link */}

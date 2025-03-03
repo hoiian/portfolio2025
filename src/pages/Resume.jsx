@@ -119,9 +119,7 @@ const Resume = () => {
               <span className="text-xl font-bold">Hologram</span>
             </a>
             <span className="mx-2 text-zinc-400">›</span>
-            <span>
-              {content.Senior} UI/UX {content.Designer}
-            </span>
+            <span>UI/UX {content.Designer}</span>
 
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
