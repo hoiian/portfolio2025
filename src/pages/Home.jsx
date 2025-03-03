@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
 import ProjectCarousel from "../components/ProjectCarousel";
-import neteaseLogo from "../assets/images/neteaseLogo.png";
 
 const works = [
   {
     title: "Studio: Redefining AI-Powered Video Creation",
-    image: "src//assets/images/placeholder-image.jpg",
-    video: "src//assets/videos/work1/demo-FullStudio.mp4",
+    image: "/images/placeholder-image.jpg",
+    video: "/videos/work1/demo-FullStudio.mp4",
     link: "/work1",
     description:
       "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.",
@@ -16,7 +15,7 @@ const works = [
 
   {
     title: "NFT minting",
-    image: "src//assets/images/placeholder-image.jpg",
+    image: "/images/placeholder-image.jpg",
     video: "",
     link: "/work2",
     description:
@@ -251,7 +250,7 @@ export default function Home() {
               className="hover:opacity-70 transition-opacity duration-300"
             >
               <img
-                src={neteaseLogo}
+                src="/images/neteaseLogo.png"
                 alt="NetEase Logo"
                 className="mb-1 w-[120px]"
               />

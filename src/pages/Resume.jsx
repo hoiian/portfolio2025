@@ -132,16 +132,17 @@ const Resume = () => {
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
               <li>
-                Enhanced the Holoword AI platform by refining its design system
-                and, as the only designer, independently driving new iterations.
+                Refined the Holoword AI design system, driving new iterations as
+                the sole designer. Integrated TailwindCSS to optimize
+                development and accelerate implementation.
               </li>
               <li>
-                Led full-cycle design projects—from low-fidelity sketches to
-                complete high-fidelity prototypes—with close collaboration with
-                engineers and PMs.
+                Led full-cycle design projects from low-fidelity sketches to
+                high-fidelity prototypes, collaborating closely with engineers
+                and PMs.
               </li>
               <li>
-                Rapidly produced 0-to-1 designs for diverse features (e.g.,
+                Rapidly delivered 0-to-1 designs for diverse features (e.g.,
                 video editor, message inbox, launchpad) in a fast-paced startup
                 environment.
               </li>
@@ -171,7 +172,7 @@ const Resume = () => {
               {/* Tooltip */}
               <div className="absolute top-0 right-[100px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
                 <img
-                  src="src/assets/images/neteaseLogo.png" // replace with actual image URL
+                  src="/images/neteaseLogo.png" // replace with actual image URL
                   alt="Tooltip image"
                   className="w-[160px] object-cover rounded-xl mb-2"
                 />
@@ -283,7 +284,7 @@ const Resume = () => {
               {/* Tooltip */}
               <div className="absolute top-0 right-[200px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
                 <img
-                  src="src/assets/images/THULogo.svg" // replace with actual image URL
+                  src="/images/THULogo.svg" // replace with actual image URL
                   alt="Tooltip image"
                   className="w-[160px] object-cover rounded-xl mb-2"
                 />
