@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Work1BeforeAfter from "../components/Work1BeforeAfter";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
@@ -68,14 +69,14 @@ export default function Work1() {
         </Link>
       </header>
       {/* Work1 Content */}
-      <div className="flex-1 p-8 text-center max-w-4xl mx-auto">
+      <div className="flex-1 pt-48 pb-32 text-center max-w-4xl mx-auto">
         {/* Floating Glow Effect */}
         {/* <div className="absolute top-1/2 left-1/2  w-[1100px] h-[500px] bg-white opacity-20 blur-[150px] rounded-full"></div> */}
         <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
 
-        <div className="max-w-3xl mx-auto mt-56 mb-16 ">
+        <div className="max-w-3xl mx-auto mb-16 ">
           <span>Hologram, 2024</span>
-          <h1 className="italic text-4xl">
+          <h1 className="mt-3 italic text-4xl">
             Studio: Redefining AI-Powered Video Creation
           </h1>
         </div>
@@ -169,8 +170,8 @@ export default function Work1() {
             </p>
           </div>
         </div>
-
-        <div>
+        <Work1BeforeAfter />
+        {/* <div>
           <h3 className="text-2xl mt-10 mb-4">
             Before & After: Expanding the Studio Experience
           </h3>
@@ -190,7 +191,7 @@ export default function Work1() {
             and refine avatar-driven content seamlessly. AI Video Generator –
             Create videos instantly from text prompts.
           </p>
-        </div>
+        </div> */}
       </section>
       {/* Vtuber Playground */}
       <section id="Vtuber" className="p-8 border-t border-zinc-800">
