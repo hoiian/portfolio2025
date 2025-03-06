@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Work1() {
-  const [activeSection, setActiveSection] = useState("context");
+  const [activeSection, setActiveSection] = useState("background");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["context", "timeline", "features"];
-      let currentSection = "context";
+      const sections = ["background", "timeline", "features"];
+      let currentSection = "background";
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -31,12 +31,12 @@ export default function Work1() {
         <ul className="space-y-2 text-sm">
           <li>
             <a
-              href="#context"
+              href="#background"
               className={`block ${
-                activeSection === "context" ? "text-white" : "text-zinc-500"
+                activeSection === "background" ? "text-white" : "text-zinc-500"
               } hover:text-zinc-300`}
             >
-              Context
+              background
             </a>
           </li>
           <li>
@@ -84,8 +84,12 @@ export default function Work1() {
           Your browser does not support the video tag.
         </video>
       </div>
+
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+
       {/* Overview Section */}
-      <div className="max-w-5xl mx-auto py-24 border-t border-zinc-800">
+      <div className="max-w-6xl mx-auto py-24">
         <div>
           <h2 className="text-3xl italic">Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-white">
@@ -131,29 +135,40 @@ export default function Work1() {
           />
         </div>
       </div>
-      {/* Background Section */}
-      <section id="context" className="p-8 border-t border-zinc-800  ">
-        <div className="flex flex-row items-center justify-between text-5xl italic">
-          <h2 className="">Context</h2>
-          <h2>00</h2>
-        </div>
 
-        <p className="mt-4 max-w-3xl">
-          Video creation has always been a top demand for Hologram. Our goal is
-          to transform HoloStudio into a complete content creation platform for
-          users. Today’s creators rely on their digital identities—avatars,
-          PFPs, and IPs—and we're focusing on talking videos, a format popular
-          on TikTok, YouTube, and Twitch. Hologram uniquely lets users have
-          their personalized AI avatars speak on their behalf.
-        </p>
-        <p className="max-w-3xl">
-          The current studio is a basic canvas for one-time short clips (with
-          face tracking, background change, and picture-in-picture mode), but it
-          lacks the full editing experience—combining multiple tracks and
-          advanced effects—that creators need. We envision a studio modeled
-          after tools like TikTok’s editor and CapCut, offering seamless
-          recording, editing, and interaction all in one.
-        </p>
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+      {/* Background Section */}
+      <section id="background" className="max-w-6xl mx-auto py-24">
+        <h2 className="text-[11vw] md:text-[184px] whitespace-nowrap font-extrabold italic text-center">
+          Background
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-zinc-200">
+          {/* <!-- 左側空間 (1/3) --> */}
+          <div className="hidden md:block"></div>
+
+          {/* <!-- 右側文字 (2/3) --> */}
+          <div className="md:col-span-2 text-2xl leading-relaxed max-w-3xl">
+            <p className="mt-4">
+              Video creation has always been a top demand for Hologram. Our goal
+              is to transform HoloStudio into a complete content creation
+              platform for users. Today’s creators rely on their digital
+              identities—avatars, PFPs, and IPs—and we're focusing on talking
+              videos, a format popular on TikTok, YouTube, and Twitch. Hologram
+              uniquely lets users have their personalized AI avatars speak on
+              their behalf.
+            </p>
+            <p className="mt-6">
+              The current studio is a basic canvas for one-time short clips
+              (with face tracking, background change, and picture-in-picture
+              mode), but it lacks the full editing experience—combining multiple
+              tracks and advanced effects—that creators need. We envision a
+              studio modeled after tools like TikTok’s editor and CapCut,
+              offering seamless recording, editing, and interaction all in one.
+            </p>
+          </div>
+        </div>
 
         <div>
           <h3 className="text-2xl mt-10 mb-4">
