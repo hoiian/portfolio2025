@@ -25,7 +25,7 @@ export default function Work1() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white flex flex-col max-w-6xl mx-auto relative">
+    <div className="min-h-screen text-white flex flex-col mx-auto relative">
       {/* Fixed Right Navigation */}
       <nav className="fixed top-8 right-8 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
         <ul className="space-y-2 text-sm">
@@ -61,35 +61,78 @@ export default function Work1() {
           </li>
         </ul>
       </nav>
-
       {/* Header with Back Button */}
       <header className="p-6 fixed top-2 left-2">
         <Link to="/" className="hover:underline">
           ← Back
         </Link>
       </header>
-
       {/* Work1 Content */}
-      <div className="flex-1 p-8 text-left">
-        <video autoPlay loop muted playsInline>
+      <div className="flex-1 p-8 text-center max-w-4xl mx-auto">
+        {/* Floating Glow Effect */}
+        {/* <div className="absolute top-1/2 left-1/2  w-[1100px] h-[500px] bg-white opacity-20 blur-[150px] rounded-full"></div> */}
+        <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
+
+        <div className="max-w-3xl mx-auto mt-56 mb-16 ">
+          <span>Hologram, 2024</span>
+          <h1 className="italic text-4xl">
+            Studio: Redefining AI-Powered Video Creation
+          </h1>
+        </div>
+        <video autoPlay loop muted playsInline className="rounded-2xl">
           <source src="/videos/work1/demo-FullStudio.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1 className="italic text-4xl">
-          Studio: Redefining AI-Powered Video Creation
-        </h1>
-        <p className="mt-4  max-w-3xl">
-          Studio is an all-in-one content creation suite, enabling VTubers, AI
-          creators, and digital influencers to stream, record, and edit videos
-          seamlessly.
-        </p>
+      </div>
+      {/* Overview Section */}
+      <div className="max-w-5xl mx-auto py-24 border-t border-zinc-800">
         <div>
-          My Role: UI, UX, Prototyping Team: 1 engineer Duration: 2 months
+          <h2 className="text-3xl italic">Overview</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-white">
+            <div className="md:col-span-2">
+              <p className="text-zinc-400 mt-2">
+                Studio is an all-in-one content creation suite, enabling
+                VTubers, AI creators, and digital influencers to stream, record,
+                and edit videos seamlessly.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-3 gap-6 md:col-span-2">
+              <div className="flex flex-col items-start">
+                <span className="flex items-center gap-2 text-lg font-semibold">
+                  📅 Duration
+                </span>
+                <span className="text-zinc-400">2 months</span>
+              </div>
+
+              <div className="flex flex-col items-start">
+                <span className="flex items-center gap-2 text-lg font-semibold">
+                  🏷 Role
+                </span>
+                <span className="text-zinc-400">UXUI Designer</span>
+              </div>
+
+              <div className="flex flex-col items-start">
+                <span className="flex items-center gap-2 text-lg font-semibold">
+                  🔧 Tool
+                </span>
+                <span className="text-zinc-400">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-24">
+          <h2 className="text-3xl italic mb-4">Timeline</h2>
+          <img
+            src="/images/work1/timeline.png"
+            alt="Studio Timeline"
+            className="mb-1 w-full"
+          />
         </div>
       </div>
-
       {/* Background Section */}
-      <section id="context" className="p-8 border-t border-zinc-800">
+      <section id="context" className="p-8 border-t border-zinc-800  ">
         <div className="flex flex-row items-center justify-between text-5xl italic">
           <h2 className="">Context</h2>
           <h2>00</h2>
@@ -169,7 +212,6 @@ export default function Work1() {
           Key milestones in the development and launch of Studio.
         </p>
       </section>
-
       {/* Key Features Section */}
       <section id="features" className="p-8 border-t border-zinc-800">
         <h2 className="text-5xl italic">Key Features</h2>
@@ -177,7 +219,6 @@ export default function Work1() {
           What makes Studio unique and how it empowers creators.
         </p>
       </section>
-
       {/* Next Project Link */}
       <div className="p-6 text-center">
         <Link to="/work2" className="italic hover:underline text-4xl">

@@ -14,7 +14,7 @@ const works = [
   {
     title: "GaaS",
     image: "/images/pastProjCover/2gaas.png",
-    video: "/videos/pastProjCover/2gaas.mp4",
+    video: "/videos/pastProjCover/2GaaS.mp4",
     link: "https://whoiian.com/portfolio-item/gaas/",
     description: "Wallet and Market system for GameFi",
     background: "bg-[linear-gradient(142deg,#A475F5_0%,#2F34C1_100%)]",
