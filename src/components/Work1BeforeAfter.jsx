@@ -4,7 +4,7 @@ export default function Work1BeforeAfter() {
   const [activeTab, setActiveTab] = useState("after");
 
   return (
-    <div className="flex flex-col items-center text-center relative my-52 h-screen">
+    <div className="flex flex-col items-center text-center relative my-52 h-screen max-w-5xl">
       {/* Floating Glow Effect */}
       <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/10 blur-[150px] z-[-1]"></div>
       {/* Tabs */}
