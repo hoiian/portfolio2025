@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Work1BeforeAfter() {
-  const [activeTab, setActiveTab] = useState("after");
+  const [activeTab, setActiveTab] = useState("before");
 
   return (
     <div className="flex flex-col items-center text-center relative my-32 pb-16  max-w-[1360px] w-full mx-auto bg-white bg-opacity-[0.025] rounded-3xl">

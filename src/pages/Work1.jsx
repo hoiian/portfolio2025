@@ -29,7 +29,7 @@ export default function Work1() {
   return (
     <div className="min-h-screen text-white flex flex-col mx-auto relative">
       {/* Fixed Right Navigation */}
-      <nav className="fixed top-8 right-8 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
+      <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
         <ul className="space-y-2 text-sm">
           <li>
             <a
