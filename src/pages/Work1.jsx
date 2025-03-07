@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
+import { ChevronLeft } from "lucide-react";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
@@ -64,8 +65,12 @@ export default function Work1() {
       </nav>
       {/* Header with Back Button */}
       <header className="p-6 fixed top-2 left-2">
-        <Link to="/" className="hover:underline">
-          ← Back
+        <Link
+          to="/"
+          className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
+        >
+          <ChevronLeft strokeWidth={1} />
+          Back
         </Link>
       </header>
       {/* Work1 Content */}

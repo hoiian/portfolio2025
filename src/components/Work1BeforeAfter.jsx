@@ -4,23 +4,27 @@ export default function Work1BeforeAfter() {
   const [activeTab, setActiveTab] = useState("after");
 
   return (
-    <div className="flex flex-col items-center text-center relative my-52 h-screen">
+    <div className="flex flex-col items-center text-center relative my-32 pb-16  max-w-[1360px] w-full mx-auto bg-white bg-opacity-[0.025] rounded-3xl">
       {/* Floating Glow Effect */}
-      <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/10 blur-[150px] z-[-1]"></div>
+      <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white bg-opacity-[0.03] blur-[150px] z-[-1]"></div>
       {/* Tabs */}
-      <div className="flex space-x-6 text-4xl mb-6 font-heading font-bold">
+      <div className="flex space-x-6 text-4xl mb-16 font-heading w-full h-28 border-b border-zinc-800">
         <button
           onClick={() => setActiveTab("before")}
-          className={`italic transition hover:text-zinc-300 ${
-            activeTab === "before" ? "text-white underline" : "text-zinc-500"
+          className={` transition hover:text-zinc-300 w-full ${
+            activeTab === "before"
+              ? "text-white border-b-2 font-bold"
+              : "text-zinc-600"
           }`}
         >
           Before
         </button>
         <button
           onClick={() => setActiveTab("after")}
-          className={`italic transition hover:text-zinc-300 ${
-            activeTab === "after" ? "text-white underline" : "text-zinc-500"
+          className={` transition hover:text-zinc-300 w-full ${
+            activeTab === "after"
+              ? "text-white border-b-2 font-bold"
+              : "text-zinc-600"
           }`}
         >
           After
@@ -28,13 +32,13 @@ export default function Work1BeforeAfter() {
       </div>
 
       {/* Section Title */}
-      <h3
+      {/* <h3
         className={`text-xl italic text-zinc-300 mb-6 transition-opacity duration-500 ${
           activeTab === "before" ? "opacity-10" : "opacity-100"
         }`}
       >
         Expanding the Studio Experience
-      </h3>
+      </h3> */}
 
       {/* Before / After Content */}
       <div>
@@ -77,9 +81,20 @@ export default function Work1BeforeAfter() {
 
           {/* Card 2:  */}
           <div className="flex flex-col">
-            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+            <video
+              key={activeTab} // Forces re-render when activeTab changes
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-lg mb-4 h-full"
+            >
               <source
-                src="/videos/work1/demo-VtuberPlayground.mp4"
+                src={
+                  activeTab === "before"
+                    ? "/videos/work1/demo-VtuberPlayground-before.mp4"
+                    : "/videos/work1/demo-VtuberPlayground.mp4"
+                }
                 type="video/mp4"
               />
               Your browser does not support the video tag.
