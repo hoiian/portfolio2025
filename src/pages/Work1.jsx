@@ -169,9 +169,8 @@ export default function Work1() {
             </p>
           </div>
         </div>
-        <Work1BeforeAfter />
       </section>
-
+      <Work1BeforeAfter />
       {/* Vtuber Playground */}
       {/* <section id="Vtuber" className="p-8 border-t border-zinc-800">
         <div className="flex flex-row items-center justify-between text-5xl italic">

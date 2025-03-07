@@ -4,14 +4,14 @@ export default function Work1BeforeAfter() {
   const [activeTab, setActiveTab] = useState("after");
 
   return (
-    <div className="flex flex-col items-center text-center relative my-52 h-screen max-w-5xl">
+    <div className="flex flex-col items-center text-center relative my-52 h-screen">
       {/* Floating Glow Effect */}
       <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/10 blur-[150px] z-[-1]"></div>
       {/* Tabs */}
       <div className="flex space-x-6 text-4xl mb-6 font-heading font-bold">
         <button
           onClick={() => setActiveTab("before")}
-          className={`italic transition ${
+          className={`italic transition hover:text-zinc-300 ${
             activeTab === "before" ? "text-white underline" : "text-zinc-500"
           }`}
         >
@@ -19,7 +19,7 @@ export default function Work1BeforeAfter() {
         </button>
         <button
           onClick={() => setActiveTab("after")}
-          className={`italic transition ${
+          className={`italic transition hover:text-zinc-300 ${
             activeTab === "after" ? "text-white underline" : "text-zinc-500"
           }`}
         >
@@ -28,55 +28,85 @@ export default function Work1BeforeAfter() {
       </div>
 
       {/* Section Title */}
-      <h3 className="text-xl italic text-zinc-400 mb-6">
+      <h3
+        className={`text-xl italic text-zinc-300 mb-6 transition-opacity duration-500 ${
+          activeTab === "before" ? "opacity-10" : "opacity-100"
+        }`}
+      >
         Expanding the Studio Experience
       </h3>
 
       {/* Before / After Content */}
-      <div className="relative w-full max-w-6xl">
-        {/* Before */}
+      <div>
         <div
-          className={`absolute inset-0 w-full transition-opacity duration-500 ${
-            activeTab === "before" ? "opacity-100" : "opacity-0"
+          className={`max-w-7xl mx-auto flex flex-col justify-center items-center transition-opacity duration-150 ${
+            activeTab === "before" ? "opacity-10" : "opacity-100"
           }`}
         >
-          <div className="flex flex-wrap justify-center items-center space-x-12">
-            <div className="w-[400px]">
-              <img src="/images/placeholder-image.jpg" alt="Before Studio" />
-              <h3 className="text-zinc-50 mt-2 text-3xl">Studio</h3>
-            </div>
-            <div className="w-[400px]">
-              <img src="/images/placeholder-image.jpg" alt="Before Editor" />
-              <h3 className="text-zinc-50 mt-2 text-3xl">Video Editor</h3>
-            </div>
-          </div>
+          <img
+            src="/images/work1/background/Home.png"
+            alt="Studio"
+            className="w-1/3 rounded-lg"
+          />
+          <img
+            src="/images/work1/background/stuctureLine.png"
+            alt="Studio"
+            className="w-[858px] mt-[-202px]"
+          />
         </div>
 
-        {/* After */}
-        <div
-          className={`absolute inset-0 w-full transition-opacity duration-500 ${
-            activeTab === "after" ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="flex flex-wrap justify-center items-center space-x-12">
-            <div className="w-[400px]">
-              <img
-                src="/images/placeholder-image.jpg"
-                alt="Vtuber Playground"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {/* Card 1:  */}
+          <div
+            className={`flex flex-col transition-opacity duration-500 ${
+              activeTab === "before" ? "opacity-10" : "opacity-100"
+            }`}
+          >
+            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+              <source
+                src="/videos/work1/demo-FullStudio.mp4"
+                type="video/mp4"
               />
-              <h3 className="text-zinc-50 mt-2 text-3xl">Vtuber Playground</h3>
-            </div>
-            <div className="w-[400px]">
-              <img
-                src="/images/placeholder-image.jpg"
-                alt="AI Video Generator"
+              Your browser does not support the video tag.
+            </video>
+            <h3 className="text-3xl">Video Editor</h3>
+            <p className="text-zinc-300 mt-2">
+              Record, edit, and refine avatar-driven content seamlessly.
+            </p>
+          </div>
+
+          {/* Card 2:  */}
+          <div className="flex flex-col">
+            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+              <source
+                src="/videos/work1/demo-VtuberPlayground.mp4"
+                type="video/mp4"
               />
-              <h3 className="text-zinc-50 mt-2 text-3xl">AI Video Generator</h3>
-            </div>
-            <div className="w-[400px]">
-              <img src="/images/placeholder-image.jpg" alt="Video Editor" />
-              <h3 className="text-zinc-50 mt-2 text-3xl">Video Editor</h3>
-            </div>
+              Your browser does not support the video tag.
+            </video>
+            <h3 className="text-3xl">Vtuber Playground</h3>
+            <p className="text-zinc-300 mt-2">
+              Real-time AI avatar streaming with enhanced interactivity.
+            </p>
+          </div>
+
+          {/* Card 3:  */}
+          <div
+            className={`flex flex-col transition-opacity duration-500 ${
+              activeTab === "before" ? "opacity-10" : "opacity-100"
+            }`}
+          >
+            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+              <source
+                src="/videos/work1/demo-PromptToVideo.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h3 className="text-3xl">AI Video Generator</h3>
+            <p className="text-zinc-300 mt-2">
+              Create videos instantly from text prompts.
+            </p>
           </div>
         </div>
       </div>
