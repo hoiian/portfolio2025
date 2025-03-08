@@ -508,6 +508,66 @@ export default function Work1() {
             </div>
           </div>
         </div>
+
+        <div className="max-w-6xl mx-auto py-36  md:px-5 px-3">
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-32 items-start">
+            {/* Left 1/3 - Title */}
+            <h2 className="text-5xl md:text-6xl font-extrabold italic">
+              Design
+            </h2>
+
+            {/* Right 2/3 - Description */}
+            <p className="md:col-span-2 text-zinc-300">
+              Before: Tools were cluttered on the left, breaking user flow.
+              After: Centered toolbar, following standard video platforms like
+              TikTok Live.
+            </p>
+          </div>
+
+          {/* Design - 1.Avatar selection */}
+          <div className="mt-24 grid md:grid-cols-3 gap-8">
+            {/* Left 1/3 - Text Content */}
+            <div className="md:col-span-1">
+              {/* <h3 className="text-sm font-bold uppercase text-zinc-400">
+                Livestreaming Platform
+              </h3> */}
+              <h4 className="text-3xl italic font-semibold mt-2">
+                1. Avatar Selection
+              </h4>
+              <h4 className="text-lg font-bold mt-6 text-white">
+                Simplified Navigation
+              </h4>
+              <p className=" text-zinc-300 mt-4">
+                Reduced hierarchy for a more intuitive experience; each section
+                contains only one or two layers to minimize unnecessary clicks.
+              </p>
+
+              <h4 className="text-lg font-bold mt-6 text-white">
+                Compact Thumbnails
+              </h4>
+              <p className="text-zinc-300 mt-2">
+                Smaller thumbnails allow more projects to be displayed per
+                screen, improving scannability and accessibility.
+              </p>
+            </div>
+
+            {/* Right 1/3 - Hyper Logo */}
+            <div className="flex justify-end mt-5 bg-zinc-900 md:col-span-2 rounded-xl"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+      {/* VVideo Editor */}
+      <section
+        id="editor"
+        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
+      >
+        <h2 className="text-[11vw] md:text-[216px] whitespace-nowrap font-extrabold italic text-center">
+          Video Editor
+        </h2>
       </section>
 
       {/* Key Features Section */}
