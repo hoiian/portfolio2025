@@ -8,7 +8,7 @@ export default function Work1() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["background", "vtuber", "features"];
+      const sections = ["background", "vtuber", "editor"];
       let currentSection = "background";
       sections.forEach((section) => {
         const element = document.getElementById(section);
@@ -53,12 +53,12 @@ export default function Work1() {
           </li>
           <li>
             <a
-              href="#features"
+              href="#editor"
               className={`block ${
-                activeSection === "features" ? "text-white" : "text-zinc-500"
+                activeSection === "editor" ? "text-white" : "text-zinc-500"
               } hover:text-zinc-300`}
             >
-              Key Features
+              Video Editor
             </a>
           </li>
         </ul>
@@ -529,16 +529,13 @@ export default function Work1() {
           <div className="mt-24 grid md:grid-cols-3 gap-8">
             {/* Left 1/3 - Text Content */}
             <div className="md:col-span-1">
-              {/* <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Livestreaming Platform
-              </h3> */}
               <h4 className="text-3xl italic font-semibold mt-2">
                 1. Avatar Selection
               </h4>
               <h4 className="text-lg font-bold mt-6 text-white">
                 Simplified Navigation
               </h4>
-              <p className=" text-zinc-300 mt-4">
+              <p className=" text-zinc-300 mt-1">
                 Reduced hierarchy for a more intuitive experience; each section
                 contains only one or two layers to minimize unnecessary clicks.
               </p>
@@ -546,14 +543,33 @@ export default function Work1() {
               <h4 className="text-lg font-bold mt-6 text-white">
                 Compact Thumbnails
               </h4>
-              <p className="text-zinc-300 mt-2">
+              <p className="text-zinc-300 mt-1">
                 Smaller thumbnails allow more projects to be displayed per
                 screen, improving scannability and accessibility.
               </p>
             </div>
 
-            {/* Right 1/3 - Hyper Logo */}
-            <div className="flex justify-end mt-5 bg-zinc-900 md:col-span-2 rounded-xl"></div>
+            {/* Right 2/3 */}
+            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl"></div>
+          </div>
+
+          {/* Design - 2.Device Setting */}
+          <div className="mt-24 grid md:grid-cols-3 gap-8">
+            {/* Left 1/3 - Text Content */}
+            <div className="md:col-span-1">
+              <h4 className="text-3xl italic font-semibold mt-2">
+                2. Device Setting
+              </h4>
+              <h4 className="text-lg font-bold mt-6 text-white">
+                Streamlined Device Settings
+              </h4>
+              <p className=" text-zinc-300 mt-1">
+                Consolidated for easier access and better discoverability.
+              </p>
+            </div>
+
+            {/* Right 2/3 */}
+            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl"></div>
           </div>
         </div>
       </section>
