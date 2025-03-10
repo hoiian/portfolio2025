@@ -329,12 +329,12 @@ export default function Work1() {
           {/* Image Section */}
           <div className="mt-12 grid md:grid-cols-2 gap-6">
             <img
-              src="/images/placeholder-image.jpg"
+              src="/images/work1/vtuber/exploration/hyper1.png"
               alt="Hyper Livestream Interface"
               className="rounded-xl shadow-lg"
             />
             <img
-              src="/images/placeholder-image.jpg"
+              src="/images/work1/vtuber/exploration/hyper2.png"
               alt="Hyper Avatar Builder"
               className="rounded-xl shadow-lg"
             />
@@ -365,7 +365,7 @@ export default function Work1() {
 
           <video autoPlay loop muted playsInline className="rounded-2xl">
             <source
-              src="/videos/work1/Exploration/2-GoogleMeet.mp4"
+              src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -377,7 +377,7 @@ export default function Work1() {
               <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
                 <video autoPlay loop muted playsInline className="">
                   <source
-                    src="/videos/work1/Exploration/2-GoogleMeet-Setting.mp4"
+                    src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -400,7 +400,7 @@ export default function Work1() {
                   className="scale-[180%] ml-40"
                 >
                   <source
-                    src="/videos/work1/Exploration/2-GoogleMeet-Hover.mp4"
+                    src="/videos/work1/vtuber/exploration/2-GoogleMeet-Hover.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -415,11 +415,11 @@ export default function Work1() {
 
             {/* Card 3: Toast Notifications */}
             <div className="flex flex-col ">
-              <div className="bg-zinc-900 h-[300px] w-full rounded-3xl overflow-hidden mb-4">
+              <div className="bg-zinc-900 h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
                 <img
-                  src="/images/placeholder-image.jpg"
+                  src="/images/work1/vtuber/exploration/toast.png"
                   alt="Toast Notifications"
-                  className="w-full object-cover"
+                  className="w-60 object-cover"
                 />
               </div>
               <h3 className="text-3xl">Toast Notifications</h3>
@@ -482,7 +482,7 @@ export default function Work1() {
               <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                 <video autoPlay loop muted playsInline className="">
                   <source
-                    src="/videos/work1/Exploration/3-FigJam-Toolbar.mp4"
+                    src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -497,7 +497,7 @@ export default function Work1() {
               <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                 <video autoPlay loop muted playsInline className="">
                   <source
-                    src="/videos/work1/Exploration/3-Figma-Toolbar.mp4"
+                    src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -550,7 +550,22 @@ export default function Work1() {
             </div>
 
             {/* Right 2/3 */}
-            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl"></div>
+            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl">
+              <video autoPlay loop muted playsInline className="w-1/2">
+                <source
+                  src="/videos/work1/vtuber/design/menu-before.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <video autoPlay loop muted playsInline className="w-1/2">
+                <source
+                  src="/videos/work1/vtuber/design/menu.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
 
           {/* Design - 2.Device Setting */}
@@ -569,7 +584,23 @@ export default function Work1() {
             </div>
 
             {/* Right 2/3 */}
-            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl"></div>
+            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl">
+              {" "}
+              <video autoPlay loop muted playsInline className="w-1/2">
+                <source
+                  src="/videos/work1/vtuber/design/setting-before.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <video autoPlay loop muted playsInline className="w-1/2">
+                <source
+                  src="/videos/work1/vtuber/design/setting.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </section>
