@@ -68,7 +68,7 @@ export default function Work1BeforeAfter() {
           >
             <video autoPlay loop muted playsInline className="rounded-lg mb-4">
               <source
-                src="/videos/work1/demo-FullStudio.mp4"
+                src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

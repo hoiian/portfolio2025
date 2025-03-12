@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, MoveRight } from "lucide-react";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
@@ -615,6 +615,88 @@ export default function Work1() {
         <h2 className="text-[11vw] md:text-[216px] whitespace-nowrap font-extrabold italic text-center">
           Video Editor
         </h2>
+        {/* Title and Description Section */}
+        <div className="grid md:grid-cols-3 gap-32 items-start">
+          {/* Left 1/3 - Title */}
+          <h2 className="text-5xl md:text-6xl font-extrabold italic">
+            Background
+          </h2>
+
+          {/* Right 2/3 - Description */}
+          <p className="md:col-span-2 text-zinc-300">
+            Designed a 0-to-1 video editor that lets users generate videos using
+            our avatars with face tracking and auto-generated copy, then edit
+            them for a complete creative experience.
+          </p>
+        </div>
+        {/* Title and Description Section */}
+        <div className="grid md:grid-cols-3 gap-32 items-start mt-10">
+          {/* Left 1/3 - Title */}
+          <h2 className="text-5xl md:text-6xl font-extrabold italic">
+            Structure
+          </h2>
+
+          {/* Right 2/3 - Description */}
+          <p className="md:col-span-2 text-zinc-300">
+            Unlike typical editing software, HoloStudio integrates both video
+            recording and post-production editing services, allowing users to
+            seamlessly upload their final content to social media.
+          </p>
+        </div>
+
+        <div className="flex flex-row w-full mx-auto mt-16 1items-center">
+          {/* Card 1:   */}
+          <div className="flex flex-col">
+            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+              Home
+            </div>
+            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+              <img
+                src="/images/work1/background/Home.png"
+                alt="Studio Homepage"
+                className="mb-1 w-full"
+              />
+            </div>
+          </div>
+          <MoveRight
+            strokeWidth={0.5}
+            className="w-[200px] h-[60px] text-zinc-400"
+          />
+          {/* Card 2:   */}
+          <div className="flex flex-col  ">
+            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+              Record Mode
+            </div>
+            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+              <video autoPlay loop muted playsInline className="">
+                <source
+                  src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>{" "}
+          <MoveRight
+            strokeWidth={0.5}
+            className="w-[200px] h-[60px] text-zinc-400"
+          />
+          {/* Card 3:   */}
+          <div className="flex flex-col  ">
+            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+              Edit Mode
+            </div>
+            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+              <video autoPlay loop muted playsInline className="">
+                <source
+                  src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Key Features Section */}
