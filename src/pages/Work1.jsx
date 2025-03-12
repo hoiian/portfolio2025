@@ -363,7 +363,14 @@ export default function Work1() {
             </div>
           </div>
 
-          <video autoPlay loop muted playsInline className="rounded-2xl">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            className="rounded-2xl"
+          >
             <source
               src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
               type="video/mp4"
@@ -793,6 +800,85 @@ export default function Work1() {
             />
             Your browser does not support the video tag.
           </video>
+        </div>
+
+        {/* Design - Record Mode */}
+        <div className="max-w-6xl mx-auto mt-32">
+          <h2 className="text-5xl md:text-6xl font-extrabold italic">
+            Design - Record Mode
+          </h2>
+          <div className="space-y-4 text-zinc-300 mt-4 mb-6">
+            <h3 className="text-xl font-bold">
+              Record Mode is the project’s key innovation, featuring three input
+              modes:
+            </h3>
+            <ul className="list-disc list-inside space-y-2 text-zinc-300">
+              <li>
+                <strong>Narrate (Text Mode):</strong> Your avatar reads aloud
+                your input content.
+              </li>
+              <li>
+                <strong>Vtube (Camera Mode):</strong> Captures dynamic video
+                with face tracking.
+              </li>
+              <li>
+                <strong>Companion (Microphone Mode):</strong> Enables real-time
+                avatar conversations.
+              </li>
+            </ul>
+            <p className="">
+              This approach delivers a unique, efficient recording experience.
+            </p>
+          </div>
+
+          <img src="/images/work1/videoeditor/RecordModesTable.png" />
+
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            className="rounded-xl border border-zinc-800 mt-10"
+          >
+            <source
+              src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        {/* Design - Edit Mode */}
+        <div className="max-w-6xl mx-auto mt-32">
+          <h2 className="text-5xl md:text-6xl font-extrabold italic">
+            Design - Edit Mode
+          </h2>
+          <div className="space-y-4 text-zinc-300 mt-4 mb-6">
+            <p className="text-zinc-300">
+              Edit Mode, while more conventional and comparable to tools like
+              CapCut, offers a familiar and intuitive interface that complements
+              the innovative Record Mode, ensuring users can easily refine and
+              enhance their videos post-recording. This comprehensive approach
+              allows HoloStudio to deliver a seamless end-to-end video creation
+              experience that sets it apart in the market.
+            </p>
+
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-xl border border-zinc-800"
+            >
+              <source
+                src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
 
