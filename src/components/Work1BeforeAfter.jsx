@@ -73,7 +73,9 @@ export default function Work1BeforeAfter() {
               />
               Your browser does not support the video tag.
             </video>
-            <h3 className="text-3xl">Video Editor</h3>
+            <h3 className="text-3xl hover:text-zinc-400">
+              <a href="#editor">Video Editor</a>
+            </h3>
             <p className="text-zinc-300 mt-2">
               Record, edit, and refine avatar-driven content seamlessly.
             </p>
@@ -99,7 +101,9 @@ export default function Work1BeforeAfter() {
               />
               Your browser does not support the video tag.
             </video>
-            <h3 className="text-3xl">Vtuber Playground</h3>
+            <h3 className="text-3xl hover:text-zinc-400">
+              <a href="#vtuber">Vtuber Playground</a>
+            </h3>
             <p className="text-zinc-300 mt-2">
               Real-time AI avatar streaming with enhanced interactivity.
             </p>
@@ -118,7 +122,9 @@ export default function Work1BeforeAfter() {
               />
               Your browser does not support the video tag.
             </video>
-            <h3 className="text-3xl">AI Video Generator</h3>
+            <h3 className="text-3xl hover:text-zinc-400">
+              <a href="#prompt">AI Video Generator</a>
+            </h3>
             <p className="text-zinc-300 mt-2">
               Create videos instantly from text prompts.
             </p>

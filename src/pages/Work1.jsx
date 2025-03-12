@@ -5,20 +5,45 @@ import { ChevronLeft, MoveRight } from "lucide-react";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    document.getElementById(targetId)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["background", "vtuber", "editor"];
+      const sections = [
+        "background",
+        "vtuber",
+        "vtuber-competitor",
+        "vtuber-design",
+        "editor",
+        "editor-background",
+        "editor-structure",
+        "editor-competitor",
+        "editor-design",
+        "prompt",
+        "prompt-background",
+        "conclusion",
+      ];
       let currentSection = "background";
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
+          // Adjust the threshold for detecting active sections
+          if (
+            rect.top <= window.innerHeight * 0.2 &&
+            rect.bottom >= window.innerHeight * 0.2
+          ) {
             currentSection = section;
           }
         }
       });
+
       setActiveSection(currentSection);
     };
 
@@ -31,9 +56,11 @@ export default function Work1() {
       {/* Fixed Right Navigation */}
       <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
         <ul className="space-y-2 text-sm">
+          {/* Background / Context */}
           <li>
             <a
               href="#background"
+              onClick={(e) => handleSmoothScroll(e, "background")}
               className={`block ${
                 activeSection === "background" ? "text-white" : "text-zinc-500"
               } hover:text-zinc-300`}
@@ -41,28 +68,158 @@ export default function Work1() {
               Background
             </a>
           </li>
+
+          {/* Vtuber Playground (Redesign) */}
           <li>
             <a
               href="#vtuber"
+              onClick={(e) => handleSmoothScroll(e, "vtuber")}
               className={`block ${
                 activeSection === "vtuber" ? "text-white" : "text-zinc-500"
               } hover:text-zinc-300`}
             >
               Vtuber Playground
             </a>
+            <ul className="pl-4 space-y-1">
+              <li>
+                <a
+                  href="#vtuber-competitor"
+                  onClick={(e) => handleSmoothScroll(e, "vtuber-competitor")}
+                  className={`block ${
+                    activeSection === "vtuber-competitor"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Competitor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#vtuber-design"
+                  onClick={(e) => handleSmoothScroll(e, "vtuber-design")}
+                  className={`block ${
+                    activeSection === "vtuber-design"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Design
+                </a>
+              </li>
+            </ul>
           </li>
+
+          {/* Video Editor (0 to 1) */}
           <li>
             <a
               href="#editor"
+              onClick={(e) => handleSmoothScroll(e, "editor")}
               className={`block ${
                 activeSection === "editor" ? "text-white" : "text-zinc-500"
               } hover:text-zinc-300`}
             >
               Video Editor
             </a>
+            <ul className="pl-4 space-y-1">
+              <li>
+                <a
+                  href="#editor-background"
+                  onClick={(e) => handleSmoothScroll(e, "editor-background")}
+                  className={`block ${
+                    activeSection === "editor-background"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Background
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#editor-structure"
+                  onClick={(e) => handleSmoothScroll(e, "editor-structure")}
+                  className={`block ${
+                    activeSection === "editor-structure"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Structure
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#editor-competitor"
+                  onClick={(e) => handleSmoothScroll(e, "editor-competitor")}
+                  className={`block ${
+                    activeSection === "editor-competitor"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Competitor
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#editor-design"
+                  onClick={(e) => handleSmoothScroll(e, "editor-design")}
+                  className={`block ${
+                    activeSection === "editor-design"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Design
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          {/* Prompt to Video (0 to 1) */}
+          <li>
+            <a
+              href="#prompt"
+              onClick={(e) => handleSmoothScroll(e, "prompt")}
+              className={`block ${
+                activeSection === "prompt" ? "text-white" : "text-zinc-500"
+              } hover:text-zinc-300`}
+            >
+              Prompt to Video
+            </a>
+            <ul className="pl-4 space-y-1">
+              <li>
+                <a
+                  href="#prompt-background"
+                  onClick={(e) => handleSmoothScroll(e, "prompt-background")}
+                  className={`block ${
+                    activeSection === "prompt-background"
+                      ? "text-white"
+                      : "text-zinc-500"
+                  } hover:text-zinc-300`}
+                >
+                  Background
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          {/* Conclusion */}
+          <li>
+            <a
+              href="#conclusion"
+              onClick={(e) => handleSmoothScroll(e, "conclusion")}
+              className={`block ${
+                activeSection === "conclusion" ? "text-white" : "text-zinc-500"
+              } hover:text-zinc-300`}
+            >
+              Conclusion
+            </a>
           </li>
         </ul>
       </nav>
+
       {/* Header with Back Button */}
       <header className="p-6 fixed top-2 left-2">
         <Link
@@ -85,7 +242,10 @@ export default function Work1() {
           </h1>
         </div>
         <video autoPlay loop muted playsInline className="rounded-2xl">
-          <source src="/videos/work1/demo-FullStudio.mp4" type="video/mp4" />
+          <source
+            src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -250,7 +410,10 @@ export default function Work1() {
           />
         </div>
 
-        <div className="max-w-6xl mx-auto py-36  md:px-5 px-3">
+        <div
+          id="vtuber-competitor"
+          className="max-w-6xl mx-auto py-36  md:px-5 px-3"
+        >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
@@ -516,7 +679,10 @@ export default function Work1() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto py-36  md:px-5 px-3">
+        <div
+          id="vtuber-design"
+          className="max-w-6xl mx-auto py-36  md:px-5 px-3"
+        >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
@@ -633,7 +799,7 @@ export default function Work1() {
 
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
-      {/* VVideo Editor */}
+      {/* Video Editor */}
       <section
         id="editor"
         className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
@@ -641,8 +807,9 @@ export default function Work1() {
         <h2 className="text-[11vw] md:text-[216px] whitespace-nowrap font-extrabold italic text-center">
           Video Editor
         </h2>
+
         {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3 items-start">
+        <div id="editor-background" className="grid md:grid-cols-3 items-start">
           {/* Left 1/3 - Title */}
           <h2 className="text-5xl md:text-6xl font-extrabold italic">
             Background
@@ -655,76 +822,80 @@ export default function Work1() {
             them for a complete creative experience.
           </p>
         </div>
-        {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3  items-start mt-32">
-          {/* Left 1/3 - Title */}
-          <h2 className="text-5xl md:text-6xl font-extrabold italic">
-            Structure
-          </h2>
 
-          {/* Right 2/3 - Description */}
-          <p className="md:col-span-2 text-zinc-300">
-            Unlike typical editing software, HoloStudio integrates both video
-            recording and post-production editing services, allowing users to
-            seamlessly upload their final content to social media.
-          </p>
-        </div>
+        <div id="editor-structure">
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3  items-start mt-32">
+            {/* Left 1/3 - Title */}
+            <h2 className="text-5xl md:text-6xl font-extrabold italic">
+              Structure
+            </h2>
 
-        <div className="flex flex-row w-full mx-auto mt-16">
-          {/* Card 1:   */}
-          <div className="flex flex-col">
-            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
-              Home
+            {/* Right 2/3 - Description */}
+            <p className="md:col-span-2 text-zinc-300">
+              Unlike typical editing software, HoloStudio integrates both video
+              recording and post-production editing services, allowing users to
+              seamlessly upload their final content to social media.
+            </p>
+          </div>
+
+          <div className="flex flex-row w-full mx-auto mt-16">
+            {/* Card 1:   */}
+            <div className="flex flex-col">
+              <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
+                Home
+              </div>
+              <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+                <img
+                  src="/images/work1/background/Home.png"
+                  alt="Studio Homepage"
+                  className="mb-1 w-full"
+                />
+              </div>
             </div>
-            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-              <img
-                src="/images/work1/background/Home.png"
-                alt="Studio Homepage"
-                className="mb-1 w-full"
-              />
+            <MoveRight
+              strokeWidth={0.5}
+              className="w-[200px] h-[60px] text-zinc-400"
+            />
+            {/* Card 2:   */}
+            <div className="flex flex-col  ">
+              <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
+                Record Mode
+              </div>
+              <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+                <video autoPlay loop muted playsInline className="">
+                  <source
+                    src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>{" "}
+            <MoveRight
+              strokeWidth={0.5}
+              className="w-[200px] h-[60px] text-zinc-400"
+            />
+            {/* Card 3:   */}
+            <div className="flex flex-col  ">
+              <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
+                Edit Mode
+              </div>
+              <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
+                <video autoPlay loop muted playsInline className="">
+                  <source
+                    src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
-          <MoveRight
-            strokeWidth={0.5}
-            className="w-[200px] h-[60px] text-zinc-400"
-          />
-          {/* Card 2:   */}
-          <div className="flex flex-col  ">
-            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
-              Record Mode
-            </div>
-            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-              <video autoPlay loop muted playsInline className="">
-                <source
-                  src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>{" "}
-          <MoveRight
-            strokeWidth={0.5}
-            className="w-[200px] h-[60px] text-zinc-400"
-          />
-          {/* Card 3:   */}
-          <div className="flex flex-col  ">
-            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
-              Edit Mode
-            </div>
-            <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-              <video autoPlay loop muted playsInline className="">
-                <source
-                  src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
         </div>
+
         {/* Competitor */}
-        <div className="max-w-6xl mx-auto">
+        <div id="editor-competitor" className="max-w-6xl mx-auto">
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 items-start mt-32">
             {/* Left 1/3 - Title */}
@@ -803,7 +974,7 @@ export default function Work1() {
         </div>
 
         {/* Design - Record Mode */}
-        <div className="max-w-6xl mx-auto mt-32">
+        <div id="editor-design" className="max-w-6xl mx-auto mt-32">
           <h2 className="text-5xl md:text-6xl font-extrabold italic">
             Design - Record Mode
           </h2>
@@ -879,6 +1050,35 @@ export default function Work1() {
               Your browser does not support the video tag.
             </video>
           </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+      {/* Video Editor */}
+      <section
+        id="prompt"
+        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
+      >
+        <h2 className="text-[11vw] md:text-[134px] whitespace-nowrap font-extrabold italic text-center">
+          AI Video Generator
+        </h2>
+
+        {/* Title and Description Section */}
+        <div id="prompt-background" className="grid md:grid-cols-3 items-start">
+          {/* Left 1/3 - Title */}
+          <h2 className="text-5xl md:text-6xl font-extrabold italic">
+            Background
+          </h2>
+
+          {/* Right 2/3 - Description */}
+          <p className="md:col-span-2 text-zinc-300">
+            With GPT-like platforms popularizing input-based interactions, our
+            Prompt to Video feature lets users create videos from text. Choose
+            between a single-person narration with subtitles or a two-person
+            split-screen dialogue, and with simple customization, generate the
+            video you envision.
+          </p>
         </div>
       </section>
 
