@@ -252,10 +252,10 @@ export default function Work1() {
 
         <div className="max-w-6xl mx-auto py-36  md:px-5 px-3">
           {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-32 items-start">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
             <h2 className="text-5xl md:text-6xl font-extrabold italic">
-              Exploration
+              Competitor
             </h2>
 
             {/* Right 2/3 - Description */}
@@ -511,7 +511,7 @@ export default function Work1() {
 
         <div className="max-w-6xl mx-auto py-36  md:px-5 px-3">
           {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-32 items-start">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
             <h2 className="text-5xl md:text-6xl font-extrabold italic">
               Design
@@ -550,26 +550,36 @@ export default function Work1() {
             </div>
 
             {/* Right 2/3 */}
-            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl">
-              <video autoPlay loop muted playsInline className="w-1/2">
-                <source
-                  src="/videos/work1/vtuber/design/menu-before.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <video autoPlay loop muted playsInline className="w-1/2">
-                <source
-                  src="/videos/work1/vtuber/design/menu.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+            <div className="flex flex-row w-full mx-auto bg-zinc-900 md:col-span-2 rounded-xl p-10 gap-8">
+              <div>
+                <h4 className="text-3xl italic font-semibold mb-2 text-center">
+                  Before
+                </h4>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/menu-before.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <h4 className="text-3xl italic font-semibold mb-2 text-center">
+                  After
+                </h4>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/menu.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
 
           {/* Design - 2.Device Setting */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
+          <div className="mt-24 grid md:grid-cols-3 gap-8 place-items-center1">
             {/* Left 1/3 - Text Content */}
             <div className="md:col-span-1">
               <h4 className="text-3xl italic font-semibold mt-2">
@@ -584,22 +594,31 @@ export default function Work1() {
             </div>
 
             {/* Right 2/3 */}
-            <div className="flex justify-end bg-zinc-900 md:col-span-2 rounded-xl">
-              {" "}
-              <video autoPlay loop muted playsInline className="w-1/2">
-                <source
-                  src="/videos/work1/vtuber/design/setting-before.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <video autoPlay loop muted playsInline className="w-1/2">
-                <source
-                  src="/videos/work1/vtuber/design/setting.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+            <div className="flex flex-row w-full mx-auto bg-zinc-900 md:col-span-2 rounded-xl p-10 gap-8">
+              <div className="w-1/2">
+                <h4 className="text-3xl italic font-semibold mb-2 text-center">
+                  Before
+                </h4>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/setting-before.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>{" "}
+              <div className="w-1/2">
+                <h4 className="text-3xl italic font-semibold mb-2 text-center">
+                  After
+                </h4>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/setting.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -616,7 +635,7 @@ export default function Work1() {
           Video Editor
         </h2>
         {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3 gap-32 items-start">
+        <div className="grid md:grid-cols-3 items-start">
           {/* Left 1/3 - Title */}
           <h2 className="text-5xl md:text-6xl font-extrabold italic">
             Background
@@ -630,7 +649,7 @@ export default function Work1() {
           </p>
         </div>
         {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3 gap-32 items-start mt-10">
+        <div className="grid md:grid-cols-3  items-start mt-32">
           {/* Left 1/3 - Title */}
           <h2 className="text-5xl md:text-6xl font-extrabold italic">
             Structure
@@ -644,10 +663,10 @@ export default function Work1() {
           </p>
         </div>
 
-        <div className="flex flex-row w-full mx-auto mt-16 1items-center">
+        <div className="flex flex-row w-full mx-auto mt-16">
           {/* Card 1:   */}
           <div className="flex flex-col">
-            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
               Home
             </div>
             <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
@@ -664,7 +683,7 @@ export default function Work1() {
           />
           {/* Card 2:   */}
           <div className="flex flex-col  ">
-            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
               Record Mode
             </div>
             <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
@@ -683,7 +702,7 @@ export default function Work1() {
           />
           {/* Card 3:   */}
           <div className="flex flex-col  ">
-            <div className="text-3xl text-center p-3 border border-zinc-600 font-heading">
+            <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
               Edit Mode
             </div>
             <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
@@ -696,6 +715,84 @@ export default function Work1() {
               </video>
             </div>
           </div>
+        </div>
+        {/* Competitor */}
+        <div className="max-w-6xl mx-auto">
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 items-start mt-32">
+            {/* Left 1/3 - Title */}
+            <h2 className="text-5xl md:text-6xl font-extrabold italic">
+              Competitor
+            </h2>
+
+            {/* Right 2/3 - Description */}
+            <p className="md:col-span-2 text-zinc-300">..</p>
+          </div>
+
+          {/* Competitor - 1. CapCut */}
+          <div className="mt-24 grid md:grid-cols-3 gap-8">
+            {/* Left 1/3 - Text Content */}
+            <div className="md:col-span-2">
+              <h3 className="text-sm font-bold uppercase text-zinc-400">
+                Editor Platform
+              </h3>
+              <h4 className="text-3xl italic font-semibold mt-2">CapCut</h4>
+              <p className=" text-zinc-300 mt-4">...</p>
+            </div>
+
+            {/* Right 1/3 - Logo */}
+            <div className="flex1 justify-end flex mt-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="128"
+                height="24"
+                viewBox="0 0 128 24"
+                fill="none"
+              >
+                <path
+                  d="M30.8152 5.03318V0.306107L25.1296 3.29079V3.11417C25.1296 1.22989 23.7792 0.0927734 21.8235 0.0927734H3.80127C1.74137 0.0927734 0.496094 1.22989 0.496094 3.11417V7.87696L8.4569 11.9998L0.496094 16.1583V20.9211C0.496094 22.7696 1.74137 23.9067 3.80127 23.9067H21.8225C23.7772 23.9067 25.1267 22.7696 25.1267 20.9211V20.673L30.8132 23.6934V18.8959L17.5925 11.9998L30.8152 5.03318ZM13.0083 14.3444L22.784 19.4644H3.19501L13.0064 14.3444H13.0083ZM22.7125 4.53606L13.0073 9.61836L3.19699 4.53606H22.7105H22.7125ZM47.8769 19.1181C42.1755 19.1181 38.1926 15.4984 38.1926 10.3129C38.1926 5.12744 42.1755 1.50772 47.8769 1.50772C49.3157 1.50772 51.0055 1.67045 53.5953 2.84924V6.53742C51.7209 5.49259 49.8684 4.96273 48.0883 4.96273C44.5162 4.96273 42.0217 7.16353 42.0217 10.3109C42.0217 13.4593 44.5162 15.6611 48.0883 15.6611C49.8198 15.6611 51.7229 15.1214 53.5953 14.0993V17.7756C51.0035 18.9544 49.3157 19.1181 47.8769 19.1181ZM61.2316 19.1181C57.8609 19.1181 55.5073 16.5581 55.5073 12.8938C55.5073 9.22939 57.9631 6.6426 61.3457 6.6426C63.2151 6.6426 64.5149 7.21315 65.5598 8.49612L65.6441 8.59733V7.25085H68.9404V18.8522H65.6441V17.2051L65.5578 17.3281C64.7104 18.5496 63.3352 19.1181 61.2316 19.1181ZM62.3707 9.408C60.3961 9.408 58.9633 10.8745 58.9633 12.8938C58.9633 14.914 60.3961 16.3537 62.3707 16.3537C64.3453 16.3537 65.8039 14.8971 65.8039 12.8938C65.8039 10.8904 64.3611 9.408 62.3707 9.408ZM71.4408 23.9067V7.25085H74.7649V8.69953L74.8502 8.58046C75.4882 7.68446 76.9984 6.64161 79.1556 6.64161C82.4697 6.64161 84.8739 9.27107 84.8739 12.8928C84.8739 16.5145 82.5104 19.1171 79.1288 19.1171C77.1105 19.1171 75.6708 18.5367 74.8502 17.3877L74.7639 17.2686V23.9067H71.4408ZM78.0095 9.40601C76.0349 9.40601 74.6051 10.8726 74.6051 12.8928C74.6051 14.912 76.0379 16.3517 78.0105 16.3517C79.9831 16.3517 81.3911 14.8961 81.3911 12.8928C81.3911 10.8884 79.9682 9.40601 78.0095 9.40601ZM96.5894 19.1181C90.8869 19.1181 86.905 15.4984 86.905 10.3129C86.905 5.12744 90.8869 1.50772 96.5894 1.50772C98.0271 1.50772 99.7169 1.67045 102.308 2.84924V6.53742C100.432 5.49259 98.5798 4.96273 96.8017 4.96273C93.2296 4.96273 90.7351 7.16353 90.7351 10.3109C90.7351 13.4593 93.2296 15.6611 96.8017 15.6611C98.5332 15.6611 100.436 15.1214 102.308 14.0993V17.7756C99.7159 18.9544 98.0271 19.1181 96.5894 19.1181ZM110.438 19.1181C106.721 19.1181 104.321 17.3638 104.321 14.651V6.90654H107.618V13.6886C107.618 15.3555 108.673 16.3508 110.438 16.3508C112.203 16.3508 113.208 15.3565 113.208 13.6895V6.90654H116.504V14.6481C116.504 17.3629 114.123 19.1162 110.438 19.1162V19.1181ZM123.78 19.1181C120.129 19.1181 118.833 16.8538 118.833 14.915V6.28639L122.129 4.55194V6.90753H126.679V9.60446H122.129V14.2502C122.129 14.8743 122.367 16.326 124.578 16.326C125.191 16.326 125.953 16.1642 126.677 15.8814V18.6597C125.524 19.0824 124.17 19.1162 123.778 19.1162L123.78 19.1181Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <video autoPlay loop muted playsInline className="rounded-2xl">
+            <source
+              src="/videos/work1/videoeditor/capcut-record.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* Competitor - 2. D-ID */}
+          <div className="mt-24 grid md:grid-cols-3 gap-8">
+            {/* Left 1/3 - Text Content */}
+            <div className="md:col-span-2">
+              <h3 className="text-sm font-bold uppercase text-zinc-400">
+                Editor Platform
+              </h3>
+              <h4 className="text-3xl italic font-semibold mt-2">D-ID</h4>
+              <p className=" text-zinc-300 mt-4">...</p>
+            </div>
+
+            {/* Right 1/3 - Logo */}
+            <div className="flex1 justify-end flex mt-5">
+              <img
+                src="/images/work1/videoeditor/d-id-logo.svg"
+                alt="D-ID Logo"
+                className="w-[60px]"
+              />
+            </div>
+          </div>
+
+          <video autoPlay loop muted playsInline className="rounded-2xl">
+            <source
+              src="/videos/work1/videoeditor/competitor-Did.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
