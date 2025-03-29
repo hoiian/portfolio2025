@@ -10,15 +10,15 @@ const Resume = () => {
   const downloadOptions = [
     { label: "English", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en.pdf" },
     { label: "繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
-    { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
+    // { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
     {
       label: "English + 繁體中文",
       file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",
     },
-    {
-      label: "English + 简体中文",
-      file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf",
-    },
+    // {
+    //   label: "English + 简体中文",
+    //   file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf",
+    // },
   ];
 
   // Fetch the current language's text
@@ -55,7 +55,7 @@ const Resume = () => {
             <span className="block md:hidden font-serifTC">繁</span>
             <span className="hidden md:block font-serifTC">繁體中文</span>
           </button>
-          <button
+          {/*  <button
             className={`block w-full text-left ${
               selectedLanguage === "simplified"
                 ? "text-white"
@@ -65,7 +65,7 @@ const Resume = () => {
           >
             <span className="block md:hidden font-serifTC">簡</span>
             <span className="hidden md:block font-serifTC">簡体中文</span>
-          </button>
+          </button>*/}
         </div>
         {/* Download Dropdown */}
         <div className="relative md:mt-20">
