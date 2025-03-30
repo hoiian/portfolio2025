@@ -9,10 +9,10 @@ const Resume = () => {
 
   const downloadOptions = [
     { label: "English", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en.pdf" },
-    { label: "繁體中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
+    { label: "中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
     // { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
     {
-      label: "English + 繁體中文",
+      label: "English + 中文",
       file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",
     },
     // {
@@ -52,8 +52,8 @@ const Resume = () => {
             }`}
             onClick={() => setSelectedLanguage("traditional")}
           >
-            <span className="block md:hidden font-serifTC">繁</span>
-            <span className="hidden md:block font-serifTC">繁體中文</span>
+            <span className="block md:hidden font-serifTC">中</span>
+            <span className="hidden md:block font-serifTC">中文</span>
           </button>
           {/*  <button
             className={`block w-full text-left ${
