@@ -54,172 +54,177 @@ export default function Work1() {
   return (
     <div className="min-h-screen text-white flex flex-col mx-auto relative">
       {/* Fixed Right Navigation */}
-      <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
-        <ul className="space-y-2 text-sm">
-          {/* Background / Context */}
-          <li>
-            <a
-              href="#background"
-              onClick={(e) => handleSmoothScroll(e, "background")}
-              className={`block ${
-                activeSection === "background" ? "text-white" : "text-zinc-500"
-              } hover:text-zinc-300`}
-            >
-              Background
-            </a>
-          </li>
+      {false && (
+        <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
+          <ul className="space-y-2 text-sm">
+            {/* Background / Context */}
+            <li>
+              <a
+                href="#background"
+                onClick={(e) => handleSmoothScroll(e, "background")}
+                className={`block ${
+                  activeSection === "background"
+                    ? "text-white"
+                    : "text-zinc-500"
+                } hover:text-zinc-300`}
+              >
+                Background
+              </a>
+            </li>
 
-          {/* Vtuber Playground (Redesign) */}
-          <li>
-            <a
-              href="#vtuber"
-              onClick={(e) => handleSmoothScroll(e, "vtuber")}
-              className={`block ${
-                activeSection === "vtuber" ? "text-white" : "text-zinc-500"
-              } hover:text-zinc-300`}
-            >
-              Vtuber Playground
-            </a>
-            <ul className="pl-4 space-y-1">
-              <li>
-                <a
-                  href="#vtuber-competitor"
-                  onClick={(e) => handleSmoothScroll(e, "vtuber-competitor")}
-                  className={`block ${
-                    activeSection === "vtuber-competitor"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Competitor
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#vtuber-design"
-                  onClick={(e) => handleSmoothScroll(e, "vtuber-design")}
-                  className={`block ${
-                    activeSection === "vtuber-design"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Design
-                </a>
-              </li>
-            </ul>
-          </li>
+            {/* Vtuber Playground (Redesign) */}
+            <li>
+              <a
+                href="#vtuber"
+                onClick={(e) => handleSmoothScroll(e, "vtuber")}
+                className={`block ${
+                  activeSection === "vtuber" ? "text-white" : "text-zinc-500"
+                } hover:text-zinc-300`}
+              >
+                Vtuber Playground
+              </a>
+              <ul className="pl-4 space-y-1">
+                <li>
+                  <a
+                    href="#vtuber-competitor"
+                    onClick={(e) => handleSmoothScroll(e, "vtuber-competitor")}
+                    className={`block ${
+                      activeSection === "vtuber-competitor"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Competitor
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#vtuber-design"
+                    onClick={(e) => handleSmoothScroll(e, "vtuber-design")}
+                    className={`block ${
+                      activeSection === "vtuber-design"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Design
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          {/* Video Editor (0 to 1) */}
-          <li>
-            <a
-              href="#editor"
-              onClick={(e) => handleSmoothScroll(e, "editor")}
-              className={`block ${
-                activeSection === "editor" ? "text-white" : "text-zinc-500"
-              } hover:text-zinc-300`}
-            >
-              Video Editor
-            </a>
-            <ul className="pl-4 space-y-1">
-              <li>
-                <a
-                  href="#editor-background"
-                  onClick={(e) => handleSmoothScroll(e, "editor-background")}
-                  className={`block ${
-                    activeSection === "editor-background"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Background
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#editor-structure"
-                  onClick={(e) => handleSmoothScroll(e, "editor-structure")}
-                  className={`block ${
-                    activeSection === "editor-structure"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Structure
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#editor-competitor"
-                  onClick={(e) => handleSmoothScroll(e, "editor-competitor")}
-                  className={`block ${
-                    activeSection === "editor-competitor"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Competitor
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#editor-design"
-                  onClick={(e) => handleSmoothScroll(e, "editor-design")}
-                  className={`block ${
-                    activeSection === "editor-design"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Design
-                </a>
-              </li>
-            </ul>
-          </li>
+            {/* Video Editor (0 to 1) */}
+            <li>
+              <a
+                href="#editor"
+                onClick={(e) => handleSmoothScroll(e, "editor")}
+                className={`block ${
+                  activeSection === "editor" ? "text-white" : "text-zinc-500"
+                } hover:text-zinc-300`}
+              >
+                Video Editor
+              </a>
+              <ul className="pl-4 space-y-1">
+                <li>
+                  <a
+                    href="#editor-background"
+                    onClick={(e) => handleSmoothScroll(e, "editor-background")}
+                    className={`block ${
+                      activeSection === "editor-background"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Background
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#editor-structure"
+                    onClick={(e) => handleSmoothScroll(e, "editor-structure")}
+                    className={`block ${
+                      activeSection === "editor-structure"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Structure
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#editor-competitor"
+                    onClick={(e) => handleSmoothScroll(e, "editor-competitor")}
+                    className={`block ${
+                      activeSection === "editor-competitor"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Competitor
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#editor-design"
+                    onClick={(e) => handleSmoothScroll(e, "editor-design")}
+                    className={`block ${
+                      activeSection === "editor-design"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Design
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          {/* Prompt to Video (0 to 1) */}
-          <li>
-            <a
-              href="#prompt"
-              onClick={(e) => handleSmoothScroll(e, "prompt")}
-              className={`block ${
-                activeSection === "prompt" ? "text-white" : "text-zinc-500"
-              } hover:text-zinc-300`}
-            >
-              Prompt to Video
-            </a>
-            <ul className="pl-4 space-y-1">
-              <li>
-                <a
-                  href="#prompt-background"
-                  onClick={(e) => handleSmoothScroll(e, "prompt-background")}
-                  className={`block ${
-                    activeSection === "prompt-background"
-                      ? "text-white"
-                      : "text-zinc-500"
-                  } hover:text-zinc-300`}
-                >
-                  Background
-                </a>
-              </li>
-            </ul>
-          </li>
+            {/* Prompt to Video (0 to 1) */}
+            <li>
+              <a
+                href="#prompt"
+                onClick={(e) => handleSmoothScroll(e, "prompt")}
+                className={`block ${
+                  activeSection === "prompt" ? "text-white" : "text-zinc-500"
+                } hover:text-zinc-300`}
+              >
+                Prompt to Video
+              </a>
+              <ul className="pl-4 space-y-1">
+                <li>
+                  <a
+                    href="#prompt-background"
+                    onClick={(e) => handleSmoothScroll(e, "prompt-background")}
+                    className={`block ${
+                      activeSection === "prompt-background"
+                        ? "text-white"
+                        : "text-zinc-500"
+                    } hover:text-zinc-300`}
+                  >
+                    Background
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          {/* Conclusion */}
-          <li>
-            <a
-              href="#conclusion"
-              onClick={(e) => handleSmoothScroll(e, "conclusion")}
-              className={`block ${
-                activeSection === "conclusion" ? "text-white" : "text-zinc-500"
-              } hover:text-zinc-300`}
-            >
-              Conclusion
-            </a>
-          </li>
-        </ul>
-      </nav>
-
+            {/* Conclusion */}
+            <li>
+              <a
+                href="#conclusion"
+                onClick={(e) => handleSmoothScroll(e, "conclusion")}
+                className={`block ${
+                  activeSection === "conclusion"
+                    ? "text-white"
+                    : "text-zinc-500"
+                } hover:text-zinc-300`}
+              >
+                Conclusion
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )}
       {/* Header with Back Button */}
       <header className="p-6 fixed top-2 left-2">
         <Link
@@ -231,23 +236,30 @@ export default function Work1() {
         </Link>
       </header>
       {/* Work1 Content */}
-      <div className="flex-1 pt-48 pb-32 text-center max-w-4xl mx-auto">
+      <div className="flex flex-col items-center justify-center pt-48">
         {/* Floating Glow Effect */}
-        <div className="absolute top-[100px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
+        <div className="absolute top-[300px] left-1/2 -translate-x-1/2 w-[885px] h-[600px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
 
-        <div className="max-w-3xl mx-auto mb-16 ">
+        <div className="max-w-3xl mx-auto mb-16 text-center">
           <span>Hologram, 2024</span>
-          <h1 className="mt-3 italic text-4xl">
+          <h1 className="mt-3 text-4xl">
             Studio: Redefining AI-Powered Video Creation
           </h1>
         </div>
-        <video autoPlay loop muted playsInline className="rounded-2xl">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="rounded-2xl border-[16px] border-black max-w-4xl"
+        >
           <source
             src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>
+        <div className="h-[30px] w-[968px] bg-black rounded-t-2xl"></div>
       </div>
 
       {/* Divider */}
@@ -256,7 +268,7 @@ export default function Work1() {
       {/* Overview Section */}
       <div className="max-w-6xl mx-auto py-24">
         <div>
-          <h2 className="text-3xl italic">Overview</h2>
+          <h2 className="text-3xl">Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-white">
             <div className="md:col-span-2">
               <p className="text-zinc-400 mt-2">
@@ -292,7 +304,7 @@ export default function Work1() {
         </div>
 
         <div className="mt-24">
-          <h2 className="text-3xl italic mb-4">Timeline</h2>
+          <h2 className="text-3xl mb-4">Timeline</h2>
           <img
             src="/images/work1/timeline.png"
             alt="Studio Timeline"
@@ -305,16 +317,13 @@ export default function Work1() {
       <div className="w-full border-t border-zinc-800"></div>
       {/* Background Section */}
       <section id="background" className="max-w-6xl mx-auto py-24">
-        <h2 className="text-[11vw] md:text-[184px] whitespace-nowrap font-extrabold italic text-center">
-          Background
-        </h2>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-zinc-200">
           {/* <!-- 左側空間 (1/3) --> */}
           <div className="hidden md:block"></div>
 
           {/* <!-- 右側文字 (2/3) --> */}
           <div className="md:col-span-2 text-2xl leading-relaxed max-w-3xl">
+            <h2 className="text-[120px] whitespace-nowrap">Background</h2>
             <p className="mt-4">
               Video creation has always been a top demand for Hologram. Our goal
               is to transform HoloStudio into a complete content creation
@@ -335,6 +344,10 @@ export default function Work1() {
           </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+
       <Work1BeforeAfter />
       {/* Vtuber Playground */}
       {/* <section id="Vtuber" className="p-8 border-t border-zinc-800">
@@ -368,343 +381,373 @@ export default function Work1() {
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
       {/* Vtuber Playground Section */}
-      <section
-        id="vtuber"
-        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
-      >
-        <h2 className="text-[11vw] md:text-[143px] whitespace-nowrap font-extrabold italic text-center">
-          Vtuber Playground
-        </h2>
+      <section id="vtuber" className="border-t border-zinc-800 py-44">
+        <div className="flex flex-col space-y-4 items-center text-center">
+          <h2 className="text-9xl whitespace-nowrap">Vtuber Playground</h2>
+          <p className="max-w-3xl">
+            Real-time AI avatar streaming with enhanced interactivity. Real-time
+            AI avatar streaming with enhanced interactivity. Real-time AI avatar
+            streaming with enhanced interactivity. Real-time AI avatar streaming
+            with enhanced interactivity.
+          </p>
+        </div>
 
-        <div className="flex items-center justify-between gap-20 relative my-10">
-          <video
-            className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source
-              src="/videos/work1/demo-VtuberPlayground-before.mp4"
-              type="video/mp4"
+        <div className="flex flex-col items-center justify-between  my-24 bg-black max-w-full mx-auto py-52">
+          <div className="flex items-center justify-between gap-20  relative max-w-[1360px]">
+            <video
+              className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="/videos/work1/demo-VtuberPlayground-before.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <video
+              className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="/videos/work1/demo-VtuberPlayground.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <img
+              src="/images/work1/vtuber/compareLine.png"
+              alt="compareLine"
+              className="absolute top-[44px] left-[621px] w-[564px]"
             />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source
-              src="/videos/work1/demo-VtuberPlayground.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <img
-            src="/images/work1/vtuber/compareLine.png"
-            alt="compareLine"
-            className="absolute top-[44px] left-[621px] w-[564px]"
-          />
+          </div>
         </div>
 
         <div
           id="vtuber-competitor"
-          className="max-w-6xl mx-auto py-36  md:px-5 px-3"
+          className="max-w-6xl mx-auto py-36 md:px-5 px-3"
         >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
-            <h2 className="text-5xl md:text-6xl font-extrabold italic">
-              Competitor
-            </h2>
-
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Competitor</h2>
+              <p className=" text-zinc-300">
+                Before finalizing the toolbar redesign, I explored layouts from
+                similar livestream platforms and interaction patterns from
+                meeting apps to enhance usability, efficiency, and seamless AI
+                avatar integration.
+              </p>
+            </div>
             {/* Right 2/3 - Description */}
-            <p className="md:col-span-2 text-zinc-300">
-              Before finalizing the toolbar redesign, I explored layouts from
-              similar livestream platforms and interaction patterns from meeting
-              apps to enhance usability, efficiency, and seamless AI avatar
-              integration.
-            </p>
           </div>
 
           {/* Exploration - 1.Hyper */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-2">
-              <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Livestreaming Platform
-              </h3>
-              <h4 className="text-3xl italic font-semibold mt-2">Hyper</h4>
-              <p className=" text-zinc-300 mt-4">
-                Hyper Online, a leading VTubing and livestreaming platform,
-                features motion capture, avatar customization, and real-time
-                broadcasting. Its center-bottom toolbar ensures quick, intuitive
-                access to essential controls for a seamless user experience.
-              </p>
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <p className="text-sm font-bold text-zinc-400">
+                  Livestreaming Platform
+                </p>
+                <h4 className="text-3xl mt-2">Hyper</h4>
+                <p className=" text-zinc-300 mt-4">
+                  Hyper Online, a leading VTubing and livestreaming platform,
+                  features motion capture, avatar customization, and real-time
+                  broadcasting. Its center-bottom toolbar ensures quick,
+                  intuitive access to essential controls for a seamless user
+                  experience.
+                </p>
 
-              <h4 className="text-lg font-bold mt-6 text-white">
-                Impact on Studio’s Livestream Playground
-              </h4>
-              <p className="text-zinc-300 mt-2">
-                Inspired by Hyper’s user-centric design, I relocated Studio’s
-                toolbar from the right to center-bottom, improving
-                accessibility, efficiency, and focus while keeping the interface
-                clean and intuitive.
-              </p>
+                <h4 className="text-lg font-bold mt-6 text-white">
+                  Impact on Studio’s Livestream Playground
+                </h4>
+                <p className="text-zinc-300 mt-2">
+                  Inspired by Hyper’s user-centric design, I relocated Studio’s
+                  toolbar from the right to center-bottom, improving
+                  accessibility, efficiency, and focus while keeping the
+                  interface clean and intuitive.
+                </p>
+              </div>
+
+              {/* Right 1/3 - Hyper Logo */}
+              <div className="flex justify-end mt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="132"
+                  height="17"
+                  viewBox="0 0 132 17"
+                  fill="none"
+                >
+                  <path
+                    d="M18.986 10.9933V16.5222H25.3099V0.333008H18.986V5.8619H9.50619V0.333008H3.19434V16.5222H9.50619V10.9933H18.986Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M35.7632 0.357422H28.2588L37.3411 11.0177V16.5466H43.653V11.0177L48.1941 5.68756L52.7353 0.357422H45.2429L40.497 6.16336L35.7632 0.357422Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M61.9959 7.8491V5.09068H69.705C70.0784 5.09068 70.4037 5.22318 70.6686 5.50022C70.9457 5.76523 71.0782 6.09045 71.0782 6.47591C71.0782 6.84933 70.9457 7.17455 70.6686 7.4516C70.4037 7.7166 70.0784 7.8491 69.705 7.8491H61.9959ZM55.6841 0.35679V16.546H61.9959V12.595H71.283C74.6196 12.6432 77.4503 9.81248 77.4021 6.47591C77.4503 3.12726 74.6196 0.320654 71.283 0.35679H55.6841Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M81.5916 16.5466H100.539V12.3909H87.9034V10.3191H100.539V6.5729H87.9034V4.50108H100.539V0.357422H81.5916V16.5466Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M106.366 0.345072V16.5342H112.678V12.5833H118.316L121.363 16.5342H128.085L124.556 11.9931C125.615 11.4992 126.471 10.7524 127.109 9.77673C127.759 8.78897 128.085 7.68079 128.085 6.4642C128.133 3.11554 125.303 0.308935 121.966 0.345072H106.366ZM120.375 5.07896C121.146 5.07896 121.761 5.69328 121.761 6.4642C121.761 6.8376 121.629 7.16283 121.351 7.43988C121.087 7.70488 120.761 7.83738 120.375 7.83738H112.678V5.07896H120.375Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
             </div>
 
-            {/* Right 1/3 - Hyper Logo */}
-            <div className="flex justify-end mt-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="132"
-                height="17"
-                viewBox="0 0 132 17"
-                fill="none"
-              >
-                <path
-                  d="M18.986 10.9933V16.5222H25.3099V0.333008H18.986V5.8619H9.50619V0.333008H3.19434V16.5222H9.50619V10.9933H18.986Z"
-                  fill="white"
-                />
-                <path
-                  d="M35.7632 0.357422H28.2588L37.3411 11.0177V16.5466H43.653V11.0177L48.1941 5.68756L52.7353 0.357422H45.2429L40.497 6.16336L35.7632 0.357422Z"
-                  fill="white"
-                />
-                <path
-                  d="M61.9959 7.8491V5.09068H69.705C70.0784 5.09068 70.4037 5.22318 70.6686 5.50022C70.9457 5.76523 71.0782 6.09045 71.0782 6.47591C71.0782 6.84933 70.9457 7.17455 70.6686 7.4516C70.4037 7.7166 70.0784 7.8491 69.705 7.8491H61.9959ZM55.6841 0.35679V16.546H61.9959V12.595H71.283C74.6196 12.6432 77.4503 9.81248 77.4021 6.47591C77.4503 3.12726 74.6196 0.320654 71.283 0.35679H55.6841Z"
-                  fill="white"
-                />
-                <path
-                  d="M81.5916 16.5466H100.539V12.3909H87.9034V10.3191H100.539V6.5729H87.9034V4.50108H100.539V0.357422H81.5916V16.5466Z"
-                  fill="white"
-                />
-                <path
-                  d="M106.366 0.345072V16.5342H112.678V12.5833H118.316L121.363 16.5342H128.085L124.556 11.9931C125.615 11.4992 126.471 10.7524 127.109 9.77673C127.759 8.78897 128.085 7.68079 128.085 6.4642C128.133 3.11554 125.303 0.308935 121.966 0.345072H106.366ZM120.375 5.07896C121.146 5.07896 121.761 5.69328 121.761 6.4642C121.761 6.8376 121.629 7.16283 121.351 7.43988C121.087 7.70488 120.761 7.83738 120.375 7.83738H112.678V5.07896H120.375Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-
-          {/* Image Section */}
-          <div className="mt-12 grid md:grid-cols-2 gap-6">
-            <img
-              src="/images/work1/vtuber/exploration/hyper1.png"
-              alt="Hyper Livestream Interface"
-              className="rounded-xl shadow-lg"
-            />
-            <img
-              src="/images/work1/vtuber/exploration/hyper2.png"
-              alt="Hyper Avatar Builder"
-              className="rounded-xl shadow-lg"
-            />
-          </div>
-
-          {/* Exploration - 2. Google Meet */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-2">
-              <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Meeting Platform
-              </h3>
-              <h4 className="text-3xl italic font-semibold mt-2">
-                Google Meet
-              </h4>
-              <p className=" text-zinc-300 mt-4">...</p>
-            </div>
-
-            {/* Right 1/3 - Logo */}
-            <div className="flex1 justify-end1 flex mt-5">
+            {/* Image Section */}
+            <div className="mt-12 grid md:grid-cols-2 gap-6">
               <img
-                src="/images/work1/vtuber/exploration/logo-googlemeet.png"
-                alt="Google Meet"
-                className="w-[170px] object-contain ml-auto "
+                src="/images/work1/vtuber/exploration/hyper1.png"
+                alt="Hyper Livestream Interface"
+                className="rounded-xl shadow-lg"
+              />
+              <img
+                src="/images/work1/vtuber/exploration/hyper2.png"
+                alt="Hyper Avatar Builder"
+                className="rounded-xl shadow-lg"
               />
             </div>
           </div>
 
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-            className="rounded-2xl"
-          >
-            <source
-              src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
-            {/* Card 1: Streamlined Device Settings */}
-            <div className="flex flex-col  ">
-              <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+          {/* Exploration - 2. Google Meet */}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <p className="text-sm font-bold text-zinc-400">
+                  Meeting Platform
+                </p>
+                <h4 className="text-3xl mt-2">Google Meet</h4>
+                <p className=" text-zinc-300 mt-4">...</p>
               </div>
-              <h3 className="text-3xl">Streamlined Device Settings</h3>
-              <p className="text-zinc-300 mt-2">
-                Consolidated for easier access and better discoverability.
-              </p>
-            </div>
 
-            {/* Card 2: Clear Hover Labels */}
-            <div className="flex flex-col ">
-              <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="scale-[180%] ml-40"
-                >
-                  <source
-                    src="/videos/work1/vtuber/exploration/2-GoogleMeet-Hover.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <h3 className="text-3xl">Clear Hover Labels</h3>
-              <p className="text-zinc-300 mt-2">
-                Use verb + noun instead of single words.
-                <br /> ✅ Turn on microphone <br /> ❌ Microphone
-              </p>
-            </div>
-
-            {/* Card 3: Toast Notifications */}
-            <div className="flex flex-col ">
-              <div className="bg-zinc-900 h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
+              {/* Right 1/3 - Logo */}
+              <div className="flex1 justify-end1 flex mt-5">
                 <img
-                  src="/images/work1/vtuber/exploration/toast.png"
-                  alt="Toast Notifications"
-                  className="w-60 object-cover"
+                  src="/images/work1/vtuber/exploration/logo-googlemeet.png"
+                  alt="Google Meet"
+                  className="w-[170px] object-contain ml-auto "
                 />
               </div>
-              <h3 className="text-3xl">Toast Notifications</h3>
-              <p className="text-zinc-300 mt-2">
-                Reduce confusion and prevent awkward moments by clearly
-                confirming mic and camera toggles.
-              </p>
+            </div>
+
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-2xl"
+            >
+              <source
+                src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
+              {/* Card 1: Streamlined Device Settings */}
+              <div className="flex flex-col  ">
+                <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
+                  <video autoPlay loop muted playsInline className="">
+                    <source
+                      src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="text-3xl">Streamlined Device Settings</h3>
+                <p className="text-zinc-300 mt-2">
+                  Consolidated for easier access and better discoverability.
+                </p>
+              </div>
+
+              {/* Card 2: Clear Hover Labels */}
+              <div className="flex flex-col ">
+                <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="scale-[180%] ml-40"
+                  >
+                    <source
+                      src="/videos/work1/vtuber/exploration/2-GoogleMeet-Hover.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="text-3xl">Clear Hover Labels</h3>
+                <p className="text-zinc-300 mt-2">
+                  Use verb + noun instead of single words.
+                  <br /> ✅ Turn on microphone <br /> ❌ Microphone
+                </p>
+              </div>
+
+              {/* Card 3: Toast Notifications */}
+              <div className="flex flex-col ">
+                <div className="bg-zinc-900 h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
+                  <img
+                    src="/images/work1/vtuber/exploration/toast.png"
+                    alt="Toast Notifications"
+                    className="w-60 object-cover"
+                  />
+                </div>
+                <h3 className="text-3xl">Toast Notifications</h3>
+                <p className="text-zinc-300 mt-2">
+                  Reduce confusion and prevent awkward moments by clearly
+                  confirming mic and camera toggles.
+                </p>
+              </div>
             </div>
           </div>
-
           {/* Exploration - 3. Figma */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-2">
-              <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Design Tool
-              </h3>
-              <h4 className="text-3xl italic font-semibold mt-2">Figma</h4>
-              <p className=" text-zinc-300 mt-4">...</p>
-            </div>
-
-            {/* Right 1/3 - Logo */}
-            <div className="flex1 justify-end flex mt-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="33"
-                height="49"
-                fill="none"
-                viewBox="0 0 33 49"
-                aria-label="Homepage"
-                class="css-7vzs6a"
-              >
-                <path
-                  fill="#00B6FF"
-                  d="M16.5 23.612a7.28 7.28 0 0 1 7.28-7.279h1.053a8.167 8.167 0 1 1 0 16.333H23.78a7.28 7.28 0 0 1-7.279-7.279z"
-                ></path>
-                <path
-                  fill="#24CB71"
-                  d="M0 40.834a8.167 8.167 0 0 1 8.167-8.167H16.5v8.083c0 4.557-3.735 8.25-8.292 8.25C3.698 49 0 45.344 0 40.834"
-                ></path>
-                <path
-                  fill="#FF7237"
-                  d="M16.5 0v16.333h8.333a8.167 8.167 0 1 0 0-16.333z"
-                ></path>
-                <path
-                  fill="#FF3737"
-                  d="M0 8.166a8.167 8.167 0 0 0 8.167 8.167H16.5V0H8.167A8.167 8.167 0 0 0 0 8.166"
-                ></path>
-                <path
-                  fill="#874FFF"
-                  d="M0 24.5a8.167 8.167 0 0 0 8.167 8.167H16.5V16.334H8.167A8.167 8.167 0 0 0 0 24.5"
-                ></path>
-              </svg>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
-            {/* Card 1:   */}
-            <div className="flex flex-col  ">
-              <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <p className="text-sm font-bold text-zinc-400">Design Tool</p>
+                <h4 className="text-3xl mt-2">Figma</h4>
+                <p className=" text-zinc-300 mt-4">...</p>
               </div>
-              <h3 className="text-3xl">FigJam</h3>
-              <p className="text-zinc-300 mt-2">..</p>
+
+              {/* Right 1/3 - Logo */}
+              <div className="flex1 justify-end flex mt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="49"
+                  fill="none"
+                  viewBox="0 0 33 49"
+                  aria-label="Homepage"
+                  class="css-7vzs6a"
+                >
+                  <path
+                    fill="#00B6FF"
+                    d="M16.5 23.612a7.28 7.28 0 0 1 7.28-7.279h1.053a8.167 8.167 0 1 1 0 16.333H23.78a7.28 7.28 0 0 1-7.279-7.279z"
+                  ></path>
+                  <path
+                    fill="#24CB71"
+                    d="M0 40.834a8.167 8.167 0 0 1 8.167-8.167H16.5v8.083c0 4.557-3.735 8.25-8.292 8.25C3.698 49 0 45.344 0 40.834"
+                  ></path>
+                  <path
+                    fill="#FF7237"
+                    d="M16.5 0v16.333h8.333a8.167 8.167 0 1 0 0-16.333z"
+                  ></path>
+                  <path
+                    fill="#FF3737"
+                    d="M0 8.166a8.167 8.167 0 0 0 8.167 8.167H16.5V0H8.167A8.167 8.167 0 0 0 0 8.166"
+                  ></path>
+                  <path
+                    fill="#874FFF"
+                    d="M0 24.5a8.167 8.167 0 0 0 8.167 8.167H16.5V16.334H8.167A8.167 8.167 0 0 0 0 24.5"
+                  ></path>
+                </svg>
+              </div>
             </div>
 
-            {/* Card 2:   */}
-            <div className="flex flex-col ">
-              <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
+              {/* Card 1:   */}
+              <div className="flex flex-col  ">
+                <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                  <video autoPlay loop muted playsInline className="">
+                    <source
+                      src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="text-3xl">FigJam</h3>
+                <p className="text-zinc-300 mt-2">..</p>
               </div>
-              <h3 className="text-3xl">Figma</h3>
-              <p className="text-zinc-300 mt-2">..</p>
+
+              {/* Card 2:   */}
+              <div className="flex flex-col ">
+                <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                  <video autoPlay loop muted playsInline className="">
+                    <source
+                      src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h3 className="text-3xl">Figma</h3>
+                <p className="text-zinc-300 mt-2">..</p>
+              </div>
             </div>
           </div>
         </div>
 
+        {/* Divider */}
+        <div className="w-full border-t border-zinc-800"></div>
+
         <div
           id="vtuber-design"
-          className="max-w-6xl mx-auto py-36  md:px-5 px-3"
+          className="max-w-6xl mx-auto pt-36  md:px-5 px-3"
         >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
-            <h2 className="text-5xl md:text-6xl font-extrabold italic">
-              Design
-            </h2>
-
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Design</h2>
+              <p className=" text-zinc-300">
+                Before: Tools were cluttered on the left, breaking user flow.
+                After: Centered toolbar, following standard video platforms like
+                TikTok Live.
+              </p>
+            </div>
             {/* Right 2/3 - Description */}
-            <p className="md:col-span-2 text-zinc-300">
-              Before: Tools were cluttered on the left, breaking user flow.
-              After: Centered toolbar, following standard video platforms like
-              TikTok Live.
-            </p>
           </div>
 
           {/* Design - 1.Avatar selection */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-1">
-              <h4 className="text-3xl italic font-semibold mt-2">
-                1. Avatar Selection
-              </h4>
+          <div className="mt-24 flex gap-12 items-center pr-10 rounded-3xl border border-zinc-700">
+            {/* Left */}
+            <div className="flex flex-row w-full mx-auto bg-black rounded-l-3xl p-10 gap-8">
+              <div>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/menu-before.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <h4 className="text-3xl mt-4 text-center">Before</h4>
+              </div>
+              <div>
+                <video autoPlay loop muted playsInline className="rounded-lg">
+                  <source
+                    src="/videos/work1/vtuber/design/menu.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <h4 className="text-3xl mt-4 text-center">After</h4>
+              </div>
+            </div>
+
+            {/* Right - Text Content */}
+            <div className="">
+              <h4 className="text-5xl">Avatar Selection</h4>
               <h4 className="text-lg font-bold mt-6 text-white">
                 Simplified Navigation
               </h4>
@@ -721,43 +764,13 @@ export default function Work1() {
                 screen, improving scannability and accessibility.
               </p>
             </div>
-
-            {/* Right 2/3 */}
-            <div className="flex flex-row w-full mx-auto bg-zinc-900 md:col-span-2 rounded-xl p-10 gap-8">
-              <div>
-                <h4 className="text-3xl italic font-semibold mb-2 text-center">
-                  Before
-                </h4>
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/menu-before.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <h4 className="text-3xl italic font-semibold mb-2 text-center">
-                  After
-                </h4>
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/menu.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
           </div>
 
           {/* Design - 2.Device Setting */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8 place-items-center1">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-1">
-              <h4 className="text-3xl italic font-semibold mt-2">
-                2. Device Setting
-              </h4>
+          <div className="mt-24 flex gap-12 items-center pl-16 rounded-3xl border border-zinc-700">
+            {/* Left - Text Content */}
+            <div className="">
+              <h4 className="text-5xl">Device Setting</h4>
               <h4 className="text-lg font-bold mt-6 text-white">
                 Streamlined Device Settings
               </h4>
@@ -766,12 +779,9 @@ export default function Work1() {
               </p>
             </div>
 
-            {/* Right 2/3 */}
-            <div className="flex flex-row w-full mx-auto bg-zinc-900 md:col-span-2 rounded-xl p-10 gap-8">
-              <div className="w-1/2">
-                <h4 className="text-3xl italic font-semibold mb-2 text-center">
-                  Before
-                </h4>
+            {/* Right */}
+            <div className="flex flex-row  mx-auto bg-black rounded-r-3xl p-10 gap-8">
+              <div className="w-[152px]">
                 <video autoPlay loop muted playsInline className="rounded-lg">
                   <source
                     src="/videos/work1/vtuber/design/setting-before.mp4"
@@ -779,11 +789,9 @@ export default function Work1() {
                   />
                   Your browser does not support the video tag.
                 </video>
-              </div>{" "}
-              <div className="w-1/2">
-                <h4 className="text-3xl italic font-semibold mb-2 text-center">
-                  After
-                </h4>
+                <h4 className="text-3xl mt-4 text-center">Before</h4>
+              </div>
+              <div className="w-[300px]">
                 <video autoPlay loop muted playsInline className="rounded-lg">
                   <source
                     src="/videos/work1/vtuber/design/setting.mp4"
@@ -791,6 +799,7 @@ export default function Work1() {
                   />
                   Your browser does not support the video tag.
                 </video>
+                <h4 className="text-3xl mt-4 text-center">After</h4>
               </div>
             </div>
           </div>
@@ -802,24 +811,17 @@ export default function Work1() {
       {/* Video Editor */}
       <section
         id="editor"
-        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
+        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-36"
       >
-        <h2 className="text-[11vw] md:text-[216px] whitespace-nowrap font-extrabold italic text-center">
-          Video Editor
-        </h2>
-
-        {/* Title and Description Section */}
-        <div id="editor-background" className="grid md:grid-cols-3 items-start">
-          {/* Left 1/3 - Title */}
-          <h2 className="text-5xl md:text-6xl font-extrabold italic">
-            Background
-          </h2>
-
-          {/* Right 2/3 - Description */}
-          <p className="md:col-span-2 text-zinc-300">
-            Designed a 0-to-1 video editor that lets users generate videos using
-            our avatars with face tracking and auto-generated copy, then edit
-            them for a complete creative experience.
+        <div className="flex flex-col space-y-4 items-center text-center">
+          <h2 className="text-9xl whitespace-nowrap">Video Editor</h2>
+          <p className="max-w-3xl">
+            Designed a 0-to-1 video editor that lets users generate videos with
+            our avatars using face tracking and auto-generated copy. The editor
+            focuses on enhancing avatar narration and face tracking with simple
+            post-production tweaks—unlike professional tools like CapCut or
+            Final Cut Pro—to create content that’s ready for seamless posting on
+            platforms like TikTok.
           </p>
         </div>
 
