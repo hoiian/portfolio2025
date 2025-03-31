@@ -232,7 +232,7 @@ export default function Home() {
         </div>
       </main>
 
-      <main className="flex-1 py-10">
+      <main className="flex-1 py-20">
         <div className="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between mb-10">
           <div className="text-center md:text-left">
             <p className="mb-2 font-bold">2021 - 2023</p>

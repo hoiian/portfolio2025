@@ -866,7 +866,14 @@ export default function Work1() {
               </div>
             </div>
 
-            <video autoPlay loop muted playsInline className="rounded-2xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-2xl"
+            >
               <source
                 src="/videos/work1/videoeditor/capcut-record.mp4"
                 type="video/mp4"
@@ -894,7 +901,14 @@ export default function Work1() {
               </div>
             </div>
 
-            <video autoPlay loop muted playsInline className="rounded-2xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-2xl"
+            >
               <source
                 src="/videos/work1/videoeditor/competitor-Did.mp4"
                 type="video/mp4"
@@ -953,7 +967,7 @@ export default function Work1() {
           </div>
 
           {/* RRecord Mode as the Primary Process */}
-          <div className="my-24">
+          <div className="mt-24">
             <h3 className="text-2xl text-emerald-300 flex items-center justify-start gap-3">
               <CircleCheck strokeWidth={1} size={36} />
               Record Mode as the Primary Process
@@ -967,7 +981,7 @@ export default function Work1() {
             </div>
           </div>
 
-          <h3 className="max-w-4xl mx-auto text-center text-2xl">
+          <h3 className="max-w-4xl mx-auto text-center text-2xl my-32">
             Unlike typical editing software, HoloStudio integrates both video
             recording and post-production editing services, allowing users to
             seamlessly upload their final content to social media.
