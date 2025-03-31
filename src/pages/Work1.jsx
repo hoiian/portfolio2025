@@ -1205,7 +1205,7 @@ export default function Work1() {
       {/* AI Video Generator */}
       <section
         id="prompt"
-        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-36"
+        className="border-zinc-800 max-w-[1360px] mx-auto py-36"
       >
         <div className="flex flex-col space-y-4 items-center text-center mb-32">
           <h2 className="text-9xl whitespace-nowrap">AI Video Generator</h2>
@@ -1223,7 +1223,7 @@ export default function Work1() {
 
         {/* Behaviour */}
         <div
-          id="editor-design-record"
+          id="prompt-behaviour"
           className="max-w-6xl mx-auto my-32 md:px-5 px-3"
         >
           {/* Title and Description Section */}
@@ -1239,7 +1239,7 @@ export default function Work1() {
             {/* Right 2/3 - icon */}
           </div>
           {/* Step */}
-          <div className="max-w-4xl text-white">
+          <div className="max-w-4xl text-white my-12">
             {AIGeneratorSteps.map((item, index) => (
               <div
                 key={index}
@@ -1266,6 +1266,135 @@ export default function Work1() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Step1. */}
+        <div className="max-w-6xl my-40">
+          <div className="max-w-3xl space-y-3 text-center mx-auto">
+            <span className="uppercase text-2xl">Step 1</span>
+            <h2 className="text-5xl md:text-6xl">Input prompt</h2>
+            <p className=" text-zinc-300">
+              Unlike the other two more complex features with subtle entry
+              points, this functionality is designed for rapid video
+              generation—so we've opted for a straightforward input box
+              approach.
+            </p>
+          </div>
+
+          <div className="mt-12 flex flex-row gap-8">
+            <div className="w-full">
+              <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
+                <CircleCheck strokeWidth={1} size={36} />
+              </h3>
+              <div className="mt-2 flex items-center rounded-3xl border border-red-400 p-4">
+                <img
+                  src="/images/work1/prompt/s1-layout-1.png"
+                  alt="step1 layout"
+                />
+              </div>
+            </div>
+
+            <div className="w-full">
+              <h3 className="text-2xl text-emerald-300 flex items-center justify-center gap-3">
+                <CircleCheck strokeWidth={1} size={36} />
+              </h3>
+              <div className="mt-2 flex items-center rounded-3xl border border-emerald-300 p-4">
+                <img
+                  src="/images/work1/prompt/s1-layout-2.png"
+                  alt="step1 layout"
+                />
+              </div>
+            </div>
+          </div>
+
+          <h3 className="max-w-4xl mx-auto text-center text-4xl my-32">
+            But, if it's just an input box...
+          </h3>
+
+          {/* Problem - 1.  */}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="">
+              <h4 className="text-3xl mt-2">💭 Problem 1</h4>
+              <p className="text-zinc-300 mt-2">
+                Users might not understand what can be generated and may end up
+                entering random, meaningless content.
+              </p>
+            </div>
+
+            <div className="mt-12">
+              <h4 className="text-3xl mt-2">💡 So,</h4>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Step2. */}
+        <div className="max-w-6xl my-40">
+          <div className="max-w-3xl space-y-3 text-center mx-auto">
+            <span className="uppercase text-2xl">Step 2</span>
+            <h2 className="text-5xl md:text-6xl">Edit Script, select style</h2>
+            <p className=" text-zinc-300">
+              All-in-one page for quick editing. Half-page layout optimized for
+              shorter videos and scripts requiring minimal user edits. Scripts
+              are presented line-by-line for enhanced readability and ease of
+              interaction.
+            </p>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Step3. */}
+        <div className="max-w-6xl my-40">
+          <div className="max-w-3xl space-y-3 text-center mx-auto">
+            <span className="uppercase text-2xl">Step 3</span>
+            <h2 className="text-5xl md:text-6xl">Generate</h2>
+            <p className=" text-zinc-300">
+              No complicated settings before generating—just select the ratio to
+              complete the setup.
+            </p>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Outcome */}
+        <div
+          id="prompt-outcome"
+          className="max-w-6xl mx-auto my-32 md:px-5 px-3"
+        >
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
+            {/* Left 1/3 - Title */}
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Outcome</h2>
+              <p className=" text-zinc-300">..</p>
+            </div>
+            {/* Right 2/3 - icon */}
+          </div>
+
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-xl border border-zinc-800 max-w-3xl"
+            >
+              <source
+                src="/videos/work1/demo-prompt-diag.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
