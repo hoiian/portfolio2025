@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
-import { ChevronLeft, MoveRight } from "lucide-react";
+import { ChevronLeft, MoveRight, CircleX, CircleCheck } from "lucide-react";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
@@ -699,7 +699,7 @@ export default function Work1() {
         </div>
 
         {/* Divider */}
-        <div className="w-full border-t border-zinc-800"></div>
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         <div
           id="vtuber-design"
@@ -825,21 +825,153 @@ export default function Work1() {
           </p>
         </div>
 
-        <div id="editor-structure">
+        {/* Competitor */}
+        <div
+          id="editor-competitor"
+          className="max-w-6xl mx-auto  py-36 md:px-5 px-3"
+        >
           {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3  items-start mt-32">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Left 1/3 - Title */}
-            <h2 className="text-5xl md:text-6xl font-extrabold italic">
-              Structure
-            </h2>
-
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Competitor</h2>
+              <p className=" text-zinc-300">,,</p>
+            </div>
             {/* Right 2/3 - Description */}
-            <p className="md:col-span-2 text-zinc-300">
-              Unlike typical editing software, HoloStudio integrates both video
-              recording and post-production editing services, allowing users to
-              seamlessly upload their final content to social media.
-            </p>
           </div>
+
+          {/* Competitor - 1. CapCut */}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <h4 className="text-3xl mt-2">CapCut</h4>
+                <p className=" text-zinc-300 mt-4">...</p>
+              </div>
+
+              {/* Right 1/3 -  Logo */}
+              <div className="flex justify-end">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="24"
+                  viewBox="0 0 128 24"
+                  fill="none"
+                >
+                  <path
+                    d="M30.8152 5.03318V0.306107L25.1296 3.29079V3.11417C25.1296 1.22989 23.7792 0.0927734 21.8235 0.0927734H3.80127C1.74137 0.0927734 0.496094 1.22989 0.496094 3.11417V7.87696L8.4569 11.9998L0.496094 16.1583V20.9211C0.496094 22.7696 1.74137 23.9067 3.80127 23.9067H21.8225C23.7772 23.9067 25.1267 22.7696 25.1267 20.9211V20.673L30.8132 23.6934V18.8959L17.5925 11.9998L30.8152 5.03318ZM13.0083 14.3444L22.784 19.4644H3.19501L13.0064 14.3444H13.0083ZM22.7125 4.53606L13.0073 9.61836L3.19699 4.53606H22.7105H22.7125ZM47.8769 19.1181C42.1755 19.1181 38.1926 15.4984 38.1926 10.3129C38.1926 5.12744 42.1755 1.50772 47.8769 1.50772C49.3157 1.50772 51.0055 1.67045 53.5953 2.84924V6.53742C51.7209 5.49259 49.8684 4.96273 48.0883 4.96273C44.5162 4.96273 42.0217 7.16353 42.0217 10.3109C42.0217 13.4593 44.5162 15.6611 48.0883 15.6611C49.8198 15.6611 51.7229 15.1214 53.5953 14.0993V17.7756C51.0035 18.9544 49.3157 19.1181 47.8769 19.1181ZM61.2316 19.1181C57.8609 19.1181 55.5073 16.5581 55.5073 12.8938C55.5073 9.22939 57.9631 6.6426 61.3457 6.6426C63.2151 6.6426 64.5149 7.21315 65.5598 8.49612L65.6441 8.59733V7.25085H68.9404V18.8522H65.6441V17.2051L65.5578 17.3281C64.7104 18.5496 63.3352 19.1181 61.2316 19.1181ZM62.3707 9.408C60.3961 9.408 58.9633 10.8745 58.9633 12.8938C58.9633 14.914 60.3961 16.3537 62.3707 16.3537C64.3453 16.3537 65.8039 14.8971 65.8039 12.8938C65.8039 10.8904 64.3611 9.408 62.3707 9.408ZM71.4408 23.9067V7.25085H74.7649V8.69953L74.8502 8.58046C75.4882 7.68446 76.9984 6.64161 79.1556 6.64161C82.4697 6.64161 84.8739 9.27107 84.8739 12.8928C84.8739 16.5145 82.5104 19.1171 79.1288 19.1171C77.1105 19.1171 75.6708 18.5367 74.8502 17.3877L74.7639 17.2686V23.9067H71.4408ZM78.0095 9.40601C76.0349 9.40601 74.6051 10.8726 74.6051 12.8928C74.6051 14.912 76.0379 16.3517 78.0105 16.3517C79.9831 16.3517 81.3911 14.8961 81.3911 12.8928C81.3911 10.8884 79.9682 9.40601 78.0095 9.40601ZM96.5894 19.1181C90.8869 19.1181 86.905 15.4984 86.905 10.3129C86.905 5.12744 90.8869 1.50772 96.5894 1.50772C98.0271 1.50772 99.7169 1.67045 102.308 2.84924V6.53742C100.432 5.49259 98.5798 4.96273 96.8017 4.96273C93.2296 4.96273 90.7351 7.16353 90.7351 10.3109C90.7351 13.4593 93.2296 15.6611 96.8017 15.6611C98.5332 15.6611 100.436 15.1214 102.308 14.0993V17.7756C99.7159 18.9544 98.0271 19.1181 96.5894 19.1181ZM110.438 19.1181C106.721 19.1181 104.321 17.3638 104.321 14.651V6.90654H107.618V13.6886C107.618 15.3555 108.673 16.3508 110.438 16.3508C112.203 16.3508 113.208 15.3565 113.208 13.6895V6.90654H116.504V14.6481C116.504 17.3629 114.123 19.1162 110.438 19.1162V19.1181ZM123.78 19.1181C120.129 19.1181 118.833 16.8538 118.833 14.915V6.28639L122.129 4.55194V6.90753H126.679V9.60446H122.129V14.2502C122.129 14.8743 122.367 16.326 124.578 16.326C125.191 16.326 125.953 16.1642 126.677 15.8814V18.6597C125.524 19.0824 124.17 19.1162 123.778 19.1162L123.78 19.1181Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <video autoPlay loop muted playsInline className="rounded-2xl">
+              <source
+                src="/videos/work1/videoeditor/capcut-record.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* Competitor - 2. D-ID  */}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <h4 className="text-3xl mt-2">D-ID</h4>
+                <p className=" text-zinc-300 mt-4">...</p>
+              </div>
+
+              {/* Right 1/3 -  Logo */}
+              <div className="flex justify-end">
+                <img
+                  src="/images/work1/videoeditor/d-id-logo.svg"
+                  alt="D-ID Logo"
+                  className="w-[60px]"
+                />
+              </div>
+            </div>
+
+            <video autoPlay loop muted playsInline className="rounded-2xl">
+              <source
+                src="/videos/work1/videoeditor/competitor-Did.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* Competitor -  3. Other*/}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Left 1/3 - Text Content */}
+              <div className="md:col-span-2">
+                <h4 className="text-3xl mt-2">Other Platform</h4>
+                <p className=" text-zinc-300 mt-4">...</p>
+              </div>
+
+              {/* Right 1/3 -  Logo */}
+              <div className="flex justify-end"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        <div id="editor-flow" className="max-w-6xl mx-auto py-36  md:px-5 px-3">
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            {/* Left 1/3 - Title */}
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Flow</h2>
+              <p className=" text-zinc-300">
+                Initially, Record Mode was intended as a sub-feature within Edit
+                Mode. However, we repositioned it as the primary step—ensuring
+                users have generated content to edit—making the editing process
+                an auxiliary refinement.
+              </p>
+            </div>
+            {/* Right 2/3 - Description */}
+          </div>
+
+          {/* Record Mode as a Sub-Feature */}
+          <div className="my-24">
+            <h3 className="text-2xl text-red-400 flex items-center justify-start gap-3">
+              <CircleX strokeWidth={1} size={36} />
+              Record Mode as a Sub-Feature
+            </h3>
+            <div className="mt-4 flex gap-12 items-center pr-10 rounded-3xl border border-red-400">
+              {/* Left */}
+              <div className=""></div>
+
+              {/* Right */}
+              <div className="bg-black rounded-r-3xl p-10 gap-8"></div>
+            </div>
+          </div>
+
+          {/* RRecord Mode as the Primary Process */}
+          <div className="my-24">
+            <h3 className="text-2xl text-emerald-300 flex items-center justify-start gap-3">
+              <CircleCheck strokeWidth={1} size={36} />
+              Record Mode as the Primary Process
+            </h3>
+            <div className="mt-4 flex gap-12 items-center pr-10 rounded-3xl border border-emerald-300">
+              {/* Left */}
+              <div className=""></div>
+
+              {/* Right */}
+              <div className="bg-black rounded-r-3xl p-10 gap-8"></div>
+            </div>
+          </div>
+
+          <h3 className="max-w-4xl mx-auto text-center text-2xl">
+            Unlike typical editing software, HoloStudio integrates both video
+            recording and post-production editing services, allowing users to
+            seamlessly upload their final content to social media.
+          </h3>
 
           <div className="flex flex-row w-full mx-auto mt-16">
             {/* Card 1:   */}
@@ -896,154 +1028,99 @@ export default function Work1() {
           </div>
         </div>
 
-        {/* Competitor */}
-        <div id="editor-competitor" className="max-w-6xl mx-auto">
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 items-start mt-32">
-            {/* Left 1/3 - Title */}
-            <h2 className="text-5xl md:text-6xl font-extrabold italic">
-              Competitor
-            </h2>
-
-            {/* Right 2/3 - Description */}
-            <p className="md:col-span-2 text-zinc-300">..</p>
-          </div>
-
-          {/* Competitor - 1. CapCut */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-2">
-              <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Editor Platform
-              </h3>
-              <h4 className="text-3xl italic font-semibold mt-2">CapCut</h4>
-              <p className=" text-zinc-300 mt-4">...</p>
-            </div>
-
-            {/* Right 1/3 - Logo */}
-            <div className="flex1 justify-end flex mt-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="128"
-                height="24"
-                viewBox="0 0 128 24"
-                fill="none"
-              >
-                <path
-                  d="M30.8152 5.03318V0.306107L25.1296 3.29079V3.11417C25.1296 1.22989 23.7792 0.0927734 21.8235 0.0927734H3.80127C1.74137 0.0927734 0.496094 1.22989 0.496094 3.11417V7.87696L8.4569 11.9998L0.496094 16.1583V20.9211C0.496094 22.7696 1.74137 23.9067 3.80127 23.9067H21.8225C23.7772 23.9067 25.1267 22.7696 25.1267 20.9211V20.673L30.8132 23.6934V18.8959L17.5925 11.9998L30.8152 5.03318ZM13.0083 14.3444L22.784 19.4644H3.19501L13.0064 14.3444H13.0083ZM22.7125 4.53606L13.0073 9.61836L3.19699 4.53606H22.7105H22.7125ZM47.8769 19.1181C42.1755 19.1181 38.1926 15.4984 38.1926 10.3129C38.1926 5.12744 42.1755 1.50772 47.8769 1.50772C49.3157 1.50772 51.0055 1.67045 53.5953 2.84924V6.53742C51.7209 5.49259 49.8684 4.96273 48.0883 4.96273C44.5162 4.96273 42.0217 7.16353 42.0217 10.3109C42.0217 13.4593 44.5162 15.6611 48.0883 15.6611C49.8198 15.6611 51.7229 15.1214 53.5953 14.0993V17.7756C51.0035 18.9544 49.3157 19.1181 47.8769 19.1181ZM61.2316 19.1181C57.8609 19.1181 55.5073 16.5581 55.5073 12.8938C55.5073 9.22939 57.9631 6.6426 61.3457 6.6426C63.2151 6.6426 64.5149 7.21315 65.5598 8.49612L65.6441 8.59733V7.25085H68.9404V18.8522H65.6441V17.2051L65.5578 17.3281C64.7104 18.5496 63.3352 19.1181 61.2316 19.1181ZM62.3707 9.408C60.3961 9.408 58.9633 10.8745 58.9633 12.8938C58.9633 14.914 60.3961 16.3537 62.3707 16.3537C64.3453 16.3537 65.8039 14.8971 65.8039 12.8938C65.8039 10.8904 64.3611 9.408 62.3707 9.408ZM71.4408 23.9067V7.25085H74.7649V8.69953L74.8502 8.58046C75.4882 7.68446 76.9984 6.64161 79.1556 6.64161C82.4697 6.64161 84.8739 9.27107 84.8739 12.8928C84.8739 16.5145 82.5104 19.1171 79.1288 19.1171C77.1105 19.1171 75.6708 18.5367 74.8502 17.3877L74.7639 17.2686V23.9067H71.4408ZM78.0095 9.40601C76.0349 9.40601 74.6051 10.8726 74.6051 12.8928C74.6051 14.912 76.0379 16.3517 78.0105 16.3517C79.9831 16.3517 81.3911 14.8961 81.3911 12.8928C81.3911 10.8884 79.9682 9.40601 78.0095 9.40601ZM96.5894 19.1181C90.8869 19.1181 86.905 15.4984 86.905 10.3129C86.905 5.12744 90.8869 1.50772 96.5894 1.50772C98.0271 1.50772 99.7169 1.67045 102.308 2.84924V6.53742C100.432 5.49259 98.5798 4.96273 96.8017 4.96273C93.2296 4.96273 90.7351 7.16353 90.7351 10.3109C90.7351 13.4593 93.2296 15.6611 96.8017 15.6611C98.5332 15.6611 100.436 15.1214 102.308 14.0993V17.7756C99.7159 18.9544 98.0271 19.1181 96.5894 19.1181ZM110.438 19.1181C106.721 19.1181 104.321 17.3638 104.321 14.651V6.90654H107.618V13.6886C107.618 15.3555 108.673 16.3508 110.438 16.3508C112.203 16.3508 113.208 15.3565 113.208 13.6895V6.90654H116.504V14.6481C116.504 17.3629 114.123 19.1162 110.438 19.1162V19.1181ZM123.78 19.1181C120.129 19.1181 118.833 16.8538 118.833 14.915V6.28639L122.129 4.55194V6.90753H126.679V9.60446H122.129V14.2502C122.129 14.8743 122.367 16.326 124.578 16.326C125.191 16.326 125.953 16.1642 126.677 15.8814V18.6597C125.524 19.0824 124.17 19.1162 123.778 19.1162L123.78 19.1181Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <video autoPlay loop muted playsInline className="rounded-2xl">
-            <source
-              src="/videos/work1/videoeditor/capcut-record.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-
-          {/* Competitor - 2. D-ID */}
-          <div className="mt-24 grid md:grid-cols-3 gap-8">
-            {/* Left 1/3 - Text Content */}
-            <div className="md:col-span-2">
-              <h3 className="text-sm font-bold uppercase text-zinc-400">
-                Editor Platform
-              </h3>
-              <h4 className="text-3xl italic font-semibold mt-2">D-ID</h4>
-              <p className=" text-zinc-300 mt-4">...</p>
-            </div>
-
-            {/* Right 1/3 - Logo */}
-            <div className="flex1 justify-end flex mt-5">
-              <img
-                src="/images/work1/videoeditor/d-id-logo.svg"
-                alt="D-ID Logo"
-                className="w-[60px]"
-              />
-            </div>
-          </div>
-
-          <video autoPlay loop muted playsInline className="rounded-2xl">
-            <source
-              src="/videos/work1/videoeditor/competitor-Did.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         {/* Design - Record Mode */}
-        <div id="editor-design" className="max-w-6xl mx-auto mt-32">
-          <h2 className="text-5xl md:text-6xl font-extrabold italic">
-            Design - Record Mode
-          </h2>
-          <div className="space-y-4 text-zinc-300 mt-4 mb-6">
-            <h3 className="text-xl font-bold">
-              Record Mode is the project’s key innovation, featuring three input
-              modes:
-            </h3>
-            <ul className="list-disc list-inside space-y-2 text-zinc-300">
-              <li>
-                <strong>Narrate (Text Mode):</strong> Your avatar reads aloud
-                your input content.
-              </li>
-              <li>
-                <strong>Vtube (Camera Mode):</strong> Captures dynamic video
-                with face tracking.
-              </li>
-              <li>
-                <strong>Companion (Microphone Mode):</strong> Enables real-time
-                avatar conversations.
-              </li>
-            </ul>
-            <p className="">
-              This approach delivers a unique, efficient recording experience.
-            </p>
+        <div
+          id="editor-design-record"
+          className="max-w-6xl mx-auto my-32 md:px-5 px-3"
+        >
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
+            {/* Left 1/3 - Title */}
+            <div className="md:col-span-2 space-y-6">
+              <h2 className="text-5xl md:text-6xl">Design - Record Mode</h2>
+              <div className="space-y-1 text-zinc-300 mt-4 mb-6">
+                <h3 className="text-xl ">
+                  Record Mode is the project’s key innovation, featuring three
+                  input modes:
+                </h3>
+                <ul className="list-disc list-inside space-y-1 text-zinc-300">
+                  <li>
+                    <strong>Narrate (Text Mode):</strong> Your avatar reads
+                    aloud your input content.
+                  </li>
+                  <li>
+                    <strong>Vtube (Camera Mode):</strong> Captures dynamic video
+                    with face tracking.
+                  </li>
+                  <li>
+                    <strong>Companion (Microphone Mode):</strong> Enables
+                    real-time avatar conversations.
+                  </li>
+                </ul>
+                <p className="text-zinc-300">
+                  This approach delivers a unique, efficient recording
+                  experience.
+                </p>
+              </div>
+            </div>
+            {/* Right 2/3 - Description */}
           </div>
 
           <img src="/images/work1/videoeditor/RecordModesTable.png" />
 
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls
-            className="rounded-xl border border-zinc-800 mt-10"
-          >
-            <source
-              src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        {/* Design - Edit Mode */}
-        <div className="max-w-6xl mx-auto mt-32">
-          <h2 className="text-5xl md:text-6xl font-extrabold italic">
-            Design - Edit Mode
-          </h2>
-          <div className="space-y-4 text-zinc-300 mt-4 mb-6">
-            <p className="text-zinc-300">
-              Edit Mode, while more conventional and comparable to tools like
-              CapCut, offers a familiar and intuitive interface that complements
-              the innovative Record Mode, ensuring users can easily refine and
-              enhance their videos post-recording. This comprehensive approach
-              allows HoloStudio to deliver a seamless end-to-end video creation
-              experience that sets it apart in the market.
-            </p>
-
+          <div className="mt-14 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
             <video
               autoPlay
               loop
               muted
               playsInline
               controls
-              className="rounded-xl border border-zinc-800"
+              className="rounded-xl border border-zinc-800 max-w-3xl"
+            >
+              <source
+                src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Design - Edit Mode */}
+        <div id="editor-design-edit" className="max-w-6xl mx-auto md:px-5 px-3">
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-8 items-start mt-32">
+            {/* Left 1/3 - Title */}
+            <div className="md:col-span-2 space-y-6">
+              <h2 className="text-5xl md:text-6xl">Design - Edit Mode</h2>
+
+              <p className="text-zinc-300">
+                Edit Mode, while more conventional and comparable to tools like
+                CapCut, offers a familiar and intuitive interface that
+                complements the innovative Record Mode, ensuring users can
+                easily refine and enhance their videos post-recording. This
+                comprehensive approach allows HoloStudio to deliver a seamless
+                end-to-end video creation experience that sets it apart in the
+                market.
+              </p>
+            </div>
+            {/* Right 2/3 - Description */}
+          </div>
+
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-xl border border-zinc-800 max-w-3xl"
             >
               <source
                 src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
@@ -1057,24 +1134,15 @@ export default function Work1() {
 
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
-      {/* Video Editor */}
+      {/* AI Video Generator */}
       <section
         id="prompt"
         className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
       >
-        <h2 className="text-[11vw] md:text-[134px] whitespace-nowrap font-extrabold italic text-center">
-          AI Video Generator
-        </h2>
-
-        {/* Title and Description Section */}
-        <div id="prompt-background" className="grid md:grid-cols-3 items-start">
-          {/* Left 1/3 - Title */}
-          <h2 className="text-5xl md:text-6xl font-extrabold italic">
-            Background
-          </h2>
-
-          {/* Right 2/3 - Description */}
-          <p className="md:col-span-2 text-zinc-300">
+        <h2 className="text-[11vw] md:text-[134px] whitespace-nowrap font-extrabold italic text-center"></h2>
+        <div className="flex flex-col space-y-4 items-center text-center">
+          <h2 className="text-9xl whitespace-nowrap">AI Video Generator</h2>
+          <p className="max-w-3xl">
             With GPT-like platforms popularizing input-based interactions, our
             Prompt to Video feature lets users create videos from text. Choose
             between a single-person narration with subtitles or a two-person
