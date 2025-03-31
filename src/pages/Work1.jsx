@@ -13,6 +13,32 @@ export default function Work1() {
     });
   };
 
+  const AIGeneratorSteps = [
+    {
+      step: "STEP 1",
+      title: "Input prompt",
+      description: [
+        "Input box / entry button?",
+        "How to guide the user?",
+        "How to display the final result?",
+      ],
+    },
+    {
+      step: "STEP 2",
+      title: "Edit Script, select style",
+      description: [
+        "One page or split into two steps?",
+        "What is the editing difference between single-person and two-person dialogue?",
+        "Is the script edited as a whole or line by line?",
+      ],
+    },
+    {
+      step: "STEP 3",
+      title: "Generate video",
+      description: ["How to quickly set the ratio?"],
+    },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
@@ -948,7 +974,7 @@ export default function Work1() {
                 an auxiliary refinement.
               </p>
             </div>
-            {/* Right 2/3 - Description */}
+            {/* Right 2/3 - icon */}
           </div>
 
           {/* Record Mode as a Sub-Feature */}
@@ -957,12 +983,24 @@ export default function Work1() {
               <CircleX strokeWidth={1} size={36} />
               Record Mode as a Sub-Feature
             </h3>
-            <div className="mt-4 flex gap-12 items-center pr-10 rounded-3xl border border-red-400">
+            <div className="mt-4 flex items-center rounded-3xl border border-red-400 overflow-hidden">
               {/* Left */}
-              <div className=""></div>
+              <div className="px-8">
+                <img
+                  src="/images/work1/videoeditor/Flow-1-Left-Diagram.png"
+                  alt="Flow-1-Left-Diagram"
+                  className="w-full"
+                />
+              </div>
 
               {/* Right */}
-              <div className="bg-black rounded-r-3xl p-10 gap-8"></div>
+              <div className="bg-black rounded-r-3xl">
+                <img
+                  src="/images/work1/videoeditor/Flow-1-Right-Layout.png"
+                  alt="Flow-1-Left-Diagram"
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
 
@@ -972,12 +1010,24 @@ export default function Work1() {
               <CircleCheck strokeWidth={1} size={36} />
               Record Mode as the Primary Process
             </h3>
-            <div className="mt-4 flex gap-12 items-center pr-10 rounded-3xl border border-emerald-300">
+            <div className="mt-4 flex items-center rounded-3xl border border-emerald-300 overflow-hidden">
               {/* Left */}
-              <div className=""></div>
+              <div className="px-8">
+                <img
+                  src="/images/work1/videoeditor/Flow-2-Left-Diagram.png"
+                  alt="Flow-1-Left-Diagram"
+                  className="w-full"
+                />
+              </div>
 
               {/* Right */}
-              <div className="bg-black rounded-r-3xl p-10 gap-8"></div>
+              <div className="bg-black rounded-r-3xl">
+                <img
+                  src="/images/work1/videoeditor/Flow-2-Right-Layout.png"
+                  alt="Flow-1-Left-Diagram"
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
 
@@ -1127,6 +1177,10 @@ export default function Work1() {
             {/* Right 2/3 - Description */}
           </div>
 
+          <div className="mt-12 bg-black flex items-center justify-center rounded-3xl">
+            <img src="/images/work1/videoeditor/Design-Editmode-Layout.png" />
+          </div>
+
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
             <video
               autoPlay
@@ -1151,10 +1205,9 @@ export default function Work1() {
       {/* AI Video Generator */}
       <section
         id="prompt"
-        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-16"
+        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-36"
       >
-        <h2 className="text-[11vw] md:text-[134px] whitespace-nowrap font-extrabold italic text-center"></h2>
-        <div className="flex flex-col space-y-4 items-center text-center">
+        <div className="flex flex-col space-y-4 items-center text-center mb-32">
           <h2 className="text-9xl whitespace-nowrap">AI Video Generator</h2>
           <p className="max-w-3xl">
             With GPT-like platforms popularizing input-based interactions, our
@@ -1163,6 +1216,57 @@ export default function Work1() {
             split-screen dialogue, and with simple customization, generate the
             video you envision.
           </p>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Behaviour */}
+        <div
+          id="editor-design-record"
+          className="max-w-6xl mx-auto my-32 md:px-5 px-3"
+        >
+          {/* Title and Description Section */}
+          <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
+            {/* Left 1/3 - Title */}
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl md:text-6xl">Behaviour</h2>
+              <p className=" text-zinc-300">
+                We break down user behavior into three core components to drive
+                our design decisions.
+              </p>
+            </div>
+            {/* Right 2/3 - icon */}
+          </div>
+          {/* Step */}
+          <div className="max-w-4xl text-white">
+            {AIGeneratorSteps.map((item, index) => (
+              <div
+                key={index}
+                // className="flex flex-row gap-28 py-12 border-zinc-900"
+                className={`flex flex-row gap-28 py-12 ${
+                  index !== AIGeneratorSteps.length - 1
+                    ? "border-b border-zinc-900"
+                    : ""
+                }`}
+              >
+                {/* Step Number */}
+                <span className="text-zinc-400 text-2xl">{item.step}</span>
+
+                {/* Step Title + Description */}
+                <div>
+                  <span className="text-2xl font-semibold">{item.title}</span>
+                  <ul className="mt-2 space-y-1111 text-zinc-300">
+                    {item.description.map((desc, i) => (
+                      <li key={i} className="list-disc list-inside">
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

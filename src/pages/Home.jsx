@@ -53,7 +53,7 @@ function RotatingText() {
 
   return (
     <h6
-      className={`font-extralight text-xl text-zinc-200 mt-4 transition-opacity duration-500 ${
+      className={`font-extralight text-xl text-zinc-200 my-4 transition-opacity duration-500 ${
         fade ? "opacity-100" : "opacity-0"
       }`}
     >
