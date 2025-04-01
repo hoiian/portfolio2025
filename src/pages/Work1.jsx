@@ -1110,7 +1110,7 @@ export default function Work1() {
                   Record Mode is the project’s key innovation, featuring three
                   input modes:
                 </h3>
-                <ul className="list-disc list-inside space-y-1 text-zinc-300">
+                <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
                   <li>
                     <strong>Narrate (Text Mode):</strong> Your avatar reads
                     aloud your input content.
@@ -1421,6 +1421,47 @@ export default function Work1() {
               interaction.
             </p>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-20">
+            {/* Card 1:   */}
+            <div className="flex flex-col  ">
+              <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                <video autoPlay loop muted playsInline className="">
+                  <source
+                    src="/videos/work1/prompt/s2-edit-mono.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3 className="text-3xl">Monologue</h3>
+              <p className="text-zinc-300 mt-2">..</p>
+            </div>
+
+            {/* Card 2:   */}
+            <div className="flex flex-col ">
+              <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                <video autoPlay loop muted playsInline className="">
+                  <source
+                    src="/videos/work1/prompt/s2-edit-diag.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3 className="text-3xl">Dialogue</h3>
+              <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
+                <li>
+                  Avatars positioned intuitively to the left of script lines,
+                  resembling a chatroom.
+                </li>
+                <li>
+                  Clicking avatars triggers a subtle shake animation, visually
+                  guiding users to the right-side menu.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         {/* Divider */}
@@ -1435,6 +1476,23 @@ export default function Work1() {
               No complicated settings before generating—just select the ratio to
               complete the setup.
             </p>
+          </div>
+
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-xl border border-zinc-800 max-w-3xl"
+            >
+              <source
+                src="/videos/work1/prompt/s3-generate.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
@@ -1466,7 +1524,7 @@ export default function Work1() {
               className="rounded-xl border border-zinc-800 max-w-3xl"
             >
               <source
-                src="/videos/work1/demo-prompt-diag.mp4"
+                src="/videos/work1/prompt/demo-prompt-diag.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
