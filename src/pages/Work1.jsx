@@ -1326,6 +1326,82 @@ export default function Work1() {
 
             <div className="mt-12">
               <h4 className="text-3xl mt-2">💡 So,</h4>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-xl my-4 border1 border-zinc-800"
+              >
+                <source
+                  src="/videos/work1/prompt/problem1.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <p>
+                Below the input box, we offer selected sample ideas to help
+                users get started quickly, allowing them to enjoy full
+                functionality without the pressure of coming up with the perfect
+                idea.
+              </p>
+            </div>
+          </div>
+
+          {/* Problem - 2.  */}
+          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+            <div className="">
+              <h4 className="text-3xl mt-2">💭 Problem 2</h4>
+              <p className="text-zinc-300 mt-2">
+                Users might not be aware of the final output's presentation,
+                including its style.
+              </p>
+            </div>
+
+            <div className="mt-12">
+              <h4 className="text-3xl mt-2">💡 So,</h4>
+              <div className="mt-2 mb-14 flex flex-row gap-8">
+                {/* Left */}
+                <div className="w-full">
+                  <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
+                    <CircleCheck strokeWidth={1} size={36} />
+                  </h3>
+                  <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full">
+                    <img
+                      src="/images/work1/prompt/problem2-false.png"
+                      alt="problem2 menu"
+                      className="max-w-[200px] mx-auto"
+                    />
+                  </div>
+                </div>
+                {/* Right */}
+                <div className="w-full">
+                  <h3 className="text-2xl text-emerald-300 flex items-center justify-center gap-3 ">
+                    <CircleCheck strokeWidth={1} size={36} />
+                  </h3>
+                  <div className="flex items-center rounded-3xl border border-emerald-300 h-full">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="rounded-xl max-w-xs mx-auto border1 border-zinc-800"
+                    >
+                      <source
+                        src="/videos/work1/prompt/problem2-true.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Instead of relying on unclear single-word labels, we added
+                descriptive text and a preview video so users can easily
+                understand the final presentation without having to interpret
+                uncommon terms like "monologue."
+              </p>
             </div>
           </div>
         </div>
