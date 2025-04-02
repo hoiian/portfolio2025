@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
+import SectionNav from "../components/SectionNav";
 import { ChevronLeft, MoveRight, CircleX, CircleCheck } from "lucide-react";
 
 export default function Work1() {
@@ -79,6 +80,8 @@ export default function Work1() {
 
   return (
     <div className="min-h-screen text-white flex flex-col mx-auto relative">
+      <SectionNav />
+
       {/* Fixed Right Navigation */}
       {false && (
         <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
@@ -252,15 +255,14 @@ export default function Work1() {
         </nav>
       )}
       {/* Header with Back Button */}
-      <header className="p-6 fixed top-2 left-2">
+      <div className="w-8 h-8 fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 ">
         <Link
           to="/"
-          className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
+          // className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
         >
-          <ChevronLeft strokeWidth={1} />
-          Back
+          <ChevronLeft strokeWidth={1} size={28} />
         </Link>
-      </header>
+      </div>
       {/* Work1 Content */}
       <div className="flex flex-col items-center justify-center pt-48">
         {/* Floating Glow Effect */}
@@ -1533,19 +1535,25 @@ export default function Work1() {
         </div>
       </section>
 
-      {/* Key Features Section */}
-      {/* <section id="features" className="p-8 border-t border-zinc-800">
-        <h2 className="text-5xl italic">Key Features</h2>
-        <p className="mt-4">
-          What makes Studio unique and how it empowers creators.
-        </p>
-      </section> */}
+      {/* Divider */}
+      <div className="w-full border-t border-zinc-800"></div>
+      {/* Conclusion */}
+      <section
+        id="conclusion"
+        className="border-zinc-800 max-w-[1360px] mx-auto py-36"
+      >
+        <div className="flex flex-col space-y-4 items-center text-center mb-32">
+          <h2 className="text-9xl whitespace-nowrap">Conclusion</h2>
+          <p className="max-w-3xl">,,</p>
+        </div>
+      </section>
+
       {/* Next Project Link */}
-      <div className="p-6 text-center">
+      {/* <div className="p-6 text-center">
         <Link to="/work2" className="italic hover:underline text-4xl">
           Next Project →
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
