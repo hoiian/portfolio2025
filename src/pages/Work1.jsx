@@ -422,32 +422,45 @@ export default function Work1() {
 
         <div className="flex flex-col items-center justify-between  my-24 bg-black max-w-full mx-auto py-52">
           <div className="flex items-center justify-between gap-20  relative max-w-[1360px]">
-            <video
-              className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source
-                src="/videos/work1/demo-VtuberPlayground-before.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <video
-              className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source
-                src="/videos/work1/demo-VtuberPlayground.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <div>
+              <h3 className="text-3xl flex items-center justify-center mb-2">
+                Before
+              </h3>
+              <video
+                className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              >
+                <source
+                  src="/videos/work1/demo-VtuberPlayground-before.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <h3 className="text-3xl flex items-center justify-center mb-2">
+                After
+              </h3>
+              <video
+                className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              >
+                <source
+                  src="/videos/work1/demo-VtuberPlayground.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
             <img
               src="/images/work1/vtuber/compareLine.png"
               alt="compareLine"
@@ -462,7 +475,7 @@ export default function Work1() {
         >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 1/3 - Title */}
+            {/* Left 2/3 - Title + Description */}
             <div className="md:col-span-2 space-y-3">
               <h2 className="text-5xl md:text-6xl">Competitor</h2>
               <p className=" text-zinc-300">
@@ -472,7 +485,25 @@ export default function Work1() {
                 avatar integration.
               </p>
             </div>
-            {/* Right 2/3 - Description */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="132"
+                height="130"
+                viewBox="0 0 132 130"
+                fill="none"
+              >
+                <circle cx="46.5" cy="46.5" r="46" stroke="white" />
+                <line
+                  x1="80.3536"
+                  y1="78.6464"
+                  x2="131.354"
+                  y2="129.646"
+                  stroke="white"
+                />
+              </svg>
+            </div>
           </div>
 
           {/* Exploration - 1.Hyper */}
@@ -735,7 +766,7 @@ export default function Work1() {
         >
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 1/3 - Title */}
+            {/* Left 2/3 - Title + Description */}
             <div className="md:col-span-2 space-y-3">
               <h2 className="text-5xl md:text-6xl">Design</h2>
               <p className=" text-zinc-300">
@@ -744,7 +775,50 @@ export default function Work1() {
                 TikTok Live.
               </p>
             </div>
-            {/* Right 2/3 - Description */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="140"
+                height="140"
+                viewBox="0 0 140 140"
+                fill="none"
+              >
+                <path
+                  d="M73.049 47.898L26.1511 1.00006L2.83667 24.3145L49.7346 71.2124"
+                  stroke="white"
+                />
+                <path
+                  d="M68.8662 90.3145L115.764 137.212L139.079 113.898L92.1806 67.0001"
+                  stroke="white"
+                />
+                <path
+                  d="M115.267 5.33222C115.853 4.74644 116.803 4.74643 117.389 5.33222L134.547 22.4909C135.133 23.0766 135.133 24.0264 134.547 24.6122L29.7734 129.386L10.4935 129.386L10.4935 110.106L115.267 5.33222Z"
+                  stroke="white"
+                />
+                <line
+                  x1="49.2195"
+                  y1="25.3536"
+                  x2="38.2195"
+                  y2="36.3536"
+                  stroke="white"
+                />
+                <line
+                  x1="115.249"
+                  y1="90.3536"
+                  x2="104.249"
+                  y2="101.354"
+                  stroke="white"
+                />
+                <line
+                  x1="94.3536"
+                  y1="25.6464"
+                  x2="114.153"
+                  y2="45.4454"
+                  stroke="white"
+                />
+              </svg>
+            </div>
           </div>
 
           {/* Design - 1.Avatar selection */}
@@ -865,7 +939,25 @@ export default function Work1() {
               <h2 className="text-5xl md:text-6xl">Competitor</h2>
               <p className=" text-zinc-300">,,</p>
             </div>
-            {/* Right 2/3 - Description */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="132"
+                height="130"
+                viewBox="0 0 132 130"
+                fill="none"
+              >
+                <circle cx="46.5" cy="46.5" r="46" stroke="white" />
+                <line
+                  x1="80.3536"
+                  y1="78.6464"
+                  x2="131.354"
+                  y2="129.646"
+                  stroke="white"
+                />
+              </svg>
+            </div>
           </div>
 
           {/* Competitor - 1. CapCut */}
@@ -966,7 +1058,7 @@ export default function Work1() {
         <div id="editor-flow" className="max-w-6xl mx-auto py-36  md:px-5 px-3">
           {/* Title and Description Section */}
           <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 1/3 - Title */}
+            {/* Left 2/3 - Title */}
             <div className="md:col-span-2 space-y-3">
               <h2 className="text-5xl md:text-6xl">Flow</h2>
               <p className=" text-zinc-300">
@@ -976,7 +1068,52 @@ export default function Work1() {
                 an auxiliary refinement.
               </p>
             </div>
-            {/* Right 2/3 - icon */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="137"
+                height="137"
+                viewBox="0 0 137 137"
+                fill="none"
+              >
+                <rect
+                  x="0.25"
+                  y="0.25"
+                  width="56.5"
+                  height="38.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="80.25"
+                  y="98.25"
+                  width="56.5"
+                  height="38.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="68"
+                  y="48.4004"
+                  width="29.1985"
+                  height="29.1985"
+                  transform="rotate(45 68 48.4004)"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <path
+                  d="M57 20H110.5C124.031 20 135 30.969 135 44.5V44.5C135 58.031 124.031 69 110.5 69H88.5205"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <path
+                  d="M80 118H26.5C12.969 118 2 107.031 2 93.5V93.5C2 79.969 12.969 69 26.5 69H47.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+              </svg>
+            </div>
           </div>
 
           {/* Record Mode as a Sub-Feature */}
@@ -1238,7 +1375,52 @@ export default function Work1() {
                 our design decisions.
               </p>
             </div>
-            {/* Right 2/3 - icon */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="137"
+                height="137"
+                viewBox="0 0 137 137"
+                fill="none"
+              >
+                <rect
+                  x="0.25"
+                  y="0.25"
+                  width="56.5"
+                  height="38.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="80.25"
+                  y="98.25"
+                  width="56.5"
+                  height="38.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="68"
+                  y="48.4004"
+                  width="29.1985"
+                  height="29.1985"
+                  transform="rotate(45 68 48.4004)"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <path
+                  d="M57 20H110.5C124.031 20 135 30.969 135 44.5V44.5C135 58.031 124.031 69 110.5 69H88.5205"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <path
+                  d="M80 118H26.5C12.969 118 2 107.031 2 93.5V93.5C2 79.969 12.969 69 26.5 69H47.5"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+              </svg>
+            </div>
           </div>
           {/* Step */}
           <div className="max-w-4xl text-white my-12">
@@ -1513,7 +1695,57 @@ export default function Work1() {
               <h2 className="text-5xl md:text-6xl">Outcome</h2>
               <p className=" text-zinc-300">..</p>
             </div>
-            {/* Right 2/3 - icon */}
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="142"
+                height="110"
+                viewBox="0 0 142 110"
+                fill="none"
+              >
+                <rect
+                  x="0.25"
+                  y="0.25"
+                  width="141.5"
+                  height="109.5"
+                  rx="7.75"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <line
+                  y1="20.75"
+                  x2="142"
+                  y2="20.75"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <line
+                  x1="51.25"
+                  y1="21"
+                  x2="51.25"
+                  y2="110"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <line
+                  x1="52"
+                  y1="64.75"
+                  x2="142"
+                  y2="64.75"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+                <line
+                  x1="98.25"
+                  y1="65"
+                  x2="98.25"
+                  y2="110"
+                  stroke="white"
+                  stroke-width="0.5"
+                />
+              </svg>
+            </div>
           </div>
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
@@ -1544,7 +1776,92 @@ export default function Work1() {
       >
         <div className="flex flex-col space-y-4 items-center text-center mb-32">
           <h2 className="text-9xl whitespace-nowrap">Conclusion</h2>
-          <p className="max-w-3xl">,,</p>
+          <p className="max-w-3xl">
+            This project encompassed diverse design challenges: redesigning an
+            interactive playground tool, building a video editor from scratch,
+            and introducing a new AI-generated video feature. Through this
+            experience, I explored detailed interactions essential to creative
+            tools and gained valuable insights into AI applications in video
+            production. Operating under rapid iteration cycles required swiftly
+            translating basic requirements into fully functional prototypes. As
+            the sole designer without direct PM support, I took ownership of
+            defining the overall framework, workflows, and high-fidelity
+            designs. This challenged me to sharpen my skills in independent
+            decision-making, balancing innovation with practicality, and quickly
+            validating design ideas through prototypes.
+          </p>
+        </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
+
+        {/* Reflection */}
+        {/* Title and Description Section */}
+        <div className="grid md:grid-cols-3 gap-8 items-start my-32 max-w-5xl">
+          {/* Left 2/3 - Title */}
+          <div className="md:col-span-2 space-y-3">
+            <h2 className="text-5xl md:text-6xl">Reflection</h2>
+            <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
+              <li>
+                Learned to prioritize critical interactions, ensuring intuitive
+                user experiences.
+              </li>
+              <li>
+                Deepened my understanding of AI capabilities and limitations in
+                creative contexts.
+              </li>
+              <li>
+                Improved efficiency by balancing thorough exploration with rapid
+                prototyping.
+              </li>
+              <li>
+                Gained confidence in independently handling end-to-end product
+                design processes without direct project management support.
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex justify-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="132"
+              height="144"
+              viewBox="0 0 132 144"
+              fill="none"
+            >
+              <path
+                d="M25.6612 112.5C10.681 101.182 1 83.2218 1 63C1 28.7583 28.7583 1 63 1C92.7827 1 117.661 21.9997 123.635 50"
+                stroke="white"
+                stroke-width="0.5"
+              />
+              <path
+                d="M123.5 49.5L130.779 79.0431C131.4 81.5644 129.492 84 126.895 84H108.5V116.5C108.5 121.471 104.471 125.5 99.5 125.5H75.5V143.5"
+                stroke="white"
+                stroke-width="0.5"
+              />
+              <line
+                x1="25.25"
+                y1="112"
+                x2="25.25"
+                y2="144"
+                stroke="white"
+                stroke-width="0.5"
+              />
+              <path
+                d="M44 45C45.5 41.6667 51.1 34 61.5 34C74.5 34 79 43 79 49.5C79 57 73.0962 61.9038 68.5 66.5C65.5 69.5 61.5 73.5 61.5 81.5"
+                stroke="white"
+                stroke-width="0.5"
+              />
+              <line
+                x1="61.25"
+                y1="94"
+                x2="61.25"
+                y2="102"
+                stroke="white"
+                stroke-width="0.5"
+              />
+            </svg>
+          </div>
         </div>
       </section>
 

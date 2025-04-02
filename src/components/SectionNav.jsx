@@ -15,7 +15,7 @@ const SectionNav = () => {
 
       const startTop = startEl.offsetTop;
       const endBottom = endEl.offsetTop + endEl.offsetHeight;
-      const totalHeight = endBottom - startTop;
+      const totalHeight = endBottom - startTop - window.innerHeight; // ✨ 加這裡保持一致
 
       const widths = {};
 
