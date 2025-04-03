@@ -25,7 +25,7 @@ const Resume = () => {
   const content = resumeTexts[selectedLanguage];
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20">
+    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20 mb-40">
       <Header />
       {/* Left Sidebar */}
       <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start md:sticky md:top-5 md:h-screen">

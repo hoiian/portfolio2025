@@ -52,7 +52,7 @@ export default function Work1() {
       <SectionNav />
 
       {/* Header with Back Button */}
-      <div className="w-8 h-8 fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 ">
+      <div className="w-8 h-8 fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 z-50">
         <Link
           to="/"
           // className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
@@ -124,7 +124,12 @@ export default function Work1() {
           <img
             src="/images/work1/timeline.png"
             alt="Studio Timeline"
-            className="mb-1 w-full"
+            className="hidden md:block mb-1 w-full"
+          />
+          <img
+            src="/images/work1/timeline-mobile.png"
+            alt="Studio Timeline"
+            className="md:hidden block mb-1 w-full"
           />
         </div>
       </div>

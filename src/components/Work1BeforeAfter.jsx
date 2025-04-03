@@ -4,11 +4,11 @@ export default function Work1BeforeAfter() {
   const [activeTab, setActiveTab] = useState("before");
 
   return (
-    <div className="flex flex-col items-center text-center relative  pb-16 px-4 w-full mx-auto">
+    <div className="flex flex-col items-center text-center relative  pb-16 px-4 w-full mx-auto min-h-screen">
       {/* Floating Glow Effect */}
       {/* <div className="absolute top-[0px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white bg-opacity-[0.05] blur-[150px] z-[-1]"></div> */}
       {/* Tabs */}
-      <div className="flex justify-center space-x-6 text-4xl mb-16 font-heading w-full h-28 border-b border-zinc-800 item-center">
+      <div className="md:static sticky top-8 z-50 md:z-0 bg-zinc-950/60 backdrop-blur-lg flex justify-center space-x-6 text-4xl mb-16 font-heading w-full h-28 border-b border-zinc-800 item-center">
         <button
           onClick={() => setActiveTab("before")}
           className={` transition hover:text-zinc-300 w-sm p-5 ${
