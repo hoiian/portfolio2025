@@ -133,9 +133,9 @@ export default function Work1() {
       <div className="w-full border-t border-zinc-800"></div>
       {/* Background Section */}
       <section id="background" className="max-w-6xl mx-auto py-24 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-zinc-200">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-zinc-200">
           {/* <!-- 左側空間 (1/3) --> */}
-          <div className="hidden md:block"></div>
+          <div className="hidden lg:block"></div>
 
           {/* <!-- 右側文字 (2/3) --> */}
           <div className="md:col-span-2 text-2xl leading-relaxed md:max-w-3xl w-full">
@@ -184,8 +184,8 @@ export default function Work1() {
           </p>
         </div>
 
-        <div className="flex  items-center justify-between  my-24 bg-black max-w-full mx-auto md:py-52 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-20 relative w-full px-4 md:max-w-[1360px] md:mx-auto">
+        <div className="flex  items-center justify-between  my-24 bg-black max-w-full mx-auto md:py-48 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-20 relative w-full md:px-0 px-4 md:max-w-[1360px] md:mx-auto">
             <div>
               <h3 className="text-3xl flex items-center justify-center mb-2">
                 Before
@@ -236,7 +236,7 @@ export default function Work1() {
             <img
               src="/images/work1/vtuber/compareLine.png"
               alt="compareLine"
-              className="hidden lg:block absolute top-[94px] left-[621px] w-[564px] "
+              className="hidden lg:block absolute top-[46px] left-[45%]1 w-[full] "
             />
           </div>
         </div>
@@ -279,7 +279,7 @@ export default function Work1() {
           </div>
 
           {/* Exploration - 1.Hyper */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -307,7 +307,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Hyper Logo */}
-              <div className="flex justify-end mt-5">
+              <div className="hidden md:block flex justify-end mt-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="132"
@@ -355,7 +355,7 @@ export default function Work1() {
           </div>
 
           {/* Exploration - 2. Google Meet */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -367,7 +367,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Logo */}
-              <div className="flex1 justify-end1 flex mt-5">
+              <div className="hidden md:block flex1 justify-end1 flex mt-5">
                 <img
                   src="/images/work1/vtuber/exploration/logo-googlemeet.png"
                   alt="Google Meet"
@@ -451,7 +451,7 @@ export default function Work1() {
             </div>
           </div>
           {/* Exploration - 3. Figma */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -461,7 +461,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Logo */}
-              <div className="flex1 justify-end flex mt-5">
+              <div className="hidden md:block flex1 justify-end flex mt-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="33"
@@ -594,7 +594,7 @@ export default function Work1() {
           </div>
 
           {/* Design - 1.Avatar selection */}
-          <div className="mt-24 flex md:flex-row flex-col gap-12 items-center md:pr-10 p-8 rounded-3xl border border-zinc-700">
+          <div className="mt-24 flex md:flex-row flex-col md:gap-12 gap-0 items-center p-0 md:pr-10 overflow-hidden rounded-3xl border border-zinc-700">
             {/* Left */}
             <div className="flex flex-row w-full mx-auto bg-black rounded-l-3xl p-10 gap-8">
               <div>
@@ -620,7 +620,7 @@ export default function Work1() {
             </div>
 
             {/* Right - Text Content */}
-            <div className="">
+            <div className="p-10">
               <h4 className="text-5xl">Avatar Selection</h4>
               <h4 className="text-lg font-bold mt-6 text-white">
                 Simplified Navigation
@@ -641,9 +641,9 @@ export default function Work1() {
           </div>
 
           {/* Design - 2.Device Setting */}
-          <div className="mt-24 flex md:flex-row flex-col gap-12 items-center md:pl-16 p-8 rounded-3xl border border-zinc-700">
+          <div className="mt-24 flex md:flex-row flex-col gap-0 md:gap-12 items-center md:pl-16 p-0 overflow-hidden rounded-3xl border border-zinc-700">
             {/* Left - Text Content */}
-            <div className="">
+            <div className="p-10">
               <h4 className="text-5xl">Device Setting</h4>
               <h4 className="text-lg font-bold mt-6 text-white">
                 Streamlined Device Settings
@@ -654,8 +654,8 @@ export default function Work1() {
             </div>
 
             {/* Right */}
-            <div className="flex flex-row  mx-auto bg-black rounded-r-3xl p-10 gap-8">
-              <div className="max-w-[152px]">
+            <div className="flex flex-row w-full mx-auto bg-black rounded-r-3xl p-10 gap-8">
+              <div className="max-w-[162px]">
                 <video autoPlay loop muted playsInline className="rounded-lg">
                   <source
                     src="/videos/work1/vtuber/design/setting-before.mp4"
@@ -733,7 +733,7 @@ export default function Work1() {
           </div>
 
           {/* Competitor - 1. CapCut */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -742,7 +742,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 -  Logo */}
-              <div className="flex justify-end">
+              <div className="hidden md:block flex justify-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
@@ -775,7 +775,7 @@ export default function Work1() {
           </div>
 
           {/* Competitor - 2. D-ID  */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -784,7 +784,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 -  Logo */}
-              <div className="flex justify-end">
+              <div className="hidden md:block flex justify-end">
                 <img
                   src="/images/work1/videoeditor/d-id-logo.svg"
                   alt="D-ID Logo"
@@ -810,7 +810,7 @@ export default function Work1() {
           </div>
 
           {/* Competitor -  3. Other*/}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="grid md:grid-cols-3 gap-8">
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
@@ -890,7 +890,7 @@ export default function Work1() {
 
           {/* Record Mode as a Sub-Feature */}
           <div className="my-24">
-            <h3 className="text-2xl text-red-400 flex items-center justify-start gap-3">
+            <h3 className="md:text-2xl text-lg text-red-400 flex items-center justify-start gap-3">
               <CircleX strokeWidth={1} size={36} />
               Record Mode as a Sub-Feature
             </h3>
@@ -917,7 +917,7 @@ export default function Work1() {
 
           {/* Record Mode as the Primary Process */}
           <div className="mt-24">
-            <h3 className="text-2xl text-emerald-300 flex items-center justify-start gap-3">
+            <h3 className="md:text-2xl text-lg text-emerald-300 flex items-center justify-start gap-3">
               <CircleCheck strokeWidth={1} size={36} />
               Record Mode as the Primary Process
             </h3>
@@ -1248,7 +1248,7 @@ export default function Work1() {
             </p>
           </div>
 
-          <div className="mt-12 flex flex-row gap-8">
+          <div className="mt-12 flex md:flex-row flex-col gap-8">
             <div className="w-full">
               <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
                 <CircleCheck strokeWidth={1} size={36} />
@@ -1279,7 +1279,7 @@ export default function Work1() {
           </h3>
 
           {/* Problem - 1.  */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="">
               <h4 className="text-3xl mt-2">💭 Problem 1</h4>
               <p className="text-zinc-300 mt-2">
@@ -1313,7 +1313,7 @@ export default function Work1() {
           </div>
 
           {/* Problem - 2.  */}
-          <div className="mt-24 p-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
             <div className="">
               <h4 className="text-3xl mt-2">💭 Problem 2</h4>
               <p className="text-zinc-300 mt-2">
@@ -1324,13 +1324,13 @@ export default function Work1() {
 
             <div className="mt-12">
               <h4 className="text-3xl mt-2">💡 So,</h4>
-              <div className="mt-2 mb-14 flex flex-row gap-8">
+              <div className="mt-2 mb-14 flex md:flex-row flex-col gap-8">
                 {/* Left */}
                 <div className="w-full">
                   <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
                     <CircleCheck strokeWidth={1} size={36} />
                   </h3>
-                  <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full px-4">
+                  <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full p-4 overflow-hidden">
                     <img
                       src="/images/work1/prompt/problem2-false.png"
                       alt="problem2 menu"
@@ -1343,7 +1343,7 @@ export default function Work1() {
                   <h3 className="text-2xl text-emerald-300 flex items-center justify-center gap-3 ">
                     <CircleCheck strokeWidth={1} size={36} />
                   </h3>
-                  <div className="flex items-center rounded-3xl border border-emerald-300 h-full">
+                  <div className="flex items-center rounded-3xl border border-emerald-300 h-full overflow-hidden">
                     <video
                       autoPlay
                       loop
