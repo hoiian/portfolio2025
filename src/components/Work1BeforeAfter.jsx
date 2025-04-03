@@ -4,7 +4,7 @@ export default function Work1BeforeAfter() {
   const [activeTab, setActiveTab] = useState("before");
 
   return (
-    <div className="flex flex-col items-center text-center relative  pb-16  w-full mx-auto">
+    <div className="flex flex-col items-center text-center relative  pb-16 px-4 w-full mx-auto">
       {/* Floating Glow Effect */}
       {/* <div className="absolute top-[0px] left-1/2 -translate-x-1/2 w-[1095px] h-[421px] rounded-[1095px] bg-white bg-opacity-[0.05] blur-[150px] z-[-1]"></div> */}
       {/* Tabs */}
@@ -50,12 +50,15 @@ export default function Work1BeforeAfter() {
           <img
             src="/images/work1/background/Home.png"
             alt="Studio"
-            className="w-1/3 rounded-lg"
+            className="md:w-1/3 w-full rounded-lg"
           />
+          <h3 className="md:hidden block mb-12 text-3xl hover:text-zinc-400">
+            <a href="#vtuber">Studio Homepage</a>
+          </h3>
           <img
             src="/images/work1/background/stuctureLine.png"
             alt="Studio"
-            className="w-[858px] mt-[-202px]"
+            className="w-[858px] mt-[-202px] hidden md:block"
           />
         </div>
 

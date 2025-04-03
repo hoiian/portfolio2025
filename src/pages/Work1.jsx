@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
 import SectionNav from "../components/SectionNav";
-import { ChevronLeft, MoveRight, CircleX, CircleCheck } from "lucide-react";
+import {
+  ChevronLeft,
+  MoveRight,
+  MoveDown,
+  CircleX,
+  CircleCheck,
+} from "lucide-react";
 
 export default function Work1() {
   const [activeSection, setActiveSection] = useState("background");
@@ -84,7 +90,7 @@ export default function Work1() {
       <div className="w-full border-t border-zinc-800"></div>
 
       {/* Overview Section */}
-      <div className="max-w-6xl mx-auto py-24">
+      <div className="max-w-6xl mx-auto py-24 px-4">
         <div>
           <h2 className="text-3xl">Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start text-white">
@@ -134,7 +140,7 @@ export default function Work1() {
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
       {/* Background Section */}
-      <section id="background" className="max-w-6xl mx-auto py-24 ">
+      <section id="background" className="max-w-6xl mx-auto py-24 px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-zinc-200">
           {/* <!-- 左側空間 (1/3) --> */}
           <div className="hidden md:block"></div>
@@ -391,7 +397,7 @@ export default function Work1() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
               {/* Card 1: Streamlined Device Settings */}
               <div className="flex flex-col  ">
-                <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
+                <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
                   <video autoPlay loop muted playsInline className="">
                     <source
                       src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
@@ -408,7 +414,7 @@ export default function Work1() {
 
               {/* Card 2: Clear Hover Labels */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
+                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
                   <video
                     autoPlay
                     loop
@@ -432,7 +438,7 @@ export default function Work1() {
 
               {/* Card 3: Toast Notifications */}
               <div className="flex flex-col ">
-                <div className="bg-zinc-900 h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
+                <div className="bg-zinc-900 max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
                   <img
                     src="/images/work1/vtuber/exploration/toast.png"
                     alt="Toast Notifications"
@@ -495,7 +501,7 @@ export default function Work1() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
               {/* Card 1:   */}
               <div className="flex flex-col  ">
-                <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                   <video autoPlay loop muted playsInline className="">
                     <source
                       src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
@@ -510,7 +516,7 @@ export default function Work1() {
 
               {/* Card 2:   */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                   <video autoPlay loop muted playsInline className="">
                     <source
                       src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
@@ -891,7 +897,7 @@ export default function Work1() {
               <CircleX strokeWidth={1} size={36} />
               Record Mode as a Sub-Feature
             </h3>
-            <div className="mt-4 flex items-center rounded-3xl border border-red-400 overflow-hidden">
+            <div className="mt-4 flex flex-col md:flex-row items-center rounded-3xl border border-red-400 overflow-hidden">
               {/* Left */}
               <div className="px-8">
                 <img
@@ -912,13 +918,13 @@ export default function Work1() {
             </div>
           </div>
 
-          {/* RRecord Mode as the Primary Process */}
+          {/* Record Mode as the Primary Process */}
           <div className="mt-24">
             <h3 className="text-2xl text-emerald-300 flex items-center justify-start gap-3">
               <CircleCheck strokeWidth={1} size={36} />
               Record Mode as the Primary Process
             </h3>
-            <div className="mt-4 flex items-center rounded-3xl border border-emerald-300 overflow-hidden">
+            <div className="mt-4 flex flex-col md:flex-row items-center rounded-3xl border border-emerald-300 overflow-hidden">
               {/* Left */}
               <div className="px-8">
                 <img
@@ -945,7 +951,7 @@ export default function Work1() {
             seamlessly upload their final content to social media.
           </h3>
 
-          <div className="flex flex-row w-full mx-auto mt-16">
+          <div className="flex md:flex-row flex-col w-full mx-auto mt-16">
             {/* Card 1:   */}
             <div className="flex flex-col">
               <div className="text-3xl text-center pb-3 pt-4 border border-zinc-600 font-heading">
@@ -959,9 +965,13 @@ export default function Work1() {
                 />
               </div>
             </div>
+            <MoveDown
+              strokeWidth={0.5}
+              className="md:hidden block w-[200px] h-[60px] text-zinc-400"
+            />
             <MoveRight
               strokeWidth={0.5}
-              className="w-[200px] h-[60px] text-zinc-400"
+              className="hidden md:block w-[200px] h-[60px] text-zinc-400"
             />
             {/* Card 2:   */}
             <div className="flex flex-col  ">
@@ -978,9 +988,13 @@ export default function Work1() {
                 </video>
               </div>
             </div>{" "}
+            <MoveDown
+              strokeWidth={0.5}
+              className="md:hidden block w-[200px] h-[60px] text-zinc-400"
+            />
             <MoveRight
               strokeWidth={0.5}
-              className="w-[200px] h-[60px] text-zinc-400"
+              className="hidden md:block w-[200px] h-[60px] text-zinc-400"
             />
             {/* Card 3:   */}
             <div className="flex flex-col  ">
@@ -1043,7 +1057,7 @@ export default function Work1() {
 
           <img src="/images/work1/videoeditor/RecordModesTable.png" />
 
-          <div className="mt-14 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+          <div className="mt-14 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <video
               autoPlay
               loop
@@ -1089,7 +1103,7 @@ export default function Work1() {
             <img src="/images/work1/videoeditor/Design-Editmode-Layout.png" />
           </div>
 
-          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <video
               autoPlay
               loop
@@ -1225,7 +1239,7 @@ export default function Work1() {
         <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         {/* Step1. */}
-        <div className="max-w-6xl my-40">
+        <div className="max-w-6xl mx-auto my-40">
           <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 1</span>
             <h2 className="text-5xl md:text-6xl">Input prompt</h2>
@@ -1363,7 +1377,7 @@ export default function Work1() {
         <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         {/* Step2. */}
-        <div className="max-w-6xl my-40">
+        <div className="max-w-6xl mx-auto my-40">
           <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 2</span>
             <h2 className="text-5xl md:text-6xl">Edit Script, select style</h2>
@@ -1378,7 +1392,7 @@ export default function Work1() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-20">
             {/* Card 1:   */}
             <div className="flex flex-col  ">
-              <div className="bg-[#1E1E20]  h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+              <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                 <video autoPlay loop muted playsInline className="">
                   <source
                     src="/videos/work1/prompt/s2-edit-mono.mp4"
@@ -1393,7 +1407,7 @@ export default function Work1() {
 
             {/* Card 2:   */}
             <div className="flex flex-col ">
-              <div className="bg-[#1E1E20] h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
+              <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
                 <video autoPlay loop muted playsInline className="">
                   <source
                     src="/videos/work1/prompt/s2-edit-diag.mp4"
@@ -1421,7 +1435,7 @@ export default function Work1() {
         <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         {/* Step3. */}
-        <div className="max-w-6xl my-40">
+        <div className="max-w-6xl mx-auto my-40">
           <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 3</span>
             <h2 className="text-5xl md:text-6xl">Generate</h2>
@@ -1431,7 +1445,7 @@ export default function Work1() {
             </p>
           </div>
 
-          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <video
               autoPlay
               loop
@@ -1517,7 +1531,7 @@ export default function Work1() {
             </div>
           </div>
 
-          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center p-24 rounded-3xl">
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <video
               autoPlay
               loop
