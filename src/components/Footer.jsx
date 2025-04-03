@@ -29,7 +29,7 @@ export default function Footer() {
 
       <footer className="text-black border-t-zinc-800 rounded-t-3xl text-center py-24 px-10 bg-zinc-50">
         <div className="max-w-[1360px]  mx-auto">
-          <h2 className="min-[1360px]:text-[180px] text-[11vw] whitespace-nowrap overflow-hidden uppercase">
+          <h2 className="min-[1360px]:text-[180px] text-[10vw] whitespace-nowrap uppercase">
             Let's connect
           </h2>
           <div className="socialicons flex flex-col md:flex-row items-center justify-between py-7 border-t border-black">

@@ -181,10 +181,7 @@ export default function Work1() {
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
       {/* Vtuber Playground Section */}
-      <section
-        id="vtuber"
-        className="py-44 w-full px-4 md:max-w-[1360px] md:mx-auto"
-      >
+      <section id="vtuber" className="py-44 w-full px-4 mx-auto">
         <div className="flex flex-col space-y-4 items-center text-center">
           <h2 className="md:text-9xl text-6xl">Vtuber Playground</h2>
           <p className="md:max-w-3xl w-full">
@@ -195,7 +192,7 @@ export default function Work1() {
           </p>
         </div>
 
-        <div className="flex  items-center justify-between  my-24 bg-black max-w-full mx-auto py-52">
+        <div className="flex  items-center justify-between  my-24 bg-black max-w-full mx-auto md:py-52 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-20 relative w-full px-4 md:max-w-[1360px] md:mx-auto">
             <div>
               <h3 className="text-3xl flex items-center justify-center mb-2">
@@ -1580,7 +1577,7 @@ export default function Work1() {
 
         {/* Reflection */}
         {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3 gap-8 items-start my-32 max-w-5xl">
+        <div className="grid md:grid-cols-3 gap-8 items-start my-32 w-full md:max-w-6xl mx-auto">
           {/* Left 2/3 - Title */}
           <div className="md:col-span-2 space-y-3">
             <h2 className="text-5xl md:text-6xl">Reflection</h2>

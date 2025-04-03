@@ -200,7 +200,7 @@ export default function Home() {
             href={works[0].link}
             className="group block relative col-span-1 lg:col-span-2 overflow-hidden transform transition hover:rotate-1"
           >
-            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl h-[500px] flex items-center justify-center">
+            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl max-h-[500px] p-10 flex items-center justify-center">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
               <video
                 src={works[0].video}
@@ -208,7 +208,7 @@ export default function Home() {
                 playsInline
                 autoPlay
                 muted
-                className=" transition-opacity duration-500 h-[80%] rounded-xl shadow-xl"
+                className=" transition-opacity duration-500 max-w-[80%] max-h-[80%] rounded-xl shadow-xl"
               />
             </div>
 
