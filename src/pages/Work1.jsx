@@ -312,7 +312,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Hyper Logo */}
-              <div className="hidden md:block flex justify-end mt-5">
+              <div className="hidden md:flex justify-end mt-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="132"
@@ -372,7 +372,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Logo */}
-              <div className="hidden md:block flex1 justify-end1 flex mt-5">
+              <div className="hidden md:flex justify-end">
                 <img
                   src="/images/work1/vtuber/exploration/logo-googlemeet.png"
                   alt="Google Meet"
@@ -380,26 +380,16 @@ export default function Work1() {
                 />
               </div>
             </div>
-
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
               controls
               className="rounded-2xl"
-            >
-              <source
-                src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
               {/* Card 1: Streamlined Device Settings */}
               <div className="flex flex-col  ">
-                <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
+                <div className="bg-[#1E1E20]  md:h-[300px] h-[200px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
                   <video autoPlay loop muted playsInline className="">
                     <source
                       src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
@@ -416,7 +406,7 @@ export default function Work1() {
 
               {/* Card 2: Clear Hover Labels */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
+                <div className="bg-[#1E1E20] md:h-[300px] h-[200px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
                   <video
                     autoPlay
                     loop
@@ -440,7 +430,7 @@ export default function Work1() {
 
               {/* Card 3: Toast Notifications */}
               <div className="flex flex-col ">
-                <div className="bg-zinc-900 max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
+                <div className="bg-zinc-900 md:h-[300px]  h-[200px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
                   <img
                     src="/images/work1/vtuber/exploration/toast.png"
                     alt="Toast Notifications"
@@ -466,7 +456,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 - Logo */}
-              <div className="hidden md:block flex1 justify-end flex mt-5">
+              <div className="hidden md:flex justify-end mt-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="33"
@@ -504,13 +494,7 @@ export default function Work1() {
               {/* Card 1:   */}
               <div className="flex flex-col  ">
                 <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                  <video autoPlay loop muted playsInline className="">
-                    <source
-                      src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  <SmartVideo src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4" />
                 </div>
                 <h3 className="text-3xl">FigJam</h3>
                 <p className="text-zinc-300 mt-2">..</p>
@@ -519,13 +503,7 @@ export default function Work1() {
               {/* Card 2:   */}
               <div className="flex flex-col ">
                 <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                  <video autoPlay loop muted playsInline className="">
-                    <source
-                      src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  <SmartVideo src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4" />
                 </div>
                 <h3 className="text-3xl">Figma</h3>
                 <p className="text-zinc-300 mt-2">..</p>
@@ -747,7 +725,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 -  Logo */}
-              <div className="hidden md:block flex justify-end">
+              <div className="hidden md:flex justify-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
@@ -762,21 +740,11 @@ export default function Work1() {
                 </svg>
               </div>
             </div>
-
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/videoeditor/competitor-capcut-record.mp4"
               controls
               className="rounded-2xl"
-            >
-              <source
-                src="/videos/work1/videoeditor/capcut-record.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
 
           {/* Competitor - 2. D-ID  */}
@@ -789,7 +757,7 @@ export default function Work1() {
               </div>
 
               {/* Right 1/3 -  Logo */}
-              <div className="hidden md:block flex justify-end">
+              <div className="hidden md:flex justify-end">
                 <img
                   src="/images/work1/videoeditor/d-id-logo.svg"
                   alt="D-ID Logo"
@@ -797,21 +765,11 @@ export default function Work1() {
                 />
               </div>
             </div>
-
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/videoeditor/competitor-Did.mp4"
               controls
               className="rounded-2xl"
-            >
-              <source
-                src="/videos/work1/videoeditor/competitor-Did.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
 
           {/* Competitor -  3. Other*/}
@@ -825,6 +783,26 @@ export default function Work1() {
 
               {/* Right 1/3 -  Logo */}
               <div className="flex justify-end"></div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
+              {/* Card 1:   */}
+              <div className="flex flex-col ">
+                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-xl overflow-hidden mb-4 ">
+                  <SmartVideo src="/videos/work1/videoeditor/competitor-captions.mp4" />
+                </div>
+                <h3 className="text-3xl">captions.ai</h3>
+                <p className="text-zinc-300 mt-2">..</p>
+              </div>
+
+              {/* Card 2:   */}
+              <div className="flex flex-col ">
+                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-xl overflow-hidden mb-4 ">
+                  <SmartVideo src="/videos/work1/videoeditor/competitor-heygen.mp4" />
+                </div>
+                <h3 className="text-3xl">HeyGen</h3>
+                <p className="text-zinc-300 mt-2">..</p>
+              </div>
             </div>
           </div>
         </div>
@@ -981,13 +959,7 @@ export default function Work1() {
                 Record Mode
               </div>
               <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4" />
               </div>
             </div>{" "}
             <MoveDown
@@ -1004,13 +976,7 @@ export default function Work1() {
                 Edit Mode
               </div>
               <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4" />
               </div>
             </div>
           </div>
@@ -1560,7 +1526,7 @@ export default function Work1() {
         className="w-full px-4 md:max-w-[1360px] md:mx-auto py-36"
       >
         <div className="flex flex-col space-y-4 items-center text-center mb-32">
-          <h2 className="md:text-9xl text-6xl">Conclusion</h2>
+          <h2 className="md:text-9xl text-6xl">Takeaways</h2>
           <p className="md:max-w-3xl w-full">
             This project encompassed diverse design challenges: redesigning an
             interactive playground tool, building a video editor from scratch,

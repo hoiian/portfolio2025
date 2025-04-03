@@ -14,12 +14,11 @@ const works = [
   },
 
   {
-    title: "NFT minting",
-    image: "/images/placeholder-image.jpg",
+    title: "Coming soon",
+    image: "/images/megaeth-cover.png",
     video: "",
     link: "/work2",
-    description:
-      "A Web3 development project focusing on blockchain integration.",
+    description: "",
   },
 ];
 
@@ -200,7 +199,7 @@ export default function Home() {
             href={works[0].link}
             className="group block relative col-span-1 lg:col-span-2 overflow-hidden transform transition hover:rotate-1"
           >
-            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl max-h-[500px] p-10 flex items-center justify-center">
+            <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl md:h-[460px] p-6 flex items-center justify-center">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
               <video
                 src={works[0].video}
@@ -208,7 +207,7 @@ export default function Home() {
                 playsInline
                 autoPlay
                 muted
-                className=" transition-opacity duration-500 max-w-[80%] max-h-[80%] rounded-xl shadow-xl"
+                className=" transition-opacity duration-500 max-w-[80%] max-h-[90%] rounded-xl shadow-xl"
               />
             </div>
 
@@ -218,11 +217,16 @@ export default function Home() {
             </div>
           </a>
           <a
-            href={works[1].link}
+            // href={works[1].link}
+
             className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1"
           >
-            <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl h-[500px]">
-              {/* <img  alt={works[1].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
+            <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl md:h-[460px] p-6 flex items-center justify-center">
+              <img
+                alt={works[1].title}
+                src={works[1].image}
+                className=" max-w-[50%] max-h-[90%] object-cover group-hover:opacity-80 transition blur"
+              />
             </div>
             <div className="p-4 text-white">
               <h3 className="text-2xl italic">{works[1].title}</h3>

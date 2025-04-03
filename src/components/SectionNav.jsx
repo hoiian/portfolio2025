@@ -107,6 +107,8 @@ const SectionNav = () => {
               ? "Video Editor"
               : id === "prompt"
               ? "AI Video Generator"
+              : id === "conclusion"
+              ? "Takeaways"
               : id.charAt(0).toUpperCase() + id.slice(1)}
           </button>
         ))}
