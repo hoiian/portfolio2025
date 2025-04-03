@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
 import SectionNav from "../components/SectionNav";
 import SmartVideo from "../components/SmartVideo";
+import BackToTop from "../components/BackToTop";
 import {
   ChevronLeft,
   MoveRight,
@@ -61,7 +62,7 @@ export default function Work1() {
         </Link>
       </div>
       {/* Work1 Content */}
-      <div className="flex flex-col items-center justify-center pt-48">
+      <div className="flex flex-col items-center justify-center pt-48 px-4">
         {/* Floating Glow Effect */}
         <div className="absolute top-[300px] left-1/2 -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
 
@@ -73,13 +74,13 @@ export default function Work1() {
         </div>
         <SmartVideo
           src="/videos/work1/demo-all.mp4"
-          className="rounded-2xl border-[16px] border-black md:max-w-4xl w-full md:mx-auto"
+          className="rounded-2xl md:border-[16px] border-black md:max-w-4xl w-full md:mx-auto"
         />
-        <div className="max-h-[30px] max-w-[968px] bg-black rounded-t-2xl"></div>
+        <div className="lg:h-[30px] lg:w-[968px] bg-black rounded-t-2xl"></div>
       </div>
 
       {/* Divider */}
-      <div className="w-full border-t border-zinc-800"></div>
+      <div className="w-full lg:border-t border-zinc-800"></div>
 
       {/* Overview Section */}
       <div className="max-w-6xl mx-auto py-24 px-4">
@@ -129,7 +130,7 @@ export default function Work1() {
           <img
             src="/images/work1/timeline-mobile.png"
             alt="Studio Timeline"
-            className="md:hidden block mb-1 w-full"
+            className="md:hidden block mb-1 max-w-xs mx-auto"
           />
         </div>
       </div>
@@ -355,7 +356,7 @@ export default function Work1() {
             <SmartVideo
               src="/videos/work1/vtuber/exploration/2-GoogleMeet.mp4"
               controls
-              className="rounded-2xl"
+              className="rounded-2xl overflow-hidden"
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16">
@@ -450,18 +451,22 @@ export default function Work1() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
               {/* Card 1:   */}
               <div className="flex flex-col  ">
-                <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                  <SmartVideo src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4" />
-                </div>
+                <SmartVideo
+                  src="/videos/work1/vtuber/exploration/3-FigJam-Toolbar.mp4"
+                  className="rounded-xl overflow-hidden mb-4"
+                />
+
                 <h3 className="text-3xl">FigJam</h3>
                 <p className="text-zinc-300 mt-2">..</p>
               </div>
 
               {/* Card 2:   */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                  <SmartVideo src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4" />
-                </div>
+                <SmartVideo
+                  src="/videos/work1/vtuber/exploration/3-Figma-Toolbar.mp4"
+                  className="rounded-xl overflow-hidden mb-4"
+                />
+
                 <h3 className="text-3xl">Figma</h3>
                 <p className="text-zinc-300 mt-2">..</p>
               </div>
@@ -536,7 +541,7 @@ export default function Work1() {
           {/* Design - 1.Avatar selection */}
           <div className="mt-24 flex md:flex-row flex-col md:gap-12 gap-0 items-center p-0 md:pr-10 overflow-hidden rounded-3xl border border-zinc-700">
             {/* Left */}
-            <div className="flex flex-row w-full mx-auto bg-black rounded-l-3xl p-10 gap-8">
+            <div className="flex flex-row w-full mx-auto bg-black p-10 gap-8">
               <div>
                 <SmartVideo
                   src="/videos/work1/vtuber/design/menu-before.mp4"
@@ -588,7 +593,7 @@ export default function Work1() {
             </div>
 
             {/* Right */}
-            <div className="flex flex-row w-full mx-auto bg-black rounded-r-3xl p-10 gap-8">
+            <div className="flex flex-row w-full mx-auto justify-center bg-black rounded-r-3xl p-10 gap-8">
               <div className="max-w-[162px]">
                 <SmartVideo
                   src="/videos/work1/vtuber/design/setting-before.mp4"
@@ -733,18 +738,22 @@ export default function Work1() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-5">
               {/* Card 1:   */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-xl overflow-hidden mb-4 ">
-                  <SmartVideo src="/videos/work1/videoeditor/competitor-captions.mp4" />
-                </div>
+                <SmartVideo
+                  src="/videos/work1/videoeditor/competitor-captions.mp4"
+                  className="rounded-xl overflow-hidden mb-4"
+                />
+
                 <h3 className="text-3xl">captions.ai</h3>
                 <p className="text-zinc-300 mt-2">..</p>
               </div>
 
               {/* Card 2:   */}
               <div className="flex flex-col ">
-                <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-xl overflow-hidden mb-4 ">
-                  <SmartVideo src="/videos/work1/videoeditor/competitor-heygen.mp4" />
-                </div>
+                <SmartVideo
+                  src="/videos/work1/videoeditor/competitor-heygen.mp4"
+                  className="rounded-xl overflow-hidden mb-4"
+                />
+
                 <h3 className="text-3xl">HeyGen</h3>
                 <p className="text-zinc-300 mt-2">..</p>
               </div>
@@ -1149,7 +1158,7 @@ export default function Work1() {
           <div className="mt-12 flex md:flex-row flex-col gap-8">
             <div className="w-full">
               <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
-                <CircleCheck strokeWidth={1} size={36} />
+                <CircleX strokeWidth={1} size={36} />
               </h3>
               <div className="mt-2 flex items-center rounded-3xl border border-red-400 p-4">
                 <img
@@ -1217,7 +1226,7 @@ export default function Work1() {
                 {/* Left */}
                 <div className="w-full">
                   <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
-                    <CircleCheck strokeWidth={1} size={36} />
+                    <CircleX strokeWidth={1} size={36} />
                   </h3>
                   <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full p-4 overflow-hidden">
                     <img
@@ -1269,18 +1278,20 @@ export default function Work1() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-20">
             {/* Card 1:   */}
             <div className="flex flex-col  ">
-              <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <SmartVideo src="/videos/work1/prompt/s2-edit-mono.mp4" />
-              </div>
+              <SmartVideo
+                src="/videos/work1/prompt/s2-edit-mono.mp4"
+                className="overflow-hidden rounded-3xl mb-4"
+              />
               <h3 className="text-3xl">Monologue</h3>
               <p className="text-zinc-300 mt-2">..</p>
             </div>
 
             {/* Card 2:   */}
             <div className="flex flex-col ">
-              <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <SmartVideo src="/videos/work1/prompt/s2-edit-diag.mp4" />
-              </div>
+              <SmartVideo
+                src="/videos/work1/prompt/s2-edit-diag.mp4"
+                className="overflow-hidden rounded-3xl mb-4"
+              />
               <h3 className="text-3xl">Dialogue</h3>
               <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
                 <li>
@@ -1494,7 +1505,7 @@ export default function Work1() {
           </div>
         </div>
       </section>
-
+      <BackToTop />
       {/* Next Project Link */}
       {/* <div className="p-6 text-center">
         <Link to="/work2" className="italic hover:underline text-4xl">
