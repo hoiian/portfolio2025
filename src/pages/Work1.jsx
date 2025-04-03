@@ -40,220 +40,10 @@ export default function Work1() {
     },
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        "background",
-        "vtuber",
-        "vtuber-competitor",
-        "vtuber-design",
-        "editor",
-        "editor-background",
-        "editor-structure",
-        "editor-competitor",
-        "editor-design",
-        "prompt",
-        "prompt-background",
-        "conclusion",
-      ];
-      let currentSection = "background";
-      sections.forEach((section) => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          // Adjust the threshold for detecting active sections
-          if (
-            rect.top <= window.innerHeight * 0.2 &&
-            rect.bottom >= window.innerHeight * 0.2
-          ) {
-            currentSection = section;
-          }
-        }
-      });
-
-      setActiveSection(currentSection);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="min-h-screen text-white flex flex-col mx-auto relative">
       <SectionNav />
 
-      {/* Fixed Right Navigation */}
-      {false && (
-        <nav className="fixed top-20 left-6 bg-zinc-900 bg-opacity-10 p-4 rounded-xl shadow-lg w-48">
-          <ul className="space-y-2 text-sm">
-            {/* Background / Context */}
-            <li>
-              <a
-                href="#background"
-                onClick={(e) => handleSmoothScroll(e, "background")}
-                className={`block ${
-                  activeSection === "background"
-                    ? "text-white"
-                    : "text-zinc-500"
-                } hover:text-zinc-300`}
-              >
-                Background
-              </a>
-            </li>
-
-            {/* Vtuber Playground (Redesign) */}
-            <li>
-              <a
-                href="#vtuber"
-                onClick={(e) => handleSmoothScroll(e, "vtuber")}
-                className={`block ${
-                  activeSection === "vtuber" ? "text-white" : "text-zinc-500"
-                } hover:text-zinc-300`}
-              >
-                Vtuber Playground
-              </a>
-              <ul className="pl-4 space-y-1">
-                <li>
-                  <a
-                    href="#vtuber-competitor"
-                    onClick={(e) => handleSmoothScroll(e, "vtuber-competitor")}
-                    className={`block ${
-                      activeSection === "vtuber-competitor"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Competitor
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#vtuber-design"
-                    onClick={(e) => handleSmoothScroll(e, "vtuber-design")}
-                    className={`block ${
-                      activeSection === "vtuber-design"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Design
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* Video Editor (0 to 1) */}
-            <li>
-              <a
-                href="#editor"
-                onClick={(e) => handleSmoothScroll(e, "editor")}
-                className={`block ${
-                  activeSection === "editor" ? "text-white" : "text-zinc-500"
-                } hover:text-zinc-300`}
-              >
-                Video Editor
-              </a>
-              <ul className="pl-4 space-y-1">
-                <li>
-                  <a
-                    href="#editor-background"
-                    onClick={(e) => handleSmoothScroll(e, "editor-background")}
-                    className={`block ${
-                      activeSection === "editor-background"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Background
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#editor-structure"
-                    onClick={(e) => handleSmoothScroll(e, "editor-structure")}
-                    className={`block ${
-                      activeSection === "editor-structure"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Structure
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#editor-competitor"
-                    onClick={(e) => handleSmoothScroll(e, "editor-competitor")}
-                    className={`block ${
-                      activeSection === "editor-competitor"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Competitor
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#editor-design"
-                    onClick={(e) => handleSmoothScroll(e, "editor-design")}
-                    className={`block ${
-                      activeSection === "editor-design"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Design
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* Prompt to Video (0 to 1) */}
-            <li>
-              <a
-                href="#prompt"
-                onClick={(e) => handleSmoothScroll(e, "prompt")}
-                className={`block ${
-                  activeSection === "prompt" ? "text-white" : "text-zinc-500"
-                } hover:text-zinc-300`}
-              >
-                Prompt to Video
-              </a>
-              <ul className="pl-4 space-y-1">
-                <li>
-                  <a
-                    href="#prompt-background"
-                    onClick={(e) => handleSmoothScroll(e, "prompt-background")}
-                    className={`block ${
-                      activeSection === "prompt-background"
-                        ? "text-white"
-                        : "text-zinc-500"
-                    } hover:text-zinc-300`}
-                  >
-                    Background
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* Conclusion */}
-            <li>
-              <a
-                href="#conclusion"
-                onClick={(e) => handleSmoothScroll(e, "conclusion")}
-                className={`block ${
-                  activeSection === "conclusion"
-                    ? "text-white"
-                    : "text-zinc-500"
-                } hover:text-zinc-300`}
-              >
-                Conclusion
-              </a>
-            </li>
-          </ul>
-        </nav>
-      )}
       {/* Header with Back Button */}
       <div className="w-8 h-8 fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 ">
         <Link
@@ -266,9 +56,9 @@ export default function Work1() {
       {/* Work1 Content */}
       <div className="flex flex-col items-center justify-center pt-48">
         {/* Floating Glow Effect */}
-        <div className="absolute top-[300px] left-1/2 -translate-x-1/2 w-[885px] h-[600px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
+        <div className="absolute top-[300px] left-1/2 -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
 
-        <div className="max-w-3xl mx-auto mb-16 text-center">
+        <div className="md:max-w-3xl w-full mx-auto mb-16 text-center">
           <span>Hologram, 2024</span>
           <h1 className="mt-3 text-4xl">
             Studio: Redefining AI-Powered Video Creation
@@ -279,7 +69,7 @@ export default function Work1() {
           loop
           muted
           playsInline
-          className="rounded-2xl border-[16px] border-black max-w-4xl"
+          className="rounded-2xl border-[16px] border-black md:max-w-4xl w-full md:mx-auto"
         >
           <source
             src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
@@ -287,7 +77,7 @@ export default function Work1() {
           />
           Your browser does not support the video tag.
         </video>
-        <div className="h-[30px] w-[968px] bg-black rounded-t-2xl"></div>
+        <div className="max-h-[30px] max-w-[968px] bg-black rounded-t-2xl"></div>
       </div>
 
       {/* Divider */}
@@ -344,18 +134,21 @@ export default function Work1() {
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
       {/* Background Section */}
-      <section id="background" className="max-w-6xl mx-auto py-24">
+      <section id="background" className="max-w-6xl mx-auto py-24 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-zinc-200">
           {/* <!-- 左側空間 (1/3) --> */}
           <div className="hidden md:block"></div>
 
           {/* <!-- 右側文字 (2/3) --> */}
-          <div className="md:col-span-2 text-2xl leading-relaxed max-w-3xl">
-            <h2 className="text-[120px] whitespace-nowrap">Background</h2>
+          <div className="md:col-span-2 text-2xl leading-relaxed md:max-w-3xl w-full">
+            <h2 className="md:text-9xl text-6xl">Background</h2>
             <p className="mt-4">
               Video creation has always been a top demand for Hologram. Our goal
-              is to transform HoloStudio into a complete content creation
-              platform for users. Today’s creators rely on their digital
+              is to transform HoloStudio into a{" "}
+              <span className="bg-gradient-to-r from-zinc-100 to-zinc-300 text-black px-1 rounded">
+                complete content creation platform
+              </span>{" "}
+              for users. Today’s creators rely on their digital
               identities—avatars, PFPs, and IPs—and we're focusing on talking
               videos, a format popular on TikTok, YouTube, and Twitch. Hologram
               uniquely lets users have their personalized AI avatars speak on
@@ -378,41 +171,17 @@ export default function Work1() {
 
       <Work1BeforeAfter />
       {/* Vtuber Playground */}
-      {/* <section id="Vtuber" className="p-8 border-t border-zinc-800">
-        <div className="flex flex-row items-center justify-between text-5xl italic">
-          <h2 className="">Vtuber Playground</h2>
-          <h2>01</h2>
-        </div>
-        <div className="flex flex-row items-center justify-between">
-          <video autoPlay loop muted playsInline>
-            <source
-              src="/videos/work1/demo-VtuberPlayground-before.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <video autoPlay loop muted playsInline>
-            <source
-              src="/videos/work1/demo-VtuberPlayground.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div className="flex flex-row items-center justify-between text-4xl mt-10">
-          <h2 className="italic">Problem</h2>
-          <h2>🔍</h2>
-        </div>
-      </section> */}
 
       {/* Divider */}
       <div className="w-full border-t border-zinc-800"></div>
       {/* Vtuber Playground Section */}
-      <section id="vtuber" className="border-t border-zinc-800 py-44">
+      <section
+        id="vtuber"
+        className="py-44 w-full px-4 md:max-w-[1360px] md:mx-auto"
+      >
         <div className="flex flex-col space-y-4 items-center text-center">
-          <h2 className="text-9xl whitespace-nowrap">Vtuber Playground</h2>
-          <p className="max-w-3xl">
+          <h2 className="md:text-9xl text-6xl">Vtuber Playground</h2>
+          <p className="md:max-w-3xl w-full">
             Real-time AI avatar streaming with enhanced interactivity. Real-time
             AI avatar streaming with enhanced interactivity. Real-time AI avatar
             streaming with enhanced interactivity. Real-time AI avatar streaming
@@ -420,14 +189,14 @@ export default function Work1() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-between  my-24 bg-black max-w-full mx-auto py-52">
-          <div className="flex items-center justify-between gap-20  relative max-w-[1360px]">
+        <div className="flex  items-center justify-between  my-24 bg-black max-w-full mx-auto py-52">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-20 relative w-full px-4 md:max-w-[1360px] md:mx-auto">
             <div>
               <h3 className="text-3xl flex items-center justify-center mb-2">
                 Before
               </h3>
               <video
-                className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
                 autoPlay
                 loop
                 muted
@@ -446,7 +215,7 @@ export default function Work1() {
                 After
               </h3>
               <video
-                className="flex-1 w-[637.5px] h-auto object-cover rounded-lg"
+                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
                 autoPlay
                 loop
                 muted
@@ -464,7 +233,7 @@ export default function Work1() {
             <img
               src="/images/work1/vtuber/compareLine.png"
               alt="compareLine"
-              className="absolute top-[44px] left-[621px] w-[564px]"
+              className="hidden lg:block absolute top-[94px] left-[621px] w-[564px] "
             />
           </div>
         </div>
@@ -599,7 +368,7 @@ export default function Work1() {
                 <img
                   src="/images/work1/vtuber/exploration/logo-googlemeet.png"
                   alt="Google Meet"
-                  className="w-[170px] object-contain ml-auto "
+                  className="max-w-[170px] object-contain ml-auto "
                 />
               </div>
             </div>
@@ -822,7 +591,7 @@ export default function Work1() {
           </div>
 
           {/* Design - 1.Avatar selection */}
-          <div className="mt-24 flex gap-12 items-center pr-10 rounded-3xl border border-zinc-700">
+          <div className="mt-24 flex md:flex-row flex-col gap-12 items-center md:pr-10 p-8 rounded-3xl border border-zinc-700">
             {/* Left */}
             <div className="flex flex-row w-full mx-auto bg-black rounded-l-3xl p-10 gap-8">
               <div>
@@ -869,7 +638,7 @@ export default function Work1() {
           </div>
 
           {/* Design - 2.Device Setting */}
-          <div className="mt-24 flex gap-12 items-center pl-16 rounded-3xl border border-zinc-700">
+          <div className="mt-24 flex md:flex-row flex-col gap-12 items-center md:pl-16 p-8 rounded-3xl border border-zinc-700">
             {/* Left - Text Content */}
             <div className="">
               <h4 className="text-5xl">Device Setting</h4>
@@ -883,7 +652,7 @@ export default function Work1() {
 
             {/* Right */}
             <div className="flex flex-row  mx-auto bg-black rounded-r-3xl p-10 gap-8">
-              <div className="w-[152px]">
+              <div className="max-w-[152px]">
                 <video autoPlay loop muted playsInline className="rounded-lg">
                   <source
                     src="/videos/work1/vtuber/design/setting-before.mp4"
@@ -893,7 +662,7 @@ export default function Work1() {
                 </video>
                 <h4 className="text-3xl mt-4 text-center">Before</h4>
               </div>
-              <div className="w-[300px]">
+              <div className="max-w-[300px]">
                 <video autoPlay loop muted playsInline className="rounded-lg">
                   <source
                     src="/videos/work1/vtuber/design/setting.mp4"
@@ -913,11 +682,11 @@ export default function Work1() {
       {/* Video Editor */}
       <section
         id="editor"
-        className="border-t border-zinc-800 max-w-[1360px] mx-auto py-36"
+        className="w-full px-4 md:max-w-[1360px] md:mx-auto py-36"
       >
         <div className="flex flex-col space-y-4 items-center text-center">
-          <h2 className="text-9xl whitespace-nowrap">Video Editor</h2>
-          <p className="max-w-3xl">
+          <h2 className="md:text-9xl text-6xl">Video Editor</h2>
+          <p className="md:max-w-3xl w-full">
             Designed a 0-to-1 video editor that lets users generate videos with
             our avatars using face tracking and auto-generated copy. The editor
             focuses on enhancing avatar narration and face tracking with simple
@@ -1281,7 +1050,7 @@ export default function Work1() {
               muted
               playsInline
               controls
-              className="rounded-xl border border-zinc-800 max-w-3xl"
+              className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
             >
               <source
                 src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
@@ -1327,7 +1096,7 @@ export default function Work1() {
               muted
               playsInline
               controls
-              className="rounded-xl border border-zinc-800 max-w-3xl"
+              className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
             >
               <source
                 src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
@@ -1344,11 +1113,11 @@ export default function Work1() {
       {/* AI Video Generator */}
       <section
         id="prompt"
-        className="border-zinc-800 max-w-[1360px] mx-auto py-36"
+        className="w-full px-4 md:max-w-[1360px] md:mx-auto py-36"
       >
         <div className="flex flex-col space-y-4 items-center text-center mb-32">
-          <h2 className="text-9xl whitespace-nowrap">AI Video Generator</h2>
-          <p className="max-w-3xl">
+          <h2 className="md:text-9xl text-6xl">AI Video Generator</h2>
+          <p className="md:max-w-3xl w-full">
             With GPT-like platforms popularizing input-based interactions, our
             Prompt to Video feature lets users create videos from text. Choose
             between a single-person narration with subtitles or a two-person
@@ -1428,7 +1197,7 @@ export default function Work1() {
               <div
                 key={index}
                 // className="flex flex-row gap-28 py-12 border-zinc-900"
-                className={`flex flex-row gap-28 py-12 ${
+                className={`flex md:flex-row flex-col md:gap-28 gap-3 py-12 ${
                   index !== AIGeneratorSteps.length - 1
                     ? "border-b border-zinc-900"
                     : ""
@@ -1440,9 +1209,9 @@ export default function Work1() {
                 {/* Step Title + Description */}
                 <div>
                   <span className="text-2xl font-semibold">{item.title}</span>
-                  <ul className="mt-2 space-y-1111 text-zinc-300">
+                  <ul className="list-disc list-outside pl-5 space-y-1 mt-2 text-zinc-300">
                     {item.description.map((desc, i) => (
-                      <li key={i} className="list-disc list-inside">
+                      <li key={i} className="">
                         {desc}
                       </li>
                     ))}
@@ -1457,7 +1226,7 @@ export default function Work1() {
 
         {/* Step1. */}
         <div className="max-w-6xl my-40">
-          <div className="max-w-3xl space-y-3 text-center mx-auto">
+          <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 1</span>
             <h2 className="text-5xl md:text-6xl">Input prompt</h2>
             <p className=" text-zinc-300">
@@ -1550,11 +1319,11 @@ export default function Work1() {
                   <h3 className="text-2xl text-red-400 flex items-center justify-center gap-3">
                     <CircleCheck strokeWidth={1} size={36} />
                   </h3>
-                  <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full">
+                  <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full px-4">
                     <img
                       src="/images/work1/prompt/problem2-false.png"
                       alt="problem2 menu"
-                      className="max-w-[200px] mx-auto"
+                      className="max-w-[200px] w-full mx-auto"
                     />
                   </div>
                 </div>
@@ -1569,7 +1338,7 @@ export default function Work1() {
                       loop
                       muted
                       playsInline
-                      className="rounded-xl max-w-xs mx-auto border1 border-zinc-800"
+                      className="rounded-xl md:max-w-xs w-full mx-auto border1 border-zinc-800"
                     >
                       <source
                         src="/videos/work1/prompt/problem2-true.mp4"
@@ -1595,7 +1364,7 @@ export default function Work1() {
 
         {/* Step2. */}
         <div className="max-w-6xl my-40">
-          <div className="max-w-3xl space-y-3 text-center mx-auto">
+          <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 2</span>
             <h2 className="text-5xl md:text-6xl">Edit Script, select style</h2>
             <p className=" text-zinc-300">
@@ -1653,7 +1422,7 @@ export default function Work1() {
 
         {/* Step3. */}
         <div className="max-w-6xl my-40">
-          <div className="max-w-3xl space-y-3 text-center mx-auto">
+          <div className="md:max-w-3xl w-full space-y-3 text-center mx-auto">
             <span className="uppercase text-2xl">Step 3</span>
             <h2 className="text-5xl md:text-6xl">Generate</h2>
             <p className=" text-zinc-300">
@@ -1669,7 +1438,7 @@ export default function Work1() {
               muted
               playsInline
               controls
-              className="rounded-xl border border-zinc-800 max-w-3xl"
+              className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
             >
               <source
                 src="/videos/work1/prompt/s3-generate.mp4"
@@ -1755,7 +1524,7 @@ export default function Work1() {
               muted
               playsInline
               controls
-              className="rounded-xl border border-zinc-800 max-w-3xl"
+              className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
             >
               <source
                 src="/videos/work1/prompt/demo-prompt-diag.mp4"
@@ -1772,11 +1541,11 @@ export default function Work1() {
       {/* Conclusion */}
       <section
         id="conclusion"
-        className="border-zinc-800 max-w-[1360px] mx-auto py-36"
+        className="w-full px-4 md:max-w-[1360px] md:mx-auto py-36"
       >
         <div className="flex flex-col space-y-4 items-center text-center mb-32">
-          <h2 className="text-9xl whitespace-nowrap">Conclusion</h2>
-          <p className="max-w-3xl">
+          <h2 className="md:text-9xl text-6xl">Conclusion</h2>
+          <p className="md:max-w-3xl w-full">
             This project encompassed diverse design challenges: redesigning an
             interactive playground tool, building a video editor from scratch,
             and introducing a new AI-generated video feature. Through this
