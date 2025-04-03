@@ -7,7 +7,7 @@ const works = [
   {
     title: "Studio: Redefining AI-Powered Video Creation",
     image: "/images/placeholder-image.jpg",
-    video: "/videos/work1/demo-FullStudio.mp4",
+    video: "/videos/work1/demo-all.mp4",
     link: "/work1",
     description:
       "Studio is an all-in-one content creation suite, enabling VTubers, AI creators, and digital influencers to stream, record, and edit videos seamlessly.",

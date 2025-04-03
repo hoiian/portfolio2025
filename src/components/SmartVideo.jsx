@@ -36,8 +36,8 @@ const SmartVideo = ({ src, className = "", controls = false }) => {
       {/* Video */}
       {inView && (
         <video
-          autoPlay={!controls}
-          loop={!controls}
+          autoPlay
+          loop
           muted
           playsInline
           controls={controls}

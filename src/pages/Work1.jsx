@@ -72,7 +72,7 @@ export default function Work1() {
           </h1>
         </div>
         <SmartVideo
-          src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
+          src="/videos/work1/demo-all.mp4"
           className="rounded-2xl border-[16px] border-black md:max-w-4xl w-full md:mx-auto"
         />
         <div className="max-h-[30px] max-w-[968px] bg-black rounded-t-2xl"></div>
@@ -196,46 +196,18 @@ export default function Work1() {
                 Before
               </h3>
               <SmartVideo
-                src="/videos/work1/demo-VtuberPlayground-before.mp4"
+                src="/videos/work1/vtuber/demo-VtuberPlayground-before.mp4"
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
               />
-              {/* <video
-                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-              >
-                <source
-                  src="/videos/work1/demo-VtuberPlayground-before.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video> */}
             </div>
             <div>
               <h3 className="text-3xl flex items-center justify-center mb-2">
                 After
               </h3>
               <SmartVideo
-                src="/videos/work1/demo-VtuberPlayground.mp4"
+                src="/videos/work1/vtuber/demo-VtuberPlayground.mp4"
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
               />
-              {/* <video
-                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-              >
-                <source
-                  src="/videos/work1/demo-VtuberPlayground.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video> */}
             </div>
 
             <img
@@ -390,13 +362,7 @@ export default function Work1() {
               {/* Card 1: Streamlined Device Settings */}
               <div className="flex flex-col  ">
                 <div className="bg-[#1E1E20]  md:h-[300px] h-[200px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex justify-center items-center">
-                  <video autoPlay loop muted playsInline className="">
-                    <source
-                      src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  <SmartVideo src="/videos/work1/vtuber/exploration/2-GoogleMeet-Setting.mp4" />
                 </div>
                 <h3 className="text-3xl">Streamlined Device Settings</h3>
                 <p className="text-zinc-300 mt-2">
@@ -407,19 +373,10 @@ export default function Work1() {
               {/* Card 2: Clear Hover Labels */}
               <div className="flex flex-col ">
                 <div className="bg-[#1E1E20] md:h-[300px] h-[200px] w-full rounded-3xl overflow-hidden mb-4 p-5 flex items-center">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                  <SmartVideo
+                    src="/videos/work1/vtuber/exploration/2-GoogleMeet-Hover.mp4"
                     className="scale-[180%] ml-40"
-                  >
-                    <source
-                      src="/videos/work1/vtuber/exploration/2-GoogleMeet-Hover.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                  />
                 </div>
                 <h3 className="text-3xl">Clear Hover Labels</h3>
                 <p className="text-zinc-300 mt-2">
@@ -581,23 +538,17 @@ export default function Work1() {
             {/* Left */}
             <div className="flex flex-row w-full mx-auto bg-black rounded-l-3xl p-10 gap-8">
               <div>
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/menu-before.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo
+                  src="/videos/work1/vtuber/design/menu-before.mp4"
+                  className="rounded-lg"
+                />
                 <h4 className="text-3xl mt-4 text-center">Before</h4>
               </div>
               <div>
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/menu.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo
+                  src="/videos/work1/vtuber/design/menu.mp4"
+                  className="rounded-lg"
+                />
                 <h4 className="text-3xl mt-4 text-center">After</h4>
               </div>
             </div>
@@ -639,23 +590,17 @@ export default function Work1() {
             {/* Right */}
             <div className="flex flex-row w-full mx-auto bg-black rounded-r-3xl p-10 gap-8">
               <div className="max-w-[162px]">
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/setting-before.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo
+                  src="/videos/work1/vtuber/design/setting-before.mp4"
+                  className="rounded-lg"
+                />
                 <h4 className="text-3xl mt-4 text-center">Before</h4>
               </div>
               <div className="max-w-[300px]">
-                <video autoPlay loop muted playsInline className="rounded-lg">
-                  <source
-                    src="/videos/work1/vtuber/design/setting.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo
+                  src="/videos/work1/vtuber/design/setting.mp4"
+                  className="rounded-lg"
+                />
                 <h4 className="text-3xl mt-4 text-center">After</h4>
               </div>
             </div>
@@ -1026,20 +971,11 @@ export default function Work1() {
           <img src="/images/work1/videoeditor/RecordModesTable.png" />
 
           <div className="mt-14 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
               controls
               className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
-            >
-              <source
-                src="/videos/work1/videoeditor/demo-videoeditor-recordmode.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
         </div>
 
@@ -1072,20 +1008,11 @@ export default function Work1() {
           </div>
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
               controls
               className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
-            >
-              <source
-                src="/videos/work1/videoeditor/demo-videoeditor-editmode.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
         </div>
       </section>
@@ -1261,19 +1188,10 @@ export default function Work1() {
 
             <div className="mt-12">
               <h4 className="text-3xl mt-2">💡 So,</h4>
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <SmartVideo
+                src="/videos/work1/prompt/problem1.mp4"
                 className="rounded-xl my-4 border1 border-zinc-800"
-              >
-                <source
-                  src="/videos/work1/prompt/problem1.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+              />
               <p>
                 Below the input box, we offer selected sample ideas to help
                 users get started quickly, allowing them to enjoy full
@@ -1315,19 +1233,10 @@ export default function Work1() {
                     <CircleCheck strokeWidth={1} size={36} />
                   </h3>
                   <div className="flex items-center rounded-3xl border border-emerald-300 h-full overflow-hidden">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
+                    <SmartVideo
+                      src="/videos/work1/prompt/problem2-true.mp4"
                       className="rounded-xl md:max-w-xs w-full mx-auto border1 border-zinc-800"
-                    >
-                      <source
-                        src="/videos/work1/prompt/problem2-true.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    />
                   </div>
                 </div>
               </div>
@@ -1361,13 +1270,7 @@ export default function Work1() {
             {/* Card 1:   */}
             <div className="flex flex-col  ">
               <div className="bg-[#1E1E20]  max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/prompt/s2-edit-mono.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo src="/videos/work1/prompt/s2-edit-mono.mp4" />
               </div>
               <h3 className="text-3xl">Monologue</h3>
               <p className="text-zinc-300 mt-2">..</p>
@@ -1376,13 +1279,7 @@ export default function Work1() {
             {/* Card 2:   */}
             <div className="flex flex-col ">
               <div className="bg-[#1E1E20] max-h-[300px] w-full rounded-3xl overflow-hidden mb-4 ">
-                <video autoPlay loop muted playsInline className="">
-                  <source
-                    src="/videos/work1/prompt/s2-edit-diag.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                <SmartVideo src="/videos/work1/prompt/s2-edit-diag.mp4" />
               </div>
               <h3 className="text-3xl">Dialogue</h3>
               <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
@@ -1414,20 +1311,11 @@ export default function Work1() {
           </div>
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/prompt/s3-generate.mp4"
               controls
               className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
-            >
-              <source
-                src="/videos/work1/prompt/s3-generate.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
         </div>
 
@@ -1500,20 +1388,11 @@ export default function Work1() {
           </div>
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
+            <SmartVideo
+              src="/videos/work1/prompt/demo-prompt-diag.mp4"
               controls
               className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
-            >
-              <source
-                src="/videos/work1/prompt/demo-prompt-diag.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            />
           </div>
         </div>
       </section>

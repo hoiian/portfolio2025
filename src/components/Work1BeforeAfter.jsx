@@ -97,8 +97,8 @@ export default function Work1BeforeAfter() {
               <source
                 src={
                   activeTab === "before"
-                    ? "/videos/work1/demo-VtuberPlayground-before.mp4"
-                    : "/videos/work1/demo-VtuberPlayground.mp4"
+                    ? "/videos/work1/vtuber/demo-VtuberPlayground-before.mp4"
+                    : "/videos/work1/vtuber/demo-VtuberPlayground.mp4"
                 }
                 type="video/mp4"
               />
