@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
 import SectionNav from "../components/SectionNav";
+import SmartVideo from "../components/SmartVideo";
 import {
   ChevronLeft,
   MoveRight,
@@ -70,19 +71,10 @@ export default function Work1() {
             Studio: Redefining AI-Powered Video Creation
           </h1>
         </div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <SmartVideo
+          src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
           className="rounded-2xl border-[16px] border-black md:max-w-4xl w-full md:mx-auto"
-        >
-          <source
-            src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        />
         <div className="max-h-[30px] max-w-[968px] bg-black rounded-t-2xl"></div>
       </div>
 
@@ -198,7 +190,11 @@ export default function Work1() {
               <h3 className="text-3xl flex items-center justify-center mb-2">
                 Before
               </h3>
-              <video
+              <SmartVideo
+                src="/videos/work1/demo-VtuberPlayground-before.mp4"
+                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
+              />
+              {/* <video
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
                 autoPlay
                 loop
@@ -211,13 +207,17 @@ export default function Work1() {
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
             <div>
               <h3 className="text-3xl flex items-center justify-center mb-2">
                 After
               </h3>
-              <video
+              <SmartVideo
+                src="/videos/work1/demo-VtuberPlayground.mp4"
+                className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
+              />
+              {/* <video
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
                 autoPlay
                 loop
@@ -230,7 +230,7 @@ export default function Work1() {
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
 
             <img
