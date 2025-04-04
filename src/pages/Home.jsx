@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
 import ProjectCarousel from "../components/ProjectCarousel";
+import SmartVideo from "../components/SmartVideo";
 
 const works = [
   {
@@ -201,14 +202,19 @@ export default function Home() {
           >
             <div className="bg-[linear-gradient(108deg,#2DEDD0_0%,#2474DD_100%)] rounded-3xl md:h-[460px] p-6 flex items-center justify-center">
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
-              <video
+              <SmartVideo
+                src={works[0].video}
+                className="transition-opacity duration-500 lg:max-w-[70%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
+              />
+
+              {/* <video
                 src={works[0].video}
                 loop
                 playsInline
                 autoPlay
                 muted
                 className=" transition-opacity duration-500 max-w-[80%] max-h-[90%] rounded-xl shadow-xl"
-              />
+              /> */}
             </div>
 
             <div className="p-4 text-white">
