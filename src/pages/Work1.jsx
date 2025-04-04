@@ -53,7 +53,7 @@ export default function Work1() {
       <SectionNav />
 
       {/* Header with Back Button */}
-      <div className="w-8 h-8 fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 z-50">
+      <div className="w-8 h-[37px] fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 z-50 flex items-center">
         <Link
           to="/"
           // className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
