@@ -91,26 +91,43 @@ const SectionNav = () => {
       {/* Navigation */}
       <div className="flex items-center border-t border-zinc-800 text-sm text-zinc-400">
         {sections.map((id) => (
-          <button
+          <div
             key={id}
-            onClick={() => handleClick(id)}
-            className={`h-8 border-r border-zinc-800 text-left px-3 truncate ${
-              activeSection === id
-                ? "text-white font-medium"
-                : "hover:text-zinc-500"
-            }`}
+            className="relative group"
             style={{ width: `${sectionWidths[id] || 0}%` }}
           >
-            {id === "vtuber"
-              ? "Vtuber Playground"
-              : id === "editor"
-              ? "Video Editor"
-              : id === "prompt"
-              ? "AI Video Generator"
-              : id === "conclusion"
-              ? "Takeaways"
-              : id.charAt(0).toUpperCase() + id.slice(1)}
-          </button>
+            <button
+              onClick={() => handleClick(id)}
+              className={`h-8 w-full border-r border-zinc-800 text-left px-3 truncate ${
+                activeSection === id
+                  ? "text-white font-medium"
+                  : "hover:text-zinc-500"
+              }`}
+            >
+              {id === "vtuber"
+                ? "Vtuber Playground"
+                : id === "editor"
+                ? "Video Editor"
+                : id === "prompt"
+                ? "AI Video Generator"
+                : id === "conclusion"
+                ? "Takeaways"
+                : id.charAt(0).toUpperCase() + id.slice(1)}
+            </button>
+
+            {/* Tooltip */}
+            <div className="absolute top-full left-0 mt-1 whitespace-nowrap text-xs text-white bg-zinc-900 bg-opacity-80 backdrop-blur-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition z-10">
+              {id === "vtuber"
+                ? "Redesign"
+                : id === "editor"
+                ? "0-1"
+                : id === "prompt"
+                ? "Prompt to video"
+                : id === "conclusion"
+                ? "Takeaways & reflections"
+                : "Project background"}
+            </div>
+          </div>
         ))}
       </div>
     </div>

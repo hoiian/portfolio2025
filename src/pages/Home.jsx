@@ -223,8 +223,7 @@ export default function Home() {
             </div>
           </a>
           <a
-            // href={works[1].link}
-
+            href={works[1].link}
             className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1"
           >
             <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl md:h-[460px] p-6 flex items-center justify-center">
