@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Work1BeforeAfter from "../components/Work1BeforeAfter";
 import SectionNav from "../components/SectionNav";
+import SmartImage from "../components/SmartImage";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
-// import TitleSection from "../components/TitleSection";
+import TitleSection from "../components/TitleSection";
 import {
   ChevronLeft,
   MoveRight,
@@ -123,12 +124,12 @@ export default function Work1() {
 
         <div className="mt-24">
           <h2 className="text-3xl mb-4">Timeline</h2>
-          <img
+          <SmartImage
             src="/images/work1/timeline.png"
             alt="Studio Timeline"
             className="hidden md:block mb-1 w-full"
           />
-          <img
+          <SmartImage
             src="/images/work1/timeline-mobile.png"
             alt="Studio Timeline"
             className="md:hidden block mb-1 max-w-xs mx-auto"
@@ -224,38 +225,14 @@ export default function Work1() {
           id="vtuber-competitor"
           className="max-w-6xl mx-auto py-36 md:px-5 px-3"
         >
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 2/3 - Title + Description */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Competitor</h2>
-              <p className=" text-zinc-300">
-                Before finalizing the toolbar redesign, I explored layouts from
+          <TitleSection
+            title="Competitor"
+            description="Before finalizing the toolbar redesign, I explored layouts from
                 similar livestream platforms and interaction patterns from
                 meeting apps to enhance usability, efficiency, and seamless AI
-                avatar integration.
-              </p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="132"
-                height="130"
-                viewBox="0 0 132 130"
-                fill="none"
-              >
-                <circle cx="46.5" cy="46.5" r="46" stroke="white" />
-                <line
-                  x1="80.3536"
-                  y1="78.6464"
-                  x2="131.354"
-                  y2="129.646"
-                  stroke="white"
-                />
-              </svg>
-            </div>
-          </div>
+                avatar integration."
+            icon="magnifier"
+          />
 
           {/* Exploration - 1.Hyper */}
           <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
@@ -320,12 +297,12 @@ export default function Work1() {
 
             {/* Image Section */}
             <div className="mt-12 grid md:grid-cols-2 gap-6">
-              <img
+              <SmartImage
                 src="/images/work1/vtuber/exploration/hyper1.png"
                 alt="Hyper Livestream Interface"
                 className="rounded-xl shadow-lg"
               />
-              <img
+              <SmartImage
                 src="/images/work1/vtuber/exploration/hyper2.png"
                 alt="Hyper Avatar Builder"
                 className="rounded-xl shadow-lg"
@@ -347,7 +324,7 @@ export default function Work1() {
 
               {/* Right 1/3 - Logo */}
               <div className="hidden md:flex justify-end">
-                <img
+                <SmartImage
                   src="/images/work1/vtuber/exploration/logo-googlemeet.png"
                   alt="Google Meet"
                   className="max-w-[170px] object-contain ml-auto "
@@ -390,7 +367,7 @@ export default function Work1() {
               {/* Card 3: Toast Notifications */}
               <div className="flex flex-col ">
                 <div className="bg-zinc-900 md:h-[300px]  h-[200px] w-full rounded-3xl overflow-hidden mb-4 flex justify-center items-center">
-                  <img
+                  <SmartImage
                     src="/images/work1/vtuber/exploration/toast.png"
                     alt="Toast Notifications"
                     className="w-60 object-cover"
@@ -482,62 +459,13 @@ export default function Work1() {
           id="vtuber-design"
           className="max-w-6xl mx-auto pt-36  md:px-5 px-3"
         >
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 2/3 - Title + Description */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Design</h2>
-              <p className=" text-zinc-300">
-                Before: Tools were cluttered on the left, breaking user flow.
+          <TitleSection
+            title="Design"
+            description="Before: Tools were cluttered on the left, breaking user flow.
                 After: Centered toolbar, following standard video platforms like
-                TikTok Live.
-              </p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-              >
-                <path
-                  d="M73.049 47.898L26.1511 1.00006L2.83667 24.3145L49.7346 71.2124"
-                  stroke="white"
-                />
-                <path
-                  d="M68.8662 90.3145L115.764 137.212L139.079 113.898L92.1806 67.0001"
-                  stroke="white"
-                />
-                <path
-                  d="M115.267 5.33222C115.853 4.74644 116.803 4.74643 117.389 5.33222L134.547 22.4909C135.133 23.0766 135.133 24.0264 134.547 24.6122L29.7734 129.386L10.4935 129.386L10.4935 110.106L115.267 5.33222Z"
-                  stroke="white"
-                />
-                <line
-                  x1="49.2195"
-                  y1="25.3536"
-                  x2="38.2195"
-                  y2="36.3536"
-                  stroke="white"
-                />
-                <line
-                  x1="115.249"
-                  y1="90.3536"
-                  x2="104.249"
-                  y2="101.354"
-                  stroke="white"
-                />
-                <line
-                  x1="94.3536"
-                  y1="25.6464"
-                  x2="114.153"
-                  y2="45.4454"
-                  stroke="white"
-                />
-              </svg>
-            </div>
-          </div>
+                TikTok Live."
+            icon="design"
+          />
 
           {/* Design - 1.Avatar selection */}
           <div className="mt-24 flex md:flex-row flex-col md:gap-12 gap-0 items-center p-0 md:pr-10 overflow-hidden rounded-3xl border border-zinc-700">
@@ -638,33 +566,7 @@ export default function Work1() {
           id="editor-competitor"
           className="max-w-6xl mx-auto  py-36 md:px-5 px-3"
         >
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 1/3 - Title */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Competitor</h2>
-              <p className=" text-zinc-300">,,</p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="132"
-                height="130"
-                viewBox="0 0 132 130"
-                fill="none"
-              >
-                <circle cx="46.5" cy="46.5" r="46" stroke="white" />
-                <line
-                  x1="80.3536"
-                  y1="78.6464"
-                  x2="131.354"
-                  y2="129.646"
-                  stroke="white"
-                />
-              </svg>
-            </div>
-          </div>
+          <TitleSection title="Competitor" description="" icon="magnifier" />
 
           {/* Competitor - 1. CapCut */}
           <div className="mt-24 md:p-10 p-6 rounded-3xl border border-zinc-700">
@@ -709,7 +611,7 @@ export default function Work1() {
 
               {/* Right 1/3 -  Logo */}
               <div className="hidden md:flex justify-end">
-                <img
+                <SmartImage
                   src="/images/work1/videoeditor/d-id-logo.svg"
                   alt="D-ID Logo"
                   className="w-[60px]"
@@ -766,65 +668,14 @@ export default function Work1() {
         <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         <div id="editor-flow" className="max-w-6xl mx-auto py-36  md:px-5 px-3">
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left 2/3 - Title */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Flow</h2>
-              <p className=" text-zinc-300">
-                Initially, Record Mode was intended as a sub-feature within Edit
+          <TitleSection
+            title="Flow"
+            description="Initially, Record Mode was intended as a sub-feature within Edit
                 Mode. However, we repositioned it as the primary step—ensuring
                 users have generated content to edit—making the editing process
-                an auxiliary refinement.
-              </p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="137"
-                height="137"
-                viewBox="0 0 137 137"
-                fill="none"
-              >
-                <rect
-                  x="0.25"
-                  y="0.25"
-                  width="56.5"
-                  height="38.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <rect
-                  x="80.25"
-                  y="98.25"
-                  width="56.5"
-                  height="38.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <rect
-                  x="68"
-                  y="48.4004"
-                  width="29.1985"
-                  height="29.1985"
-                  transform="rotate(45 68 48.4004)"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <path
-                  d="M57 20H110.5C124.031 20 135 30.969 135 44.5V44.5C135 58.031 124.031 69 110.5 69H88.5205"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <path
-                  d="M80 118H26.5C12.969 118 2 107.031 2 93.5V93.5C2 79.969 12.969 69 26.5 69H47.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-              </svg>
-            </div>
-          </div>
+                an auxiliary refinement."
+            icon="flow"
+          />
 
           {/* Record Mode as a Sub-Feature */}
           <div className="my-24">
@@ -835,7 +686,7 @@ export default function Work1() {
             <div className="mt-4 flex flex-col md:flex-row items-center rounded-3xl border border-red-400 overflow-hidden">
               {/* Left */}
               <div className="px-8">
-                <img
+                <SmartImage
                   src="/images/work1/videoeditor/Flow-1-Left-Diagram.png"
                   alt="Flow-1-Left-Diagram"
                   className="w-full"
@@ -844,7 +695,7 @@ export default function Work1() {
 
               {/* Right */}
               <div className="bg-black rounded-r-3xl">
-                <img
+                <SmartImage
                   src="/images/work1/videoeditor/Flow-1-Right-Layout.png"
                   alt="Flow-1-Left-Diagram"
                   className="w-full"
@@ -862,7 +713,7 @@ export default function Work1() {
             <div className="mt-4 flex flex-col md:flex-row items-center rounded-3xl border border-emerald-300 overflow-hidden">
               {/* Left */}
               <div className="px-8">
-                <img
+                <SmartImage
                   src="/images/work1/videoeditor/Flow-2-Left-Diagram.png"
                   alt="Flow-1-Left-Diagram"
                   className="w-full"
@@ -871,7 +722,7 @@ export default function Work1() {
 
               {/* Right */}
               <div className="bg-black rounded-r-3xl">
-                <img
+                <SmartImage
                   src="/images/work1/videoeditor/Flow-2-Right-Layout.png"
                   alt="Flow-1-Left-Diagram"
                   className="w-full"
@@ -893,7 +744,7 @@ export default function Work1() {
                 Home
               </div>
               <div className="w-full rounded-xl overflow-hidden mt-4 border border-zinc-800">
-                <img
+                <SmartImage
                   src="/images/work1/background/Home.png"
                   alt="Studio Homepage"
                   className="mb-1 w-full"
@@ -978,7 +829,7 @@ export default function Work1() {
             {/* Right 2/3 - Description */}
           </div>
 
-          <img src="/images/work1/videoeditor/RecordModesTable.png" />
+          <SmartImage src="/images/work1/videoeditor/RecordModesTable.png" />
 
           <div className="mt-14 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <SmartVideo
@@ -1014,7 +865,7 @@ export default function Work1() {
           </div>
 
           <div className="mt-12 bg-black flex items-center justify-center rounded-3xl">
-            <img src="/images/work1/videoeditor/Design-Editmode-Layout.png" />
+            <SmartImage src="/images/work1/videoeditor/Design-Editmode-Layout.png" />
           </div>
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
@@ -1053,63 +904,13 @@ export default function Work1() {
           id="prompt-behaviour"
           className="max-w-6xl mx-auto my-32 md:px-5 px-3"
         >
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
-            {/* Left 1/3 - Title */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Behaviour</h2>
-              <p className=" text-zinc-300">
-                We break down user behavior into three core components to drive
-                our design decisions.
-              </p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="137"
-                height="137"
-                viewBox="0 0 137 137"
-                fill="none"
-              >
-                <rect
-                  x="0.25"
-                  y="0.25"
-                  width="56.5"
-                  height="38.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <rect
-                  x="80.25"
-                  y="98.25"
-                  width="56.5"
-                  height="38.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <rect
-                  x="68"
-                  y="48.4004"
-                  width="29.1985"
-                  height="29.1985"
-                  transform="rotate(45 68 48.4004)"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <path
-                  d="M57 20H110.5C124.031 20 135 30.969 135 44.5V44.5C135 58.031 124.031 69 110.5 69H88.5205"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <path
-                  d="M80 118H26.5C12.969 118 2 107.031 2 93.5V93.5C2 79.969 12.969 69 26.5 69H47.5"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-              </svg>
-            </div>
-          </div>
+          <TitleSection
+            title="Behaviour"
+            description="We break down user behavior into three core components to drive
+                our design decisions."
+            icon="flow"
+          />
+
           {/* Step */}
           <div className="max-w-4xl text-white my-12">
             {AIGeneratorSteps.map((item, index) => (
@@ -1162,7 +963,7 @@ export default function Work1() {
                 <CircleX strokeWidth={1} size={36} />
               </h3>
               <div className="mt-2 flex items-center rounded-3xl border border-red-400 p-4">
-                <img
+                <SmartImage
                   src="/images/work1/prompt/s1-layout-1.png"
                   alt="step1 layout"
                 />
@@ -1174,7 +975,7 @@ export default function Work1() {
                 <CircleCheck strokeWidth={1} size={36} />
               </h3>
               <div className="mt-2 flex items-center rounded-3xl border border-emerald-300 p-4">
-                <img
+                <SmartImage
                   src="/images/work1/prompt/s1-layout-2.png"
                   alt="step1 layout"
                 />
@@ -1230,7 +1031,7 @@ export default function Work1() {
                     <CircleX strokeWidth={1} size={36} />
                   </h3>
                   <div className="flex items-center justify-center rounded-3xl border border-red-400 h-full p-4 overflow-hidden">
-                    <img
+                    <SmartImage
                       src="/images/work1/prompt/problem2-false.png"
                       alt="problem2 menu"
                       className="max-w-[200px] w-full mx-auto"
@@ -1339,65 +1140,7 @@ export default function Work1() {
           id="prompt-outcome"
           className="max-w-6xl mx-auto my-32 md:px-5 px-3"
         >
-          {/* Title and Description Section */}
-          <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
-            {/* Left 1/3 - Title */}
-            <div className="md:col-span-2 space-y-3">
-              <h2 className="text-5xl md:text-6xl">Outcome</h2>
-              <p className=" text-zinc-300">..</p>
-            </div>
-            {/* Right 1/3 - Icon */}
-            <div className="flex justify-end">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="142"
-                height="110"
-                viewBox="0 0 142 110"
-                fill="none"
-              >
-                <rect
-                  x="0.25"
-                  y="0.25"
-                  width="141.5"
-                  height="109.5"
-                  rx="7.75"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <line
-                  y1="20.75"
-                  x2="142"
-                  y2="20.75"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <line
-                  x1="51.25"
-                  y1="21"
-                  x2="51.25"
-                  y2="110"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <line
-                  x1="52"
-                  y1="64.75"
-                  x2="142"
-                  y2="64.75"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-                <line
-                  x1="98.25"
-                  y1="65"
-                  x2="98.25"
-                  y2="110"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-              </svg>
-            </div>
-          </div>
+          <TitleSection title="Outcome" description="" icon="wireframe" />
 
           <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
             <SmartVideo
@@ -1438,72 +1181,31 @@ export default function Work1() {
         <div className="max-w-6xl mx-auto border-t border-zinc-800"></div>
 
         {/* Reflection */}
-        {/* Title and Description Section */}
-        <div className="grid md:grid-cols-3 gap-8 items-start my-32 w-full md:max-w-6xl mx-auto">
-          {/* Left 2/3 - Title */}
-          <div className="md:col-span-2 space-y-3">
-            <h2 className="text-5xl md:text-6xl">Reflection</h2>
-            <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
-              <li>
-                Learned to prioritize critical interactions, ensuring intuitive
-                user experiences.
-              </li>
-              <li>
-                Deepened my understanding of AI capabilities and limitations in
-                creative contexts.
-              </li>
-              <li>
-                Improved efficiency by balancing thorough exploration with rapid
-                prototyping.
-              </li>
-              <li>
-                Gained confidence in independently handling end-to-end product
-                design processes without direct project management support.
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex justify-end">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="132"
-              height="144"
-              viewBox="0 0 132 144"
-              fill="none"
-            >
-              <path
-                d="M25.6612 112.5C10.681 101.182 1 83.2218 1 63C1 28.7583 28.7583 1 63 1C92.7827 1 117.661 21.9997 123.635 50"
-                stroke="white"
-                stroke-width="0.5"
-              />
-              <path
-                d="M123.5 49.5L130.779 79.0431C131.4 81.5644 129.492 84 126.895 84H108.5V116.5C108.5 121.471 104.471 125.5 99.5 125.5H75.5V143.5"
-                stroke="white"
-                stroke-width="0.5"
-              />
-              <line
-                x1="25.25"
-                y1="112"
-                x2="25.25"
-                y2="144"
-                stroke="white"
-                stroke-width="0.5"
-              />
-              <path
-                d="M44 45C45.5 41.6667 51.1 34 61.5 34C74.5 34 79 43 79 49.5C79 57 73.0962 61.9038 68.5 66.5C65.5 69.5 61.5 73.5 61.5 81.5"
-                stroke="white"
-                stroke-width="0.5"
-              />
-              <line
-                x1="61.25"
-                y1="94"
-                x2="61.25"
-                y2="102"
-                stroke="white"
-                stroke-width="0.5"
-              />
-            </svg>
-          </div>
+        <div className="my-32 w-full md:max-w-6xl mx-auto">
+          <TitleSection
+            title="Reflection"
+            description={
+              <ul className="list-disc list-outside pl-5 space-y-1 text-zinc-300">
+                <li>
+                  Learned to prioritize critical interactions, ensuring
+                  intuitive user experiences.
+                </li>
+                <li>
+                  Deepened my understanding of AI capabilities and limitations
+                  in creative contexts.
+                </li>
+                <li>
+                  Improved efficiency by balancing thorough exploration with
+                  rapid prototyping.
+                </li>
+                <li>
+                  Gained confidence in independently handling end-to-end product
+                  design processes without direct project management support.
+                </li>
+              </ul>
+            }
+            icon="think"
+          />
         </div>
       </section>
       <BackToTop />

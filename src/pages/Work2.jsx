@@ -1,6 +1,7 @@
 import React from "react";
 import TitleSection from "../components/TitleSection";
 import SmartImage from "../components/SmartImage";
+import BackToTop from "../components/BackToTop";
 import { FileText } from "lucide-react";
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
 
@@ -203,6 +204,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           className="border border-zinc-700 rounded-2xl"
         />
       </div>
+      <BackToTop />
     </div>
   );
 }
