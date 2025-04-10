@@ -124,7 +124,7 @@ const SectionNav = () => {
                 : id === "prompt"
                 ? "Prompt to video"
                 : id === "conclusion"
-                ? "Takeaways & reflections"
+                ? "Takeaways"
                 : "Project background"}
             </div>
           </div>

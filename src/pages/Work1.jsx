@@ -4,6 +4,7 @@ import Work1BeforeAfter from "../components/Work1BeforeAfter";
 import SectionNav from "../components/SectionNav";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
+// import TitleSection from "../components/TitleSection";
 import {
   ChevronLeft,
   MoveRight,
