@@ -200,8 +200,27 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
 
         <SmartImage
           src="/images/work2/design/megaETHbranding.png"
-          alt="megaETHbranding"
+          alt="megaETH branding"
           className="border border-zinc-700 rounded-2xl"
+        />
+
+        <h2 className="text-4xl mt-14">Related UI reference</h2>
+        <p className="text-zinc-300 max-w-3xl mt-3">..</p>
+
+        <SmartImage
+          src="/images/work2/design/uiRef.png"
+          alt="UI reference"
+          className="border border-zinc-700 rounded-2xl"
+        />
+
+        <h2 className="text-5xl mt-24 mb-4">UI kits</h2>
+
+        <SmartImage src="/images/work2/design/UIkits.png" alt="UI Kits" />
+        <h2 className="text-xl mt-24 mb-4 uppercase">Page</h2>
+        <SmartImage
+          src="/images/work2/design/UIKitspage.png"
+          alt="UI Kits"
+          className="max-w-xl mx-auto"
         />
       </div>
       <BackToTop />

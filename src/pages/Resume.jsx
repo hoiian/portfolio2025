@@ -69,12 +69,12 @@ const Resume = () => {
         </div>
         {/* Download Dropdown */}
         <div className="relative md:mt-20">
-          <button
+          {/* <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white pl-5 pr-4 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800 flex items-center justify-between gap-1"
           >
             Download PDF <ChevronDown strokeWidth={1} />
-          </button>
+          </button> */}
 
           {/* Dropdown Menu with Transition */}
           <div
