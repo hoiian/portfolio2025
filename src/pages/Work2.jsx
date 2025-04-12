@@ -18,7 +18,7 @@ export default function Work2() {
         </div>
         <div>
           {" "}
-          <img src="/images/placeholder-image.jpg" alt="" />
+          <SmartImage src="/images/work2/heroPreview.png" alt="" />
         </div>
       </section>
 
@@ -216,12 +216,31 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
         <h2 className="text-5xl mt-24 mb-4">UI kits</h2>
 
         <SmartImage src="/images/work2/design/UIkits.png" alt="UI Kits" />
-        <h2 className="text-xl mt-24 mb-4 uppercase">Page</h2>
+        <h2 className="font- text-xl mt-24 mb-4 uppercase">Page</h2>
         <SmartImage
           src="/images/work2/design/UIKitspage.png"
           alt="UI Kits"
           className="max-w-xl mx-auto"
         />
+      </div>
+
+      {/* Divider */}
+      <div className="w-full lg:border-t border-zinc-800"></div>
+      {/* Key Features Section */}
+      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+        <TitleSection
+          title="Key Features"
+          description="bbbbb..."
+          icon="highlight"
+        />
+
+        <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto">
+          <span className="uppercase text-2xl">1</span>
+          <h2 className="text-5xl md:text-6xl">
+            Sign up & Whitelist Eligibility Check
+          </h2>
+          <p className=" text-zinc-300">====</p>
+        </div>
       </div>
       <BackToTop />
     </div>
