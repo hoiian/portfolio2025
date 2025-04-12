@@ -350,6 +350,13 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           </div>
         </div>
       </div>
+
+      {/* Divider */}
+      <div className="w-full lg:border-t border-zinc-800"></div>
+      {/* Takeaways Section */}
+      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+        <TitleSection title="Takeaways" description="bbbbb..." icon="think" />
+      </div>
       <BackToTop />
     </div>
   );
