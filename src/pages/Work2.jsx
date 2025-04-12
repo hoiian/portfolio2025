@@ -281,6 +281,73 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               </div>
             </div>
           </div>
+
+          <h2 className="font- text-xl mt-24 mb-4">2. Check eligibility</h2>
+          <div className="overflow-x-auto rounded-2xl border border-zinc-800">
+            <table className="w-full text-center text-sm text-white border-collapse">
+              <thead>
+                <tr className="border-b border-zinc-800">
+                  <th className="w-1/3 py-4"></th>
+                  <th className="w-1/3 py-4 font-semibold">whitelisted</th>
+                  <th className="w-1/3 py-4 font-semibold">not whitelisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* Row 1 */}
+                <tr className="border-b border-zinc-800">
+                  <td className="py-6 px-4 font-semibold">
+                    <p className="text-white">check by input addr.</p>
+                  </td>
+                  <td className="py-6 px-4 text-center">
+                    <SmartVideo
+                      src="/videos/work2/disclaimer2.mp4"
+                      className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
+                    />
+                  </td>
+                  <td className="py-6 px-4 text-center">
+                    <SmartVideo
+                      src="/videos/work2/disclaimer2.mp4"
+                      className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
+                    />
+                  </td>
+                </tr>
+
+                {/* Row 2 */}
+                <tr>
+                  <td className="py-6 px-4 font-semibold">
+                    <p className="text-white">sign in w/ ur whitelist addr.</p>
+                  </td>
+                  <td className="py-6 text-center">
+                    <SmartVideo
+                      src="/videos/work2/disclaimer2.mp4"
+                      className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
+                    />
+                  </td>
+                  <td className="py-6 text-center">
+                    <SmartVideo
+                      src="/videos/work2/disclaimer2.mp4"
+                      className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
+            {/* Left - Image */}
+            <div className="w-full md:w-auto">
+              <SmartVideo
+                src="/videos/work2/disclaimer2.mp4"
+                className="rounded-2xl overflow-hidden max-w-[260px] inline-block"
+              />
+            </div>
+
+            {/* Right - Text */}
+            <div className="text-center md:text-left">
+              <p className="text-xl md:text-2xl mb-2">2.</p>
+              <h2 className="text-4xl md:text-5xl font-heading">Minting</h2>
+            </div>
+          </div>
         </div>
       </div>
       <BackToTop />

@@ -474,14 +474,14 @@ export default function Work1() {
               <div>
                 <SmartVideo
                   src="/videos/work1/vtuber/design/menu-before.mp4"
-                  className="rounded-lg"
+                  className="rounded-lg overflow-hidden"
                 />
                 <h4 className="text-3xl mt-4 text-center">Before</h4>
               </div>
               <div>
                 <SmartVideo
                   src="/videos/work1/vtuber/design/menu.mp4"
-                  className="rounded-lg"
+                  className="rounded-lg overflow-hidden"
                 />
                 <h4 className="text-3xl mt-4 text-center">After</h4>
               </div>
@@ -526,14 +526,14 @@ export default function Work1() {
               <div className="max-w-[162px]">
                 <SmartVideo
                   src="/videos/work1/vtuber/design/setting-before.mp4"
-                  className="rounded-lg"
+                  className="rounded-lg overflow-hidden"
                 />
                 <h4 className="text-3xl mt-4 text-center">Before</h4>
               </div>
               <div className="max-w-[300px]">
                 <SmartVideo
                   src="/videos/work1/vtuber/design/setting.mp4"
-                  className="rounded-lg"
+                  className="rounded-lg overflow-hidden"
                 />
                 <h4 className="text-3xl mt-4 text-center">After</h4>
               </div>
