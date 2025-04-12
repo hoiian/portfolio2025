@@ -1,6 +1,7 @@
 import React from "react";
 import TitleSection from "../components/TitleSection";
 import SmartImage from "../components/SmartImage";
+import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
 import { FileText } from "lucide-react";
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
@@ -10,7 +11,7 @@ export default function Work2() {
     <div className="min-h-screen text-white flex flex-col">
       <section className="min-h-screen max-w-6xl mx-auto flex flex-row items-center justify-center px-4">
         {/* Floating Glow Effect */}
-        <div className="absolute top-[300px] left-1/2 -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-white/20 blur-[150px] z-[-1]"></div>
+        <div className="absolute top-[100px] left-[100px] -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-[#32B288]/10 blur-[150px] z-[-1]"></div>
 
         <div className="md:max-w-3xl w-full mx-auto mb-16">
           <span>Hologram, 2024</span>
@@ -171,7 +172,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Wireframe Section */}
       <div className="w-full mx-auto py-36 md:px-5 px-3">
-        <div className="max-w-6xl mx-auto ">
+        <div className="w-full md:max-w-6xl mx-auto ">
           <TitleSection
             title="Wireframe"
             description="bbbbb..."
@@ -227,12 +228,14 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Key Features Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
-        <TitleSection
-          title="Key Features"
-          description="bbbbb..."
-          icon="highlight"
-        />
+      <div className="w-full mx-auto py-36 md:px-5 px-3">
+        <div className="w-full md:max-w-6xl mx-auto ">
+          <TitleSection
+            title="Key Features"
+            description="bbbbb..."
+            icon="highlight"
+          />
+        </div>
 
         <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto">
           <span className="uppercase text-2xl">1</span>
@@ -240,6 +243,44 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             Sign up & Whitelist Eligibility Check
           </h2>
           <p className=" text-zinc-300">====</p>
+        </div>
+
+        <SmartImage
+          src="/images/work2/keyfeature/signupflow.png"
+          alt="Flow"
+          className=""
+        />
+        <div className="w-full md:max-w-6xl mx-auto ">
+          <h2 className="font- text-xl mt-24 mb-4">1. Disclaimer</h2>
+          <div className="mt-4 flex md:flex-row flex-col md:gap-12 gap-0 items-center p-0 md:pr-10 overflow-hidden rounded-3xl border border-zinc-700">
+            {/* Left */}
+            <div className="flex flex-row w-full mx-auto p-10 gap-8 items-center justify-stretch">
+              <SmartVideo
+                src="/videos/work2/disclaimer1.mp4"
+                className="rounded-3xl overflow-hidden flex-1"
+              />
+              <div className="flex-1">
+                <h4 className="text-3xl mt-4 ">Not allow</h4>
+                <p className="mt-3">
+                  If user lives in the US, they would not allow to use the app.
+                </p>
+              </div>
+            </div>
+
+            {/* Right */}
+            <div className="md:border-l md:border-t-0 border-t border-zinc-700 flex flex-row w-full mx-auto p-10 gap-8 items-center justify-stretch">
+              <SmartVideo
+                src="/videos/work2/disclaimer2.mp4"
+                className="rounded-3xl overflow-hidden flex-1"
+              />
+              <div className="flex-1">
+                <h4 className="text-3xl mt-4">Allow</h4>
+                <p className="mt-3">
+                  If user lblblbbl abalbalba lbalbalblblablabl.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <BackToTop />
