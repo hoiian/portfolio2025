@@ -34,9 +34,24 @@
       
       
       hologramDetails: [
-        "Built the marketplace, loot box, and staking system from scratch, defining the framework, flow, and visual to support the design of the product's financial system.",
-        "Designed the landing page, using innovative interactive methods to introduce the product and create interactive prototypes.",
+        "Refined the Holoword AI design system, driving new iterations as the sole designer. Integrated TailwindCSS to optimize development and accelerate implementation.",
+        "Led full-cycle design projects from low-fidelity sketches to high-fidelity prototypes, collaborating closely with engineers and PMs.",
+        "Rapidly delivered 0-to-1 designs for diverse features (e.g., video editor, message inbox, launchpad) in a fast-paced startup environment.",
       ],
+      netEaseDetails: [
+        "Computer Game (NARAKA: BLADEPOINT): Designed 28 interfaces, optimizing user experience while integrating joystick input in Unity for PC. Streamlined resource uploads to improve team workflow and project efficiency.",
+        "Browser Plugin (Web3 Tool): Led the design and development of web pages and plugins, iterating based on user feedback, resulting in a 4.8/5 app rating.",
+        "Web Application (Web3 Trading Platform): Developed adaptive wallet and market applications, focusing on responsive design for a seamless, cross-platform user experience.",
+      ],
+      MRSADetails: [
+        "Collaborated with PMs and lead designers on FinTech and COVID Insights web projects, streamlining processes and designing data forms.",
+        "Used data visualization to clearly present text, numbers, and 3D information.",
+      ],
+
+      Strengths1:"Technology Implementation",
+      Strengths2:"Efficiency Advocate",
+      Strengths3:"Bilingual Proficiency",
+
       educationDetails: [
         "M.S. in Information Art and Design at Tsinghua University.",
         "B.S. in Industrial Design at National Cheng Kung University.",
@@ -79,9 +94,23 @@
       NCKUDegree:"工業設計學士",
 
       hologramDetails: [
-        "從零開始構建市場、抽獎和質押系統，定義框架、流程和視覺，支持產品金融系統設計。",
-        "設計登陸頁，使用創新的交互方式來介紹產品並創建交互式原型。",
+        "優化 Holoword AI 的設計系統，作為唯一設計師推動新一輪迭代。整合 TailwindCSS，提升開發效率並加快實作速度。",
+        "從低保真草圖到高保真原型，主導完整的設計流程，並與工程師及產品經理密切合作。",
+        "在快速迭代的初創環境中，獨立完成多個 0 到 1 的設計任務（如影片編輯器、聊天室、Launchpad等功能）。",
       ],
+      netEaseDetails: [
+        "電腦遊戲《永劫無間》（NARAKA: BLADEPOINT）：每兩星期版本迭代中，與策劃合作完成28份介面交互和文檔輸出，同時為電腦版配置手柄輸入，促進遊戲順利登陸主機平台",
+        "瀏覽器插件 (Web3工具): 從0到1設計後台網頁和插件流程，制定視覺風格和規範，提升後續迭代設計效率；通過4次版本迭代，根據用戶反饋優化產品，在商店獲得4.8/5的評分",
+        "WebApp (Web3交易平台): 獨自負責從零開始梳理錢包和市場兩個子應用的流程，同時製作原型並製定統一的視覺風格和規範；實現豎版與橫版的設計適配，確保平台在不同遊戲螢幕方向下都提供優質體驗",
+      ],
+      MRSADetails: [
+        "與產品經理與資深設計師合作，參與 FinTech 金融科技與 COVID 資訊平台等 Web 專案設計。",
+        "優化使用流程，設計資料填寫表單，並透過資料視覺化清晰呈現文字、數據與三維資訊。",
+      ],
+      Strengths1:"技術實作",
+      Strengths2:"效率規範",
+      Strengths3:"雙語能力",
+
       educationDetails: [
         "清華大學信息藝術與設計碩士。",
         "成功大學工業設計學士。",

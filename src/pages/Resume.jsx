@@ -129,21 +129,9 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>
-                Refined the Holoword AI design system, driving new iterations as
-                the sole designer. Integrated TailwindCSS to optimize
-                development and accelerate implementation.
-              </li>
-              <li>
-                Led full-cycle design projects from low-fidelity sketches to
-                high-fidelity prototypes, collaborating closely with engineers
-                and PMs.
-              </li>
-              <li>
-                Rapidly delivered 0-to-1 designs for diverse features (e.g.,
-                video editor, message inbox, launchpad) in a fast-paced startup
-                environment.
-              </li>
+              {content.hologramDetails.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
 
@@ -191,22 +179,9 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>
-                Computer Game (NARAKA: BLADEPOINT): Designed 28 interfaces,
-                optimizing user experience while integrating joystick input in
-                Unity for PC. Streamlined resource uploads to improve team
-                workflow and project efficiency.
-              </li>
-              <li>
-                Browser Plugin (Web3 Tool): Led the design and development of
-                web pages and plugins, iterating based on user feedback,
-                resulting in a 4.8/5 app rating.
-              </li>
-              <li>
-                Web Application (Web3 Trading Platform): Developed adaptive
-                wallet and market applications, focusing on responsive design
-                for a seamless, cross-platform user experience.
-              </li>
+              {content.netEaseDetails.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
 
@@ -245,15 +220,9 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              <li>
-                Collaborated with PMs and lead designers on FinTech and COVID
-                Insights web projects, streamlining processes and designing data
-                forms.
-              </li>
-              <li>
-                Used data visualization to clearly present text, numbers, and 3D
-                information.
-              </li>
+              {content.MRSADetails.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
 
@@ -338,7 +307,7 @@ const Resume = () => {
           {content.Strengths}
         </h2>
         <div className="mt-6">
-          <span className="font-bold ">Technology Implementation</span>
+          <span className="font-bold ">{content.Strengths1}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
               Independent web developer since 2017, such as eDC Cloud Portal,
@@ -347,7 +316,7 @@ const Resume = () => {
           </ul>
         </div>
         <div className="mt-6">
-          <span className="font-bold ">Efficiency Advocate</span>
+          <span className="font-bold ">{content.Strengths2}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
               Proficient in managing personal tasks and producing clear, concise
@@ -360,7 +329,7 @@ const Resume = () => {
           </ul>
         </div>
         <div className="mt-6">
-          <span className="font-bold ">Bilingual Proficiency</span>
+          <span className="font-bold ">{content.Strengths3}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
               Fluent in English, Cantonese, and Mandarin
