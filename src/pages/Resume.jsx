@@ -28,7 +28,7 @@ const Resume = () => {
     <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20 mb-40">
       <Header />
       {/* Left Sidebar */}
-      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start md:sticky md:top-5 md:h-screen">
+      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start md:sticky md:top-5 md:h-screen z-[60]">
         <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
           <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">
             Language
@@ -309,33 +309,26 @@ const Resume = () => {
         <div className="mt-6">
           <span className="font-bold ">{content.Strengths1}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-            <li>
-              Independent web developer since 2017, such as eDC Cloud Portal,
-              Acer AI, Acer VR, and more.
-            </li>
+            <li>{content.Strengths1Details}</li>
           </ul>
         </div>
         <div className="mt-6">
           <span className="font-bold ">{content.Strengths2}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-            <li>
-              Proficient in managing personal tasks and producing clear, concise
-              design file.
-            </li>
-            <li>
-              Established resource standards in early 2D game development,
-              boosting efficiency by 30%.
-            </li>
+            {content.Strengths2Details.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div className="mt-6">
           <span className="font-bold ">{content.Strengths3}</span>
           <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
             <li>
-              Fluent in English, Cantonese, and Mandarin
+              {content.Strengths3DetailsTitle}
               <ul className="list-disc list-outside space-y-2 ml-5 mt-2">
-                <li>English as the primary language for work</li>
-                <li>Native Cantonese speaker, grew up in Macau.</li>
+                {content.Strengths3Details.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </li>
           </ul>

@@ -49,8 +49,17 @@
       ],
 
       Strengths1:"Technology Implementation",
+      Strengths1Details:"Independent web developer since 2017, such as eDC Cloud Portal, Acer AI, Acer VR, and more.",
+
       Strengths2:"Efficiency Advocate",
+      Strengths2Details: ["Proficient in managing personal tasks and producing clear, concise design file.",
+"Established resource standards in early 2D game development, boosting efficiency by 30%.",],
+
       Strengths3:"Bilingual Proficiency",
+      Strengths3DetailsTitle:"Fluent in English, Cantonese, and Mandarin",
+      Strengths3Details:["Experience working in both English and Mandarin.",
+      "Native Cantonese speaker, grew up in Macau."
+      ],
 
       educationDetails: [
         "M.S. in Information Art and Design at Tsinghua University.",
@@ -108,8 +117,18 @@
         "優化使用流程，設計資料填寫表單，並透過資料視覺化清晰呈現文字、數據與三維資訊。",
       ],
       Strengths1:"技術實作",
+      Strengths1Details:"2017年起，獨立接案開發網頁，其中包括：Acer雲架構、Acer AI、 Acer VR等",
+
       Strengths2:"效率規範",
+Strengths2Details: ["熱愛使用表格紀錄和數據化各種事務，以快速推進工作流程",
+"在2D遊戲開發初期，制定資源規範，成功提升了30％的運行效能"
+],
+
       Strengths3:"雙語能力",
+      Strengths3DetailsTitle:"英文、廣東話、普通話",
+      Strengths3Details:["有用普通話和英文為主要工作語言的工作經驗",
+      "在澳門長大生活，母語為廣東話"
+      ],
 
       educationDetails: [
         "清華大學信息藝術與設計碩士。",
