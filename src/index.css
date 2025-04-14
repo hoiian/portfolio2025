@@ -64,3 +64,14 @@ h6 {
 p {
   @apply text-zinc-400;
 }
+
+::-webkit-scrollbar {
+  height: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

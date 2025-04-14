@@ -179,11 +179,13 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             icon="wireframe"
           />
         </div>
-        <SmartImage
-          src="/images/work2/wireframe.png"
-          alt="wireframe"
-          className="h-full"
-        />
+        <div className="mt-20 overflow-x-auto border border-zinc-700 rounded-lg overflow-hidden">
+          <img
+            src="/images/work2/wireframe.png"
+            alt="wireframe"
+            className="h-[95vh] w-auto max-w-none"
+          />
+        </div>
       </div>
 
       {/* Divider */}
@@ -288,15 +290,17 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               <thead>
                 <tr className="border-b border-zinc-800">
                   <th className="w-1/3 py-4"></th>
-                  <th className="w-1/3 py-4 font-semibold">whitelisted</th>
-                  <th className="w-1/3 py-4 font-semibold">not whitelisted</th>
+                  <th className="w-1/3 py-4 font-semibold">Whitelisted</th>
+                  <th className="w-1/3 py-4 font-semibold">not Whitelisted</th>
                 </tr>
               </thead>
               <tbody>
                 {/* Row 1 */}
                 <tr className="border-b border-zinc-800">
                   <td className="py-6 px-4 font-semibold">
-                    <p className="text-white">check by input addr.</p>
+                    <p className="text-white">
+                      Check by inputting whitelist address
+                    </p>
                   </td>
                   <td className="py-6 px-4 text-center">
                     <SmartVideo
@@ -315,7 +319,9 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
                 {/* Row 2 */}
                 <tr>
                   <td className="py-6 px-4 font-semibold">
-                    <p className="text-white">sign in w/ ur whitelist addr.</p>
+                    <p className="text-white">
+                      Sign in with whitelist address.
+                    </p>
                   </td>
                   <td className="py-6 text-center">
                     <SmartVideo
