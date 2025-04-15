@@ -149,21 +149,21 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      {/* <div className="w-full lg:border-t border-zinc-800"></div> */}
       {/* Discovery Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+      {/* <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
         <TitleSection
           title="Discovery  Requirements"
           description=".."
           icon="magnifier"
         />
-      </div>
+      </div> */}
 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Flow Section */}
       <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
-        <TitleSection title="Flow" description="bbbbb..." icon="flow" />
+        <TitleSection title="Flow" description="" icon="flow" />
 
         <SmartImage src="/images/work2/flow.png" alt="Flow" className="" />
       </div>
@@ -173,11 +173,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Wireframe Section */}
       <div className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
-          <TitleSection
-            title="Wireframe"
-            description="bbbbb..."
-            icon="wireframe"
-          />
+          <TitleSection title="Wireframe" description="" icon="wireframe" />
         </div>
         <div className="mt-20 overflow-x-auto border border-zinc-700 rounded-lg overflow-hidden">
           <img
@@ -194,7 +190,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
         <TitleSection
           title="High-Fidelity Design"
-          description="bbbbb..."
+          description=""
           icon="design"
         />
 
@@ -232,11 +228,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Key Features Section */}
       <div className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
-          <TitleSection
-            title="Key Features"
-            description="bbbbb..."
-            icon="highlight"
-          />
+          <TitleSection title="Key Features" description="" icon="highlight" />
         </div>
 
         <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto">
@@ -409,7 +401,11 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Takeaways Section */}
       <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
-        <TitleSection title="Takeaways" description="bbbbb..." icon="think" />
+        <TitleSection
+          title="Takeaways"
+          description="A key challenge in this project was working with evolving requirements. In early stages, when direction was still being defined, we proactively created initial concepts to help guide alignment. This experience strengthened my ability to navigate ambiguity, communicate effectively with stakeholders, and contribute design leadership in fast-changing environments."
+          icon="think"
+        />
       </div>
       <BackToTop />
     </div>
