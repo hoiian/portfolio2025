@@ -183,7 +183,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           <img
             src="/images/work2/wireframe.png"
             alt="wireframe"
-            className="h-[95vh] w-auto max-w-none"
+            className="h-[95vh] w-auto max-w-none m-[-20px]"
           />
         </div>
       </div>
@@ -291,7 +291,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
                 <tr className="border-b border-zinc-800">
                   <th className="w-1/3 py-4"></th>
                   <th className="w-1/3 py-4 font-semibold">Whitelisted</th>
-                  <th className="w-1/3 py-4 font-semibold">not Whitelisted</th>
+                  <th className="w-1/3 py-4 font-semibold">Not Whitelisted</th>
                 </tr>
               </thead>
               <tbody>
@@ -304,13 +304,13 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
                   </td>
                   <td className="py-6 px-4 text-center">
                     <SmartVideo
-                      src="/videos/work2/disclaimer2.mp4"
+                      src="/videos/work2/whitelist_addr.mp4"
                       className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
                     />
                   </td>
                   <td className="py-6 px-4 text-center">
                     <SmartVideo
-                      src="/videos/work2/disclaimer2.mp4"
+                      src="/videos/work2/notWhitelist_addr.mp4"
                       className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
                     />
                   </td>
@@ -325,13 +325,13 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
                   </td>
                   <td className="py-6 text-center">
                     <SmartVideo
-                      src="/videos/work2/disclaimer2.mp4"
+                      src="/videos/work2/whitelist_signin.mp4"
                       className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
                     />
                   </td>
                   <td className="py-6 text-center">
                     <SmartVideo
-                      src="/videos/work2/disclaimer2.mp4"
+                      src="/videos/work2/notWhitelist_signin.mp4"
                       className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
                     />
                   </td>

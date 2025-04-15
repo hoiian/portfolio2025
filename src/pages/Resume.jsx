@@ -25,10 +25,10 @@ const Resume = () => {
   const content = resumeTexts[selectedLanguage];
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20 mb-40 overflow-hidden">
+    <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20 mb-40">
       <Header />
       {/* Left Sidebar */}
-      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start md:sticky md:top-5 md:h-screen z-[60]">
+      <div className="md:w-1/3 w-full md:p-6 p-5 flex flex-row md:flex-col justify-between md:justify-start sticky md:top-5 md:h-screen z-[60]">
         <div className="flex flex-row md:flex-col gap-6 text-3xl font-heading">
           <p className="hidden md:block text-sm text-zinc-400 font-sans font-semibold uppercase">
             Language
@@ -68,15 +68,15 @@ const Resume = () => {
           </button>*/}
         </div>
         {/* Download Dropdown */}
-        <div className="relative md:mt-20">
-          {/* <button
+        {/* <div className="relative md:mt-20">
+          <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white pl-5 pr-4 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800 flex items-center justify-between gap-1"
           >
             Download PDF <ChevronDown strokeWidth={1} />
-          </button> */}
+          </button>
 
-          {/* Dropdown Menu with Transition */}
+      
           <div
             className={`absolute top-full mt-1 text-white rounded-sm w-auto transform transition-all duration-300 origin-top ${
               menuOpen
@@ -95,7 +95,7 @@ const Resume = () => {
               </a>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Content */}
