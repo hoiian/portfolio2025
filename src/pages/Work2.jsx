@@ -343,7 +343,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             {/* Left - Image */}
             <div className="w-full md:w-auto">
               <SmartVideo
-                src="/videos/work2/disclaimer2.mp4"
+                src="/videos/work2/minting.mp4"
                 className="rounded-2xl overflow-hidden max-w-[260px] inline-block"
               />
             </div>
