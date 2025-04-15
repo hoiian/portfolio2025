@@ -156,7 +156,7 @@ const Resume = () => {
             >
               <span className="text-xl font-bold">{content.NetEase}</span>
               {/* Tooltip */}
-              <div className="absolute top-0 right-[100px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
+              <div className="absolute top-0 left-[-10px] transform -translate-x-full mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
                 <img
                   src="/images/neteaseLogo.png" // replace with actual image URL
                   alt="Tooltip image"
@@ -249,7 +249,7 @@ const Resume = () => {
             >
               <span className="text-xl font-bold">{content.THU}</span>
               {/* Tooltip */}
-              <div className="absolute top-0 right-[200px] transform -translate-x-0 mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
+              <div className="absolute top-0 left-[-10px] transform -translate-x-full mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
                 <img
                   src="/images/THULogo.svg" // replace with actual image URL
                   alt="Tooltip image"
