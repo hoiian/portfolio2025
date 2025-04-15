@@ -21,6 +21,7 @@ const defaultMappings = {
   flow: { title: "Flow", tooltip: "User flow design" },
   wireframe: { title: "Wireframe", tooltip: "Low-fidelity layout" },
   design: { title: "Design", tooltip: "Visual design details" },
+  feature: { title: "Key Feature", tooltip: "Key Feature" },
   takeaways: { title: "Takeaways", tooltip: "Takeaways" },
 };
 

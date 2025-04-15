@@ -13,17 +13,18 @@ export default function Work2() {
     "flow",
     "wireframe",
     "design",
+    "feature",
     "takeaways",
   ];
   return (
     <div className="min-h-screen text-white flex flex-col">
       <SectionNav sections={page2Sections} />
 
-      <section className="min-h-screen max-w-6xl mx-auto flex flex-row items-center justify-center px-4">
+      <section className="min-h-screen max-w-6xl mx-auto flex md:flex-row flex-col items-center justify-center px-4">
         {/* Floating Glow Effect */}
         <div className="absolute top-[100px] left-[100px] -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-[#32B288]/10 blur-[150px] z-[-1]"></div>
 
-        <div className="md:max-w-3xl w-full mx-auto mb-16">
+        <div className="md:max-w-3xl w-full mx-auto mb-16 md:text-left text-center">
           <span>Hologram, 2024</span>
           <h1 className="mt-3 text-4xl">NFT Minting Platform</h1>
         </div>
