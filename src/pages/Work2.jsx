@@ -331,7 +331,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
                   <td className="py-6 px-4 text-center">
                     <SmartVideo
                       src="/videos/work2/notWhitelist_signin.mp4"
-                      className="rounded-2xl overflow-hidden max-w-[160px] inline-block"
+                      className="rounded-3xl overflow-hidden max-w-[160px] inline-block"
                     />
                   </td>
                 </tr>
@@ -344,7 +344,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             <div className="order-2 md:order-1 w-full md:w-auto text-center">
               <SmartVideo
                 src="/videos/work2/minting.mp4"
-                className="rounded-2xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
               />
             </div>
 
@@ -366,7 +366,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             <div className=" w-full md:w-auto text-center">
               <SmartVideo
                 src="/videos/work2/closet.mp4"
-                className="rounded-2xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
               />
             </div>
           </div>
@@ -376,7 +376,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             <div className="order-2 md:order-1 w-full md:w-auto text-center">
               <SmartVideo
                 src="/videos/work2/quiz.mp4"
-                className="rounded-2xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
               />
             </div>
 
@@ -384,6 +384,22 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             <div className="order-1 md:order-2 text-center md:text-left">
               <p className="text-xl md:text-2xl mb-2">4.</p>
               <h2 className="text-4xl md:text-5xl font-heading">Chat</h2>
+            </div>
+          </div>
+          {/* 5. Profile */}
+          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
+            {/*  - Text */}
+            <div className="text-center md:text-left">
+              <p className="text-xl md:text-2xl mb-2">5.</p>
+              <h2 className="text-4xl md:text-5xl font-heading">Profile</h2>
+            </div>
+
+            {/*  - Image */}
+            <div className=" w-full md:w-auto text-center">
+              <SmartVideo
+                src="/videos/work2/profile.mp4"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
+              />
             </div>
           </div>
         </div>
