@@ -4,6 +4,7 @@ import SectionNav from "../components/SectionNav";
 import SmartImage from "../components/SmartImage";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
+import HoverImage from "../components/HoverImage";
 
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
 
@@ -20,17 +21,42 @@ export default function Work2() {
     <div className="min-h-screen text-white flex flex-col">
       <SectionNav sections={page2Sections} />
 
-      <section className="min-h-screen max-w-6xl mx-auto flex md:flex-row flex-col items-center justify-center px-4">
+      <section className="min-h-screen w-full md:max-w-6xl mx-auto flex md:flex-row flex-col items-center justify-center px-4">
         {/* Floating Glow Effect */}
         <div className="absolute top-[100px] left-[100px] -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-[#32B288]/10 blur-[150px] z-[-1]"></div>
 
-        <div className="md:max-w-3xl w-full mx-auto mb-16 md:text-left text-center">
+        <div className="md:max-w-xl w-full mx-auto mb-16 md:text-left text-center">
           <span>Hologram, 2024</span>
           <h1 className="mt-3 text-4xl">NFT Minting Platform</h1>
         </div>
-        <div>
-          {" "}
-          <SmartImage src="/images/work2/heroPreview.png" alt="" />
+        <div className="relative w-[620px] h-[646px]">
+          {/* 第一張圖片，放在左上角 */}
+          <HoverImage
+            src="/images/work2/overview/preview1.png"
+            alt="Preview Image 1"
+            className="w-[216px] absolute top-[127px] left-0 z-40"
+          />
+
+          {/* 第二張圖片，向右下偏移 */}
+          <HoverImage
+            src="/images/work2/overview/preivew2.png"
+            alt="Preview Image 2"
+            className="w-[216px] absolute z-30 left-[174px] top-[164px]"
+          />
+
+          {/* 第三張圖片，進一步向右下偏移，並可以稍微旋轉 */}
+          <HoverImage
+            src="/images/work2/overview/preview3.png"
+            alt="Preview Image 3"
+            className="w-[216px] absolute left-[293px] top-[0px]  rotate-3 z-30"
+          />
+
+          {/* 第四張圖片，調整位置與旋轉角度，讓整體看起來更錯落 */}
+          <HoverImage
+            src="/images/work2/overview/preview4.png"
+            alt="Preview Image 4"
+            className="w-[216px] absolute left-[405px] top-[111px] -rotate-2 z-40"
+          />
         </div>
       </section>
 
