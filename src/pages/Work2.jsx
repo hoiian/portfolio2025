@@ -1,14 +1,24 @@
 import React from "react";
 import TitleSection from "../components/TitleSection";
+import SectionNav from "../components/SectionNav";
 import SmartImage from "../components/SmartImage";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
-import { FileText } from "lucide-react";
+
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
 
 export default function Work2() {
+  const page2Sections = [
+    "background",
+    "flow",
+    "wireframe",
+    "design",
+    "takeaways",
+  ];
   return (
     <div className="min-h-screen text-white flex flex-col">
+      <SectionNav sections={page2Sections} />
+
       <section className="min-h-screen max-w-6xl mx-auto flex flex-row items-center justify-center px-4">
         {/* Floating Glow Effect */}
         <div className="absolute top-[100px] left-[100px] -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-[#32B288]/10 blur-[150px] z-[-1]"></div>
@@ -68,7 +78,10 @@ export default function Work2() {
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Background Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+      <div
+        id="background"
+        className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3"
+      >
         <TitleSection
           title="Background"
           description="A PWA developed in collaboration with the MegaETH team, launching a 10K NFT fluffle (rabbit) collection featuring diverse art variations.
@@ -162,7 +175,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Flow Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+      <div id="flow" className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
         <TitleSection title="Flow" description="" icon="flow" />
 
         <SmartImage src="/images/work2/flow.png" alt="Flow" className="" />
@@ -171,7 +184,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Wireframe Section */}
-      <div className="w-full mx-auto py-36 md:px-5 px-3">
+      <div id="wireframe" className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
           <TitleSection title="Wireframe" description="" icon="wireframe" />
         </div>
@@ -187,7 +200,10 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* High-Fidelity Design Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+      <div
+        id="design"
+        className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3"
+      >
         <TitleSection
           title="High-Fidelity Design"
           description=""
@@ -226,7 +242,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Key Features Section */}
-      <div className="w-full mx-auto py-36 md:px-5 px-3">
+      <div id="feature" className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
           <TitleSection title="Key Features" description="" icon="highlight" />
         </div>
@@ -400,7 +416,10 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Takeaways Section */}
-      <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
+      <div
+        id="takeaways"
+        className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3"
+      >
         <TitleSection
           title="Takeaways"
           description="A key challenge in this project was working with evolving requirements. In early stages, when direction was still being defined, we proactively created initial concepts to help guide alignment. This experience strengthened my ability to navigate ambiguity, communicate effectively with stakeholders, and contribute design leadership in fast-changing environments."

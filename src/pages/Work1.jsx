@@ -6,15 +6,16 @@ import SmartImage from "../components/SmartImage";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
 import TitleSection from "../components/TitleSection";
-import {
-  ChevronLeft,
-  MoveRight,
-  MoveDown,
-  CircleX,
-  CircleCheck,
-} from "lucide-react";
+import { MoveRight, MoveDown, CircleX, CircleCheck } from "lucide-react";
 
 export default function Work1() {
+  const page1Sections = [
+    "background",
+    "vtuber",
+    "editor",
+    "prompt",
+    "conclusion",
+  ];
   const [activeSection, setActiveSection] = useState("background");
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
@@ -52,17 +53,8 @@ export default function Work1() {
 
   return (
     <div className="min-h-screen text-white flex flex-col mx-auto relative">
-      <SectionNav />
+      <SectionNav sections={page1Sections} />
 
-      {/* Header with Back Button */}
-      <div className="w-8 h-[37px] fixed top-0 left-0 bg-gradient-to-b from-zinc-950 to-zinc-950/60 backdrop-blur-lg hover:text-zinc-400 z-50 flex items-center">
-        <Link
-          to="/"
-          // className="text-zinc-100 pl-3 pr-5 py-2 rounded-sm w-auto text-left border border-zinc-400 hover:bg-zinc-800 flex items-center justify-between gap-1"
-        >
-          <ChevronLeft strokeWidth={1} size={28} />
-        </Link>
-      </div>
       {/* Work1 Content */}
       <div className="flex flex-col items-center justify-center pt-48 px-4">
         {/* Floating Glow Effect */}
