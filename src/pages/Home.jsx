@@ -234,7 +234,7 @@ export default function Home() {
               /> */}
               <SmartVideo
                 src={works[1].video}
-                className="transition-opacity duration-500 max-w-[50%] max-h-[90%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
+                className="transition-opacity duration-500 max-w-[45%] max-h-[90%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
               />
             </div>
             <div className="p-4 text-white">
