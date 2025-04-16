@@ -254,7 +254,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           <img
             src="/images/work2/wireframe.png"
             alt="wireframe"
-            className="h-[95vh] w-auto max-w-none m-4"
+            className="h-[85vh] w-auto max-w-none m-2"
           />
         </div>
       </div>
@@ -438,52 +438,39 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             <h2 className="text-5xl md:text-6xl">Post-Mint</h2>
             <p className=" text-zinc-300"></p>
           </div>
-          {/* 3.1 Closet */}
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
-            {/*  - Text */}
-            <div className="text-center md:text-left">
-              {/* <p className="text-xl md:text-2xl mb-2">3.</p> */}
-              <h2 className="text-4xl md:text-5xl font-heading">Closet</h2>
-            </div>
 
-            {/*  - Image */}
-            <div className=" w-full md:w-auto text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-5">
+            {/* Card 1:   */}
+            <div className="flex flex-col items-center">
               <SmartVideo
                 src="/videos/work2/closet.mp4"
-                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] mb-4"
               />
+
+              <h3 className="text-3xl">Closet</h3>
+              {/* <p className="text-zinc-300 mt-2">..</p> */}
             </div>
-          </div>
-          {/* 3.2 Chat */}
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
-            {/* Left - Image */}
-            <div className="order-2 md:order-1 w-full md:w-auto text-center">
+
+            {/* Card 2:   */}
+            <div className="flex flex-col items-center">
               <SmartVideo
                 src="/videos/work2/quiz.mp4"
-                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block mb-4"
               />
+
+              <h3 className="text-3xl ">Chat</h3>
+              {/* <p className="text-zinc-300 mt-2">..</p> */}
             </div>
 
-            {/* Right - Text */}
-            <div className="order-1 md:order-2 text-center md:text-left">
-              {/* <p className="text-xl md:text-2xl mb-2">4.</p> */}
-              <h2 className="text-4xl md:text-5xl font-heading">Chat</h2>
-            </div>
-          </div>
-          {/* 3.3 Profile */}
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
-            {/*  - Text */}
-            <div className="text-center md:text-left">
-              {/* <p className="text-xl md:text-2xl mb-2">5.</p> */}
-              <h2 className="text-4xl md:text-5xl font-heading">Profile</h2>
-            </div>
-
-            {/*  - Image */}
-            <div className=" w-full md:w-auto text-center">
+            {/* Card 3:   */}
+            <div className="flex flex-col items-center">
               <SmartVideo
                 src="/videos/work2/profile.mp4"
-                className="rounded-3xl overflow-hidden max-w-[260px] inline-block"
+                className="rounded-3xl overflow-hidden max-w-[260px] inline-block mb-4"
               />
+
+              <h3 className="text-3xl ">Profile</h3>
+              {/* <p className="text-zinc-300 mt-2">..</p> */}
             </div>
           </div>
         </div>
