@@ -15,9 +15,9 @@ const works = [
   },
 
   {
-    title: "Coming soon",
+    title: "NFT Minting Platform",
     image: "/images/megaeth-cover.png",
-    video: "",
+    video: "/videos/work2/closet.mp4",
     link: "/work2",
     description: "",
   },
@@ -227,10 +227,14 @@ export default function Home() {
             className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1"
           >
             <div className="bg-[linear-gradient(142deg,#A22BC7_0%,#F17256_100%)] rounded-3xl md:h-[460px] p-6 flex items-center justify-center">
-              <img
+              {/* <img
                 alt={works[1].title}
                 src={works[1].image}
                 className=" max-w-[50%] max-h-[90%] object-cover group-hover:opacity-80 transition blur"
+              /> */}
+              <SmartVideo
+                src={works[1].video}
+                className="transition-opacity duration-500 max-w-[50%] max-h-[90%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
               />
             </div>
             <div className="p-4 text-white">
