@@ -44,43 +44,43 @@ export default function Work2() {
         {/* Floating Glow Effect */}
         <div className="absolute top-[100px] left-[100px] -translate-x-1/2 w-full md:max-w-[885px] h-[600px] rounded-[1095px] bg-[#32B288]/10 blur-[150px] z-[-1]"></div>
 
-        <div className="md:max-w-xl w-full mx-auto mb-16 md:text-left text-center">
+        <div className="md:max-w-xl w-full mx-auto mb-16 md:text-left text-center md:mt-0 mt-40">
           <span>Hologram, 2024</span>
           <h1 className="mt-3 text-4xl">NFT Minting Platform</h1>
         </div>
-        <div className="relative w-full md:w-[620px] h-[646px]">
+        <div className="relative w-full md:w-[620px] h-[646px] scale-50 md:scale-100 md:mt-0 mt-[-120px]">
           {/* 第一張圖片，放在左上角 */}
           <HoverImage
             src="/images/work2/overview/preview1.png"
             alt="Preview Image 1"
-            className="w-[216px] absolute top-[127px] left-0 z-40"
+            className="w-[216px] absolute left-[calc(50%-320px)] top-[127px] left-0 z-40"
           />
 
           {/* 第二張圖片，向右下偏移 */}
           <HoverImage
             src="/images/work2/overview/preivew2.png"
             alt="Preview Image 2"
-            className="w-[216px] absolute z-30 left-[174px] top-[164px]"
+            className="w-[216px] absolute z-30 left-[calc(50%-136px)] top-[164px]"
           />
 
           {/* 第三張圖片，進一步向右下偏移，並可以稍微旋轉 */}
           <HoverImage
             src="/images/work2/overview/preview3.png"
             alt="Preview Image 3"
-            className="w-[216px] absolute left-[293px] top-[0px]  rotate-3 z-30"
+            className="w-[216px] absolute left-[calc(50%-17px)] top-[0px]  rotate-3 z-30"
           />
 
           {/* 第四張圖片，調整位置與旋轉角度，讓整體看起來更錯落 */}
           <HoverImage
             src="/images/work2/overview/preview4.png"
             alt="Preview Image 4"
-            className="w-[216px] absolute left-[405px] top-[111px] -rotate-2 z-40"
+            className="w-[216px] absolute left-[calc(50%+95px)] top-[111px] -rotate-2 z-40"
           />
         </div>
       </section>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
 
       {/* Overview Section */}
       <div className="max-w-6xl mx-auto py-24 px-4">
@@ -122,7 +122,7 @@ export default function Work2() {
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* Background Section */}
       <div id="background" className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto">
@@ -201,7 +201,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             Our art team created 16 tribes, each with 157 unique variations.
           </p>
         </div>
-        <div className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-4 1max-w-[1600px] 1mx-auto">
+        <div className="grid 12xl:grid-cols-10 xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 1max-w-[1600px] 1mx-auto">
           {tribeNames.map((name, index) => (
             <div key={index} className="relative mx-auto pr-[64px]">
               {/* First image */}
@@ -224,7 +224,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      {/* <div className="w-full lg:border-t border-zinc-800"></div> */}
+      {/* <div className="w-full border-t border-zinc-800"></div> */}
       {/* Discovery Section */}
       {/* <div className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
         <TitleSection
@@ -235,7 +235,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div> */}
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* Flow Section */}
       <div id="flow" className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3">
         <TitleSection title="Flow" description="" icon="flow" />
@@ -244,7 +244,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* Wireframe Section */}
       <div id="wireframe" className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
@@ -260,7 +260,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* High-Fidelity Design Section */}
       <div
         id="design"
@@ -302,7 +302,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* Key Features Section */}
       <div id="feature" className="w-full mx-auto py-36 md:px-5 px-3">
         <div className="w-full md:max-w-6xl mx-auto ">
@@ -417,7 +417,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           </div>
 
           {/* 2.1 Minting */}
-          <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
             {/* Left - Image */}
             <div className="order-2 md:order-1 w-full md:w-auto text-center">
               <SmartVideo
@@ -429,7 +429,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             {/* Right - Text */}
             <div className="order-1 md:order-2 text-center md:text-left">
               {/* <p className="text-xl md:text-2xl mb-2">2.</p> */}
-              <h2 className="text-4xl md:text-5xl font-heading">Mint</h2>
+              <h2 className="text-3xl md:text-5xl font-heading">Mint</h2>
             </div>
           </div>
           {/* 2 Post-Mint */}
@@ -477,7 +477,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
       </div>
 
       {/* Divider */}
-      <div className="w-full lg:border-t border-zinc-800"></div>
+      <div className="w-full border-t border-zinc-800"></div>
       {/* Takeaways Section */}
       <div
         id="takeaways"
