@@ -17,6 +17,25 @@ export default function Work2() {
     "feature",
     "takeaways",
   ];
+
+  const tribeNames = [
+    "Witch",
+    "Innocent",
+    "Boss",
+    "Pilot",
+    "Yob",
+    "Scientist",
+    "Play Boy",
+    "Outlaw",
+    "Mad",
+    "Musician",
+    "Muscular",
+    "Executor",
+    "Soldier",
+    "Femme fatale",
+    "Sage",
+    "Samurai",
+  ];
   return (
     <div className="min-h-screen text-white flex flex-col">
       <SectionNav sections={page2Sections} />
@@ -29,7 +48,7 @@ export default function Work2() {
           <span>Hologram, 2024</span>
           <h1 className="mt-3 text-4xl">NFT Minting Platform</h1>
         </div>
-        <div className="relative w-[620px] h-[646px]">
+        <div className="relative w-full md:w-[620px] h-[646px]">
           {/* 第一張圖片，放在左上角 */}
           <HoverImage
             src="/images/work2/overview/preview1.png"
@@ -105,87 +124,103 @@ export default function Work2() {
       {/* Divider */}
       <div className="w-full lg:border-t border-zinc-800"></div>
       {/* Background Section */}
-      <div
-        id="background"
-        className="w-full md:max-w-6xl mx-auto py-36 md:px-5 px-3"
-      >
-        <TitleSection
-          title="Background"
-          description="A PWA developed in collaboration with the MegaETH team, launching a 10K NFT fluffle (rabbit) collection featuring diverse art variations.
+      <div id="background" className="w-full mx-auto py-36 md:px-5 px-3">
+        <div className="w-full md:max-w-6xl mx-auto">
+          <TitleSection
+            title="Background"
+            description="A PWA developed in collaboration with the MegaETH team, launching a 10K NFT fluffle (rabbit) collection featuring diverse art variations.
 Our art team designed and created the fluffle assets, while I handled the UI/UX design of the PWA and collaborated closely with engineers for implementation."
-          icon="bg"
-        />
-        <div className="max-w-6xl mx-auto border-t border-zinc-800 my-16"></div>
-        <h2 className="text-4xl">What is 10K NFT Project?</h2>
+            icon="bg"
+          />
+          <div className="max-w-6xl mx-auto border-t border-zinc-800 my-16"></div>
+          <h2 className="text-4xl">What is 10K NFT Project?</h2>
 
-        <h2 className="text-3xl mt-14">Key Features</h2>
-        <p className="text-zinc-300 max-w-3xl mt-3">
-          Excitement Factor: Blind-box style minting drives anticipation and
-          engagement. Simplified Process: One-click minting with Gas fee payment
-          for faster transaction
-        </p>
+          <h2 className="text-3xl mt-14">Key Features</h2>
+          <p className="text-zinc-300 max-w-3xl mt-3">
+            Excitement Factor: Blind-box style minting drives anticipation and
+            engagement. Simplified Process: One-click minting with Gas fee
+            payment for faster transaction
+          </p>
 
-        <h2 className="text-3xl mt-14">Market Success Examples</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-5">
-          {/* Card 1:   */}
-          <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
-            <div className="flex flex-row items-center gap-3">
+          <h2 className="text-3xl mt-14">Market Success Examples</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-5">
+            {/* Card 1:   */}
+            <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
+              <div className="flex flex-row items-center gap-3">
+                <SmartImage
+                  src="/images/work2/background/BAYC-logo.png"
+                  alt="BAYC Logo"
+                  className="rounded-xl overflow-hidden w-[60px]"
+                />
+                <h3 className="">Bored Ape Yacht Club (BAYC)</h3>
+              </div>
               <SmartImage
-                src="/images/work2/background/BAYC-logo.png"
-                alt="BAYC Logo"
-                className="rounded-xl overflow-hidden w-[60px]"
+                src="/images/work2/background/BAYC-ex.png"
+                alt="BAYC Example"
+                className="rounded-xl overflow-hidden"
               />
-              <h3 className="">Bored Ape Yacht Club (BAYC)</h3>
             </div>
-            <SmartImage
-              src="/images/work2/background/BAYC-ex.png"
-              alt="BAYC Example"
-              className="rounded-xl overflow-hidden"
-            />
+
+            {/* Card 2:   */}
+            <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
+              <div className="flex flex-row items-center gap-3">
+                <SmartImage
+                  src="/images/work2/background/CryptoPunks-logo.png"
+                  alt="CryptoPunks Logo"
+                  className="rounded-xl overflow-hidden w-[60px]"
+                />
+                <h3 className="">CryptoPunks</h3>
+              </div>
+              <SmartImage
+                src="/images/work2/background/CryptoPunks-ex.png"
+                alt="CryptoPunks Example"
+                className="rounded-xl overflow-hidden"
+              />
+            </div>
+            {/* Card 3:   */}
+            <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
+              <div className="flex flex-row items-center gap-3">
+                <SmartImage
+                  src="/images/work2/background/coolcats-logo.png"
+                  alt="Cool Cats Logo"
+                  className="rounded-xl overflow-hidden w-[60px]"
+                />
+                <h3 className="">Cool Cats</h3>
+              </div>
+              <SmartImage
+                src="/images/work2/background/coolcats-ex.png"
+                alt="Cool Cats Example"
+                className="rounded-xl overflow-hidden"
+              />
+            </div>
           </div>
 
-          {/* Card 2:   */}
-          <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
-            <div className="flex flex-row items-center gap-3">
-              <SmartImage
-                src="/images/work2/background/CryptoPunks-logo.png"
-                alt="CryptoPunks Logo"
-                className="rounded-xl overflow-hidden w-[60px]"
-              />
-              <h3 className="">CryptoPunks</h3>
-            </div>
-            <SmartImage
-              src="/images/work2/background/CryptoPunks-ex.png"
-              alt="CryptoPunks Example"
-              className="rounded-xl overflow-hidden"
-            />
-          </div>
-          {/* Card 3:   */}
-          <div className="flex flex-col p-6 gap-4 border border-zinc-700 rounded-2xl">
-            <div className="flex flex-row items-center gap-3">
-              <SmartImage
-                src="/images/work2/background/coolcats-logo.png"
-                alt="Cool Cats Logo"
-                className="rounded-xl overflow-hidden w-[60px]"
-              />
-              <h3 className="">Cool Cats</h3>
-            </div>
-            <SmartImage
-              src="/images/work2/background/coolcats-ex.png"
-              alt="Cool Cats Example"
-              className="rounded-xl overflow-hidden"
-            />
-          </div>
+          <div className="max-w-6xl mx-auto border-t border-zinc-800 my-16"></div>
+          <h2 className="text-4xl">Our NFTs</h2>
+          <p className="text-zinc-300 max-w-3xl mt-3">
+            Our art team created 16 tribes, each with 157 unique variations.
+          </p>
         </div>
-
-        <div className="max-w-6xl mx-auto border-t border-zinc-800 my-16"></div>
-        <h2 className="text-4xl">Our NFTs</h2>
-        <p className="text-zinc-300 max-w-3xl mt-3">..</p>
-        <SmartImage
-          src="/images/work2/background/outNFTs.png"
-          alt="Our NFTs"
-          className=""
-        />
+        <div className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-4 1max-w-[1600px] 1mx-auto">
+          {tribeNames.map((name, index) => (
+            <div key={index} className="relative mx-auto pr-[64px]">
+              {/* First image */}
+              <HoverImage
+                src={`/images/work2/background/Bunny-${index + 1}A.png`}
+                alt={`${name} A`}
+                className="block w-[100px] "
+              />
+              {/* Second image: using absolute positioning to stagger it */}
+              <HoverImage
+                src={`/images/work2/background/Bunny-${index + 1}B.png`}
+                alt={`${name} B`}
+                className="absolute w-[100px] top-[24px] left-[64px]"
+              />
+              {/* Display the name */}
+              <h3 className="text-center pr-2">{name}</h3>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Divider */}
@@ -219,7 +254,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           <img
             src="/images/work2/wireframe.png"
             alt="wireframe"
-            className="h-[95vh] w-auto max-w-none m-[-20px]"
+            className="h-[95vh] w-auto max-w-none m-4"
           />
         </div>
       </div>
@@ -274,10 +309,10 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           <TitleSection title="Key Features" description="" icon="highlight" />
         </div>
 
-        <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto">
+        <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto mt-12">
           <span className="uppercase text-2xl">1</span>
           <h2 className="text-5xl md:text-6xl">
-            Sign up & Whitelist Eligibility Check
+            Sign in & Whitelist Eligibility Check
           </h2>
           <p className=" text-zinc-300">====</p>
         </div>
@@ -373,7 +408,15 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               </tbody>
             </table>
           </div>
-          {/* 2. Minting */}
+
+          {/* 2 Minting */}
+          <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto mt-32">
+            <span className="uppercase text-2xl">2</span>
+            <h2 className="text-5xl md:text-6xl">Mint</h2>
+            <p className=" text-zinc-300"></p>
+          </div>
+
+          {/* 2.1 Minting */}
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
             {/* Left - Image */}
             <div className="order-2 md:order-1 w-full md:w-auto text-center">
@@ -385,15 +428,21 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
 
             {/* Right - Text */}
             <div className="order-1 md:order-2 text-center md:text-left">
-              <p className="text-xl md:text-2xl mb-2">2.</p>
-              <h2 className="text-4xl md:text-5xl font-heading">Minting</h2>
+              {/* <p className="text-xl md:text-2xl mb-2">2.</p> */}
+              <h2 className="text-4xl md:text-5xl font-heading">Mint</h2>
             </div>
           </div>
-          {/* 3. Closet */}
+          {/* 2 Post-Mint */}
+          <div className="md:max-w-2xl w-full space-y-3 text-center mx-auto mt-32">
+            <span className="uppercase text-2xl">3</span>
+            <h2 className="text-5xl md:text-6xl">Post-Mint</h2>
+            <p className=" text-zinc-300"></p>
+          </div>
+          {/* 3.1 Closet */}
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
             {/*  - Text */}
             <div className="text-center md:text-left">
-              <p className="text-xl md:text-2xl mb-2">3.</p>
+              {/* <p className="text-xl md:text-2xl mb-2">3.</p> */}
               <h2 className="text-4xl md:text-5xl font-heading">Closet</h2>
             </div>
 
@@ -405,7 +454,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               />
             </div>
           </div>
-          {/* 4. Chat */}
+          {/* 3.2 Chat */}
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
             {/* Left - Image */}
             <div className="order-2 md:order-1 w-full md:w-auto text-center">
@@ -417,15 +466,15 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
 
             {/* Right - Text */}
             <div className="order-1 md:order-2 text-center md:text-left">
-              <p className="text-xl md:text-2xl mb-2">4.</p>
+              {/* <p className="text-xl md:text-2xl mb-2">4.</p> */}
               <h2 className="text-4xl md:text-5xl font-heading">Chat</h2>
             </div>
           </div>
-          {/* 5. Profile */}
+          {/* 3.3 Profile */}
           <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-12 py-16 px-4 text-white">
             {/*  - Text */}
             <div className="text-center md:text-left">
-              <p className="text-xl md:text-2xl mb-2">5.</p>
+              {/* <p className="text-xl md:text-2xl mb-2">5.</p> */}
               <h2 className="text-4xl md:text-5xl font-heading">Profile</h2>
             </div>
 
