@@ -273,7 +273,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
         />
 
         <h2 className="text-4xl mt-14">megaETH branding</h2>
-        <p className="text-zinc-300 max-w-3xl mt-3">..</p>
+        {/* <p className="text-zinc-300 max-w-3xl mt-3">..</p> */}
 
         <SmartImage
           src="/images/work2/design/megaETHbranding.png"
@@ -282,7 +282,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
         />
 
         <h2 className="text-4xl mt-14">Related UI reference</h2>
-        <p className="text-zinc-300 max-w-3xl mt-3">..</p>
+        {/* <p className="text-zinc-300 max-w-3xl mt-3">..</p> */}
 
         <SmartImage
           src="/images/work2/design/uiRef.png"
@@ -314,7 +314,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
           <h2 className="text-5xl md:text-6xl">
             Sign in & Whitelist Eligibility Check
           </h2>
-          <p className=" text-zinc-300">====</p>
+          {/* <p className=" text-zinc-300">====</p> */}
         </div>
 
         <SmartImage

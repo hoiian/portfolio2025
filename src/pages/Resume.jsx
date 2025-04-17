@@ -107,7 +107,7 @@ const Resume = () => {
         <h2 className="text-3xl mb-6 text-zinc-400">{content.Experience}</h2>
 
         {/* Work1 */}
-        <div className="mt-6 flex flex-col md:flex-row">
+        <div className="mt-7 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
             <a
@@ -128,7 +128,7 @@ const Resume = () => {
               </p>
             </div>
 
-            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               {content.hologramDetails.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -145,7 +145,7 @@ const Resume = () => {
         </div>
 
         {/* Work2 */}
-        <div className="mt-6 flex flex-col md:flex-row">
+        <div className="mt-7 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
             <a
@@ -178,10 +178,30 @@ const Resume = () => {
               </p>
             </div>
 
-            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
-              {content.netEaseDetails.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
+            <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
+              {content.netEaseDetails.map((item, index) => {
+                // 同樣先找冒號（中英文都試）
+                const colonPos =
+                  item.indexOf("：") !== -1
+                    ? item.indexOf("：")
+                    : item.indexOf(":");
+
+                // 如果有冒號，就拆成 before / after
+                const hasColon = colonPos !== -1;
+                const before = hasColon ? item.slice(0, colonPos) : item;
+                const after = hasColon ? item.slice(colonPos + 1).trim() : "";
+
+                return (
+                  <li key={index} className="list-disc">
+                    {before}
+                    {hasColon && (
+                      <ul className="list-circle list-inside ml-1 mt-1">
+                        <li>{after}</li>
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -195,7 +215,7 @@ const Resume = () => {
         </div>
 
         {/* Work3 */}
-        <div className="mt-6 flex flex-col md:flex-row">
+        <div className="mt-7 flex flex-col md:flex-row">
           {/* Left Section: Title, Content, and Date for Small Screens */}
           <div className="w-full md:w-3/4">
             <a
@@ -219,7 +239,7 @@ const Resume = () => {
               </p>
             </div>
 
-            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               {content.MRSADetails.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -238,7 +258,7 @@ const Resume = () => {
         <h2 className="text-3xl mt-20 mb-6 text-zinc-400">
           {content.Education}
         </h2>
-        <div className="mt-6 flex">
+        <div className="mt-7 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
             <a
@@ -266,7 +286,7 @@ const Resume = () => {
               <p>2018 - 2021, {content.Beijing}</p>
             </div>
 
-            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               <li>{content.THUDegree}</li>
             </ul>
           </div>
@@ -277,7 +297,7 @@ const Resume = () => {
           </div>
         </div>
 
-        <div className="mt-6 flex">
+        <div className="mt-7 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
             <span className="text-xl font-bold">{content.NCKU}</span>
@@ -287,7 +307,7 @@ const Resume = () => {
               <p>2014 - 2018, {content.Taiwan}</p>
             </div>
 
-            <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+            <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               <li>{content.NCKUDegree}</li>
             </ul>
           </div>
@@ -306,23 +326,23 @@ const Resume = () => {
         <h2 className="text-3xl mt-20 mb-6 text-zinc-400">
           {content.Strengths}
         </h2>
-        <div className="mt-6">
+        <div className="mt-7">
           <span className="font-bold ">{content.Strengths1}</span>
-          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+          <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
             <li>{content.Strengths1Details}</li>
           </ul>
         </div>
-        <div className="mt-6">
+        <div className="mt-7">
           <span className="font-bold ">{content.Strengths2}</span>
-          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+          <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
             {content.Strengths2Details.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
-        <div className="mt-6">
+        <div className="mt-7">
           <span className="font-bold ">{content.Strengths3}</span>
-          <ul className="list-disc list-outside pl-5 space-y-2 mt-2 text-zinc-300 text-sm">
+          <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
             <li>
               {content.Strengths3DetailsTitle}
               <ul className="list-disc list-outside space-y-2 ml-5 mt-2">
