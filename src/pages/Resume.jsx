@@ -8,13 +8,10 @@ const Resume = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const downloadOptions = [
-    { label: "English", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en.pdf" },
-    { label: "中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
+    { label: "English", file: "/pdfs/Resume_HoiIanWong_UXUI_202504_en.pdf" },
+    // { label: "中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
     // { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
-    {
-      label: "English + 中文",
-      file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",
-    },
+    // { label: "English + 中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",},
     // {
     //   label: "English + 简体中文",
     //   file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_cn.pdf",
@@ -47,6 +44,7 @@ const Resume = () => {
     "Web3 browser plugin",
     "Web3 trading platform",
     "data visualization",
+    "設計系統",
   ];
 
   // 輔助函式：把字串中可能有正則特殊字元的詞做轉義
@@ -154,7 +152,7 @@ const Resume = () => {
           </button>*/}
         </div>
         {/* Download Dropdown */}
-        {/* <div className="relative md:mt-20">
+        <div className="relative md:mt-20">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white pl-5 pr-4 py-2 rounded-sm w-auto text-left border hover:bg-zinc-800 flex items-center justify-between gap-1"
@@ -162,7 +160,6 @@ const Resume = () => {
             Download PDF <ChevronDown strokeWidth={1} />
           </button>
 
-      
           <div
             className={`absolute top-full mt-1 text-white rounded-sm w-auto transform transition-all duration-300 origin-top ${
               menuOpen
@@ -181,7 +178,7 @@ const Resume = () => {
               </a>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Right Content */}
