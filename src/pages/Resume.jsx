@@ -78,7 +78,7 @@ const Resume = () => {
           isHighlight
             ? "bg-gradient-to-r from-zinc-800 to-zinc-700 px-1 rounded"
             : null,
-          isLink ? "underline hover:text-blue-300" : null,
+          isLink ? "underline hover:text-zinc-500" : null,
         ]
           .filter(Boolean)
           .join(" ");

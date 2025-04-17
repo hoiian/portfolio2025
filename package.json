@@ -12,6 +12,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.6.3",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
