@@ -8,7 +8,7 @@ import Work2 from "./pages/Work2";
 import Work3 from "./pages/Work3";
 import Footer from "./components/Footer";
 import PageTransition from "./components/PageTransition";
-// import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import "./index.css";
 
@@ -59,5 +59,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Routes>
     </Router>
     <Footer />
+    <SpeedInsights />
   </React.StrictMode>
 );
