@@ -35,13 +35,13 @@
       
       hologramDetails: [
         "Refined the Holoword AI design system, driving new iterations as the sole designer. Integrated TailwindCSS to optimize development and accelerate implementation.",
-        "Owned end-to-end design workflows from low-fidelity sketches to high-fidelity prototypes, collaborating closely with engineers and PMs.",
+        "Covered the full design process—from early sketches and information architecture to high-fidelity prototypes and interaction details—ensuring strong alignment with development.",
         "Rapidly delivered 0-to-1 designs for diverse features (e.g., video editor, message inbox, launchpad) in a fast-paced startup environment.",
       ],
       netEaseDetails: [
-        "Computer Game (NARAKA BLADEPOINT): Designed 28 interfaces, optimizing user experience while integrating joystick input in Unity for PC. Streamlined resource uploads to improve team workflow and project efficiency.",
-        "Browser Plugin (Web3 Tool): Led the design and development of web pages and plugins, iterating based on user feedback, resulting in a 4.8/5 app rating.",
-        "Web Application (Web3 Trading Platform): Crafted responsive wallet and market applications, focusing on responsive design for a seamless, cross-platform user experience.",
+        "Designed and documented 28 game UI screens for NARAKA: BLADEPOINT during bi-weekly iterations, enhancing UX and enabling joystick support in Unity for PC.",
+        "Led the design and iteration of a Web3 browser plugin, achieving a 4.8/5 app rating through four rounds of feedback-driven updates.",
+        "Created responsive wallet and market modules for a Web3 trading platform, focusing on cross-platform consistency and usability.",
       ],
       MRSADetails: [
         "Worked cross-functionally on FinTech and COVID Insights platforms, streamlining user flows and designing intuitive data input experiences.",
@@ -103,18 +103,18 @@
       NCKUDegree:"工業設計學士",
 
       hologramDetails: [
-        "優化 Holoword AI 的設計系統，作為唯一設計師推動新一輪迭代。整合 TailwindCSS，提升開發效率並加快實作速度。",
-        "從低保真草圖到高保真原型，主導完整的設計流程，並與工程師及產品經理密切合作。",
+        "獨立負責 Holoword AI 設計系統的優化與迭代，並整合 TailwindCSS 以提升前端實作流程。",
+        "覆蓋完整的設計流程，從構思草圖、使用流程、資訊架構規劃，到高保真原型與交互細節、互動動效設計等各階段，確保設計與開發高度對齊。",
         "在快速迭代的初創環境中，獨立完成多個 0 到 1 的設計任務（如影片編輯器、聊天室、Launchpad等功能）。",
       ],
       netEaseDetails: [
-        "電腦遊戲《永劫無間》（NARAKA: BLADEPOINT）：每兩星期版本迭代中，與策劃合作完成28份介面交互和文檔輸出，同時為電腦版配置手柄輸入，促進遊戲順利登陸主機平台",
-        "瀏覽器插件 (Web3工具)： 從0到1設計後台網頁和插件流程，制定視覺風格和規範，提升後續迭代設計效率；通過4次版本迭代，根據用戶反饋優化產品，在商店獲得4.8/5的評分",
-        "WebApp (Web3交易平台)： 獨自負責從零開始梳理錢包和市場兩個子應用的流程，同時製作原型並製定統一的視覺風格和規範；實現豎版與橫版的設計適配，確保平台在不同遊戲螢幕方向下都提供優質體驗",
+        "電腦遊戲《永劫無間》（NARAKA: BLADEPOINT）：每兩星期版本迭代中，與策劃合作完成28份介面交互和文檔輸出，同時為電腦版配置手柄輸入，助力產品登陸主機平台。",
+        "瀏覽器插件 (Web3工具)： 從0到1設計後台網頁和插件流程，制定視覺風格和規範，提升後續迭代設計效率；通過4次版本迭代，根據用戶反饋優化產品，在商店獲得4.8/5的評分。",
+        "WebApp (Web3交易平台)： 獨立梳理錢包和市場兩個子應用的流程，並製作原型與統一視覺風格和規範；實現豎版與橫版的螢幕適配，確保在不同設備與遊戲場景下皆能提供一致體驗。",
       ],
       MRSADetails: [
-        "與產品經理與資深設計師合作，參與 FinTech 金融科技與 COVID 資訊平台等 Web 專案設計。",
-        "優化使用流程，設計資料填寫表單，並透過資料視覺化清晰呈現文字、數據與三維資訊。",
+        "參與 FinTech 與 COVID Insights 網頁設計，優化使用流程，設計直覺化的資料輸入體驗。",
+        "透過資料視覺化，有效呈現文字、數據與三維資訊，提升資訊可讀性與使用體驗。",
       ],
       Strengths1:"技術實作",
       Strengths1Details:"2017年起，獨立接案開發網頁，其中包括：Acer雲架構、Acer AI、 Acer VR等",

@@ -24,6 +24,92 @@ const Resume = () => {
   // Fetch the current language's text
   const content = resumeTexts[selectedLanguage];
 
+  // 要加連結的字詞 → URL
+  const linkMap = {
+    "Holoword AI": "https://app.holoworld.com/",
+    TailwindCSS: "https://tailwindcss.com/",
+    "NARAKA: BLADEPOINT": "https://www.narakathegame.com/",
+    瀏覽器插件:
+      "https://chromewebstore.google.com/detail/MetaPush/ecponkikdgnpkeejiopipbgbllcgjimb",
+    "Web3 browser plugin":
+      "https://chromewebstore.google.com/detail/MetaPush/ecponkikdgnpkeejiopipbgbllcgjimb",
+    "eDC Cloud Portal":
+      "https://cloudgoda.aceredc.com/#/page/pricingcomparison",
+    Acer雲架構: "https://cloudgoda.aceredc.com/#/page/pricingcomparison",
+    "Acer AI": "https://acerwebai.github.io/index.html",
+    "Acer VR": "https://acerwebvr.github.io/",
+  };
+
+  // highlight 的字詞列表
+  const highlightWords = [
+    "design system",
+    "game UI",
+    "Web3 browser plugin",
+    "Web3 trading platform",
+    "data visualization",
+  ];
+
+  // 輔助函式：把字串中可能有正則特殊字元的詞做轉義
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  // formatText：把文字拆成「需處理的片段」和「純文字」，
+  // 然後根據 linkMap/highlightWords 包成 <a> 或 <span>
+  function formatText(text) {
+    // 合併所有要處理的字詞
+    const keys = Array.from(
+      new Set([...Object.keys(linkMap), ...highlightWords])
+    )
+      // 依長度排序，避免短詞把長詞切到；並轉成正則字串
+      .sort((a, b) => b.length - a.length)
+      .map(escapeRegExp);
+
+    const pattern = new RegExp(`(${keys.join("|")})`, "g");
+    const parts = text.split(pattern);
+
+    return parts.map((part, i) => {
+      const isLink = linkMap[part];
+      const isHighlight = highlightWords.includes(part);
+
+      if (isLink || isHighlight) {
+        // 組合 className
+        const classes = [
+          isHighlight
+            ? "bg-gradient-to-r from-zinc-800 to-zinc-700 px-1 rounded"
+            : null,
+          isLink ? "underline hover:text-blue-300" : null,
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        // 如果同時要連結，就用 <a>，否則用 <span>
+        if (isLink) {
+          return (
+            <a
+              key={i}
+              href={isLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes}
+            >
+              {part}
+            </a>
+          );
+        } else {
+          return (
+            <span key={i} className={classes}>
+              {part}
+            </span>
+          );
+        }
+      }
+
+      // 不用處理的文字就直接回傳
+      return part;
+    });
+  }
+
   return (
     <div className="min-h-screen flex flex-col md:flex-row max-w-[1360px] mx-auto mt-20 mb-40">
       <Header />
@@ -130,7 +216,7 @@ const Resume = () => {
 
             <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               {content.hologramDetails.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>{formatText(item)}</li>
               ))}
             </ul>
           </div>
@@ -156,7 +242,9 @@ const Resume = () => {
             >
               <span className="text-xl font-bold">{content.NetEase}</span>
               {/* Tooltip */}
-              <div className="absolute top-0 left-[-10px] transform -translate-x-full mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
+              <div
+                className={`absolute top-0 left-[-10px] transform -translate-x-full mb-2 w-[260px] bg-zinc-900 bg-opacity-80 backdrop-blur rounded-xl p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto`}
+              >
                 <img
                   src="/images/neteaseLogo.png" // replace with actual image URL
                   alt="Tooltip image"
@@ -179,7 +267,7 @@ const Resume = () => {
             </div>
 
             <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
-              {content.netEaseDetails.map((item, index) => {
+              {/* {content.netEaseDetails.map((item, index) => {
                 // 同樣先找冒號（中英文都試）
                 const colonPos =
                   item.indexOf("：") !== -1
@@ -201,7 +289,10 @@ const Resume = () => {
                     )}
                   </li>
                 );
-              })}
+              })} */}
+              {content.netEaseDetails.map((item, index) => (
+                <li key={index}>{formatText(item)}</li>
+              ))}
             </ul>
           </div>
 
@@ -241,7 +332,7 @@ const Resume = () => {
 
             <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
               {content.MRSADetails.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>{formatText(item)}</li>
               ))}
             </ul>
           </div>
@@ -269,7 +360,9 @@ const Resume = () => {
             >
               <span className="text-xl font-bold">{content.THU}</span>
               {/* Tooltip */}
-              <div className="absolute top-0 left-[-10px] transform -translate-x-full mb-2 hidden group-hover:block w-[260px] bg-zinc-9001 bg-white bg-opacity-5 backdrop-blur rounded-xl p-4">
+              <div
+                className={`absolute top-0 left-[-10px] transform -translate-x-full mb-2 w-[260px] bg-zinc-900 bg-opacity-80 backdrop-blur rounded-xl p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none group-hover:pointer-events-auto`}
+              >
                 <img
                   src="/images/THULogo.svg" // replace with actual image URL
                   alt="Tooltip image"
@@ -300,8 +393,14 @@ const Resume = () => {
         <div className="mt-7 flex">
           {/* Left Section: Title and Content (3/4) */}
           <div className="w-3/4">
-            <span className="text-xl font-bold">{content.NCKU}</span>
-
+            <a
+              href="https://web.ncku.edu.tw/index.php?Lang=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 "
+            >
+              <span className="text-xl font-bold">{content.NCKU}</span>
+            </a>
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
               <p>2014 - 2018, {content.Taiwan}</p>
@@ -327,16 +426,16 @@ const Resume = () => {
           {content.Strengths}
         </h2>
         <div className="mt-7">
-          <span className="font-bold ">{content.Strengths1}</span>
+          <span className="font-bold ">{formatText(content.Strengths1)}</span>
           <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
-            <li>{content.Strengths1Details}</li>
+            <li>{formatText(content.Strengths1Details)}</li>
           </ul>
         </div>
         <div className="mt-7">
           <span className="font-bold ">{content.Strengths2}</span>
           <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
             {content.Strengths2Details.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}>{formatText(item)}</li>
             ))}
           </ul>
         </div>
@@ -347,7 +446,7 @@ const Resume = () => {
               {content.Strengths3DetailsTitle}
               <ul className="list-disc list-outside space-y-2 ml-5 mt-2">
                 {content.Strengths3Details.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index}>{formatText(item)}</li>
                 ))}
               </ul>
             </li>
