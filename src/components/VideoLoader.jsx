@@ -1,6 +1,5 @@
-// src/components/VideoLoader.jsx
 import React from "react";
-import loaderVideo from "/videos/loading.webm"; // 或 .webm
+import loaderVideo from "/videos/loading.webm";
 
 export default function VideoLoader() {
   return (
@@ -11,7 +10,7 @@ export default function VideoLoader() {
         loop
         muted
         playsInline
-        className=" object-contain"
+        className="object-contain"
       />
     </div>
   );
