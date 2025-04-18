@@ -443,7 +443,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
             {/* Card 1:   */}
             <div className="flex flex-col items-center">
               <SmartVideo
-                src="/videos/work2/closet.mp4"
+                src="/videos/work2/closet.webm"
                 className="rounded-3xl overflow-hidden max-w-[260px] mb-4"
               />
 
