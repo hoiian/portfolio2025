@@ -425,7 +425,9 @@ const Resume = () => {
         <div className="mt-7">
           <span className="font-bold ">{formatText(content.Strengths1)}</span>
           <ul className="list-disc list-outside pl-5 space-y-3 mt-2 text-zinc-300 text-sm">
-            <li>{formatText(content.Strengths1Details)}</li>
+            {content.Strengths1Details.map((item, index) => (
+              <li key={index}>{formatText(item)}</li>
+            ))}
           </ul>
         </div>
         <div className="mt-7">

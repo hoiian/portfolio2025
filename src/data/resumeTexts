@@ -48,12 +48,13 @@
         "Applied data visualization to present text, numbers, and 3D information clearly.",
       ],
 
-      Strengths1:"Technology Implementation",
-      Strengths1Details:"Independent web developer since 2017, such as eDC Cloud Portal, Acer AI, Acer VR, and more.",
+      Strengths1:"Design with Developer Mindset",
+      Strengths1Details:["Hands-on coding experience, applying component-based thinking to ensure realistic, efficient designs.",
+       "Independent web developer since 2017, with projects including eDC Cloud Portal, Acer AI, Acer VR, and more."],
 
-      Strengths2:"Efficiency Advocate",
-      Strengths2Details: ["Proficient in managing personal tasks and producing clear, concise design file.",
-"Established resource standards in early 2D game development, boosting efficiency by 30%.",],
+      Strengths2:"Efficiency & Organization",
+      Strengths2Details: ["Skilled in task management, delivering clear and concise design documentation.",
+"Established resource standards in early 2D game development, improving team handoff and boosting efficiency by 30%.",],
 
       Strengths3:"Bilingual Proficiency",
       Strengths3DetailsTitle:"Fluent in English, Cantonese, and Mandarin",
@@ -116,12 +117,14 @@
         "參與 FinTech 與 COVID Insights 網頁設計，優化使用流程，設計直覺化的資料輸入體驗。",
         "透過資料視覺化，有效呈現文字、數據與三維資訊，提升資訊可讀性與使用體驗。",
       ],
-      Strengths1:"技術實作",
-      Strengths1Details:"2017年起，獨立接案開發網頁，其中包括：Acer雲架構、Acer AI、 Acer VR等",
+      Strengths1:"跨設計與前端思維",
+      Strengths1Details:["具備實際開發經驗，善於以組件化邏輯思考設計流程，讓設計更貼近開發、落地更順暢", 
+      "2017年起，獨立接案開發網頁，其中包括：Acer雲架構、Acer AI、 Acer VR等",
+      ],
 
-      Strengths2:"效率規範",
-Strengths2Details: ["熱愛使用表格紀錄和數據化各種事務，以快速推進工作流程",
-"在2D遊戲開發初期，制定資源規範，成功提升了30％的運行效能"
+      Strengths2:"重視流程與效率",
+Strengths2Details: ["擅長任務規劃與清晰設計文件產出，習慣以表格與數據化方式管理流程，加快專案推進效率",
+"曾於早期 2D 遊戲專案中建立資源使用與命名規範，優化交付流程，團隊整體效率提升 30%"
 ],
 
       Strengths3:"雙語能力",
