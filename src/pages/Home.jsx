@@ -17,7 +17,7 @@ const works = [
   {
     title: "NFT Minting Platform",
     image: "/images/megaeth-cover.png",
-    video: "/videos/work2/closet.mp4",
+    video: "/videos/work2/closet.webm",
     link: "/work2",
     description: "",
   },
