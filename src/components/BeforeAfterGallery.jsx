@@ -1,25 +1,36 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import { ChevronsLeftRight } from "lucide-react";
 
 const beforeAfterSets = [
   {
     before: "/images/work3/style/before1.png",
     after: "/images/work3/style/after1.png",
-    thumb: "/images/work3/style/thumb1.png",
+    // thumb: "/images/work3/style/thumb1.png",
   },
   {
     before: "/images/work3/style/before2.png",
     after: "/images/work3/style/after2.png",
-    thumb: "/images/work3/style/thumb2.png",
+    // thumb: "/images/work3/style/thumb2.png",
   },
   {
     before: "/images/work3/style/before3.png",
     after: "/images/work3/style/after3.png",
-    thumb: "/images/work3/style/thumb3.png",
+    // thumb: "/images/work3/style/thumb3.png",
   },
   {
     before: "/images/work3/style/before4.png",
     after: "/images/work3/style/after4.png",
-    thumb: "/images/work3/style/thumb4.png",
+    // thumb: "/images/work3/style/thumb4.png",
+  },
+  {
+    before: "/images/work3/style/before5.png",
+    after: "/images/work3/style/after5.png",
+    // thumb: "/images/work3/style/thumb5.png",
+  },
+  {
+    before: "/images/work3/style/before6.png",
+    after: "/images/work3/style/after6.png",
+    // thumb: "/images/work3/style/thumb6.png",
   },
 ];
 
@@ -88,25 +99,29 @@ export default function BeforeAfterGallery() {
         </div>
         {/* 中间把手 */}
         <div
-          className="absolute top-0 h-full w-1 bg-white/80 cursor-ew-resize"
+          className="absolute top-0 h-full w-[0.5px] bg-white cursor-ew-resize"
           style={{ left: `${pct}%`, transform: "translateX(-50%)" }}
           onMouseDown={() => setDragging(true)}
         >
           {/* 手柄圆环 */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full border border-gray-400" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full hover:bg-zinc-300" />
+          <ChevronsLeftRight
+            strokeWidth={1}
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full text-black"
+          />
         </div>
       </div>
 
       {/* 缩略图切换 */}
       <div className="flex justify-center gap-4">
-        {beforeAfterSets.map(({ thumb }, idx) => (
+        {beforeAfterSets.map(({ after }, idx) => (
           <button
             key={idx}
             className={`
               border-2 rounded overflow-hidden
               ${
                 idx === current
-                  ? "border-blue-500 ring-2 ring-blue-300"
+                  ? "border-zinc-500 ring-2 ring-zinc-300"
                   : "border-transparent hover:ring-1 hover:ring-gray-400/60"
               }
             `}
@@ -116,9 +131,9 @@ export default function BeforeAfterGallery() {
             }}
           >
             <img
-              src={thumb}
+              src={after}
               alt={`thumb ${idx + 1}`}
-              className="w-16 h-16 object-cover"
+              className="w-32 h-18 object-cover"
             />
           </button>
         ))}

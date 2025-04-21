@@ -69,7 +69,7 @@ export default function Work3() {
         <SmartImage
           src="/images/work3/style/colorChange.png"
           alt="color Change"
-          className="mt-10"
+          className="my-10"
         />
 
         <BeforeAfterGallery />
