@@ -104,7 +104,7 @@ export default function BeforeAfterGallery() {
           onMouseDown={() => setDragging(true)}
         >
           {/* 手柄圆环 */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full hover:bg-zinc-300" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full hover:bg-zinc-300 active:scale-105" />
           <ChevronsLeftRight
             strokeWidth={1}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full text-black"
