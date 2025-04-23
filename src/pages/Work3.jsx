@@ -5,7 +5,7 @@ import SmartImage from "../components/SmartImage";
 import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
 import HoverImage from "../components/HoverImage";
-import BeforeAfterGallery from "../components/BeforeAfterGallery";
+import Work3BeforeAfterGallery from "../components/Work3BeforeAfterGallery";
 import { CircleX, CircleCheck } from "lucide-react";
 
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
@@ -29,7 +29,7 @@ export default function Work3() {
   }
 
   return (
-    <div className="min-h-screen text-white flex flex-col">
+    <div className="min-h-screen text-white flex flex-col overflow-x-hidden">
       <SectionNav sections={page3Sections} />
 
       <section className="min-h-screen w-full md:max-w-6xl mx-auto flex md:flex-row flex-col items-center justify-center px-4 overflow-y-clip">
@@ -60,7 +60,7 @@ export default function Work3() {
       {/* Overview Section */}
       <div
         id="overview"
-        className="max-w-6xl mx-auto py-36 px-4 grid grid-cols-3 gap-6"
+        className="max-w-6xl mx-auto py-36 px-4 grid md:grid-cols-3 gap-6"
       >
         <div className=" col-span-1">
           <h2 className="text-5xl">Overview</h2>
@@ -97,7 +97,7 @@ export default function Work3() {
           className="my-10"
         />
 
-        <BeforeAfterGallery />
+        <Work3BeforeAfterGallery />
       </div>
 
       {/* Divider */}
@@ -120,7 +120,7 @@ export default function Work3() {
             <img
               src={pair[0]}
               alt={`before-${idx}`}
-              className="max-w-[720px] object-contain rounded-lg"
+              className="md:max-w-[720px] w-full object-contain rounded-lg"
               draggable={false}
             />
             {/* 叠加的上图，右下偏移 */}
@@ -128,7 +128,7 @@ export default function Work3() {
               <img
                 src={pair[1]}
                 alt={`after-${idx}`}
-                className="ml-[-80px] mt-32 max-w-[530px] object-contain rounded-lg "
+                className="md:ml-[-80px] md:mt-32 md:max-w-[530px]  w-full object-contain rounded-lg "
                 draggable={false}
               />
             )}
@@ -155,25 +155,25 @@ export default function Work3() {
               <CircleX strokeWidth={1} size={36} />
               Before: Swap icon by selecting text
             </h3>
-            <div className=" flex flex-row justify-between mt-4">
+            <div className=" flex flex-col md:flex-row justify-between mt-4">
               <div className="relative flex flex-col md:flex-row items-start">
                 {/* 底图 */}
                 <img
                   src="/images/work3/scalability/icons-before.png"
                   alt=""
-                  className="max-w-[500px] object-contain rounded-lg"
+                  className="md:max-w-[500px] w-full object-contain rounded-lg"
                 />
                 {/* 叠加的上图，右下偏移 */}
                 <img
                   src="/images/work3/scalability/icons-before1.png"
                   alt=""
-                  className="ml-[-80px] max-w-[150px] object-contain rounded-lg mt-8"
+                  className="hidden md:block ml-[-80px] max-w-[150px] object-contain rounded-lg mt-8"
                 />
               </div>
 
               <SmartVideo
                 src="/videos/work3/icon-before.mp4"
-                className="h-[70vh]"
+                className="md:h-[70vh]"
               />
             </div>
           </div>
@@ -183,25 +183,25 @@ export default function Work3() {
               <CircleCheck strokeWidth={1} size={36} />
               After: Swap icon by selecting icon
             </h3>
-            <div className=" flex flex-row justify-between mt-4">
+            <div className=" flex md:flex-row flex-col justify-between mt-4">
               <div className="relative flex flex-col md:flex-row rounded-lg items-start">
                 {/* 底图 */}
                 <img
                   src="/images/work3/scalability/icons-after.png"
                   alt=""
-                  className="max-w-[500px] object-contain rounded-lg"
+                  className="md:max-w-[500px] w-full object-contain rounded-lg"
                 />
                 {/* 叠加的上图，右下偏移 */}
                 <img
                   src="/images/work3/scalability/icons-after1.png"
                   alt=""
-                  className="ml-[-80px] mt-32 max-w-[150px] object-contain rounded-lg "
+                  className="hidden md:block  ml-[-80px] mt-32 max-w-[150px] object-contain rounded-lg "
                 />
               </div>
 
               <SmartVideo
                 src="/videos/work3/icon-after.mp4"
-                className="h-[70vh]"
+                className="md:h-[70vh]"
               />
             </div>
           </div>

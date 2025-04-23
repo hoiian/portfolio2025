@@ -34,7 +34,7 @@ const beforeAfterSets = [
   },
 ];
 
-export default function BeforeAfterGallery() {
+export default function Work3BeforeAfterGallery() {
   const [current, setCurrent] = useState(0);
   const [pct, setPct] = useState(50); // 初始 50%
   const [dragging, setDragging] = useState(false);
@@ -75,8 +75,7 @@ export default function BeforeAfterGallery() {
       {/* 滑块容器 */}
       <div
         ref={containerRef}
-        className="relative select-none overflow-hidden bg-gray-200"
-        style={{ height: "722px" }}
+        className="relative select-none overflow-hidden bg-gray-200 md:h-[722px] h-[64.94708995vw] rounded-xl"
       >
         {/* After 图铺底 */}
         <img

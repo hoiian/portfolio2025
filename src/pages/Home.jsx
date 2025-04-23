@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
-import ProjectCarousel from "../components/ProjectCarousel";
+import ProjectCarousel from "../components/HomeProjectCarousel";
 import SmartVideo from "../components/SmartVideo";
 import SmartImage from "../components/SmartImage";
 
