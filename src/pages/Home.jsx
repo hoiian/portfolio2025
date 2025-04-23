@@ -3,6 +3,7 @@ import SocialIcons from "../components/SocialIcons";
 import Header from "../components/Header";
 import ProjectCarousel from "../components/ProjectCarousel";
 import SmartVideo from "../components/SmartVideo";
+import SmartImage from "../components/SmartImage";
 
 const works = [
   {
@@ -19,6 +20,13 @@ const works = [
     image: "/images/megaeth-cover.png",
     video: "/videos/work2/closet.mp4",
     link: "/work2",
+    description: "",
+  },
+  {
+    title: "Design Library",
+    image: "/images/library-cover.png",
+    video: "",
+    link: "/work3",
     description: "",
   },
 ];
@@ -195,7 +203,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
           <a
             href={works[0].link}
             className="group block relative col-span-1 lg:col-span-2 overflow-hidden transform transition hover:rotate-1"
@@ -204,7 +212,7 @@ export default function Home() {
               {/* <img  alt={works[0].title} className="  w-full object-cover group-hover:opacity-80 transition" /> */}
               <SmartVideo
                 src={works[0].video}
-                className="transition-opacity duration-500 lg:max-w-[70%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
+                className="transition-opacity duration-500 lg:max-w-[85%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
               />
 
               {/* <video
@@ -234,12 +242,29 @@ export default function Home() {
               /> */}
               <SmartVideo
                 src={works[1].video}
-                className="transition-opacity duration-500 max-w-[45%] max-h-[90%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
+                className="transition-opacity duration-500 max-w-[65%] max-h-[95%] rounded-xl overflow-hidden shadow-3xl flex items-center justify-center"
               />
             </div>
             <div className="p-4 text-white">
               <h3 className="text-2xl italic">{works[1].title}</h3>
               <p className="text-sm">{works[1].description}</p>
+            </div>
+          </a>
+
+          <a
+            href={works[2].link}
+            className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1"
+          >
+            <div className="bg-[linear-gradient(142deg,#5EE9B5_0%,#4DF9E3_100%)] rounded-3xl overflow-hidden md:h-[460px] flex items-end justify-end">
+              <SmartImage
+                alt={works[2].title}
+                src={works[2].image}
+                className=" mr-[-1px]"
+              />
+            </div>
+            <div className="p-4 text-white">
+              <h3 className="text-2xl italic">{works[2].title}</h3>
+              <p className="text-sm">{works[2].description}</p>
             </div>
           </a>
         </div>

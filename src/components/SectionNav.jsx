@@ -8,7 +8,7 @@ const defaultSections = [
   "vtuber",
   "editor",
   "prompt",
-  "conclusion",
+  // "conclusion",
 ];
 
 const defaultMappings = {

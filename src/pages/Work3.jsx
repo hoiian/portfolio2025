@@ -276,6 +276,29 @@ export default function Work3() {
             </div>
           </div>
         </div>
+        <a
+          href="https://www.figma.com/design/vcOGP07ifDcEV2LJBJ0lCE/-Public--Holoworld-Design-System-2024?node-id=5579-311&t=UtADAsxRCpdNtP8V-1"
+          target="_blank"
+        >
+          <div className="mt-40 p-12 border border-zinc-700 rounded-2xl overflow-hidden grid md:grid-cols-3 gap-8 items-center">
+            <div className="md:col-span-2 space-y-3">
+              <h2 className="text-5xl">View Full Figma File</h2>
+              <p className=" text-zinc-300">
+                This project was originally initiated by previous designer, and
+                I later took over to update and refine the design system for
+                better scalability and responsiveness.
+              </p>
+            </div>
+            {/* Right 1/3 - Icon */}
+            <div className="flex justify-end">
+              <HoverImage
+                src="/images/work3/Thumbnail.png"
+                alt="Preview Image 1"
+                className=" "
+              />
+            </div>
+          </div>
+        </a>
       </div>
       <BackToTop />
     </div>
