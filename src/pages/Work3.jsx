@@ -206,6 +206,76 @@ export default function Work3() {
             </div>
           </div>
         </div>
+
+        <h2 className="text-4xl mt-16">Slider</h2>
+        <div className="mt-2 p-12 border border-zinc-700 rounded-2xl overflow-hidden">
+          <h3 className="md:text-2xl text-lg text-red-400 flex items-center justify-start gap-3">
+            <CircleX strokeWidth={1} size={36} />
+            Before: Non-resizable
+          </h3>
+          <div className=" flex flex-row justify-between mt-4">
+            <SmartVideo src="/videos/work3/slider-before.mp4" className="" />
+          </div>
+
+          <h3 className="mt-12 md:text-2xl text-lg text-emerald-300 flex items-center justify-start gap-3">
+            <CircleCheck strokeWidth={1} size={36} />
+            After: Resizable
+          </h3>
+          <div className=" flex flex-row justify-between mt-4">
+            <SmartVideo src="/videos/work3/slider-after.mp4" className="" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-zinc-200">
+          <div className="md:col-span-1 text-2xl leading-relaxed md:max-w-3xl w-full ">
+            <h2 className="text-4xl mt-16">Number Stepper</h2>
+            <div className="mt-2 p-12 border border-zinc-700 rounded-2xl overflow-hidden flex flex-row items-center h-[300px]">
+              <div className="text-center">
+                <h3 className="md:text-2xl text-lg text-red-400 flex items-center justify-center gap-3">
+                  <CircleX strokeWidth={1} size={36} />
+                  {/* Before: */}
+                </h3>
+                <SmartVideo
+                  src="/videos/work3/amount-before.mp4"
+                  alt="Number Stepper"
+                />
+              </div>
+              <div>
+                <h3 className="md:text-2xl text-lg text-emerald-300 flex items-center justify-center gap-3">
+                  <CircleCheck strokeWidth={1} size={36} />
+                  {/* After: */}
+                </h3>
+
+                <SmartVideo
+                  src="/videos/work3/amount-after.mp4"
+                  alt="Number Stepper"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="md:col-span-2 text-2xl leading-relaxed md:max-w-3xl w-full">
+            <h2 className="text-4xl mt-16">Progress Bar</h2>
+            <div className="mt-2 p-12 border border-zinc-700 rounded-2xl overflow-hidden  items-center h-[300px]">
+              <h3 className="md:text-2xl text-lg text-red-400 flex items-center justify-start gap-3">
+                <CircleX strokeWidth={1} size={36} />
+                Before: Non-resizable
+              </h3>
+              <SmartVideo
+                src="/videos/work3/progress-before.mp4"
+                alt="Progress Bar"
+              />
+
+              <h3 className="mt-12 md:text-2xl text-lg text-emerald-300 flex items-center justify-start gap-3">
+                <CircleCheck strokeWidth={1} size={36} />
+                After: Resizable by updating auto-layout padding
+              </h3>
+              <SmartVideo
+                src="/videos/work3/progress-after.mp4"
+                alt="Progress Bar"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <BackToTop />
     </div>
