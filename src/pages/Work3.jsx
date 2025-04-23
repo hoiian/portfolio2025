@@ -6,6 +6,7 @@ import SmartVideo from "../components/SmartVideo";
 import BackToTop from "../components/BackToTop";
 import HoverImage from "../components/HoverImage";
 import BeforeAfterGallery from "../components/BeforeAfterGallery";
+import { CircleX, CircleCheck } from "lucide-react";
 
 import { Link } from "react-router-dom"; // Ensure you have React Router set up
 
@@ -67,11 +68,14 @@ export default function Work3() {
 
         <div className="col-span-2">
           <p className="text-zinc-400 mt-2">
-            A 10K NFT minting project featuring 16 unique rabbit tribes.
-            Designed phased user flows for whitelist checks, tribe selection,
-            NFT minting, and post-mint customization. Integrated social tasks
-            for community engagement via Discord and Twitter, creating an
-            intuitive and engaging user experience.
+            When I took over the existing design library—originally built by the
+            previous designer—the product had grown in complexity and undergone
+            a visual refresh. I was responsible for updating the style
+            foundation to align with the new direction and Tailwind CSS logic.
+            This included refining component structure, improving naming
+            conventions, and making the system more scalable. These updates
+            significantly improved usability for both designers and engineers,
+            streamlining collaboration and speeding up implementation.
           </p>
         </div>
       </div>
@@ -143,6 +147,65 @@ export default function Work3() {
           description=""
           icon="flow"
         />
+
+        <h2 className="text-4xl mt-8">Icon</h2>
+        <div className="border border-zinc-700 rounded-2xl overflow-hidden ">
+          <div className="p-8">
+            <h3 className="md:text-2xl text-lg text-red-400 flex items-center justify-start gap-3">
+              <CircleX strokeWidth={1} size={36} />
+              Before: Swap icon by selecting text
+            </h3>
+            <div className=" flex flex-row justify-between mt-4">
+              <div className="relative flex flex-col md:flex-row items-start">
+                {/* 底图 */}
+                <img
+                  src="/images/work3/scalability/icons-before.png"
+                  alt=""
+                  className="max-w-[500px] object-contain rounded-lg"
+                />
+                {/* 叠加的上图，右下偏移 */}
+                <img
+                  src="/images/work3/scalability/icons-before1.png"
+                  alt=""
+                  className="ml-[-80px] max-w-[150px] object-contain rounded-lg mt-8"
+                />
+              </div>
+
+              <SmartVideo
+                src="/videos/work3/icon-before.mp4"
+                className="h-[70vh]"
+              />
+            </div>
+          </div>
+
+          <div className="p-8 border-t border-zinc-700">
+            <h3 className="md:text-2xl text-lg text-emerald-300 flex items-center justify-start gap-3">
+              <CircleCheck strokeWidth={1} size={36} />
+              After: Swap icon by selecting icon
+            </h3>
+            <div className=" flex flex-row justify-between mt-4">
+              <div className="relative flex flex-col md:flex-row rounded-lg items-start">
+                {/* 底图 */}
+                <img
+                  src="/images/work3/scalability/icons-after.png"
+                  alt=""
+                  className="max-w-[500px] object-contain rounded-lg"
+                />
+                {/* 叠加的上图，右下偏移 */}
+                <img
+                  src="/images/work3/scalability/icons-after1.png"
+                  alt=""
+                  className="ml-[-80px] mt-32 max-w-[150px] object-contain rounded-lg "
+                />
+              </div>
+
+              <SmartVideo
+                src="/videos/work3/icon-after.mp4"
+                className="h-[70vh]"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <BackToTop />
     </div>
