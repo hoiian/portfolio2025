@@ -23,6 +23,14 @@ const defaultMappings = {
   design: { title: "Design", tooltip: "Visual design details" },
   feature: { title: "Key Feature", tooltip: "Key Feature" },
   takeaways: { title: "Takeaways", tooltip: "Takeaways" },
+
+  // 為第3頁新增的映射：
+  style: { title: "Style Refresh", tooltip: "Style Refresh" },
+  css: { title: "Tailwind CSS Alignment", tooltip: "Tailwind CSS Alignment" },
+  scalability: {
+    title: "Scalability Enhancements",
+    tooltip: "Scalability Enhancements",
+  },
 };
 
 const SectionNav = ({

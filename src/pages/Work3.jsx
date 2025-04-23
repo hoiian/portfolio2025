@@ -89,7 +89,7 @@ export default function Work3() {
         <TitleSection
           title="Style Refresh"
           description="To quickly update the visual style and reduce development effort, we kept the shapes unchanged and only adjusted the color—replacing the bluish gray with a more neutral tone."
-          icon="flow"
+          icon="refresh"
         />
         <SmartImage
           src="/images/work3/style/colorChange.png"
@@ -106,7 +106,7 @@ export default function Work3() {
         <TitleSection
           title="Tailwind CSS Alignment"
           description="Introduced Tailwind CSS-aligned variables—using only predefined values for spacing, border radius, and effects during design. This allows engineers to directly apply CSS classes without manual conversion, speeding up implementation."
-          icon="flow"
+          icon="code"
         />
       </div>
 
@@ -145,7 +145,7 @@ export default function Work3() {
         <TitleSection
           title="Scalability Enhancements"
           description=""
-          icon="flow"
+          icon="scale"
         />
 
         <h2 className="text-4xl mt-8">Icon</h2>
