@@ -256,7 +256,7 @@ export default function Home() {
             className="group block relative col-span-1 overflow-hidden transform transition hover:rotate-1"
           >
             <div className="bg-[linear-gradient(142deg,#5EE9B5_0%,#4DF9E3_100%)] rounded-3xl overflow-hidden md:h-[460px] flex items-end justify-end">
-              <SmartImage
+              <img
                 alt={works[2].title}
                 src={works[2].image}
                 className=" mr-[-1px]"
