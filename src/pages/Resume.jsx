@@ -9,8 +9,8 @@ const Resume = () => {
 
   const downloadOptions = [
     { label: "English", file: "/pdfs/Resume_HoiIanWong_UXUI_202504_en.pdf" },
-    // { label: "中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_tw.pdf" },
-    // { label: "简体中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_cn.pdf" },
+    { label: "繁體中文", file: "/pdfs/Resume_HoiIanWong_UXUI_202504_zh.pdf" },
+    { label: "简体中文", file: "/pdfs/Resume_HoiIanWong_UXUI_202504_cn.pdf" },
     // { label: "English + 中文", file: "/pdfs/HoiIanWong_UXUI_Resume_2025_en_tw.pdf",},
     // {
     //   label: "English + 简体中文",
