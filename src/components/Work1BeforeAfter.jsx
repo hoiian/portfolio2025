@@ -69,7 +69,14 @@ export default function Work1BeforeAfter() {
               activeTab === "before" ? "opacity-10" : "opacity-100"
             }`}
           >
-            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-lg mb-4"
+            >
               <source
                 src="/videos/work1/videoeditor/demo-videoeditor-fromhome.mp4"
                 type="video/mp4"
@@ -92,6 +99,7 @@ export default function Work1BeforeAfter() {
               loop
               muted
               playsInline
+              controls
               className="rounded-lg mb-4 h-full"
             >
               <source
@@ -118,7 +126,14 @@ export default function Work1BeforeAfter() {
               activeTab === "before" ? "opacity-10" : "opacity-100"
             }`}
           >
-            <video autoPlay loop muted playsInline className="rounded-lg mb-4">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="rounded-lg mb-4"
+            >
               <source
                 src="/videos/work1/prompt/demo-prompt-diag.mp4"
                 type="video/mp4"

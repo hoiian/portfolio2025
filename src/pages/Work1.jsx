@@ -192,6 +192,7 @@ export default function Work1() {
               </h3>
               <SmartVideo
                 src="/videos/work1/vtuber/demo-VtuberPlayground-before.mp4"
+                controls
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
               />
             </div>
@@ -201,6 +202,7 @@ export default function Work1() {
               </h3>
               <SmartVideo
                 src="/videos/work1/vtuber/demo-VtuberPlayground.mp4"
+                controls
                 className="flex-1 max-w-[637.5px] w-full h-auto object-cover rounded-lg"
               />
             </div>
@@ -311,7 +313,7 @@ export default function Work1() {
                   Meeting Platform
                 </p>
                 <h4 className="text-3xl mt-2">Google Meet</h4>
-                <p className=" text-zinc-300 mt-4">...</p>
+                {/* <p className=" text-zinc-300 mt-4">...</p> */}
               </div>
 
               {/* Right 1/3 - Logo */}
@@ -380,7 +382,7 @@ export default function Work1() {
               <div className="md:col-span-2">
                 <p className="text-sm font-bold text-zinc-400">Design Tool</p>
                 <h4 className="text-3xl mt-2">Figma</h4>
-                <p className=" text-zinc-300 mt-4">...</p>
+                {/* <p className=" text-zinc-300 mt-4">...</p> */}
               </div>
 
               {/* Right 1/3 - Logo */}
@@ -427,7 +429,7 @@ export default function Work1() {
                 />
 
                 <h3 className="text-3xl">FigJam</h3>
-                <p className="text-zinc-300 mt-2">..</p>
+                {/* <p className="text-zinc-300 mt-2">..</p> */}
               </div>
 
               {/* Card 2:   */}
@@ -438,7 +440,7 @@ export default function Work1() {
                 />
 
                 <h3 className="text-3xl">Figma</h3>
-                <p className="text-zinc-300 mt-2">..</p>
+                {/* <p className="text-zinc-300 mt-2">..</p> */}
               </div>
             </div>
           </div>
@@ -449,7 +451,7 @@ export default function Work1() {
 
         <div
           id="vtuber-design"
-          className="max-w-6xl mx-auto pt-36  md:px-5 px-3"
+          className="max-w-6xl mx-auto py-36  md:px-5 px-3"
         >
           <TitleSection
             title="Design"
@@ -532,6 +534,25 @@ export default function Work1() {
             </div>
           </div>
         </div>
+
+        {/* Divider */}
+        <div className="max-w-6xl mx-auto border-t border-zinc-800 "></div>
+
+        {/* Outcome */}
+        <div
+          id="prompt-outcome"
+          className="max-w-6xl mx-auto my-32 md:px-5 px-3"
+        >
+          <TitleSection title="Outcome" description="" icon="wireframe" />
+
+          <div className="mt-12 bg-[linear-gradient(110deg,#171717_-0.06%,#1A1A1A_99.58%)] flex items-center justify-center md:p-24 p-4 rounded-3xl">
+            <SmartVideo
+              src="/videos/work1/vtuber/demo-VtuberPlayground.mp4"
+              controls
+              className="rounded-xl border border-zinc-800 md:max-w-3xl w-full"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Divider */}
@@ -566,7 +587,7 @@ export default function Work1() {
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
                 <h4 className="text-3xl mt-2">CapCut</h4>
-                <p className=" text-zinc-300 mt-4">...</p>
+                {/* <p className=" text-zinc-300 mt-4">...</p> */}
               </div>
 
               {/* Right 1/3 -  Logo */}
@@ -598,7 +619,7 @@ export default function Work1() {
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
                 <h4 className="text-3xl mt-2">D-ID</h4>
-                <p className=" text-zinc-300 mt-4">...</p>
+                {/* <p className=" text-zinc-300 mt-4">...</p> */}
               </div>
 
               {/* Right 1/3 -  Logo */}
@@ -623,7 +644,7 @@ export default function Work1() {
               {/* Left 1/3 - Text Content */}
               <div className="md:col-span-2">
                 <h4 className="text-3xl mt-2">Other Platform</h4>
-                <p className=" text-zinc-300 mt-4">...</p>
+                {/* <p className=" text-zinc-300 mt-4">...</p> */}
               </div>
 
               {/* Right 1/3 -  Logo */}
@@ -639,7 +660,7 @@ export default function Work1() {
                 />
 
                 <h3 className="text-3xl">captions.ai</h3>
-                <p className="text-zinc-300 mt-2">..</p>
+                {/* <p className="text-zinc-300 mt-2">..</p> */}
               </div>
 
               {/* Card 2:   */}
@@ -650,7 +671,7 @@ export default function Work1() {
                 />
 
                 <h3 className="text-3xl">HeyGen</h3>
-                <p className="text-zinc-300 mt-2">..</p>
+                {/* <p className="text-zinc-300 mt-2">..</p> */}
               </div>
             </div>
           </div>
@@ -1077,7 +1098,7 @@ export default function Work1() {
                 className="overflow-hidden rounded-3xl mb-4"
               />
               <h3 className="text-3xl">Monologue</h3>
-              <p className="text-zinc-300 mt-2">..</p>
+              {/* <p className="text-zinc-300 mt-2">..</p> */}
             </div>
 
             {/* Card 2:   */}

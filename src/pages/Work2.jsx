@@ -334,7 +334,8 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               <div className="flex-1">
                 <h4 className="text-3xl mt-4 ">Not allow</h4>
                 <p className="mt-3">
-                  If user lives in the US, they would not allow to use the app.
+                  Users located in the United States are restricted from using
+                  the app.
                 </p>
               </div>
             </div>
@@ -348,7 +349,7 @@ Our art team designed and created the fluffle assets, while I handled the UI/UX 
               <div className="flex-1">
                 <h4 className="text-3xl mt-4">Allow</h4>
                 <p className="mt-3">
-                  If user lblblbbl abalbalba lbalbalblblablabl.
+                  Only users outside of the US are allowed access.
                 </p>
               </div>
             </div>
