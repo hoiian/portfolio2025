@@ -207,7 +207,7 @@ const Resume = () => {
             {/* Date & Location for Small Screens */}
             <div className="mt-1 text-sm text-zinc-400 md:hidden">
               <p>
-                {content.Mar} 2024 - {content.Present}, {content.Shenzhen}
+                {content.Mar} 2024 - {content.Mar} 2025, {content.Shenzhen}
               </p>
             </div>
 
@@ -221,7 +221,7 @@ const Resume = () => {
           {/* Right Section: Date & Location for Larger Screens */}
           <div className="w-1/4 text-right text-sm hidden md:block ">
             <p className="text-zinc-400">
-              {content.Mar} 2024 - {content.Present}{" "}
+              {content.Mar} 2024 - {content.Mar} 2025{" "}
             </p>
             <p className="text-zinc-400">{content.Shenzhen}</p>
           </div>

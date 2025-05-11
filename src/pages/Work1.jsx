@@ -210,7 +210,7 @@ export default function Work1() {
             <img
               src="/images/work1/vtuber/compareLine.png"
               alt="compareLine"
-              className="hidden lg:block absolute top-[46px] left-[45%]1 w-[full] "
+              className="hidden lg:block absolute top-[46px] left-[45%]1 w-[full] hover:opacity-50"
             />
           </div>
         </div>
