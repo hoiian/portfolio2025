@@ -88,10 +88,14 @@ export default function Home() {
   return (
     <div className="  min-h-screen text-white flex flex-col p-5">
       {/* Floating Glow Effect */}
-      <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
+      {/* <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="fixed top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 w-[500px] h-[500px] bg-white opacity-5 blur-[150px] rounded-full animate-floating-global"></div>
-      </div>
-
+      </div> */}
+      <img
+        src="/images/HomeDeco.png"
+        alt="deco image"
+        className="hidden lg:block fixed top-0 left-0 w-[full] opacity-50"
+      />
       {/* Header */}
       <Header />
 
