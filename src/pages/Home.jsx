@@ -94,7 +94,7 @@ export default function Home() {
       <img
         src="/images/HomeDeco.png"
         alt="deco image"
-        className="hidden lg:block fixed top-0 left-0 w-[full] opacity-50"
+        className="hidden lg:block fixed top-0 left-0 w-[full]"
       />
       {/* Header */}
       <Header />
