@@ -10,6 +10,7 @@
       Feb:"Feb",
       Mar:"Mar",
       May:"May",
+      Jun:"Jun",
       Jul:"Jul",
       Dec:"Dec",
       Present: "Present",
@@ -18,9 +19,11 @@
       Beijing:"Beijing",
       Shenzhen: "Shenzhen",
       Taiwan:"Taiwan",
+      
 
       Design:"Design",
       Intern:" Intern",
+      Product:"Product",
       Designer:"Designer",
       Senior:"Senior",
 
@@ -81,6 +84,7 @@
       Feb:"2月",
       Mar:"3月",
       May:"5月",
+      Jun:"6月",
       Jul:"7月",
       Dec:"12月",
       Present: "現在",
@@ -92,6 +96,7 @@
 
       Design:"設計",
       Intern:"實習",
+      Product:"產品",
       Designer:"設計師",
       Senior:"高級",
 
@@ -152,6 +157,7 @@ Strengths2Details: ["擅長任務規劃與清晰設計文件產出，習慣以�
       Feb:"2月",
       Mar:"3月",
       May:"5月",
+      Jun:"6月",
       Jul:"7月",
       Dec:"12月",
       Present: "现在",
@@ -163,6 +169,7 @@ Strengths2Details: ["擅長任務規劃與清晰設計文件產出，習慣以�
 
       Design:"设计",
       Intern:"实习",
+      Product:"產品",
       Designer:"设计师",
       Senior:"高级",
 

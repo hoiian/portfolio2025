@@ -188,6 +188,40 @@ const Resume = () => {
         </h2>
         {/* Experience ------------------------ */}
         <h2 className="text-3xl mb-6 text-zinc-400">{content.Experience}</h2>
+        {/* Work0 */}
+        <div className="mt-7 flex flex-col md:flex-row">
+          {/* Left Section: Title, Content, and Date for Small Screens */}
+          <div className="w-full md:w-3/4">
+            <a
+              href="https://www.bnbchain.org/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 "
+            >
+              <span className="text-xl font-bold">BNB Chain</span>
+            </a>
+            <span className="mx-2 text-zinc-400">›</span>
+            <span>
+              {content.Product} {content.Designer}
+            </span>
+
+            {/* Date & Location for Small Screens */}
+            <div className="mt-1 text-sm text-zinc-400 md:hidden">
+              <p>
+                {content.Jun} 2025 - {content.Present}
+                {/* , {content.Shenzhen} */}
+              </p>
+            </div>
+          </div>
+
+          {/* Right Section: Date & Location for Larger Screens */}
+          <div className="w-1/4 text-right text-sm hidden md:block ">
+            <p className="text-zinc-400">
+              {content.Jun} 2025 - {content.Present}
+            </p>
+            {/* <p className="text-zinc-400">{content.Shenzhen}</p> */}
+          </div>
+        </div>
 
         {/* Work1 */}
         <div className="mt-7 flex flex-col md:flex-row">
