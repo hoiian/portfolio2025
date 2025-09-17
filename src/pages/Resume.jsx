@@ -202,7 +202,8 @@ const Resume = () => {
             </a>
             <span className="mx-2 text-zinc-400">›</span>
             <span>
-              {content.Product} {content.Designer}
+              {content.Product}
+              {content.Designer}
             </span>
 
             {/* Date & Location for Small Screens */}
